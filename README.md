@@ -16,3 +16,9 @@ En esta carpeta se van a guardar los archivos css generados de la compilación s
 
 Los archivos *.html que se encuentren en la raíz del proyecto seran las demos de la maquetación.
 Y las carpetas fonts, images y js son las correspondientes a los archivos comunes de maquetación.
+
+
+Herramienta de compilación:
+
+Se recomienda principalmente la herramienta ScoutApp (http://scout-app.io/) que permite seleccionar los directorios de entrada y salida.
+
