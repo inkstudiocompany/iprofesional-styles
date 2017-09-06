@@ -1,0 +1,12 @@
+{
+    "name": "iprofesional/iprofesional-styles",
+    "description": "Contiene el proyecto correspondiente a los diseños y maquetados de iProfesional.",
+    "type": "symfony-assets",
+    "authors": [
+        {
+            "name": "Elena Gidura",
+            "email": "egidura@iprofesional.com"
+        }
+    ],
+    "require": {}
+}
