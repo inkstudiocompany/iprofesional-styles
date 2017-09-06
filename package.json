@@ -1,0 +1,20 @@
+{
+  "name": "iprofesional-styles",
+  "version": "1.0.0",
+  "description": "Contiene el proyecto correspondiente a los diseños y maquetados de iProfesional.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.grupovi-da.biz:lamezquita/iprofesional-styles.git"
+  },
+  "keywords": [
+    "iprofesional",
+    "css",
+    "html"
+  ],
+  "author": "Elena Gidura",
+  "license": "ISC"
+}
