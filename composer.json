@@ -1,7 +1,6 @@
 {
     "name": "iprofesional/iprofesional-styles",
     "version": "1.0.0",
-    "minimum-stability": "master",
     "dist": {
         "url": "http://gitlab.grupovi-da.biz/lamezquita/iprofesional-styles.git",
         "type": "git"
@@ -14,5 +13,10 @@
             "email": "egidura@iprofesional.com"
         }
     ],
-    "require": {}
+    "require": {},
+    "extra": {
+        "branch-alias": {
+            "dev-master": "master"
+        }
+    }
 }
