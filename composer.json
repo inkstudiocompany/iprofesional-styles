@@ -1,7 +1,6 @@
 {
     "name": "iprofesional/iprofesional-styles",
     "version": "1.0.0",
-    "minimum-stability": "dev",
     "dist": {
         "url": "http://gitlab.grupovi-da.biz/lamezquita/iprofesional-styles.git",
         "type": "git"

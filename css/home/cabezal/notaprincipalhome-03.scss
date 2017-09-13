@@ -1,0 +1,472 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/**** nota principal home 03 ****/
+.notaprincipalhome-03 {
+	width: 100%;
+	display: table;
+}
+.notaprincipalhome-03 .colfull{
+	width: 100%;
+	float: left;
+}
+.notaprincipalhome-03 .colizq{
+	width: 65%;
+	float: left;
+}
+.notaprincipalhome-03 .colfull .notagrande{
+	width: 100%;
+	float: left;
+	padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #d4d6d7;
+}
+.notaprincipalhome-03 .colfull .notagrande .volanta{
+	min-width: 200px;
+	float: left;
+	background-color: #20c0ab;
+	color: white;
+	font-weight: 700;
+	font-size: 13px;
+	text-transform: uppercase;
+	padding-left: 10px;
+	line-height: 22px;
+	margin-bottom: 20px;
+}
+.notaprincipalhome-03 .colfull .notagrande .volanta .facebook{
+	float: right;
+	background-color: #4e70a8;
+	height: 22px;
+	width: 22px;
+	margin-left: 10px;
+	text-align: center;
+	-webkit-transition: all 0.3s ease-out 0s;
+	   -moz-transition: all 0.3s ease-out 0s;
+	    -ms-transition: all 0.3s ease-out 0s;
+	     -o-transition: all 0.3s ease-out 0s;
+		 	transition: all 0.3s ease-out 0s;
+}
+.notaprincipalhome-03 .colfull .notagrande .volanta .facebook:hover{
+	color: #4e70a8;
+	background-color: white;
+}
+.notaprincipalhome-03 .colfull .notagrande .volanta .twitter{
+	float: right;
+	background-color: #1ab7ea;
+	height: 22px;
+	width: 22px;
+	text-align: center;
+	-webkit-transition: all 0.3s ease-out 0s;
+	   -moz-transition: all 0.3s ease-out 0s;
+	    -ms-transition: all 0.3s ease-out 0s;
+	     -o-transition: all 0.3s ease-out 0s;
+		 	transition: all 0.3s ease-out 0s;
+}
+.notaprincipalhome-03 .colfull .notagrande .volanta .twitter:hover{
+	color: #1ab7ea;
+	background-color: white;
+}
+.notaprincipalhome-03 .colfull .notagrande .volanta .google{
+	float: right;
+	background-color: #dc4a38;
+	height: 22px;
+	width: 22px;
+	text-align: center;
+	-webkit-transition: all 0.3s ease-out 0s;
+	   -moz-transition: all 0.3s ease-out 0s;
+	    -ms-transition: all 0.3s ease-out 0s;
+	     -o-transition: all 0.3s ease-out 0s;
+		 	transition: all 0.3s ease-out 0s;
+}
+.notaprincipalhome-03 .colfull .notagrande .volanta .google:hover{
+	color: #dc4a38;
+	background-color: white;
+}
+.notaprincipalhome-03 .colfull .notagrande .titulo h1{
+	width: 100%;
+    margin-bottom: 20px;
+    font-family: WhitneyBold;
+    font-size: 40px;
+    line-height: 44px;
+    letter-spacing: -1.60px;
+    font-weight: 500;
+    float: left;
+}
+.notaprincipalhome-03 .colfull .notagrande .imagenbajada{
+	width: 65%;
+	float: left;
+}
+.notaprincipalhome-03 .colfull .notagrande .titulo h1 a{
+	display: block;
+	color: #293039;
+}
+.notaprincipalhome-03 .colfull .notagrande .titulo h1 a:hover{
+	color: #526072;
+}
+.notaprincipalhome-03 .colfull .notagrande .imagen{
+	width: 100%;
+	float: left;
+	line-height: 0;
+	margin-bottom: 15px;
+}
+.notaprincipalhome-03 .colfull .notagrande .imagen img{
+	width: 100%;
+	height: auto;
+}
+.notaprincipalhome-03 .colfull .notagrande .bajada h2{
+	width: 100%;
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    float: left;
+}
+.notaprincipalhome-03 .colfull .notagrande .bajada h2 a{
+	display: block;
+	color: #293039;
+}
+.notaprincipalhome-03 .colfull .notagrande .bajada h2 a:hover{
+	color: #484f56;
+}
+.notaprincipalhome-03 .colfull .notagrande .bajada h2 a span{
+	font-weight: 700;
+	margin-right: 5px;
+	color: #1fbba6;
+}
+.notaprincipalhome-03 .colfull .notamediana{
+	width: 100%;
+	float:left;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #d4d6d7;
+}
+.notaprincipalhome-03 .colfull .notamediana .imagen{
+	width: 190px;
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 10px;
+	padding-top: 5px;
+}
+.notaprincipalhome-03 .colfull .notamediana .imagen img{
+	width: 100%;
+	height: auto;
+}
+.notaprincipalhome-03 .colfull .notamediana .textos{
+	width: calc(100% - 260px);
+	float:left;
+}
+.notaprincipalhome-03 .colfull .notamediana .volanta{
+	width: 100%;
+	float: left;
+	color: #20c0ab;
+	font-weight: 700;
+	font-size: 13px;
+	text-transform: uppercase;
+	margin-bottom: 5px;
+}
+.notaprincipalhome-03 .colfull .notamediana .titulo h2{
+	width: 100%;
+	margin-bottom: 10px;
+	font-family: WhitneyBold;
+	font-size: 27px;
+	line-height: 31px;
+	letter-spacing: -0.75px;
+	font-weight: 500;
+	float: left;
+}
+.notaprincipalhome-03 .colfull .notamediana .titulo h2 a{
+	display: block;
+	color: #293039;
+}
+.notaprincipalhome-03 .colfull .notamediana .titulo h2 a:hover{
+	color: #526072;
+}
+.notaprincipalhome-03 .colfull .notamediana .bajada{
+	width: 100%;
+	float: left;
+}
+.notaprincipalhome-03 .colfull .notamediana .bajada h3{
+	width: 100%;
+	font-family: Roboto;
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: 400;
+}
+.notaprincipalhome-03 .colfull .notamediana .bajada h3 a{
+	display: block;
+	color: #293039;
+}
+.notaprincipalhome-03 .colfull .notamediana .bajada h3 a:hover{
+	color: #484f56;
+}
+.notaprincipalhome-03 .colfull .notamediana .bajada h3 a span{
+	font-weight: 700;
+	margin-right: 5px;
+	color: #1fbba6;
+}
+.notaprincipalhome-03 .colfull .triomininotas{
+	width: calc(35% - 20px);
+	float: right;
+}
+.notaprincipalhome-03 .colfull .triomininotas .mininota{
+	width: 100%;
+	margin-bottom: 20px;
+	float: left;
+	background-color: #f4f5f6;
+}
+.notaprincipalhome-03 .colfull .triomininotas .mininota .minivolanta{
+	width: calc(100% - 15px);
+	padding-right: 15px;
+	height: 22px;
+	background-color: #d6d7d9;
+	float:left;
+	font-weight: 700;
+    font-size: 13px;
+	line-height: 22px;
+	color: #606771;
+	text-align: right;
+}
+.notaprincipalhome-03 .colfull .triomininotas .mininota .minivolanta span{
+	height: 22px;
+	background-color: #1fbba6;
+	padding-left: 15px;
+	padding-right: 15px;
+	float:left;
+	color: white;
+	text-transform: uppercase;
+}
+.notaprincipalhome-03 .colfull .triomininotas .mininota .minititulo h2{
+	width: calc(100% - 30px);
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 20px;
+	padding-top: 15px;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: -0.55px;
+    font-weight: 700;
+    float: left;
+}
+.notaprincipalhome-03 .colfull .triomininotas .mininota .minititulo h2 a {
+    display: block;
+    color: #293039;
+}
+.notaprincipalhome-03 .colizq .mininota{
+	width: 100%;
+	float:left;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #d4d6d7;
+}
+.notaprincipalhome-03 .colizq .mininota h3{
+	font-family: Roboto;
+	font-size: 13px;
+	font-weight: 500;
+	line-height: 19px;
+	color: #293039;
+	background-image: url(../images/bullet-verde.png);
+	background-repeat: no-repeat;
+	background-size: 6px;
+	background-position: 5px 7px;
+	padding-left: 20px;
+}
+.notaprincipalhome-03 .colizq .mininota h3 a{
+	color: #293039;
+	display: block;
+}
+.notaprincipalhome-03 .colizq .mininota h3 a:hover{
+	color: #1ba08e;
+}
+.notaprincipalhome-03 .colizq .notamediana{
+	width: 100%;
+	float:left;
+	margin-bottom: 40px;
+}
+.notaprincipalhome-03 .colizq .notamediana .volanta{
+	width: 100%;
+	float: left;
+	color: #20c0ab;
+	font-weight: 700;
+	font-size: 13px;
+	text-transform: uppercase;
+	margin-bottom: 5px;
+}
+.notaprincipalhome-03 .colizq .notamediana .titulo h2{
+	width: 100%;
+    font-family: WhitneyBold;
+    font-size: 22px;
+    line-height: 25px;
+    letter-spacing: -0.5px;
+    font-weight: 500;
+    float: left;
+}
+.notaprincipalhome-03 .colizq .notamediana .titulo h2 a{
+	display: block;
+	color: #293039;
+}
+.notaprincipalhome-03 .colizq .notamediana .titulo h2 a:hover{
+	color: #526072;
+}
+.notaprincipalhome-03 .colizq .notamediana .imagen{
+	width: 100%;
+	float: left;
+	margin-bottom: 5px;
+}
+.notaprincipalhome-03 .colizq .notamediana .imagen img{
+	width: 100%;
+	height: auto;
+}
+.notaprincipalhome-03 .colder{
+	width: calc(35% - 20px);
+	float: right;
+}
+.notaprincipalhome-03 .colder .notamediana{
+	width: 100%;
+	float:left;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #d4d6d7;
+}
+.notaprincipalhome-03 .colder .notamediana .volanta{
+    float: left;
+    background-color: #20c0ab;
+    color: white;
+    font-weight: 700;
+    font-size: 13px;
+    text-transform: uppercase;
+    padding-left: 10px;
+	padding-right: 10px;
+    line-height: 22px;
+    margin-bottom: 13px;
+}
+.notaprincipalhome-03 .colder .notamediana .titulo h2{
+	width: 100%;
+	margin-bottom: 13px;
+	font-size: 16px;
+	line-height: 21px;
+	letter-spacing: -0.75px;
+	font-weight: 700;
+	float: left;
+}
+.notaprincipalhome-03 .colder .notamediana .titulo h2 a{
+	display: block;
+	color: #293039;
+}
+.notaprincipalhome-03 .colder .notamediana .titulo h2 a:hover{
+	color: #526072;
+}
+.notaprincipalhome-03 .colder .notamediana .imagen{
+	width: 100%;
+	float: left;
+	margin-bottom: 15px;
+	padding-top: 5px;
+	line-height: 0;
+}
+.notaprincipalhome-03 .colder .notamediana .imagen img{
+	width: 100%;
+	height: auto;
+}
+.notaprincipalhome-03 .colder .notamediana .bajada h3{
+	width: 100%;
+	font-family: Roboto;
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: 400;
+	float: left;
+}
+.notaprincipalhome-03 .colder .notamediana .bajada h3 a{
+	display: block;
+	color: #293039;
+}
+.notaprincipalhome-03 .colder .notamediana .bajada h3 a:hover{
+	color: #484f56;
+}
+.notaprincipalhome-03 .colder .notamediana .bajada h3 a span{
+	font-weight: 700;
+	margin-right: 5px;
+	color: #1fbba6;
+}
+.notaprincipalhome-03 .colder .bloqueopinion{
+	width: calc(100% - 20px);
+	float:left;
+	padding: 10px;
+	background-color: #f4f5f6;
+	margin-bottom: 40px;
+}
+.notaprincipalhome-03 .colder .bloqueopinion .tituloseccion{
+	width: 100%;
+    float: left;
+    font-family: Alice;
+    font-size: 18px;
+    line-height: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: white;
+}
+.notaprincipalhome-03 .colder .bloqueopinion .fotopersona{
+	width: 80px;
+	height: 80px;
+	float:left;
+	margin-left: 65px;
+	margin-bottom: 10px;
+	background-color: white;
+	border: solid 5px #20c0ab;
+	line-height: 0;
+	position: relative;
+}
+.notaprincipalhome-03 .colder .bloqueopinion .fotopersona img{
+	width: 100%;
+	height: auto;
+	position: absolute;
+	bottom: 0;
+}
+.notaprincipalhome-03 .colder .bloqueopinion .volanta{
+	width: 100%;
+	float:left;
+	font-size: 11px;
+	font-weight: 600;
+	text-align: center;
+	color: #606771;
+	text-transform: uppercase;
+	margin-bottom: 3px;
+}
+.notaprincipalhome-03 .colder .bloqueopinion .autor{
+	width: 100%;
+	float:left;
+	font-size: 12px;
+	line-height: 18px;
+	font-weight: 600;
+	text-align: center;
+	margin-bottom: 10px;
+	color: #293039;
+}
+.notaprincipalhome-03 .colder .bloqueopinion .autor strong{
+	font-weight: 800;
+}
+.notaprincipalhome-03 .colder .bloqueopinion .bajada{
+	width: 100%;
+	float:left;
+	font-size: 13px;
+	line-height: 18px;
+	text-align: left;
+	margin-bottom: 10px;
+	font-family: Georgia, Palatino Linotype, Palatino, Century Schoolbook L, Times New Roman, serif;
+	font-style: italic;
+}
+.notaprincipalhome-03 .colder .bloqueopinion .bajada a{
+	color: #293039;
+	display: block;
+}
+.notaprincipalhome-03 .colder .bloqueopinion .bajada a:hover{
+	color: #484f56;
+}
+.notaprincipalhome-03 .colder .bloqueopinion .bajada:first-letter { 
+	font-size:65px;
+	font-weight:300;
+	float:left;
+	padding-right:5px;
+	line-height:50px;
+	font-family:Open Sans;
+	font-weight: 400;
+	font-style: normal;
+}

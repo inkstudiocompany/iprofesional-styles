@@ -1,0 +1,583 @@
+
+.cabezal2016ip {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #293039;
+  display: table;
+  font-family: "Open Sans", Arial;
+  .secciones2016ip {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #212831;
+    display: table;
+    .wrappersecciones2016ip {
+      position: relative;
+      width: 980px;
+      margin: 0 auto;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+}
+
+.cabezaloculto {
+  position: fixed;
+  top: -100px;
+  z-index: 100000;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+  .logoiprofcabezal {
+    background-image: url(../images/logotipo_iprofesional.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 90px;
+    height: 20px;
+    a {
+      display: block;
+      width: 85px;
+      height: 20px;
+    }
+  }
+}
+
+.wrappersecciones2016ip {
+  .colizqaccesos {
+    float: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    .botonindice {
+      width: 90px;
+      float: left;
+      height: 24px;
+      line-height: 24px;
+      font-size: 11px;
+      font-family: "Open Sans", Arial;
+      font-weight: 700;
+      color: white;
+      text-align: left;
+      text-indent: 10px;
+      display: block;
+      margin-right: 10px;
+      border-bottom: solid 2px #363e47;
+      background-color: #687079;
+      background-image: url(../images/indice-icono.png);
+      background-repeat: no-repeat;
+      background-position: 65px 2px;
+      background-size: 20px;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      border-radius: 3px;
+      -webkit-transition: all 0.3s ease-out 0s;
+      -moz-transition: all 0.3s ease-out 0s;
+      -ms-transition: all 0.3s ease-out 0s;
+      -o-transition: all 0.3s ease-out 0s;
+      transition: all 0.3s ease-out 0s;
+      a {
+        width: 90px;
+        height: 24px;
+        display: block;
+        color: white;
+      }
+      &:hover {
+        border-bottom: solid 2px #363e47;
+        background-color: #7a838e;
+      }
+    }
+    .divisadolar {
+      float: left;
+      .itemtitulo {
+        float: left;
+        height: 26px;
+        width: 32px;
+        color: #FFF;
+        font-weight: 600;
+        line-height: 28px;
+        font-size: 11px;
+        text-transform: uppercase;
+      }
+      .itemcompra {
+        float: left;
+        padding-left: 15px;
+        height: 26px;
+        .nombre {
+          float: left;
+          height: 26px;
+          font-weight: 600;
+          line-height: 28px;
+          font-size: 11px;
+          text-transform: uppercase;
+          color: #6e747c;
+        }
+        .valor {
+          float: left;
+          height: 26px;
+          font-weight: 900;
+          line-height: 22px;
+          font-size: 18px;
+          text-transform: uppercase;
+          color: #FFF;
+          padding-left: 5px;
+        }
+        .baja {
+          line-height: 23px;
+          color: #bdc2c7;
+          font-size: 9px;
+          text-transform: uppercase;
+          float: left;
+          height: 20px;
+          margin-top: 3px;
+          font-weight: 600;
+          margin-left: 5px;
+          background-image: url(../images/baja.png);
+          background-repeat: no-repeat;
+          background-position: left top;
+          background-size: 10px;
+        }
+        .alta {
+          line-height: 23px;
+          color: #bdc2c7;
+          font-size: 9px;
+          text-transform: uppercase;
+          float: left;
+          height: 20px;
+          margin-top: 3px;
+          font-weight: 600;
+          margin-left: 5px;
+          background-image: url(../images/alta.png);
+          background-repeat: no-repeat;
+          background-position: left top;
+          background-size: 10px;
+        }
+      }
+    }
+  }
+  .colderaccesos {
+    width: 555px;
+    float: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    .botonregistro a {
+      width: 118px;
+      float: right;
+      height: 24px;
+      line-height: 24px;
+      font-size: 11px;
+      font-family: "Open Sans", Arial;
+      font-weight: 700;
+      color: white;
+      text-align: center;
+      display: block;
+      background-color: orange;
+      margin-left: 10px;
+      border-bottom: solid 2px #d18218;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      border-radius: 3px;
+      &:hover {
+        background-color: #ffb400;
+      }
+    }
+    .fecha {
+      width: 70px;
+      border-left: 1px dotted #303b4d;
+      float: left;
+      padding-left: 15px;
+      padding-right: 15px;
+      height: 24px;
+      font-family: "Open Sans", Arial;
+      .dia {
+        color: white;
+        float: left;
+        padding-right: 4px;
+        height: 24px;
+        font-size: 30px;
+        line-height: 24px;
+        font-weight: 500;
+        opacity: 0.7;
+        letter-spacing: -1px;
+      }
+      .mesanio {
+        float: left;
+      }
+      .mes {
+        color: white;
+        height: 12px;
+        font-size: 12px;
+        line-height: 12px;
+        opacity: 0.55;
+        font-weight: 700;
+      }
+      .anio {
+        color: white;
+        height: 11px;
+        font-size: 12px;
+        line-height: 12px;
+        opacity: 0.35;
+      }
+    }
+    .buscador {
+      .campobuscador {
+        width: 165px;
+        float: left;
+        height: 24px;
+        background-color: #303b4d;
+        -webkit-border-top-left-radius: 3px;
+        -webkit-border-bottom-left-radius: 3px;
+        -moz-border-radius-topleft: 3px;
+        -moz-border-radius-bottomleft: 3px;
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+        border-bottom: solid 2px #212b3c;
+        margin-right: 1px;
+        input {
+          width: 165px;
+          float: left;
+          height: 24px;
+          background-color: #343b43;
+          border: 0;
+          color: white;
+          text-indent: 5px;
+          font-size: 12px;
+          font-family: "Open Sans", Arial;
+          -webkit-border-radius: 3px;
+          -moz-border-radius: 3px;
+          border-radius: 3px;
+        }
+      }
+      .iconobuscador {
+        width: 27px;
+        height: 24px;
+        border-bottom: solid 2px #363e47;
+        background-color: #687079;
+        float: left;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        background-image: url(../images/buscar.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 16px;
+        -webkit-transition: all 0.3s ease-out 0s;
+        -moz-transition: all 0.3s ease-out 0s;
+        -ms-transition: all 0.3s ease-out 0s;
+        -o-transition: all 0.3s ease-out 0s;
+        transition: all 0.3s ease-out 0s;
+        a {
+          width: 27px;
+          height: 24px;
+          display: block;
+        }
+        &:hover {
+          border-bottom: solid 2px #363e47;
+          background-color: #7a838e;
+        }
+      }
+    }
+  }
+  .seccionesprincipal {
+    width: 100%;
+    height: 24px;
+    border-bottom: 1px solid #363e47;
+    padding-top: 10px;
+    float: left;
+    ul {
+      float: left;
+      width: calc(100% - 140px);
+      li {
+        float: left;
+        margin-right: 10px;
+        padding-right: 10px;
+        font-size: 11px;
+        border-right: 1px dotted #4a5561;
+        font-weight: 600;
+        line-height: 14px;
+        text-transform: uppercase;
+        a {
+          color: white;
+          &:hover {
+            opacity: 0.8;
+          }
+        }
+      }
+    }
+    .appchrome {
+      width: 130px;
+      float: right;
+      height: 24px;
+      line-height: 24px;
+      font-size: 11px;
+      font-family: "Open Sans", Arial;
+      font-weight: 700;
+      color: white;
+      text-align: center;
+      display: block;
+      background-color: orange;
+      margin-left: 10px;
+      margin-top: -5px;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      border-radius: 3px;
+      background-image: url(../images/chromeext.gif);
+      background-repeat: no-repeat;
+      background-size: cover;
+      a {
+        width: 130px;
+        height: 24px;
+        display: block;
+      }
+    }
+    .fecha {
+      float: right;
+      line-height: 24px;
+      color: white;
+      text-align: right;
+      display: block;
+      margin-left: 10px;
+      margin-top: -5px;
+      .dia {
+        color: #ff9900;
+        float: left;
+        padding-right: 4px;
+        height: 24px;
+        font-size: 28px;
+        line-height: 23px;
+        font-weight: 400;
+        letter-spacing: -1px;
+      }
+      .mesanio {
+        float: left;
+      }
+      .mes {
+        color: white;
+        height: 12px;
+        font-size: 11px;
+        line-height: 11px;
+        opacity: 0.85;
+        font-weight: 700;
+      }
+      .anio {
+        color: white;
+        height: 11px;
+        font-size: 11px;
+        line-height: 11px;
+        opacity: 0.55;
+      }
+    }
+  }
+  .seccionessecundaria {
+    width: 100%;
+    padding-bottom: 10px;
+    float: left;
+    ul {
+      float: left;
+      margin-top: 10px;
+      li {
+        float: left;
+        margin-right: 20px;
+        font-size: 11px;
+        font-weight: 600;
+        line-height: 14px;
+        a {
+          color: #7f858c;
+          &:hover {
+            color: white;
+          }
+        }
+      }
+    }
+    .ademas {
+      width: 60px;
+      background-color: white;
+      color: #293039;
+      font-size: 10px;
+      line-height: 18px;
+      font-weight: 600;
+      margin-top: 7px;
+      position: relative;
+      text-indent: 8px;
+      float: left;
+      margin-right: 25px;
+      margin-bottom: -5px;
+      &:after {
+        left: 100%;
+        top: 50%;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+        border-color: rgba(255, 255, 255, 0);
+        border-left-color: #ffffff;
+        border-width: 9px;
+        margin-top: -9px;
+      }
+    }
+    .redessocialesip {
+      float: right;
+      margin-top: 4px;
+      margin-bottom: -4px;
+      div {
+        width: 24px;
+        height: 24px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        float: left;
+        opacity: 0.35;
+        -webkit-transition: all 0.3s ease-out 0s;
+        -moz-transition: all 0.3s ease-out 0s;
+        -ms-transition: all 0.3s ease-out 0s;
+        -o-transition: all 0.3s ease-out 0s;
+        transition: all 0.3s ease-out 0s;
+        a {
+          width: 24px;
+          height: 24px;
+          display: block;
+        }
+        &:hover {
+          opacity: 1.0;
+        }
+      }
+      .fb {
+        background-image: url(../images/facebook_icono.png);
+      }
+      .tw {
+        background-image: url(../images/twitter_icono.png);
+      }
+      .li {
+        background-image: url(../images/linkedin_icono.png);
+      }
+      .gp {
+        background-image: url(../images/google_icono.png);
+      }
+      .alertas {
+        background-image: url(../images/alertas_icono.png);
+      }
+      .rss {
+        background-image: url(../images/rss_icono.png);
+      }
+    }
+  }
+}
+
+.cabezal2016ip .wrappercabezal2016ip {
+  position: relative;
+  width: 980px;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  .logotipo2016ip {
+    width: 340px;
+    height: 90px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    background-image: url(../images/logotipo_iprofesional.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 340px;
+    float: left;
+  }
+  .bannerizq2016ip {
+    width: calc(50% - 210px);
+    height: 90px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    float: left;
+    text-align: left;
+  }
+  .bannerder2016ip {
+    width: calc(50% - 210px);
+    height: 90px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    float: right;
+    text-align: right;
+  }
+}
+
+.indicedenotas {
+  position: absolute;
+  left: -400px;
+  top: 45px;
+  width: 320px;
+  height: calc(100% - 125px);
+  padding: 40px;
+  background-color: #f4f5f5;
+  z-index: 100000;
+  overflow-y: scroll;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+  .cerrarindice {
+    width: 24px;
+    height: 24px;
+    background-color: rgba(72, 85, 105, 0.4);
+    position: absolute;
+    left: 350px;
+    top: 12px;
+    background-image: url(../images/cerrarindice.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 16px;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+    &:hover {
+      background-color: rgba(72, 85, 105, 0.8);
+    }
+  }
+  .tituloidn {
+    width: 100%;
+    float: left;
+    margin-bottom: 40px;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    font-family: "Open Sans", Arial;
+  }
+  .listadoidn {
+    width: 100%;
+    float: left;
+    ul li {
+      width: 100%;
+      border-bottom: 1px solid #c9cdd3;
+      margin-bottom: 15px;
+      padding-bottom: 15px;
+      font-family: "Open Sans", Arial;
+      font-size: 14px;
+      a {
+        color: #293039;
+        display: block;
+        span {
+          color: #20c0ac;
+          font-weight: 700;
+        }
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+}
+
+.resto {
+  height: 2300px;
+  width: 100%;
+  background-image: url(../images/demopage.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+/**** FIN CABEZAL ****/
