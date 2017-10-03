@@ -1,0 +1,371 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>iProfesional RESULTADO DE BÚSQUEDA</title>
+<meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.5, maximum-scale=2.0">
+<link href="css/estilos-buscador.css" rel="stylesheet" type="text/css">
+<link href="css/swiper.min.css" rel="stylesheet" type="text/css">
+<link href="css/responsive.css" rel="stylesheet" type="text/css">
+<script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/fancybox/jquery.fancybox.pack.js"></script>
+<link rel="stylesheet" type="text/css" href="js/fancybox/jquery.fancybox.css?v=2.1.5" media="screen" />
+</head>
+
+<body>
+<div id="top"></div>
+<div class="buscador" id="buscador">
+	<div class="basebuscador">
+		<div class="campo"><input type="" name="" value="Ingresar el texto a buscar"></div>
+		<div class="cerrar" onclick="cerrarBuscador()"></div>
+	</div>
+</div>
+<div class="menuflotante" id="menuflotante">
+	<div class="wrappermenu">
+		<div class="seccionesprincipal">
+			<ul>
+				<li class="titlista">&Uacute;LTIMAS NOTICIAS</li>
+				<li><a href="#">Econom&iacute;a</a></li>
+				<li><a href="#">Finanzas</a></li>
+				<li><a href="#">Impuestos</a></li>
+				<li><a href="#">Legales</a></li>
+				<li><a href="#">Negocios</a></li>
+				<li><a href="#">Tecnolog&iacute;a</a></li>
+				<li><a href="#">Comex</a></li>
+				<li><a href="#">Management</a></li>
+				<li><a href="#">Marketing</a></li>
+				<li></li>
+			</ul>	
+		</div>
+		<div class="seccionessecundarias">
+			<ul>
+				<li class="titlista">ADEM&Aacute;S</li>
+				<li><a href="#">Autos iPro</a></li>
+				<li><a href="#">Vinos &amp; Bodegas</a></li>
+				<li><a href="#">Energ&iacute;as Limpias</a></li>
+				<li><a href="#">Ahora Brasil</a></li>
+				<li><a href="#">Health &amp; Tech</a></li>
+				<li><a href="#">Responsabilidad Social Digital</a></li>
+				<li><a href="#">Real Estate</a></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+		<div class="redessocialesip">
+			<div class="fb"><a href="#"></a></div>
+			<div class="tw"><a href="#"></a></div>
+			<div class="li"><a href="#"></a></div>
+			<div class="gp"><a href="#"></a></div>
+			<div class="alertas"><a href="#"></a></div>
+			<div class="rss"><a href="#"></a></div>
+		</div>
+		<div class="registroip">
+			<div><a href="#">LOGIN</a></div>
+		</div>
+	</div>
+</div>
+<div id="compartir" style="display: none;">
+	<div class="tituloseccion">Compartir nota</div>
+	<ul>
+		<li>
+			<a href="#">
+				<div class="share fb"></div>
+				<div class="texto">Compartir en Facebook</div>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				<div class="share tw"></div>
+				<div class="texto">Compartir en Twitter</div>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				<div class="share mail"></div>
+				<div class="texto">Enviar por Mail</div>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				<div class="share wa"></div>
+				<div class="texto">Enviar por Whatsapp</div>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				<div class="share li"></div>
+				<div class="texto">Compartir en Linkedin</div>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				<div class="share gp"></div>
+				<div class="texto">Compartir en Google+</div>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				<div class="share url"></div>
+				<div class="texto">Copiar url corta</div>
+			</a>
+		</li>
+	</ul>
+</div>
+<div id="indicenotas" style="display: none;">
+          <ul>
+            <li><a href="#"><span class="seccion">FINANZAS</span> <span class="fecha">Hace 14 minutos</span> <span class="titulo">Blanqueo, día después: cómo queda cada impuesto para los que entraron y para quienes queden al margen</span></a> </li>
+            <li><a href="#"><span class="seccion">NEGOCIOS</span> <span class="fecha">Hace 19 minutos</span> <span class="titulo">Los mercados impactados por el default: los bonos y las acciones reportaron pérdidas de hasta el 11 por ciento</a> </li>
+            <li><a href="#"><span class="seccion">ACTUALIDAD</span> <span class="fecha">Hace 34 minutos</span> <span class="titulo">Blanqueo, día después: cómo queda cada impuesto para los que entraron y para quienes queden al margen</span></a> </li>
+            <li><a href="#"><span class="seccion">FINANZAS</span> <span class="fecha">Hace 54 minutos</span> <span class="titulo">Impuesto a las Ganancias, bajo la lupa: este es el horizonte completo de los futuros cambios</span></a> </li>
+            <li><a href="#"><span class="seccion">COMEX</span> <span class="fecha">Hace 1 hora</span> <span class="titulo">Blanqueo, día después: cómo queda cada impuesto para los que entraron y para quienes queden al margen</span></a> </li>
+            <li><a href="#"><span class="seccion">MARKETING</span> <span class="fecha">Hace 1 hora</span> <span class="titulo">Los mercados impactados por el default: los bonos y las acciones reportaron pérdidas de hasta el 11 por ciento</span></a> </li>
+            <li><a href="#"><span class="seccion">FINANZAS</span> <span class="fecha">Hace 2 horas</span> <span class="titulo">Blanqueo, día después: cómo queda cada impuesto para los que entraron y para quienes queden al margen</span></a> </li>
+            <li><a href="#"><span class="seccion">ACTUALIDAD</span> <span class="fecha">Hace 2 horas</span> <span class="titulo">Impuesto a las Ganancias, bajo la lupa: este es el horizonte completo de los futuros cambios</span></a> </li>
+            <li><a href="#"><span class="seccion">TECNOLOG&Iacute;A</span> <span class="fecha">Hace 2 horas</span> <span class="titulo">Blanqueo, día después: cómo queda cada impuesto para los que entraron y para quienes queden al margen</span></a> </li>
+            <li><a href="#"><span class="seccion">FINANZAS</span> <span class="fecha">Hace 3 horas</span> <span class="titulo">Los mercados impactados por el default: los bonos y las acciones reportaron pérdidas de hasta el 11 por ciento</span></a> </li>
+            <li><a href="#"><span class="seccion">ECONOM&Iacute;A</span> <span class="fecha">Hace 4 horas</span> <span class="titulo">Blanqueo, día después: cómo queda cada impuesto para los que entraron y para quienes queden al margen</span></a> </li>
+            <li><a href="#"><span class="seccion">FINANZAS</span> <span class="fecha">Hace 4 horas</span> <span class="titulo">Impuesto a las Ganancias, bajo la lupa: este es el horizonte completo de los futuros cambios</span></a> </li>
+            <li><a href="#"><span class="seccion">FINANZAS</span> <span class="fecha">Hace 4 horas</span> <span class="titulo">Blanqueo, día después: cómo queda cada impuesto para los que entraron y para quienes queden al margen</span></a> </li>
+            <li><a href="#"><span class="seccion">FINANZAS</span> <span class="fecha">Hace 4 horas</span> <span class="titulo">Los mercados impactados por el default: los bonos y las acciones reportaron pérdidas de hasta el 11 por ciento</span></a> </li>
+            <li><a href="#"><span class="seccion">FINANZAS</span> <span class="fecha">Hace 5 horas</span> <span class="titulo">Blanqueo, día después: cómo queda cada impuesto para los que entraron y para quienes queden al margen</span></a> </li>
+            <li><a href="#"><span class="seccion">FINANZAS</span> <span class="fecha">Hace 5 horas</span> <span class="titulo">Impuesto a las Ganancias, bajo la lupa: este es el horizonte completo de los futuros cambios</span></a> </li>
+          </ul>
+</div>
+<div id="filtros" style="display: none;">
+	<div class="filtroderesultados">
+		<div class="columna">
+			<div class="tipofiltro">
+				<div class="titulofiltro">Fecha</div>
+				<div class="itemsfiltro">
+					<ul>
+						<li><a href="">Hoy</a></li>
+						<li><a href="">Última semana</a></li>
+						<li><a href="">Último mes</a></li>
+						<li><a href="">Último año</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="tipofiltro">
+				<div class="titulofiltro">FORMATO</div>
+				<div class="itemsfiltro">
+					<ul>
+						<li>Desde (selector)</li>
+						<li>Hasta (selector)</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="columna">
+			<div class="tipofiltro">
+				<div class="titulofiltro">SECCI&Oacute;N</div>
+				<div class="itemsfiltromitad">
+					<ul>
+						<li><a href="#">Econom&iacute;a (2)</a></li>
+						<li><a href="#">Finanzas (4)</a></li>
+						<li><a href="#">Impuestos (0)</a></li>
+						<li><a href="#">Legales (2)</a></li>
+						<li><a href="#">Negocios (2)</a></li>
+						<li><a href="#">Tecnolog&iacute;a (2)</a></li>
+						<li><a href="#">Comex (2)</a></li>
+						<li><a href="#">Management (1)</a></li>
+						<li><a href="#">Marketing (0)</a></li>
+						<li><a href="#">Vinos &amp; Bodegas (1)</a></li>
+						<li><a href="#">Autos iPro (0)</a></li>
+						<li><a href="#">Energ&iacute;as Limpias (0)</a></li>
+						<li><a href="#">Ahora Brasil (0)</a></li>
+						<li><a href="#">Health &amp; Tech (0)</a></li>
+						<li><a href="#">RSD (0)</a></li>
+						<li><a href="#">Real Estate (2)</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="mainwrapper">
+	<div class="cabezalmobile">
+		<div class="botonmenu" onclick="funcionMenu()"></div>
+		<div class="desktop">
+			<div class="seccionesexpandido">
+				<ul>
+					<li><strong>SECCIONES</strong></li>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Econom&iacute;a</a></li>
+					<li><a href="#">Finanzas</a></li>
+					<li><a href="#">Impuestos</a></li>
+					<li><a href="#">Legales</a></li>
+					<li><a href="#">Negocios</a></li>
+					<li><a href="#">Tecnolog&iacute;a</a></li>
+					<li><a href="#">Comex</a></li>
+					<li><a href="#">Management</a></li>
+					<li><a href="#">Marketing</a></li>
+				</ul>
+			</div>
+			<div class="logotipoblanco"></div>
+		</div>
+		<div class="logotipo"></div>
+		<div class="botonbuscador" onclick="abrirBuscador()"></div>
+	</div>
+	<div class="cabezalgrande">
+		<div class="bannerizq"><img src="http://www.benzinsider.com/wp-content/uploads/2017/09/mercedes-amg-project-one-3-180x70.jpg"></div>
+		<div class="logogrande"></div>
+		<div class="bannerder"><img src="http://www.benzinsider.com/wp-content/uploads/2017/09/mercedes-amg-project-one-3-180x70.jpg"></div>
+	</div>
+	<div class="cabezalmobilenv2">
+		<div class="fecha">23.04.2017</div>
+		<div class="accesosusuario"><a class="fancybox" href="#indicenotas" title="&Iacute;NDICE DE NOTAS">&Iacute;NDICE</a> <a href>LOGIN</a> <a href>REGISTRO</a></div>
+	</div>
+	<div class="contenido">
+		<div class="bloquenotas">
+			<div class="buscadorwrapper">
+				<div class="titulobuscador">Resultados de b&uacute;squeda:</div>
+				<div class="palabraclave">Macri</div>
+				<div class="cantidadresultados">
+					<div class="colizq">Resultados 1-10 de 197</div>
+					<div class="colder">
+						<div class="flechaizq"><a href="">ANT</a></div>
+						<div class="flechader"><a href="">SIG</a></div>
+					</div>
+				</div>
+				<div class="opcioneslistado">
+					<div class="botonfiltro"><a class="fancybox" href="#filtros" title="FILTRAR RESULTADOS">Filtrar</a></div>
+					<div class="ordenlistado"><span>Ordenado por:</span> Más nuevo | <a href="">Más antiguo</a></div>
+				</div>
+				<div class="listaresultados">
+					<div class="item">
+						<div class="fechaitem">24.08.2017 <span>Finanzas</span></div>
+						<div class="tituloitem"><a href="">Un "cisne negro" sorprende a <strong>Macri</strong>: lo que viene tras el freno de Trump al biodiésel argentino</a></div>
+						<div class="bajadaitem"><a href="">El Gobierno todavía festejaba el reingreso de los cítricos nacionales a ese mercado cuando, súbitamente, Estados Unidos aniquiló un negocio valuado en más de u$s1.200 millones anuales. Empresarios alertan por un desplome del precio del &ldquo;bio&rdquo; y por el impacto en la cadena sojera</a></div>
+					</div>
+					<div class="item">
+						<div class="fechaitem">24.08.2017 <span>Finanzas</span></div>
+						<div class="tituloitem"><a href=""><strong>Macri</strong> fulminó a Capusotto: "El kirchnerismo nos hizo mantenerte por 12 años"</a></div>
+						<div class="bajadaitem"><a href="">"Más temprano o más tarde, estos tipos van a caer", había dicho sobre el macrismo el humorista que vuelve a la pantalla chica de la mano de canal 9</a></div>
+					</div>
+					<div class="item">
+						<div class="fechaitem">24.08.2017 <span>Finanzas</span></div>
+						<div class="tituloitem"><a href="">Tiempo de descuento: <strong>Macri</strong> tiene hasta el lunes para apelar la decisión de EE.UU de poner barreras al biodiésel</a></div>
+						<div class="bajadaitem"><a href="">Mediante un acuerdo de suspensión, que debe pedir <strong>Macri</strong>, se buscaría consensuar un volumen de exportación y un arancel que permita la marcha del negocio</a></div>
+					</div>
+					<div class="item">
+						<div class="fechaitem">24.08.2017 <span>Finanzas</span></div>
+						<div class="tituloitem"><a href="">¿Qué opina Longobardi sobre <strong>Macri</strong> y su gobierno?</a></div>
+						<div class="bajadaitem"><a href="">El conductor evaluó el desempeño de Cambiemos al mando del país y confesó estar "harto de que el país gire todo el tiempo alrededor de Cristina Kirchner"</a></div>
+					</div>
+					<div class="item">
+						<div class="fechaitem">24.08.2017 <span>Finanzas</span></div>
+						<div class="tituloitem"><a href="">Un "cisne negro" sorprende a <strong>Macri</strong>: lo que viene tras el freno de Trump al biodiésel argentino</a></div>
+						<div class="bajadaitem"><a href="">El Gobierno todavía festejaba el reingreso de los cítricos nacionales a ese mercado cuando, súbitamente, Estados Unidos aniquiló un negocio valuado en más de u$s1.200 millones anuales. Empresarios alertan por un desplome del precio del &ldquo;bio&rdquo; y por el impacto en la cadena sojera</a></div>
+					</div>
+					<div class="item">
+						<div class="fechaitem">24.08.2017 <span>Finanzas</span></div>
+						<div class="tituloitem"><a href="">Casero fulminó a <strong>Macri</strong>: "El kirchnerismo nos hizo mantenerte por 12 años"</a></div>
+						<div class="bajadaitem"><a href="">"Más temprano o más tarde, estos tipos van a caer", había dicho sobre el macrismo el humorista que vuelve a la pantalla chica de la mano de canal 9</a></div>
+					</div>
+					<div class="item">
+						<div class="fechaitem">24.08.2017 <span>Finanzas</span></div>
+						<div class="tituloitem"><a href="">Tiempo de descuento: <strong>Macri</strong> tiene hasta el lunes para apelar la decisión de EE.UU de poner barreras al biodiésel</a></div>
+						<div class="bajadaitem"><a href="">Mediante un acuerdo de suspensión, que debe pedir Macri, se buscaría consensuar un volumen de exportación y un arancel que permita la marcha del negocio</a></div>
+					</div>
+					<div class="item">
+						<div class="fechaitem">24.08.2017 <span>Finanzas</span></div>
+						<div class="tituloitem"><a href="">¿Qué opina Longobardi sobre <strong>Macri</strong> y su gobierno?</a></div>
+						<div class="bajadaitem"><a href="">El conductor evaluó el desempeño de Cambiemos al mando del país y confesó estar "harto de que el país gire todo el tiempo alrededor de Cristina Kirchner"</a></div>
+					</div>
+					<div class="item">
+						<div class="fechaitem">24.08.2017 <span>Finanzas</span></div>
+						<div class="tituloitem"><a href="">Un "cisne negro" sorprende a <strong>Macri</strong>: lo que viene tras el freno de Trump al biodiésel argentino</a></div>
+						<div class="bajadaitem"><a href="">El Gobierno todavía festejaba el reingreso de los cítricos nacionales a ese mercado cuando, súbitamente, Estados Unidos aniquiló un negocio valuado en más de u$s1.200 millones anuales. Empresarios alertan por un desplome del precio del &ldquo;bio&rdquo; y por el impacto en la cadena sojera</a></div>
+					</div>
+					<div class="item">
+						<div class="fechaitem">24.08.2017 <span>Finanzas</span></div>
+						<div class="tituloitem"><a href="">¿Qué opina Longobardi sobre <strong>Macri</strong> y su gobierno?</a></div>
+						<div class="bajadaitem"><a href="">El conductor evaluó el desempeño de Cambiemos al mando del país y confesó estar "harto de que el país gire todo el tiempo alrededor de Cristina Kirchner"</a></div>
+					</div>
+				</div>
+				<div class="cantidadresultados">
+					<div class="colizq">Resultados 1-10 de 197</div>
+					<div class="colder">
+						<div class="flechaizq"><a href="">ANT</a></div>
+						<div class="flechader"><a href="">SIG</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="objetosinferiores">
+			<div class="objetoexplora">
+				<div class="tituloseccion">Explor&aacute; <span>iProfesional</span></div>
+				<div class="listado">
+					<ul>
+						<li class="tit"><strong>&Uacute;ltimas noticias</strong></li>
+						<li><a href>Econom&iacute;a</a></li>
+						<li><a href>Finanzas</a></li>
+						<li><a href>Impuestos</a></li>
+						<li><a href>Legales</a></li>
+						<li><a href>Negocios</a></li>
+						<li><a href>Tecnolog&iacute;a</a></li>
+						<li><a href>Comex</a></li>
+						<li><a href>Management</a></li>
+						<li><a href>Marketing</a></li>
+					</ul>
+					<ul>
+						<li class="tit"><strong>Adem&aacute;s</strong></li>
+						<li><a href>Autos iPro</a></li>
+						<li><a href>Vinos &amp; Bodegas</a></li>
+						<li><a href>Energías Limpias</a></li>
+						<li><a href>Ahora Brasil</a></li>
+						<li><a href>Health &amp; Tech</a></li>
+						<li><a href>RSD</a></li>
+						<li><a href>Real Estate</a></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+			</div>
+			<div class="objetovolverarriba">
+				<a href>
+					<span class="flecha"></span>
+					<a href="#top"><span class="texto">Volver a arriba</span></a>
+					<span class="flecha"></span>
+				</a>
+			</div>
+			<div class="navegacioninferior">
+				<div class="indiceacceso"><a class="fancybox" href="#indicenotas" title="&Iacute;NDICE DE NOTAS">&Iacute;ndice de notas</a></div>
+				<div class="items">
+					<ul>
+						<li class="primero"><a href>Recomendar</a></li>
+						<li><a href>Registrarse</a></li>
+						<li><a href>RSS</a></li>
+						<li><a href>Contacto</a></li>
+						<li class="ultimo"><a href>Publicidad</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="footer">
+				<div class="textos">
+					iProfesional - Copyright © 2017 <br>
+					Emprendimientos Corporativos S.A. <br>
+					Buenos Aires, Argentina. Todos los derechos reservados.<br>
+				</div>
+				<div class="redes">
+					<ul>
+						<li class="fb"><a href></a></li>
+						<li class="tw"><a href></a></li>
+						<li class="gp"><a href></a></li>
+						<li class="ln"><a href></a></li>
+						<li class="mail"><a href></a></li>
+						<li class="app"><a href></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="js/iprofesional.js"></script>
+</body>
+</html>

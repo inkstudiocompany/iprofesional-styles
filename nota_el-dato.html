@@ -1,0 +1,505 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>iProfesional NOTA</title>
+<meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.5, maximum-scale=2.0">
+<link href="css/estilos-nota.css" rel="stylesheet" type="text/css">
+<link href="css/swiper.min.css" rel="stylesheet" type="text/css">
+<link href="css/responsive.css" rel="stylesheet" type="text/css">
+<script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/fancybox/jquery.fancybox.pack.js"></script>
+<link rel="stylesheet" type="text/css" href="js/fancybox/jquery.fancybox.css?v=2.1.5" media="screen" />
+</head>
+
+<body>
+<div id="top"></div>
+<div class="buscador" id="buscador">
+	<div class="basebuscador">
+		<div class="campo"><input type="" name="" value="Ingresar el texto a buscar"></div>
+		<div class="cerrar" onclick="cerrarBuscador()"></div>
+	</div>
+</div>
+<div class="menuflotante" id="menuflotante">
+	<div class="wrappermenu">
+		<div class="seccionesprincipal">
+			<ul>
+				<li class="titlista">&Uacute;LTIMAS NOTICIAS</li>
+				<li><a href="#">Econom&iacute;a</a></li>
+				<li><a href="#">Finanzas</a></li>
+				<li><a href="#">Impuestos</a></li>
+				<li><a href="#">Legales</a></li>
+				<li><a href="#">Negocios</a></li>
+				<li><a href="#">Tecnolog&iacute;a</a></li>
+				<li><a href="#">Comex</a></li>
+				<li><a href="#">Management</a></li>
+				<li><a href="#">Marketing</a></li>
+				<li></li>
+			</ul>	
+		</div>
+		<div class="seccionessecundarias">
+			<ul>
+				<li class="titlista">ADEM&Aacute;S</li>
+				<li><a href="#">Autos iPro</a></li>
+				<li><a href="#">Vinos &amp; Bodegas</a></li>
+				<li><a href="#">Energ&iacute;as Limpias</a></li>
+				<li><a href="#">Ahora Brasil</a></li>
+				<li><a href="#">Health &amp; Tech</a></li>
+				<li><a href="#">Responsabilidad Social Digital</a></li>
+				<li><a href="#">Real Estate</a></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+		<div class="redessocialesip">
+			<div class="fb"><a href="#"></a></div>
+			<div class="tw"><a href="#"></a></div>
+			<div class="li"><a href="#"></a></div>
+			<div class="gp"><a href="#"></a></div>
+			<div class="alertas"><a href="#"></a></div>
+			<div class="rss"><a href="#"></a></div>
+		</div>
+		<div class="registroip">
+			<div><a href="#">LOGIN</a></div>
+		</div>
+	</div>
+</div>
+<div id="compartir" style="display: none;">
+	<div class="tituloseccion">Compartir nota</div>
+	<ul>
+		<li>
+			<a href="#">
+				<div class="share fb"></div>
+				<div class="texto">Compartir en Facebook</div>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				<div class="share tw"></div>
+				<div class="texto">Compartir en Twitter</div>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				<div class="share mail"></div>
+				<div class="texto">Enviar por Mail</div>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				<div class="share wa"></div>
+				<div class="texto">Enviar por Whatsapp</div>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				<div class="share li"></div>
+				<div class="texto">Compartir en Linkedin</div>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				<div class="share gp"></div>
+				<div class="texto">Compartir en Google+</div>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				<div class="share url"></div>
+				<div class="texto">Copiar url corta</div>
+			</a>
+		</li>
+	</ul>
+</div>
+<div id="indicenotas" style="display: none;">
+          <ul>
+            <li><a href="#"><span class="seccion">FINANZAS</span> <span class="fecha">Hace 14 minutos</span> <span class="titulo">Blanqueo, día después: cómo queda cada impuesto para los que entraron y para quienes queden al margen</span></a> </li>
+            <li><a href="#"><span class="seccion">NEGOCIOS</span> <span class="fecha">Hace 19 minutos</span> <span class="titulo">Los mercados impactados por el default: los bonos y las acciones reportaron pérdidas de hasta el 11 por ciento</a> </li>
+            <li><a href="#"><span class="seccion">ACTUALIDAD</span> <span class="fecha">Hace 34 minutos</span> <span class="titulo">Blanqueo, día después: cómo queda cada impuesto para los que entraron y para quienes queden al margen</span></a> </li>
+            <li><a href="#"><span class="seccion">FINANZAS</span> <span class="fecha">Hace 54 minutos</span> <span class="titulo">Impuesto a las Ganancias, bajo la lupa: este es el horizonte completo de los futuros cambios</span></a> </li>
+            <li><a href="#"><span class="seccion">COMEX</span> <span class="fecha">Hace 1 hora</span> <span class="titulo">Blanqueo, día después: cómo queda cada impuesto para los que entraron y para quienes queden al margen</span></a> </li>
+            <li><a href="#"><span class="seccion">MARKETING</span> <span class="fecha">Hace 1 hora</span> <span class="titulo">Los mercados impactados por el default: los bonos y las acciones reportaron pérdidas de hasta el 11 por ciento</span></a> </li>
+            <li><a href="#"><span class="seccion">FINANZAS</span> <span class="fecha">Hace 2 horas</span> <span class="titulo">Blanqueo, día después: cómo queda cada impuesto para los que entraron y para quienes queden al margen</span></a> </li>
+            <li><a href="#"><span class="seccion">ACTUALIDAD</span> <span class="fecha">Hace 2 horas</span> <span class="titulo">Impuesto a las Ganancias, bajo la lupa: este es el horizonte completo de los futuros cambios</span></a> </li>
+            <li><a href="#"><span class="seccion">TECNOLOG&Iacute;A</span> <span class="fecha">Hace 2 horas</span> <span class="titulo">Blanqueo, día después: cómo queda cada impuesto para los que entraron y para quienes queden al margen</span></a> </li>
+            <li><a href="#"><span class="seccion">FINANZAS</span> <span class="fecha">Hace 3 horas</span> <span class="titulo">Los mercados impactados por el default: los bonos y las acciones reportaron pérdidas de hasta el 11 por ciento</span></a> </li>
+            <li><a href="#"><span class="seccion">ECONOM&Iacute;A</span> <span class="fecha">Hace 4 horas</span> <span class="titulo">Blanqueo, día después: cómo queda cada impuesto para los que entraron y para quienes queden al margen</span></a> </li>
+            <li><a href="#"><span class="seccion">FINANZAS</span> <span class="fecha">Hace 4 horas</span> <span class="titulo">Impuesto a las Ganancias, bajo la lupa: este es el horizonte completo de los futuros cambios</span></a> </li>
+            <li><a href="#"><span class="seccion">FINANZAS</span> <span class="fecha">Hace 4 horas</span> <span class="titulo">Blanqueo, día después: cómo queda cada impuesto para los que entraron y para quienes queden al margen</span></a> </li>
+            <li><a href="#"><span class="seccion">FINANZAS</span> <span class="fecha">Hace 4 horas</span> <span class="titulo">Los mercados impactados por el default: los bonos y las acciones reportaron pérdidas de hasta el 11 por ciento</span></a> </li>
+            <li><a href="#"><span class="seccion">FINANZAS</span> <span class="fecha">Hace 5 horas</span> <span class="titulo">Blanqueo, día después: cómo queda cada impuesto para los que entraron y para quienes queden al margen</span></a> </li>
+            <li><a href="#"><span class="seccion">FINANZAS</span> <span class="fecha">Hace 5 horas</span> <span class="titulo">Impuesto a las Ganancias, bajo la lupa: este es el horizonte completo de los futuros cambios</span></a> </li>
+          </ul>
+        </div>
+
+<div class="mainwrapper">
+	<div class="cabezalmobile">
+		<div class="botonmenu" onclick="funcionMenu()"></div>
+		<div class="desktop">
+			<div class="seccionesexpandido">
+				<ul>
+					<li><strong>SECCIONES</strong></li>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Econom&iacute;a</a></li>
+					<li><a href="#">Finanzas</a></li>
+					<li><a href="#">Impuestos</a></li>
+					<li><a href="#">Legales</a></li>
+					<li><a href="#">Negocios</a></li>
+					<li><a href="#">Tecnolog&iacute;a</a></li>
+					<li><a href="#">Comex</a></li>
+					<li><a href="#">Management</a></li>
+					<li><a href="#">Marketing</a></li>
+				</ul>
+			</div>
+			<div class="logotipoblanco"></div>
+		</div>
+		<div class="logotipo"></div>
+		<div class="botonbuscador" onclick="abrirBuscador()"></div>
+	</div>
+	<div class="cabezalgrande">
+		<div class="bannerizq"><img src="http://www.benzinsider.com/wp-content/uploads/2017/09/mercedes-amg-project-one-3-180x70.jpg"></div>
+		<div class="logogrande"></div>
+		<div class="bannerder"><img src="http://www.benzinsider.com/wp-content/uploads/2017/09/mercedes-amg-project-one-3-180x70.jpg"></div>
+	</div>
+	<div class="cabezalmobilenv2">
+		<div class="fecha">23.04.2017</div>
+		<div class="accesosusuario"><a class="fancybox" href="#indicenotas" title="&Iacute;NDICE DE NOTAS">&Iacute;NDICE</a> <a href>LOGIN</a> <a href>REGISTRO</a></div>
+	</div>
+	<div class="contenido">
+		<div class="banner bannerwide bannertop">
+			<div class="titulo">Publicidad</div>
+			<div class="elbanner"><img src="images/banner300x250.jpg"></div>
+		</div>
+		<div class="bloquenotas">
+		<div class="desarrollonota">
+			<div class="chapaespecial">
+				<div class="chapa">El dato</div>
+			</div>
+				<h1 class="titulonota titulonotadato">Dos directores de importantes compañías se agarran a trompadas en pleno evento empresarial</h1>
+				<div class="compartirredes">
+					<div class="redes">
+						<ul>
+							<li class="fb"><a href></a></li>
+							<li class="tw"><a href></a></li>
+							<li class="wa"><a href></a></li>
+							<li class="ln"><a href></a></li>
+							<li class="todas"><a class="fancybox" href="#compartir" title="">...</a></li>
+						</ul>
+					</div>
+				</div>
+
+			<div class="bajada">Además el Presidente dio indicios sobre la coparticipación: "No puede ser que se asista al que no hace las cosas bien"</div>
+			<div class="fecha">Hace 35 minutos</div>
+			<div class="autoreldato">
+				<div class="fotoautor"><img src="http://www.writersfestival.org/assets/cache/Mlynowski%20author%20photo_Credit%20Heather%20Waraksa_bw-306-306.jpg"></div>
+				<div class="nombreautor">Por <strong>Marcela Paredes</strong></div>
+				<div class="redesautor">
+					<ul>
+						<li class="fb"><a href></a></li>
+						<li class="tw"><a href></a></li>
+						<li class="li"><a href></a></li>
+						<li class="ig"><a href></a></li>
+						<li class="mail"><a href></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="textonota">
+				
+				<p>Será el mayor déficit comercial de la serie histórica entre Brasil y Argentina, y no es por falta de demanda brasileña. Es por falta de <strong>competitividad</strong> desde la oferta Argentina.</p>
+
+				<p>A continuación se listan una serie de <a href>propuestas para mejorar la situación</a>. No pretenden ser las únicas soluciones posibles, pero sí buscan ser un aporte para quienes definen las <strong>políticas de comercio</strong> exterior del país.</p>
+
+				<div class="tepuedeinteresar">
+					<div class="tituloseccion">Te puede interesar</div>
+					<h3 class="titulorelacionado"><a href>Ante la justicia, Moreno admitió que la inflación "era alta" pero negó haber manipulado los datos del Indec</a></h3>
+				</div>
+
+				<p>Existe una necesidad de implementar medidas tendientes a favorecer las exportaciones. Además, la política debe ser cuidadosa, porque tiene que responder a las demandas de los empresarios locales sin llegar al extremo de instaurar un proteccionismo que conspire contra el espíritu del Mercosur.</p>
+
+				<p>Será el mayor déficit comercial de la serie histórica entre Brasil y Argentina, y no es por falta de demanda brasileña. Es por falta de <strong>competitividad</strong> desde la oferta Argentina.</p>
+
+				<div class="banner">
+					<div class="titulo">Publicidad</div>
+					<div class="elbanner"><img src="images/banner300x250.jpg"></div>
+				</div>
+
+				<p>A continuación se listan una serie de propuestas para mejorar la situación. No pretenden ser las únicas soluciones posibles, pero sí buscan ser un aporte para quienes definen las <strong>políticas de comercio</strong> exterior del país.</p>
+
+				<img src="images/imagenstandard.jpg">
+
+				<p>A continuación se listan una serie de propuestas para mejorar la situación. No pretenden ser las únicas soluciones posibles, pero sí buscan ser un aporte para quienes definen las <strong>políticas de comercio</strong> exterior del país.</p>
+
+			</div>
+			<div class="compartirredes">
+				<div class="redes">
+					<ul>
+						<li class="fb"><a href></a></li>
+						<li class="tw"><a href></a></li>
+						<li class="wa"><a href></a></li>
+						<li class="ln"><a href></a></li>
+						<li class="todas"><a class="fancybox" href="#compartir" title="">...</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="objetosmedio">
+		<div class="massobreseccion">
+			<div class="titulomasseccion"><span>Otros datos</span> que ya te contamos</div>
+
+			<div class="notaschicas box">
+				<div class="notachica">
+					<h3 class="volanta">El Dato <span>20.09.2017</span></h3>
+					<h2 class="titulo"><a href>Dos directores de importantes compañías se agarran a trompadas en pleno evento empresarial</a></h2>
+					<div class="tiemposhare">
+						<div class="tiempo">Hace 14 minutos</div>
+						<div class="share"><a class="fancybox" href="#compartir" title=""></a></div>
+					</div>
+				</div>
+
+				<div class="notachica">
+					<h3 class="volanta">El Dato <span>16.09.2017</span></h3>
+					<h2 class="titulo"><a href>Dos directores de importantes compañías se agarran a trompadas en pleno evento empresarial</a></h2>
+					<div class="tiemposhare">
+						<div class="tiempo">Hace 14 minutos</div>
+						<div class="share"><a class="fancybox" href="#compartir" title=""></a></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="banner box">
+				<div class="titulo">Publicidad</div>
+				<div class="elbanner"><img src="images/banner300x250.jpg"></div>
+			</div>
+
+			<div class="notaschicas box">
+				<div class="notachica">
+					<h3 class="volanta">El Dato <span>10.09.2017</span></h3>
+					<h2 class="titulo"><a href>Macri: "Ser independientes significa que nuestro futuro depende de nosotros"</a></h2>
+					<div class="tiemposhare">
+						<div class="tiempo">Hace 14 minutos</div>
+						<div class="share"><a class="fancybox" href="#compartir" title=""></a></div>
+					</div>
+				</div>
+
+				<div class="notachica">
+					<h3 class="volanta">El Dato <span>05.09.2017</span></h3>
+					<h2 class="titulo"><a href>Macri: "Ser independientes significa que nuestro futuro depende de nosotros"</a></h2>
+					<div class="tiemposhare">
+						<div class="tiempo">Hace 14 minutos</div>
+						<div class="share"><a class="fancybox" href="#compartir" title=""></a></div>
+					</div>
+				</div>
+			</div>
+			<div class="notaschicas box">
+				<div class="notachica">
+					<h3 class="volanta">El Dato <span>20.08.2017</span></h3>
+					<h2 class="titulo"><a href>Macri: "Ser independientes significa que nuestro futuro depende de nosotros"</a></h2>
+					<div class="tiemposhare">
+						<div class="tiempo">Hace 14 minutos</div>
+						<div class="share"><a class="fancybox" href="#compartir" title=""></a></div>
+					</div>
+				</div>
+
+				<div class="notachica">
+					<h3 class="volanta">El Dato <span>17.08.2017</span></h3>
+					<h2 class="titulo"><a href>Macri: "Ser independientes significa que nuestro futuro depende de nosotros"</a></h2>
+					<div class="tiemposhare">
+						<div class="tiempo">Hace 14 minutos</div>
+						<div class="share"><a class="fancybox" href="#compartir" title=""></a></div>
+					</div>
+				</div>
+			</div>
+
+			</div>
+
+			<div class="lomasleido">
+			<div class="tituloseccion">Lo m&aacute;s le&iacute;do</div>
+			<div class="items">
+				<div class="itemmasleido">
+					<div class="volanta">
+						<span class="numero">1.</span>
+						<span class="seccion">NEGOCIOS</span>
+						<span class="textosimple">Reforma laboral</span>
+					</div>
+					<div class="share"><a class="fancybox" href="#compartir" title=""></a></div>
+					<div class="imagen"><a href><img src="images/thumbnail.jpg"></a></div>
+					<h2 class="titulo"><a href>Macri: "Ser independientes significa que nuestro futuro depende de nosotros"</a></h2>
+				</div>
+				<div class="itemmasleido">
+					<div class="volanta">
+						<span class="numero">2.</span>
+						<span class="seccion">NEGOCIOS</span>
+						<span class="textosimple">Reforma laboral</span>
+					</div>
+					<div class="share"><a class="fancybox" href="#compartir" title=""></a></div>
+					<div class="imagen"><a href><img src="images/thumbnail.jpg"></a></div>
+					<h2 class="titulo"><a href>La devaluación del peso borró el atraso cambiario de todo 2017 y Argentina se vuelve más competitiva</a></h2>
+				</div>
+				<div class="itemmasleido">
+					<div class="volanta">
+						<span class="numero">3.</span>
+						<span class="seccion">Marketing</span>
+						<span class="textosimple">Reforma laboral</span>
+					</div>
+					<div class="share"><a class="fancybox" href="#compartir" title=""></a></div>
+					<div class="imagen"><a href><img src="images/thumbnail.jpg"></a></div>
+					<h2 class="titulo"><a href>Así ve el número uno de Mastellone la crisis lechera que vive la Argentina hoy</a></h2>
+				</div>
+				<div class="itemmasleido">
+					<div class="volanta">
+						<span class="numero">4.</span>
+						<span class="seccion">Marketing</span>
+						<span class="textosimple">Reforma laboral</span>
+					</div>
+					<div class="share"><a class="fancybox" href="#compartir" title=""></a></div>
+					<div class="imagen"><a href><img src="images/thumbnail.jpg"></a></div>
+					<h2 class="titulo"><a href>Ahora las empresas motivan a sus empleados a crear nuevas compañías</a></h2>
+				</div>
+				<div class="itemmasleido">
+					<div class="volanta">
+						<span class="numero">5.</span>
+						<span class="seccion">Marketing</span>
+						<span class="textosimple">Reforma laboral</span>
+					</div>
+					<div class="share"><a class="fancybox" href="#compartir" title=""></a></div>
+					<div class="imagen"><a href><img src="images/thumbnail.jpg"></a></div>
+					<h2 class="titulo"><a href>Así ve el número uno de Mastellone la crisis lechera que vive la Argentina hoy</a></h2>
+				</div>
+				<div class="itemmasleido">
+					<div class="volanta">
+						<span class="numero">6.</span>
+						<span class="seccion">Comex</span>
+						<span class="textosimple">Reforma laboral</span>
+					</div>
+					<div class="share"><a class="fancybox" href="#compartir" title=""></a></div>
+					<div class="imagen"><a href><img src="images/thumbnail.jpg"></a></div>
+					<h2 class="titulo"><a href>Así ve el número uno de Mastellone la crisis lechera que vive la Argentina hoy</a></h2>
+				</div>
+			</div>
+		</div>
+
+			</div>
+
+			<div class="banner bannerdoble">
+				<div class="titulo">Publicidad</div>
+				<div class="elbanner"><img src="images/banner300x250.jpg"></div>
+			</div>
+
+			<div class="objetozoom zoomnota boxdoble">
+				<div class="tituloseccion">Zoom <span>Recomendadas</span></div>
+				<div class="sliderzoom">
+					<!-- Paginacion -->
+	                <div class="swiper-pagination swiper-pagination3"></div>
+					<div class="wrapperslider">
+	                    <div class="swiper-container3">
+	                        <div class="slides swiper-wrapper">
+		                        <div class="lanotachica swiper-slide">
+		                        	<div class="imagen"><a href><img src="images/imagenstandard.jpg"></a></div>
+		                        	<div class="textos">
+										<div class="volanta">14/7 <span>Panorama</span></div>
+										<h2 class="titulo"><a href>El Lamborghini Aventador SV de Novitec roza los 1.000 CV</a></h2>
+									</div>
+		                        </div>
+		                        <div class="lanotachica swiper-slide">
+		                        	<div class="imagen"><a href><img src="images/imagenstandard.jpg"></a></div>
+		                        	<div class="textos">
+										<div class="volanta">14/7 <span>Panorama</span></div>
+										<h2 class="titulo"><a href>El Lamborghini Aventador SV de Novitec roza los 1.000 CV</a></h2>
+									</div>
+		                        </div>
+		                        <div class="lanotachica swiper-slide">
+		                        	<div class="imagen"><a href><img src="images/imagenstandard.jpg"></a></div>
+		                        	<div class="textos">
+										<div class="volanta">14/7 <span>Panorama</span></div>
+										<h2 class="titulo"><a href>El Lamborghini Aventador SV de Novitec roza los 1.000 CV</a></h2>
+									</div>
+		                        </div>
+		                        <div class="lanotachica swiper-slide">
+		                        	<div class="imagen"><a href><img src="images/imagenstandard.jpg"></a></div>
+		                        	<div class="textos">
+										<div class="volanta">14/7 <span>Panorama</span></div>
+										<h2 class="titulo"><a href>El Lamborghini Aventador SV de Novitec roza los 1.000 CV</a></h2>
+									</div>
+		                        </div>
+	                        </div>
+	                    </div>
+	              	</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="objetosinferiores">
+			<div class="objetoexplora">
+				<div class="tituloseccion">Explor&aacute; <span>iProfesional</span></div>
+				<div class="listado">
+					<ul>
+						<li class="tit"><strong>&Uacute;ltimas noticias</strong></li>
+						<li><a href>Econom&iacute;a</a></li>
+						<li><a href>Finanzas</a></li>
+						<li><a href>Impuestos</a></li>
+						<li><a href>Legales</a></li>
+						<li><a href>Negocios</a></li>
+						<li><a href>Tecnolog&iacute;a</a></li>
+						<li><a href>Comex</a></li>
+						<li><a href>Management</a></li>
+						<li><a href>Marketing</a></li>
+					</ul>
+					<ul>
+						<li class="tit"><strong>Adem&aacute;s</strong></li>
+						<li><a href>Autos iPro</a></li>
+						<li><a href>Vinos &amp; Bodegas</a></li>
+						<li><a href>Energías Limpias</a></li>
+						<li><a href>Ahora Brasil</a></li>
+						<li><a href>Health &amp; Tech</a></li>
+						<li><a href>RSD</a></li>
+						<li><a href>Real Estate</a></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+			</div>
+			<div class="objetovolverarriba">
+				<a href>
+					<span class="flecha"></span>
+					<a href="#top"><span class="texto">Volver a arriba</span></a>
+					<span class="flecha"></span>
+				</a>
+			</div>
+			<div class="navegacioninferior">
+				<div class="indiceacceso"><a class="fancybox" href="#indicenotas" title="&Iacute;NDICE DE NOTAS">&Iacute;ndice de notas</a></div>
+				<div class="items">
+					<ul>
+						<li class="primero"><a href>Recomendar</a></li>
+						<li><a href>Registrarse</a></li>
+						<li><a href>RSS</a></li>
+						<li><a href>Contacto</a></li>
+						<li class="ultimo"><a href>Publicidad</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="footer">
+				<div class="textos">
+					iProfesional - Copyright © 2017 <br>
+					Emprendimientos Corporativos S.A. <br>
+					Buenos Aires, Argentina. Todos los derechos reservados.<br>
+				</div>
+				<div class="redes">
+					<ul>
+						<li class="fb"><a href></a></li>
+						<li class="tw"><a href></a></li>
+						<li class="gp"><a href></a></li>
+						<li class="ln"><a href></a></li>
+						<li class="mail"><a href></a></li>
+						<li class="app"><a href></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="js/iprofesional.js"></script>
+</body>
+</html>

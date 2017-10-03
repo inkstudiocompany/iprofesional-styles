@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+@import "_reset.scss";
+@import "_fonts.scss";
+@import "_variables.scss";
+@import "_generales.scss";
+
+// Estilos buscador
+.rsswrapper{
+	@include widePadding;
+	margin: 0 auto;
+	padding-bottom: 20px;
+	float: left;
+
+	.titulosrss{
+		font-weight: 700;
+		font-size: 26px;
+		letter-spacing: -0.75px;
+		width: $wide;
+		margin-bottom: 20px;
+	}
+	.cantidadresultados{
+		width: $wide;
+		float: left;
+		margin-bottom: 30px;
+		font-size: 16px;
+		line-height: 21px;
+	}
+	.listaresultados{
+		width: 100%;
+		float: left;
+		.item{
+			width: 100%;
+			margin-bottom: 20px;
+			padding-bottom: 20px;
+			border-bottom: 1px solid rgba(0,0,0,0.1);
+			.tituloitem{
+				width: 100%;
+				font-weight: 600;
+				font-size: 19px;
+    			line-height: 24px;
+    			font-family: 'Source Serif Pro', serif;
+				letter-spacing: -0.5px;
+				a{
+					color: $colorPrincipal;
+				}
+			}
+			.bajadaitem{
+				width: 100%;
+				a{
+					color: rgba(28, 28, 28, 0.7);
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+}

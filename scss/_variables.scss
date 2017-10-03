@@ -1,0 +1,133 @@
+// Variables
+$marginCentrado: 0 auto;
+$colorPrincipal: #1c1c1c;
+$colorSecundario: #20c0ab;
+$colorTerciario: #ff9933;
+$colorSeparadores: #d4d6d7;
+$fondoBody: white;
+$fondoObjetos: #373737;
+$wide: 100%;
+
+// Anchos MEDIA QUERY
+$mq_unacolumna: 719px;
+$mq_doscolumnas: 720px;
+$mq_trescolumnas: 1024px;
+$mq_cuatrocolumnas: 1300px;
+
+// Ancho del contenedor principal de los objetos
+$unacolumna: 300px;
+$doscolumnas: 640px;
+$trescolumnas: 980px;
+$cuatrocolumnas: 1320px;
+$wide: 100%;
+
+// Mixins
+@mixin txtCabezalNv2 ($margin, $fontFamily, $textAlign){
+	margin: $margin;
+	font-family: $fontFamily;
+	font-size: 13px;
+	font-weight: 600;
+	text-align: $textAlign;
+}
+@mixin separacionNotas{
+	padding-bottom: 40px;
+	margin-bottom: 40px;
+	border-bottom: 1px solid $colorSeparadores;
+}
+@mixin separacionNotasChico{
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	border-bottom: 0;
+}
+@mixin separacionObjetos{
+	margin-bottom: 40px;
+}
+@mixin separacionObjetosChico{
+	margin-bottom: 30px;
+}
+@mixin volanta{
+	color: $colorSecundario;
+	font-weight: 700;
+	font-size: 16px;
+	text-transform: uppercase;
+	margin-bottom: 15px;
+	@include widePadding;
+	span{
+		color: $colorPrincipal;
+		font-weight: 600;
+		text-transform: none;
+	}
+}
+@mixin widePadding{
+	width: 100%;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+@mixin wideNoPadding{
+	width: 100%;
+	padding-left: 0;
+	padding-right: 0;
+}
+@mixin tituloGrande{
+	font-size: 27px;
+	font-family: 'Source Serif Pro', serif;
+	line-height: 33px;
+	color: $colorPrincipal;
+	font-weight: 600;
+	letter-spacing: -0.75px;
+	margin-bottom: 15px;
+	@include widePadding;
+}
+@mixin tituloMediano{
+	font-size: 22px;
+	font-family: 'Source Serif Pro', serif;
+	line-height: 27px;
+	color: $colorPrincipal;
+	font-weight: 600;
+	letter-spacing: -0.5px;
+	@include widePadding;
+}
+@mixin tituloChico{
+	font-size: 19px;
+	font-family: 'Source Serif Pro', serif;
+	line-height: 23px;
+	color: $colorPrincipal;
+	font-weight: 600;
+	letter-spacing: -0.5px;
+	margin-bottom: 20px;
+	@include widePadding;
+}
+@mixin imagenWide{
+	width: $wide;
+	margin-bottom: 10px;
+	line-height: 0;
+	position: relative;
+	img {
+		width: $wide;
+		height: auto;
+	}
+}
+@mixin imagenChica{
+	width: 20%;
+	margin-right: 10px;
+	overflow: hidden;
+	float: right;
+	line-height: 0;
+	position: relative;
+	img {
+		width: $wide;
+		height: auto;
+	}
+}
+@mixin tituloSecciones($colorTexto, $colorLinea){
+	color: $colorTexto;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 28px;
+	text-transform: uppercase;
+	margin-left: -10px;
+	text-indent: 10px;
+	border-bottom: 3px solid $colorLinea;
+	display: table;
+	margin-bottom: 20px;
+}
