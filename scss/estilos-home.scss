@@ -509,6 +509,68 @@
 		}
 	}
 }
+.notainsider{
+	width: $wide;
+	display: table;
+	@include separacionObjetos;
+	.tituloseccion{
+		@include tituloSecciones($colorPrincipal, $colorTerciario);
+		margin-left: 0;
+		span{
+			font-weight: 500;
+			text-transform: none;
+		}
+	}
+	.imagen{
+		@include imagenWide;
+		margin-bottom: 0;
+		height: 250px;
+		overflow: hidden;
+		.laimagen{
+			position: absolute;
+			width: 100%;
+			top: 0;
+		}
+	}
+	.textos{
+		width: calc(100% - 20px);
+		padding-top: 20px;
+		padding-bottom: 20px;
+		position: absolute;
+		z-index: 1;
+		bottom: 0px;
+		.volanta{
+			background-color: $colorTerciario;
+			display: table;
+			font-size: 14px;
+		    line-height: 26px;
+		    color: white;
+		    padding-left: 10px;
+		    padding-right: 10px;
+		    text-transform: uppercase;
+		}
+		.titulo{
+			font-size: 18px;
+			font-family: 'Source Serif Pro', serif;
+			line-height: 22px;
+			color: white;
+			font-weight: 600;
+			letter-spacing: -0.5px;
+			background-color: rgba(0, 0, 0, 0.65);
+			width: 100%;
+			padding: 10px;
+			a{
+				color: white;
+			}
+		}
+	}
+	.tiemposhare{
+		background-color: $fondoObjetos;
+		.share{
+			background-image: url(../images/share-blanco.png);
+		}
+	}
+}
 .objetovideo{
 	@include separacionObjetos;
 	display: table;
