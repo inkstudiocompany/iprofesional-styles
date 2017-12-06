@@ -1,0 +1,17 @@
+{
+    "name": "iprofesional/iprofesional-styles",
+    "version": "1.0.0",
+    "dist": {
+        "url": "http://gitlab.grupovi-da.biz/lamezquita/iprofesional-styles.git",
+        "type": "git"
+    },
+    "description": "Contiene el proyecto correspondiente a los diseños y maquetados de iProfesional.",
+    "type": "symfony-assets",
+    "authors": [
+        {
+            "name": "Elena Gidura",
+            "email": "egidura@iprofesional.com"
+        }
+    ],
+    "require": {}
+}

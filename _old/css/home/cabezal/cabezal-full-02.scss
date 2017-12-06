@@ -1,0 +1,198 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/**** CABEZAL 02 ****/
+.cabezal-full-02 {
+	width: 100%;
+	display: table;
+}
+.cabezal-full-02 .colizq{
+	width: calc(55% - 20px);
+	float: left;
+}
+
+.cabezal-full-02 .colizq .notagrande{
+	width: 100%;
+	float: left;
+	margin-bottom: 40px;
+}
+.cabezal-full-02 .colizq .notagrande .volanta{
+	min-width: 200px;
+	float: left;
+	background-color: #20c0ab;
+	color: white;
+	font-weight: 700;
+	font-size: 13px;
+	text-transform: uppercase;
+	padding-left: 10px;
+	line-height: 22px;
+	margin-bottom: 20px;
+}
+.cabezal-full-02 .colizq .notagrande .volanta .facebook{
+	float: right;
+	background-color: #4e70a8;
+	height: 22px;
+	width: 22px;
+	margin-left: 10px;
+	text-align: center;
+	-webkit-transition: all 0.3s ease-out 0s;
+	   -moz-transition: all 0.3s ease-out 0s;
+	    -ms-transition: all 0.3s ease-out 0s;
+	     -o-transition: all 0.3s ease-out 0s;
+		 	transition: all 0.3s ease-out 0s;
+}
+.cabezal-full-02 .colizq .notagrande .volanta .facebook:hover{
+	color: #4e70a8;
+	background-color: white;
+}
+.cabezal-full-02 .colizq .notagrande .volanta .twitter{
+	float: right;
+	background-color: #1ab7ea;
+	height: 22px;
+	width: 22px;
+	text-align: center;
+	-webkit-transition: all 0.3s ease-out 0s;
+	   -moz-transition: all 0.3s ease-out 0s;
+	    -ms-transition: all 0.3s ease-out 0s;
+	     -o-transition: all 0.3s ease-out 0s;
+		 	transition: all 0.3s ease-out 0s;
+}
+.cabezal-full-02 .colizq .notagrande .volanta .twitter:hover{
+	color: #1ab7ea;
+	background-color: white;
+}
+.cabezal-full-02 .colizq .notagrande .volanta .google{
+	float: right;
+	background-color: #dc4a38;
+	height: 22px;
+	width: 22px;
+	text-align: center;
+	-webkit-transition: all 0.3s ease-out 0s;
+	   -moz-transition: all 0.3s ease-out 0s;
+	    -ms-transition: all 0.3s ease-out 0s;
+	     -o-transition: all 0.3s ease-out 0s;
+		 	transition: all 0.3s ease-out 0s;
+}
+.cabezal-full-02 .colizq .notagrande .volanta .google:hover{
+	color: #dc4a38;
+	background-color: white;
+}
+.cabezal-full-02 .colizq .notagrande .titulo h1{
+	width: 100%;
+	margin-bottom: 20px;
+	font-family: WhitneyBold;
+	font-size: 40px;
+	line-height: 44px;
+	letter-spacing: -1.75px;
+	font-weight: 500;
+	float: left;
+}
+.cabezal-full-02 .colizq .notagrande .titulo h1 a{
+	display: block;
+	color: #293039;
+}
+.cabezal-full-02 .colizq .notagrande .titulo h1 a:hover{
+	color: #526072;
+}
+.cabezal-full-02 .colizq .notagrande .imagen{
+	width: 100%;
+	float: left;
+	margin-bottom: 15px;
+	line-height: 0;
+}
+.cabezal-full-02 .colizq .notagrande .imagen img{
+	width: 100%;
+	height: auto;
+}
+.cabezal-full-02 .colizq .notagrande .bajada h2{
+	width: 100%;
+	font-family: Roboto;
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: 400;
+	float: left;
+}
+.cabezal-full-02 .colizq .notagrande .bajada h2 a{
+	display: block;
+	color: #293039;
+}
+.cabezal-full-02 .colizq .notagrande .bajada h2 a:hover{
+	color: #484f56;
+}
+.cabezal-full-02 .colizq .notagrande .bajada h2 a span{
+	font-weight: 700;
+	margin-right: 5px;
+	color: #1fbba6;
+}
+.cabezal-full-02 .colder{
+	width: 45%;
+	float: right;
+}
+
+.cabezal-full-02 .colder .notamediana{
+	width: 100%;
+	float:left;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #d4d6d7;
+}
+.cabezal-full-02 .colder .notamediana .volanta{
+    float: left;
+    background-color: #20c0ab;
+    color: white;
+    font-weight: 700;
+    font-size: 13px;
+    text-transform: uppercase;
+    padding-left: 10px;
+	padding-right: 10px;
+    line-height: 22px;
+    margin-bottom: 13px;
+}
+.cabezal-full-02 .colder .notamediana .titulo h2{
+	width: 100%;
+	margin-bottom: 13px;
+	font-size: 16px;
+	line-height: 21px;
+	letter-spacing: -0.75px;
+	font-weight: 700;
+	float: left;
+}
+.cabezal-full-02 .colder .notamediana .titulo h2 a{
+	display: block;
+	color: #293039;
+}
+.cabezal-full-02 .colder .notamediana .titulo h2 a:hover{
+	color: #526072;
+}
+.cabezal-full-02 .colder .notamediana .imagen{
+	width: 100%;
+	float: left;
+	margin-bottom: 15px;
+	padding-top: 5px;
+	line-height: 0;
+}
+.cabezal-full-02 .colder .notamediana .imagen img{
+	width: 100%;
+	height: auto;
+}
+.cabezal-full-02 .colder .notamediana .bajada h3{
+	width: 100%;
+	font-family: Roboto;
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: 400;
+	float: left;
+}
+.cabezal-full-02 .colder .notamediana .bajada h3 a{
+	display: block;
+	color: #293039;
+}
+.cabezal-full-02 .colder .notamediana .bajada h3 a:hover{
+	color: #484f56;
+}
+.cabezal-full-02 .colder .notamediana .bajada h3 a span{
+	font-weight: 700;
+	margin-right: 5px;
+	color: #1fbba6;
+}
+

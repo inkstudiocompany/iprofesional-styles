@@ -1,0 +1,74 @@
+@charset "utf-8";
+/* CSS Document */
+
+@media all and (max-width:460px){
+.mainwrapper{
+	margin-top: 80px;
+}
+.menutopchico {
+    /*height: 90px;*/
+	max-width:100vw;
+}
+.menutopchico .wrapper .colizq{
+	/*height: 90px;*/
+}
+.menutopchico .wrapper .logo{
+	float:right;
+}
+.menutopchico .wrapper .logo a{
+	width:120px;
+	height:40px;
+}
+.menutopchico .wrapper .tituloespacio{
+	/*font-size: 22px;
+	height:40px;
+	line-height:40px;
+	width:100%;
+	text-align:center;
+	margin-left:0px;
+	border-top:1px solid rgba(59, 66, 75, 0.58);*/
+	display:none !important;
+}
+.menusecciones .wrapper .listasuperior{
+	height:100%;
+}
+.menusecciones .wrapper .listasuperior ul li {
+    height: 20px;
+    font-size: 10px;
+    margin-bottom: 6px;
+	margin-top:6px;
+	float:none;
+	border:0;
+}
+.bloquenotas .wrapper .lasnotas .colizq {
+    width: 100%;
+}
+.bloquenotas .wrapper .lasnotas .colcentro {
+    width: 100%;
+}
+.bloquenotas .wrapper .lasnotas .colder {
+    float: left;
+    width: 100%;
+}
+.lanotasidebar{
+	width: 100% !important;
+}
+.lanotasidebar2{
+	width: 100% !important;
+}
+.chapaseccion{
+	line-height:28px;
+	font-size:22px;
+}
+.chapaseccion .naranja {
+    padding-right: 0px;
+    border-right: 0;
+	float:none;
+}
+.chapaseccion .gris {
+    padding-left: 0px;
+}
+.menusecciones .wrapper .listainferior ul li {
+    margin-bottom: 30px;
+}
+}

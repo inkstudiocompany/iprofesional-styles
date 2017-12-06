@@ -1,0 +1,56 @@
+@charset "utf-8";
+/* CSS Document */
+
+@media all and (max-width:1000px){
+	.bloquenotas .wrapper{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+	.menutopchico .wrapper .colder{
+		display:none;
+	}
+	.menutopchico .wrapper .colizq{
+		width:100%;
+	}
+	.menusecciones .wrapper .listasuperior ul li {
+    margin-right: 10px;
+    padding-right: 10px;
+	}
+	.bloquenotas .wrapper .lasnotas .colizq {
+    float: left;
+    width: calc(50% - 20px);
+}
+.bloquenotas .wrapper .lasnotas .colcentro {
+    float: right;
+    width: calc(50% - 20px);
+    margin-right: 0;
+    margin-left: 0;
+}
+.bloquenotas .wrapper .lasnotas .colder {
+    float: left;
+    width: 100%;
+}
+.bloquenotas .wrapper .sidebar {
+    width: 100%;
+    float: left;
+}
+.bloquenotas .wrapper .sidebar .suscribite {
+    display:none;
+}
+
+.bloquenotas .wrapper .sidebar .banner300x{
+	width: 100%;
+	text-align:center;
+	float:right;
+}
+.lanotasidebar{
+	width: calc(50% - 20px) !important;
+}
+.lanotasidebar2{
+	width: calc(50% - 20px) !important;
+	float:right !important;
+}
+.bloquebannerpremium{
+	display:none;
+}
+}
