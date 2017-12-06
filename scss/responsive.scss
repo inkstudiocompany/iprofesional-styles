@@ -150,7 +150,7 @@
 		width: calc(620px / 2 - 10px);
 	}
 	.notaprincipal1{
-		width: $doscolumnas - 20px;
+		width: $doscolumnas;
 		margin-bottom: 30px;
 		padding-bottom: 30px;
 	}
@@ -569,7 +569,7 @@
 		}
 	}
 	.notaprincipalinsider{
-		width: $doscolumnas - 20px;
+		width: $doscolumnas;
 		.titulo{
 			text-align: left;
 		}
