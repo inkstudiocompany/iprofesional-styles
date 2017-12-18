@@ -1,0 +1,171 @@
+@charset "utf-8";
+
+@import "_reset.scss";
+@import "_fonts.scss";
+@import "_variables.scss";
+@import "_generales.scss";
+
+
+// Estilos registro
+.suscripcionwrapper{
+	width: $wide;
+	margin: 0 auto 40px auto;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	background-color: #f6f6f6;
+	.bloquecontenido{
+		display: table;
+		width: 100%;
+		max-width: 800px;
+		margin: 0 auto;
+		padding-left: 30px;
+		padding-right: 30px;
+		.textos{
+			width: 100%;
+			.tituloregistro{
+				font-weight: 500;
+				font-size: 28px;
+				line-height: 32px;
+				letter-spacing: -1px;
+				text-align: left;
+				margin-bottom: 20px;
+				font-family: 'Source Serif Pro', serif;
+				border-bottom: 3px solid #f93;
+				display: table;
+    			font-weight: 700;
+			}
+			.bajadaregistro{
+				width: 100%;
+				text-align: left;
+				margin: 0 auto;
+				font-size: 16px;
+				-webkit-text-size-adjust: none;
+				a{
+					color: $colorPrincipal;
+					text-decoration: underline;
+					opacity: 0.6;
+				}
+				p{
+					padding-bottom: 20px;
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+	.bloquemail{
+		border-bottom: 1px solid #d4d6d7;
+		margin-bottom: 30px;
+		padding-bottom: 30px;
+	}
+	.bloqueredes{
+	}
+	.botonessocial{
+		margin-bottom: 20px;
+		height: 40px;
+		display: table;
+		text-align: center;
+		margin: 0 auto;
+	}
+	.botoningresafb{
+		width: 300px;
+		height: 40px;
+		background-color: #3b5998;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+		color: white;
+		font-weight: 600;
+		text-align: left;
+		line-height: 40px;
+		padding-left: 45px;
+		background-image: url(../images/facebook_icono.png);
+		background-repeat: no-repeat;
+		background-position: 6px;
+		background-size: 28px;
+		margin-bottom: 15px;
+		font-size: 16px;
+	}
+	.botoningresatw{
+		width: 300px;
+		height: 40px;
+		background-color: #1da1f2;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+		color: white;
+		font-weight: 600;
+		text-align: left;
+		line-height: 40px;
+		padding-left: 45px;
+		background-image: url(../images/twitter_icono.png);
+		background-repeat: no-repeat;
+		background-position: 6px;
+		background-size: 28px;
+		font-size: 16px;
+	}
+	.separador{
+		width: $wide;
+		height: 1px;
+		border-bottom: 1px solid #d4d6d7;
+		margin-bottom: 30px;
+		margin-top: 30px;
+	}
+	.campo{
+		width: 300px;
+		height: 40px;
+		background-color: lighten($colorPrincipal, 80%);
+		margin: 0 auto;
+		margin-bottom: 15px;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+		input{
+			width: 300px;
+			height: 40px;
+			background-color: lighten($colorPrincipal, 75%);
+			line-height: 40px;
+			text-indent: 10px;
+			border:0;
+			font-size: 14px;
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+			border-radius: 5px;
+		}
+	}
+	.terminos{
+		width: 300px;
+		margin: 0 auto;
+		padding-bottom: 25px;
+		a{
+			color: $colorPrincipal;
+			text-decoration: underline;
+			opacity:0.6;
+		}
+	}
+	.olvidaste{
+		width: $wide;
+		text-align: center;
+		margin-bottom: 20px;
+		margin-top: -5px;
+		a{
+			color: $colorPrincipal;
+			text-decoration: underline;
+			opacity:0.6;
+		}
+	}
+	.botoningresar{
+		width: 300px;
+		height: 40px;
+		background-color: lighten($colorPrincipal, 30%);
+		color: white;
+		font-weight: 700;
+		text-align: center;
+		line-height: 40px;
+		margin: 0 auto;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+		display: table;
+		text-transform: uppercase;
+	}
+}

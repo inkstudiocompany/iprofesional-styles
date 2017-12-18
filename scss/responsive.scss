@@ -811,6 +811,41 @@
 		margin-left: 10px;
 		margin-bottom: 45px;
 	}
+	.suscripcionwrapper{
+		.bloquecontenido{
+			max-width: 100%;
+		}
+		.bloquemail{
+			width: 65%;
+			display: inline-block;
+			border: 0;
+			.campo{
+				float: left;
+				width: calc(50% - 20px);
+				margin-right: 20px;
+				input{
+					width: 100%;
+				}
+			}
+		}
+		.bloqueredes{
+			display: inline-block;
+			width: 34%;
+		}
+		.botoningresar{
+			float: left;
+			width: 180px;
+		}
+		.botonessocial{
+			width: 100%;
+			.botoningresafb{
+				width: 100%;
+			}
+			.botoningresatw{
+				width: 100%;
+			}
+		}
+	}
 }
 @media screen and (min-width: $mq_cuatrocolumnas){
 	.bloquenotas,  
