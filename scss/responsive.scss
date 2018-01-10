@@ -594,6 +594,25 @@
 			float: right;
 		}
 	}
+	.alertaswrapper{
+		.bloquecontenido{
+			.items{
+				.item{
+					.imagen{
+						width: 80px;
+						height: 80px;
+					}
+					.textos{
+						width: calc(100% - 210px);
+						.titulo{
+							font-size: 20px;
+							line-height: 22px;
+						}
+					}
+				}	
+			}
+		} 
+	} 
 }
 @media screen and (min-width: $mq_trescolumnas){
 	#compartir{
@@ -814,6 +833,8 @@
 	.suscripcionwrapper{
 		.bloquecontenido{
 			max-width: 100%;
+			padding-left: 30px;
+			padding-right: 30px;
 		}
 		.bloquemail{
 			width: 65%;
@@ -826,6 +847,14 @@
 				input{
 					width: 100%;
 				}
+			}
+		}
+		.campo{
+			float: left;
+			width: calc(40% - 20px);
+			margin-right: 20px;
+			input{
+				width: 100%;
 			}
 		}
 		.bloqueredes{
@@ -844,6 +873,13 @@
 			.botoningresatw{
 				width: 100%;
 			}
+		}
+	}
+	.alertaswrapper{
+		.bloquecontenido{
+			max-width: 100%;
+			padding-left: 30px;
+			padding-right: 30px;
 		}
 	}
 }
@@ -915,5 +951,50 @@
 	.objetozoom .sliderzoom .wrapperslider,
 	.notamedianaslider .wrapperslider{
 		//width: 1280px;
+	}
+	.alertaswrapper{
+		.bloquecontenido{
+			.textos{
+				.bajadaalerta{
+					width: calc(100% - 270px);
+					display: inline-table;
+				}
+				.botontodos{
+					float: right;
+					width: 250px;
+					text-align: center;
+				}
+			}
+			.items{
+				-webkit-column-count: 2; /* Chrome, Safari, Opera */
+				-moz-column-count: 2; /* Firefox */
+				column-count: 2;
+				display: block;
+				.item{
+					display: inline-block;
+					.imagen{
+						width: 95px;
+						height: 95px;
+					}
+					.textos{
+						width: calc(100% - 225px);
+						padding-right: 15px;
+						.titulo{
+							font-size: 22px;
+							line-height: 24px;
+						}
+						.bajada{
+							font-size: 16px;
+						}
+					}
+					.boton{
+						margin-top: 25px;
+					}
+					.btn-suscripto{
+						margin-top: 25px;
+					}
+				}	
+			}
+		} 
 	}
 }
