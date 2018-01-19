@@ -37,6 +37,10 @@
 		}
 		.colder{
 			float: right;
+			a{
+				height: 20px;
+				color: $colorPrincipal;
+			}
 			.flechaizq{
 				background-image: url(../images/flecha-izq.png);
 				background-repeat: no-repeat;
