@@ -108,6 +108,17 @@
 	.redessocialesip{
 		//width: 100%;
 	}
+	.alerta{
+		height: 40px;
+		.tituloalerta{
+			line-height: 40px;
+		}
+		.textoalerta{
+			line-height: 40px;
+			padding-top: 0;
+			padding-bottom: 0;
+		}
+	}
 	.briefing{
 		padding-left: 10px;
 		padding-right: 10px;
@@ -613,6 +624,194 @@
 			}
 		} 
 	} 
+	.notavideohome{
+		.notagrande{
+			width: 60%;
+			border-bottom: 0;
+			padding-right: 15px;
+			border-right: 1px solid #4b4b4b;
+			padding-bottom: 0px;
+			.titulo{
+				font-size: 37px;
+				line-height: 40px;
+				letter-spacing: -1px;
+				padding-bottom: 10px;
+			}
+		}
+		.notasimple{
+			width: 40%;
+			padding-left: 15px;
+		}
+		.elvideo{
+			margin-bottom: 20px;
+		}
+		.notavideohomeespecial{
+			.notasimpleesp{
+				width: 50%;
+				float: left;
+				height: 150px;
+				position: relative;
+			}
+		}
+	}
+	.notahomebomba{
+		.notagrande{
+			position: relative;
+			.titulo{
+				margin-bottom: 15px;
+				font-size: 30px;
+				line-height: 34px;
+			}
+			.bajada{
+				width: calc(100% - 310px);
+				float: right;
+			}
+			.imagen{
+				width: 290px;
+				float: left;
+				margin-bottom: 0;
+			}
+			.tiemposhare{
+				width: calc(100% - 330px);
+				float: right;
+				position: absolute;
+				bottom: 40px;
+				right: 10px;
+			}
+		}
+		.masnotasbomba{
+			.notamasgrande{
+				position: relative;
+				.imagen{
+					width: calc(50% - 10px);
+					float: right;
+					.imagenwide{
+						display: none;
+					}
+					.imagencuadrada{
+						display: block;
+					}
+				}
+				.volanta{
+					width: calc(50% - 10px);
+					float: left;
+					margin-bottom: 10px;
+				}
+				.titulo{
+					width: calc(50% - 10px);
+					float: left;
+				}
+				.bajada{
+					width: calc(50% - 10px);
+					float: left;
+				}
+				.tiemposhare{
+					width: calc(50% - 20px);
+					float: left;
+					position: absolute;
+					bottom: 40px;
+				}
+			}
+			.notamasmediana{
+				width: 50%;
+				height: 330px;
+				border-right: 1px solid #4b4b4b;
+				float: left;
+				border-bottom: 0;
+				margin-bottom: 0;
+				padding-bottom: 0;
+				padding-top: 0;
+				position: relative;
+				.tiemposhare{
+					width: calc(100% - 20px);
+					position: absolute;
+					bottom: 0px;
+				}
+			}
+			.notasmassimples{
+				width: 50%;
+				float: left;
+				.notamassimple{
+					padding-bottom: 0px;
+					margin-bottom: 30px;
+					position: relative;
+					height: 155px;
+					.titulo{
+						font-size: 17px;
+						line-height: 21px;
+					}
+					.tiemposhare{
+						width: calc(100% - 20px);
+						position: absolute;
+						bottom: 10px;
+					}
+				}
+				.notamassimpleultima{
+					margin-bottom: 0;
+					padding-bottom: 0;
+				}
+
+			}
+		}
+	}
+	.notahomebombasimple{
+		.notagrande{
+			width: $doscolumnas;
+			margin-left: 10px;
+			margin-right: 10px;
+		}
+		.notamedianabombasimple{
+			margin-bottom: 30px;
+			padding-bottom: 0;
+			.volanta{
+				padding:0;
+			}
+			.titulo{
+				padding: 0;
+				font-size: 19px;
+				line-height: 24px;
+			}
+		}
+		.notaschicasbombasimple{
+			.notachica{
+				padding-bottom: 20px;
+				margin-bottom: 20px;
+				border-bottom: 0;
+				height: 150px;
+				position: relative;
+				padding: 0;
+				.volanta{
+					padding:0;
+				}
+				.titulo{
+					padding: 0;
+					font-size: 17px;
+					line-height: 21px;
+				}
+			}
+		}
+		.notaschicasbombasimpleosc{
+			padding-top: 15px;
+			.notachica{
+				padding-bottom: 15px;
+				margin-bottom: 15px; 
+				border-bottom: 0;
+				height: 150px;
+				position: relative;
+				padding: 0;
+				.volanta{
+				}
+				.titulo{
+					font-size: 16px;
+					line-height: 20px;
+				}
+				.tiemposhare{
+					padding-left: 10px;
+					padding-right: 10px;
+				}
+			}
+		}
+	}
 }
 @media screen and (min-width: $mq_trescolumnas){
 	#compartir{
@@ -657,6 +856,10 @@
 		width: $trescolumnas;
 		margin: 0 auto;
 		border-top: 2px solid $colorPrincipal;
+	}
+	.alerta{
+		width: $trescolumnas;
+		margin: 0 auto 40px auto;
 	}
 	.bloquenotas,  
 	.objetoexplora{
@@ -882,8 +1085,161 @@
 			padding-right: 30px;
 		}
 	}
+	.notavideohome{
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-wrap: wrap;
+		flex-wrap: wrap;
+		padding:10px;
+		.temanotavideo{
+			flex: 0 0 100%;
+			-webkit-flex: 0 0 100%;
+		}
+		.copeteobjeto{
+			order: 1;
+			-webkit-order:1;
+		}
+		.elvideo{
+			order:3;
+			-webkit-order:3;
+			width: calc(100% - 300px);
+			padding-right: 20px;
+			padding-left: 10px;
+		}
+		.notagrande{
+			order:2;
+			-webkit-order:2;
+			width: 100%;
+			border: 0;
+			padding-right: 10px;
+		}
+		.notasimple{
+			order:4;
+			-webkit-order:4;
+			width: 300px;
+			padding-top: 0;
+			padding-left: 0;
+		}
+		.notavideohomeespecial{
+			order: 5;
+			-webkit-order:5;
+			margin-bottom: -30px;
+			.notasimpleesp{
+				height: 140px;
+			}
+		}
+	}
+	.notahomebomba{
+		padding:10px;
+		.notagrande{
+			width: 50%;
+			float: left;
+			border-right: 1px solid #4b4b4b;
+			padding-right: 20px;
+			border-bottom: 0;
+			padding-bottom: 0;
+			.titulo{
+				margin-bottom: 10px;
+				font-size: 34px;
+				font-weight: 700;
+				line-height: 40px;
+			}
+			.bajada{
+				width: 100%;
+				float: left;
+			}
+			.imagen{
+				width: 100%;
+				float: left;
+				margin-bottom: 10px;
+			}
+			.tiemposhare{
+				width: 100%;
+				float: left;
+				position: relative;
+				bottom: unset;
+				right: unset;
+			}
+		}
+		.notagrandeultima{
+			padding-left: 20px;
+			padding-right: 10px;
+			border:0;
+			margin-bottom: 30px;
+		}
+		.masnotasbomba{
+			margin-bottom: 30px;
+			.notamasgrande{
+				width: calc(100% - 315px);
+				height: 330px;
+				border-right: 1px solid #4b4b4b;
+				border-bottom: 0;
+				float: left;
+				padding-right: 20px;
+				padding-top: 0;
+				margin-bottom: 0;
+				.imagen{
+					margin-bottom: 0;
+				}
+			}
+			.notamasmediana{
+				width:305px;
+				float: right;
+				border:0;
+				padding-bottom: 10px;
+				position: relative;
+				.titulo{
+					font-size: 17px;
+					line-height: 21px;
+				}
+				.tiemposhare {
+					width:285px;
+					position: absolute;
+					bottom: 40px;
+				}
+			}
+			.notasmassimples{
+				padding-top: 30px;
+				border-top: 1px solid #4b4b4b;
+				width: 100%;
+				.notamassimple{
+					width: 50%;
+					min-height: 130px;
+					height: auto;
+					float: left;
+					border-bottom:0;
+					border-right: 1px solid #4b4b4b;
+					padding-right: 20px;
+					padding-bottom: 0;
+					margin-bottom: 0;
+					.titulo{
+						font-size: 17px;
+						line-height: 21px;
+					}
+				}
+				.notamassimpleultima{
+					padding-left: 20px;
+					border-right: 0;
+				}
+			}
+		}
+	}
+	.notahomebombasimple{
+		.notagrande{
+			height: 710px;
+			overflow: hidden;
+			.titulo{
+				font-size: 42px;
+				line-height: 46px;
+				font-weight: 700;
+			}
+		}
+	}
 }
 @media screen and (min-width: $mq_cuatrocolumnas){
+	.alerta{
+		width: $cuatrocolumnas;
+	}
 	.bloquenotas,  
 	.objetoexplora{
 		width: $cuatrocolumnas;
@@ -996,5 +1352,126 @@
 				}	
 			}
 		} 
+	}
+	.notavideohome{
+		.copeteobjeto{
+			flex: 0 0 100%;
+			-webkit-flex:0 0 100%;
+			margin-bottom: 20px;
+		}
+		.notagrande{
+			width: 300px;
+			height: 390px;
+			position: relative;
+			padding-top: 0;
+			.titulo{
+				font-size: 28px;
+				line-height: 32px;
+			}
+			.tiemposhare{
+				width: calc(100% - 20px);
+				position: absolute;
+				bottom: 0;
+			}
+		}
+		.elvideo{
+			width: calc(100% - 600px);
+		}
+		.notasimple{
+			position: relative;
+			height: 390px;
+			.tiemposhare{
+				width: calc(100% - 20px);
+				position: absolute;
+				bottom: 0;
+			}
+		}
+		.notavideohomeespecial{
+			margin-bottom: 0;
+			.notasimpleesp{
+				height: auto;
+				width: calc(25% - 7px);
+				padding-right: 15px;
+				padding-top: 0;
+				margin-right: 7px;
+				padding-bottom: 0;
+				border-bottom: 0;
+				border-right: 1px solid #4b4b4b;
+				.titulo{
+					min-height: 75px;
+				}
+			}
+			.ultima{
+				border:0;
+
+			}
+		}
+	}
+	.notahomebomba{
+		.masnotasbomba{
+			.notamasgrande{
+				width: 50%;
+				padding-top: 0;
+				padding-bottom: 0;
+				.imagen{
+					width: 50%;
+					margin-bottom: 0;
+				}
+				.bajada{
+					width: calc(50% - 30px);
+				}
+				.titulo{
+					width: calc(50% - 30px);
+				}
+				.tiemposhare{
+					width: calc(50% - 30px);
+					bottom: 30px;
+				}
+			}
+			.notamasmediana{
+				width: 25%;
+				float: left;
+				padding-left: 20px;
+				padding-right: 20px;
+				padding-bottom:0;
+				border-right: 1px solid #4b4b4b;
+				.titulo{
+					font-size: 17px;
+					line-height: 21px;
+				}
+				.tiemposhare{
+					bottom: 30px;
+				}
+			}
+			.notasmassimples{
+				width: 25%;
+				padding-left: 20px;
+				padding-right: 10px;
+				border-top: 0;
+				padding-top: 0;
+				.notamassimple{
+					width: 100%;
+					padding-left: 0;
+					padding-right: 0;
+					height: 155px;
+					margin-bottom: 20px;
+					padding-bottom: 20px;
+					border-bottom: 1px solid #4b4b4b;
+					border-right: 0;
+					.titulo{
+						font-size: 17px;
+						line-height: 21px;
+					}
+					.tiemposhare{
+						bottom: 30px;
+					}
+				}
+				.notamassimpleultima{
+					margin-bottom: 0;
+					padding-bottom: 0;
+					border-bottom: 0;
+				}
+			}
+		}
 	}
 }

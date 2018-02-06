@@ -1,0 +1,1316 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>iProfesional HOME</title>
+<meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.5, maximum-scale=2.0">
+<link href="css/estilos-home.css" rel="stylesheet" type="text/css">
+<link href="css/estilos-home-video.css" rel="stylesheet" type="text/css">
+<link href="css/swiper.min.css" rel="stylesheet" type="text/css">
+<link href="css/responsive.css" rel="stylesheet" type="text/css">
+<script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/fancybox/jquery.fancybox.pack.js"></script>
+<link rel="stylesheet" type="text/css" href="js/fancybox/jquery.fancybox.css?v=2.1.5" media="screen" />
+</head>
+
+<body>
+<div id="top"></div>
+<div class="buscador" id="buscador">
+	<div class="basebuscador">
+		<div class="campo"><input type="" name="" value="Ingresar el texto a buscar"></div>
+		<div class="cerrar" onclick="cerrarBuscador()"></div>
+	</div>
+</div>
+<div class="menuflotante" id="menuflotante">
+	<div class="wrappermenu">
+		<div class="seccionesprincipal">
+			<ul>
+				<li class="titlista">&Uacute;LTIMAS NOTICIAS</li>
+				<li><a href="#">Econom&iacute;a</a></li>
+				<li><a href="#">Finanzas</a></li>
+				<li><a href="#">Impuestos</a></li>
+				<li><a href="#">Legales</a></li>
+				<li><a href="#">Negocios</a></li>
+				<li><a href="#">Tecnolog&iacute;a</a></li>
+				<li><a href="#">Comex</a></li>
+				<li><a href="#">Management</a></li>
+				<li><a href="#">Marketing</a></li>
+				<li></li>
+			</ul>	
+		</div>
+		<div class="seccionessecundarias">
+			<ul>
+				<li class="titlista">ADEM&Aacute;S</li>
+				<li><a href="#">Autos iPro</a></li>
+				<li><a href="#">Vinos &amp; Bodegas</a></li>
+				<li><a href="#">Energ&iacute;as Limpias</a></li>
+				<li><a href="#">Ahora Brasil</a></li>
+				<li><a href="#">Health &amp; Tech</a></li>
+				<li><a href="#">Responsabilidad Social Digital</a></li>
+				<li><a href="#">Real Estate</a></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+		<div class="redessocialesip">
+			<div class="fb"><a href="#"></a></div>
+			<div class="tw"><a href="#"></a></div>
+			<div class="li"><a href="#"></a></div>
+			<div class="gp"><a href="#"></a></div>
+			<div class="alertas"><a href="#"></a></div>
+			<div class="rss"><a href="#"></a></div>
+		</div>
+		<div class="registroip">
+			<div><a href="#">LOGIN</a></div>
+		</div>
+	</div>
+</div>
+<div id="compartir" style="display: none;">
+	<div class="tituloseccion">Compartir nota</div>
+	<ul>
+		<li>
+			<a href="#">
+				<div class="share fb"></div>
+				<div class="texto">Compartir en Facebook</div>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				<div class="share tw"></div>
+				<div class="texto">Compartir en Twitter</div>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				<div class="share mail"></div>
+				<div class="texto">Enviar por Mail</div>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				<div class="share wa"></div>
+				<div class="texto">Enviar por Whatsapp</div>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				<div class="share li"></div>
+				<div class="texto">Compartir en Linkedin</div>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				<div class="share gp"></div>
+				<div class="texto">Compartir en Google+</div>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				<div class="share url"></div>
+				<div class="texto">Copiar url corta</div>
+			</a>
+		</li>
+	</ul>
+</div>
+<div id="indicenotas" style="display: none;">
+          <ul>
+            <li><a href="#"><span class="seccion">FINANZAS</span> <span class="fecha">Hace 14 minutos</span> <span class="titulo">Blanqueo, día después: cómo queda cada impuesto para los que entraron y para quienes queden al margen</span></a> </li>
+            <li><a href="#"><span class="seccion">NEGOCIOS</span> <span class="fecha">Hace 19 minutos</span> <span class="titulo">Los mercados impactados por el default: los bonos y las acciones reportaron pérdidas de hasta el 11 por ciento</a> </li>
+            <li><a href="#"><span class="seccion">ACTUALIDAD</span> <span class="fecha">Hace 34 minutos</span> <span class="titulo">Blanqueo, día después: cómo queda cada impuesto para los que entraron y para quienes queden al margen</span></a> </li>
+            <li><a href="#"><span class="seccion">FINANZAS</span> <span class="fecha">Hace 54 minutos</span> <span class="titulo">Impuesto a las Ganancias, bajo la lupa: este es el horizonte completo de los futuros cambios</span></a> </li>
+            <li><a href="#"><span class="seccion">COMEX</span> <span class="fecha">Hace 1 hora</span> <span class="titulo">Blanqueo, día después: cómo queda cada impuesto para los que entraron y para quienes queden al margen</span></a> </li>
+            <li><a href="#"><span class="seccion">MARKETING</span> <span class="fecha">Hace 1 hora</span> <span class="titulo">Los mercados impactados por el default: los bonos y las acciones reportaron pérdidas de hasta el 11 por ciento</span></a> </li>
+            <li><a href="#"><span class="seccion">FINANZAS</span> <span class="fecha">Hace 2 horas</span> <span class="titulo">Blanqueo, día después: cómo queda cada impuesto para los que entraron y para quienes queden al margen</span></a> </li>
+            <li><a href="#"><span class="seccion">ACTUALIDAD</span> <span class="fecha">Hace 2 horas</span> <span class="titulo">Impuesto a las Ganancias, bajo la lupa: este es el horizonte completo de los futuros cambios</span></a> </li>
+            <li><a href="#"><span class="seccion">TECNOLOG&Iacute;A</span> <span class="fecha">Hace 2 horas</span> <span class="titulo">Blanqueo, día después: cómo queda cada impuesto para los que entraron y para quienes queden al margen</span></a> </li>
+            <li><a href="#"><span class="seccion">FINANZAS</span> <span class="fecha">Hace 3 horas</span> <span class="titulo">Los mercados impactados por el default: los bonos y las acciones reportaron pérdidas de hasta el 11 por ciento</span></a> </li>
+            <li><a href="#"><span class="seccion">ECONOM&Iacute;A</span> <span class="fecha">Hace 4 horas</span> <span class="titulo">Blanqueo, día después: cómo queda cada impuesto para los que entraron y para quienes queden al margen</span></a> </li>
+            <li><a href="#"><span class="seccion">FINANZAS</span> <span class="fecha">Hace 4 horas</span> <span class="titulo">Impuesto a las Ganancias, bajo la lupa: este es el horizonte completo de los futuros cambios</span></a> </li>
+            <li><a href="#"><span class="seccion">FINANZAS</span> <span class="fecha">Hace 4 horas</span> <span class="titulo">Blanqueo, día después: cómo queda cada impuesto para los que entraron y para quienes queden al margen</span></a> </li>
+            <li><a href="#"><span class="seccion">FINANZAS</span> <span class="fecha">Hace 4 horas</span> <span class="titulo">Los mercados impactados por el default: los bonos y las acciones reportaron pérdidas de hasta el 11 por ciento</span></a> </li>
+            <li><a href="#"><span class="seccion">FINANZAS</span> <span class="fecha">Hace 5 horas</span> <span class="titulo">Blanqueo, día después: cómo queda cada impuesto para los que entraron y para quienes queden al margen</span></a> </li>
+            <li><a href="#"><span class="seccion">FINANZAS</span> <span class="fecha">Hace 5 horas</span> <span class="titulo">Impuesto a las Ganancias, bajo la lupa: este es el horizonte completo de los futuros cambios</span></a> </li>
+          </ul>
+        </div>
+
+<div class="mainwrapper">
+	<div class="cabezalmobile">
+		<div class="botonmenu" onclick="funcionMenu()"></div>
+		<div class="desktop">
+			<div class="seccionesexpandido">
+				<ul>
+					<li><strong>SECCIONES</strong></li>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Econom&iacute;a</a></li>
+					<li><a href="#">Finanzas</a></li>
+					<li><a href="#">Impuestos</a></li>
+					<li><a href="#">Legales</a></li>
+					<li><a href="#">Negocios</a></li>
+					<li><a href="#">Tecnolog&iacute;a</a></li>
+					<li><a href="#">Comex</a></li>
+					<li><a href="#">Management</a></li>
+					<li><a href="#">Marketing</a></li>
+				</ul>
+			</div>
+			<div class="logotipoblanco"></div>
+		</div>
+		<div class="logotipo"></div>
+		<div class="botonbuscador" onclick="abrirBuscador()"></div>
+	</div>
+	<div class="cabezalgrande">
+		<div class="bannerizq"><img src="http://www.benzinsider.com/wp-content/uploads/2017/09/mercedes-amg-project-one-3-180x70.jpg"></div>
+		<div class="logogrande"></div>
+		<div class="bannerder"><img src="http://www.benzinsider.com/wp-content/uploads/2017/09/mercedes-amg-project-one-3-180x70.jpg"></div>
+	</div>
+	<div class="cabezalmobilenv2">
+		<div class="fecha">23.04.2017</div>
+		<div class="accesosusuario"><a class="fancybox" href="#indicenotas" title="&Iacute;NDICE DE NOTAS">&Iacute;NDICE</a> <a href>LOGIN</a> <a href>REGISTRO</a></div>
+	</div>
+	<div class="contenido">
+		<div class="alerta">
+			<div class="tituloalerta">ALERTA</div>
+			<div class="textoalerta">Operan al Presidente Mauricio Macri en el Sanatorio Otamendi</div>
+		</div>
+		<div class="bloquenotas">
+			<div class="notavideohome">
+				<div class="temanotavideo">Nueva agenda laboral</div>
+				<div class="elvideo">
+					<div class="videowrapper">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/0tek2aa8hAQ" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+					</div>
+				</div>
+				<div class="notagrande">
+					<div class="copete">Nueva agenda impositiva</div>
+					<div class="titulo"><a href>El presidente Mauricio Macri presentó las propuestas para consensuar políticas públicas</a></div>
+					<div class="bajada"><a href>El gradualismo marca la extensa iniciativa que instala un impuesto sobre la renta financiera para personas físicas, implementa un alivio para los autónomos en Ganancias y alcanza a la venta de inmuebles con un nuevo tributo</a></div>
+					<div class="tiemposhare">
+						<div class="tiempo">Hace 14 minutos</div>
+						<div class="share"><a class="fancybox" href="#compartir" title=""></a></div>
+					</div>
+				</div>
+				<div class="notasimple">
+					<div class="imagen"><a href><img src="images/imagenstandard.jpg"></a></div>
+					<div class="copete">HISTÓRICO DISCURSO EN EL CCK</div>
+					<div class="titulo"><a href>El presidente Mauricio Macri presentó las propuestas para consensuar políticas públicas</a></div>
+					<div class="bajada"><a href>Los agentes de retención serán las tarjetas de crédito. Se especula que esto conlleve un aumento del precio de la suscripción de estos servicios</a></div>
+					<div class="tiemposhare">
+						<div class="tiempo">Hace 14 minutos</div>
+						<div class="share"><a class="fancybox" href="#compartir" title=""></a></div>
+					</div>
+				</div>
+				<div class="notavideohomeespecial">
+					<div class="notasimpleesp">
+						<div class="copete">Nueva agenda laboral</div>
+						<div class="titulo"><a href>El presidente Mauricio Macri presentó las propuestas para consensuar políticas públicas</a></div>
+						<div class="tiemposhare">
+							<div class="tiempo">Hace 14 minutos</div>
+							<div class="share"><a class="fancybox" href="#compartir" title=""></a></div>
+						</div>
+					</div>
+					<div class="notasimpleesp">
+						<div class="copete">Blanqueo</div>
+						<div class="titulo"><a href>Empieza la Fase II: las PASO marcaron el fin del gradualismo y el inicio del plan "verdadero" de Mauricio Macri</a></div>
+						<div class="tiemposhare">
+							<div class="tiempo">Hace 14 minutos</div>
+							<div class="share"><a class="fancybox" href="#compartir" title=""></a></div>
+						</div>
+					</div>
+					<div class="notasimpleesp">
+						<div class="copete">HISTÓRICO DISCURSO</div>
+						<div class="titulo"><a href>Polémica en San Isidro por un proyecto inmobiliario que incluye torres, un shopping y salas de cine</a></div>
+						<div class="tiemposhare">
+							<div class="tiempo">Hace 14 minutos</div>
+							<div class="share"><a class="fancybox" href="#compartir" title=""></a></div>
+						</div>
+					</div>
+					<div class="notasimpleesp ultima">
+						<div class="copete">Legales</div>
+						<div class="titulo"><a href>El presidente Mauricio Macri presentó las propuestas para consensuar políticas públicas</a></div>
+						<div class="tiemposhare">
+							<div class="tiempo">Hace 14 minutos</div>
+							<div class="share"><a class="fancybox" href="#compartir" title=""></a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bloquenotas" id="bloque1">
+			<div class="notaprincipal1 boxdoble">
+				<h3 class="volanta">Actualidad <span>Legislativas 2017</span></h3>
+				<h1 class="titulo"><a href>Empieza la Fase II: las PASO marcaron el fin del gradualismo y el inicio del plan "verdadero" de Mauricio Macri</a></h1>
+				<div class="imagen"><a href><img src="images/imagenstandard.jpg"></a></div>
+				<h2 class="bajada"><a href>Remarcó que Cambiemos hará una gran apuesta a los créditos populares. Y preguntó si el Central intervendrá en el mercado de divisas para recuperar reservas</a></h2>
+				<div class="tiemposhare">
+					<div class="tiempo">Hace 14 minutos</div>
+					<div class="share"><a class="fancybox" href="#compartir" title=""></a></div>
+				</div>
+			</div>
+			<div class="notaschicas box">
+				<div class="objetodolar">
+					<div class="tituloseccion">Cotizaci&oacute;n del d&oacute;lar</div>
+					<div class="colizq">
+						<div class="valor">17,83</div>
+						<div class="comparativo alta">alta</div>
+					</div>
+					<div class="colder">
+						<div class="valor">17,96</div>
+						<div class="comparativo baja">baja</div>
+					</div>
+					<div class="coltipo">COMPRA</div>
+					<div class="coltipo">VENTA</div>
+
+				</div>
+				<div class="notachica">
+					<h3 class="volanta">Finanzas <span>Legislativas 2017</span></h3>
+					<h2 class="titulo"><a href>Empieza la Fase II: las PASO marcaron el fin del gradualismo y el inicio del plan "verdadero" de Mauricio Macri</a></h2>
+					<div class="tiemposhare">
+						<div class="tiempo">Hace 14 minutos</div>
+						<div class="share"><a class="fancybox" href="#compartir" title=""></a></div>
+					</div>
+				</div>
+			</div>
+			<div class="banner box">
+				<div class="titulo">Publicidad</div>
+				<div class="elbanner"><img src="images/banner300x250.jpg"></div>
+			</div>
+			<div class="notaschicas box">
+				<div class="notachica">
+					<h3 class="volanta">Finanzas <span>Legislativas 2017</span></h3>
+					<h2 class="tituloangosto"><a href>Empieza la Fase II: las PASO marcaron el fin del gradualismo y el inicio del plan "verdadero" de Mauricio Macri</a></h2>
+					<div class="imagen">
+						<div class="laimagen"><a href><img src="images/thumbnail.jpg"></a></div>
+						<div class="shareimagen"><a class="fancybox" href="#compartir" title=""></a></div>
+					</div>
+					<div class="playeraudio">
+						<audio controls>
+						  <source src="file.ogg" type="audio/ogg">
+						  <source src="https://prodengcom.s3.amazonaws.com/students/audio/cuttingedge3e/saudiarabia/starter/CENE_SWBA_U1_R1.mp3" type="audio/mpeg">
+						Your browser does not support the audio element.
+						</audio>
+					</div>
+				</div>
+				<div class="notachica">
+					<h3 class="volanta">Finanzas <span>Legislativas 2017</span></h3>
+					<h2 class="tituloangosto"><a href>Empieza la Fase II: las PASO marcaron el fin del gradualismo y el inicio del plan "verdadero" de Mauricio Macri</a></h2>
+					<div class="imagen">
+						<div class="laimagen"><a href><img src="images/thumbnail.jpg"></a></div>
+						<div class="shareimagen"><a class="fancybox" href="#compartir" title=""></a></div>
+					</div>
+				</div>
+			</div>
+			<div class="briefing box">
+				<div class="tituloseccion">Briefing</div>
+				<div class="sliderbriefing">
+					<!-- Paginacion -->
+					<div class="swiper-pagination swiper-pagination2"></div>
+					<div class="wrapperslider">
+	                    <div class="swiper-container2">
+	                        <div class="slides swiper-wrapper">
+		                        <div class="notacomillas swiper-slide">
+		                        	<div class="comillas">“”</div>
+		                        	<h2 class="titulo"><a href>Es un momento complejo para el kirchnerismo</a></h2>
+		                        	<div class="volanta">Cabandié se confiesa</div>
+		                        	<div class="bajada"><a href>Afirmó que piensa invertir en un parripollo</a></div>
+		                        </div>
+		                        <div class="notasdobles swiper-slide">
+		                        	<div class="notamitad">
+			                        	<div class="volanta">Negocios</div>
+										<h2 class="titulo"><a href>Cuánto cuesta ponerse un supermercado de barrio</a></h2>
+									</div>
+									<div class="separador"></div>
+									<div class="notamitad">
+			                        	<div class="volanta">Negocios</div>
+										<h2 class="titulo"><a href>Arcor invirtió  700 millones en la producción de envases</a></h2>
+									</div>
+		                        </div>
+		                        <div class="lanotachica swiper-slide">
+		                        	<div class="imagen"><a href><img src="images/imagenstandard.jpg"></a></div>
+		                        	<div class="textos">
+										<div class="volanta">Panorama</div>
+										<h2 class="titulo"><a href>Empieza la Fase II: las PASO marcaron el fin del gradualismo y el inicio del plan "verdadero" de Mauricio Macri</a></h2>
+									</div>
+		                        </div>
+		                        <div class="notarecuadro swiper-slide">
+		                        	<h2 class="titulo"><a href>Macri: "Ser independientes significa que nuestro futuro depende de nosotros</a></h2>
+		                        	<div class="volanta">Macri se confiesa</div>
+		                        	<div class="bajada"><a href>Además el Presidente dio indicios sobre la coparticipación</a></div>
+		                        </div>
+		                        <div class="notasdobles swiper-slide">
+		                        	<div class="notamitad">
+			                        	<div class="volanta">Negocios</div>
+										<h2 class="titulo"><a href>Cuánto cuesta ponerse un supermercado de barrio</a></h2>
+									</div>
+									<div class="separador"></div>
+									<div class="notamitad">
+			                        	<div class="volanta">Negocios</div>
+										<h2 class="titulo"><a href>Arcor invirtió  700 millones en la producción de envases</a></h2>
+									</div>
+		                        </div>
+	                        </div>
+	                    </div>
+	              </div>
+				</div>
+			</div>
+
+			<div class="notamedianaslider box">
+					<!-- Paginacion -->
+	                <div class="swiper-pagination swiper-pagination_med1"></div>
+					<div class="wrapperslider">
+	                    <div class="swiper-container_med1">
+	                        <div class="slides swiper-wrapper">
+		                        <div class="notamediana swiper-slide">
+									<h3 class="volanta">Management <span>Ca&iacute;da del d&oacute;lar</span></h3>
+									<div class="imagen">
+										<div class="laimagen"><a href><img src="images/imagenstandard.jpg"></a></div>
+										<div class="shareimagen"><a class="fancybox" href="#compartir" title=""></a></div>
+									</div>
+									<h2 class="titulo"><a href>Luego de las fuertes bajas, el dólar volvió a subir y cerró a $17,47</a></h2>
+								</div>
+		                        <div class="notamediana swiper-slide">
+									<h3 class="volanta">Finanzas <span>Legislativas 2017</span></h3>
+									<div class="imagen">
+										<div class="laimagen"><a href><img src="http://4.bp.blogspot.com/-ZORxWfBox2U/VVjtxI8cjnI/AAAAAAAAHJM/TnVLI8rxXFs/s1600/Jin%2BMao%2Btower%2BShanghai.jpg"></a></div>
+										<div class="shareimagen"><a class="fancybox" href="#compartir" title=""></a></div>
+									</div>
+									<h2 class="titulo"><a href>Sigla DESP y una IPO de 100 millones: Despegar llega a Wall Street</a></h2>
+								</div>
+		                        <div class="notamediana swiper-slide">
+									<h3 class="volanta">Actualidad <span>La salud del presidente</span></h3>
+									<div class="imagen">
+										<div class="laimagen"><a href><img src="http://www.lostiempos.com/sites/default/files/media_imagen/2016/11/3/trumop.jpg"></a></div>
+										<div class="shareimagen"><a class="fancybox" href="#compartir" title=""></a></div>
+									</div>
+									<h2 class="titulo"><a href>Tras ser operado de la rodilla, Macri realizará sus actividades en Olivos</a></h2>
+								</div>
+	                        </div>
+	                    </div>
+						<!-- Flechas -->
+						<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev"></div>
+	              </div>
+				</div>
+
+			<div class="notaschicas box">
+				<div class="notachica">
+					<h3 class="volanta">Finanzas <span>Legislativas 2017</span></h3>
+					<h2 class="titulo"><a href>Empieza la Fase II: las PASO marcaron el fin del gradualismo y el inicio del plan "verdadero" de Mauricio Macri</a></h2>
+					<div class="tiemposhare">
+						<div class="tiempo">Hace 14 minutos</div>
+						<div class="share"><a class="fancybox" href="#compartir" title=""></a></div>
+					</div>
+				</div>
+				<div class="notachica">
+					<h3 class="volanta">Finanzas <span>Legislativas 2017</span></h3>
+					<h2 class="titulo"><a href>Polémica en San Isidro por un proyecto inmobiliario que incluye torres, un shopping y salas de cine</a></h2>
+					<div class="tiemposhare">
+						<div class="tiempo">Hace 14 minutos</div>
+						<div class="share"><a class="fancybox" href="#compartir" title=""></a></div>
+					</div>
+				</div>
+			</div>
+			<div class="banner box">
+				<div class="titulo">Publicidad</div>
+				<div class="elbanner"><img src="images/banner300x250.jpg"></div>
+			</div>
+			<div class="notaschicas box">
+				<div class="notachica">
+					<h3 class="volanta">Finanzas <span>Legislativas 2017</span></h3>
+					<h2 class="tituloangosto"><a href>Empieza la Fase II: las PASO marcaron el fin del gradualismo y el inicio del plan "verdadero" de Mauricio Macri</a></h2>
+					<div class="imagen">
+						<div class="laimagen"><a href><img src="images/thumbnail.jpg"></a></div>
+						<div class="shareimagen"><a class="fancybox" href="#compartir" title=""></a></div>
+					</div>
+				</div>
+				<div class="notachica">
+					<h3 class="volanta">Finanzas <span>Legislativas 2017</span></h3>
+					<h2 class="tituloangosto"><a href>Empieza la Fase II: las PASO marcaron el fin del gradualismo y el inicio del plan "verdadero" de Mauricio Macri</a></h2>
+					<div class="imagen">
+						<div class="laimagen"><a href><img src="images/thumbnail.jpg"></a></div>
+						<div class="shareimagen"><a class="fancybox" href="#compartir" title=""></a></div>
+					</div>
+				</div>
+			</div>
+			<div class="notalobocity box">
+				<div class="tituloseccion">El lobo de la City</div>
+				<div class="textos">
+					<h2 class="titulo"><a href>Dos funcionarios, con el grito en el cielo por la escapada del dólar</a></h2>
+				</div>
+				<div class="tiemposhare">
+					<div class="tiempo">Hace 14 minutos</div>
+					<div class="share"><a class="fancybox" href="#compartir" title=""></a></div>
+				</div>
+				<div class="imagen">
+					<div class="laimagen"><a href><img src="images/imagen-lobocity.jpg"></a></div>
+				</div>
+			</div>
+
+			<div class="notaschicas box">
+				<div class="notachica">
+					<h3 class="volanta">Finanzas <span>Legislativas 2017</span></h3>
+					<h2 class="titulo"><a href>Empieza la Fase II: las PASO marcaron el fin del gradualismo y el inicio del plan "verdadero" de Mauricio Macri</a></h2>
+					<div class="tiemposhare">
+						<div class="tiempo">Hace 14 minutos</div>
+						<div class="share"><a class="fancybox" href="#compartir" title=""></a></div>
+					</div>
+				</div>
+				<div class="notachica">
+					<h3 class="volanta">Finanzas <span>Legislativas 2017</span></h3>
+					<h2 class="titulo"><a href>Polémica en San Isidro por un proyecto inmobiliario que incluye torres, un shopping y salas de cine</a></h2>
+					<div class="tiemposhare">
+						<div class="tiempo">Hace 14 minutos</div>
+						<div class="share"><a class="fancybox" href="#compartir" title=""></a></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="notaopinion box" style="display: none;">
+				<div class="tituloseccion">Opini&oacute;n</div>
+				<div class="imagen">
+					<div class="laimagen"><a href><img src="images/imagen-cuadrada.jpg"></a></div>
+				</div>
+				<div class="textos">
+					<div class="autor">Por <span>Marcela Suarez</span></div>
+					<h2 class="titulo"><a href>El argumento infalible de la cultura de la deshonestidad</a></h2>
+					<h3 class="bajada"><a href>Además el Presidente dio indicios sobre la coparticipación: "No puede ser que se asista al que no hace las cosas bien"</a></h3>
+				</div>
+				<div class="tiemposhare">
+					<div class="tiempo">Hace 14 minutos</div>
+					<div class="share"><a class="fancybox" href="#compartir" title=""></a></div>
+				</div>
+			</div>
+
+			</div>
+			<div class="banner bannerwide">
+				<div class="titulo">Publicidad</div>
+				<div class="elbanner"><img src="images/banner300x250.jpg"></div>
+			</div>
+			<div class="bloquenotas" id="bloque2">
+			<div class="notamedianaslider box">
+					<!-- Paginacion -->
+	            <div class="swiper-pagination swiper-pagination_med2"></div>
+					<div class="wrapperslider">
+	                    <div class="swiper-container_med2">
+	                        <div class="slides swiper-wrapper">
+	                        	<div class="notamediana swiper-slide">
+									<h3 class="volanta">Actualidad <span>La salud de Macri</span></h3>
+									<div class="imagen">
+										<div class="laimagen"><a href><img src="http://www.lostiempos.com/sites/default/files/media_imagen/2016/11/3/trumop.jpg"></a></div>
+										<div class="shareimagen"><a class="fancybox" href="#compartir" title=""></a></div>
+									</div>
+									<h2 class="titulo"><a href>Tras ser operado de la rodilla, Macri realizará sus actividades en Olivos</a></h2>
+								</div>
+		                        <div class="notamediana swiper-slide">
+									<h3 class="volanta">Management <span>Ca&iacute;da del d&oacute;lar</span></h3>
+									<div class="imagen">
+										<div class="laimagen"><a href><img src="images/imagenstandard.jpg"></a></div>
+										<div class="shareimagen"><a class="fancybox" href="#compartir" title=""></a></div>
+									</div>
+									<h2 class="titulo"><a href>Luego de las fuertes bajas, el dólar volvió a subir y cerró a $17,47</a></h2>
+								</div>
+		                        <div class="notamediana swiper-slide">
+									<h3 class="volanta">Finanzas <span>Legislativas 2017</span></h3>
+									<div class="imagen">
+										<div class="laimagen"><a href><img src="http://4.bp.blogspot.com/-ZORxWfBox2U/VVjtxI8cjnI/AAAAAAAAHJM/TnVLI8rxXFs/s1600/Jin%2BMao%2Btower%2BShanghai.jpg"></a></div>
+										<div class="shareimagen"><a class="fancybox" href="#compartir" title=""></a></div>
+									</div>
+									<h2 class="titulo"><a href>Sigla DESP y una IPO de 100 millones: Despegar llega a Wall Street</a></h2>
+								</div>
+	                        </div>
+	                    </div>
+	                    <!-- Flechas -->
+						<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev"></div>
+	              </div>
+			</div>
+			<div class="notaschicas box">
+				<div class="notachica">
+					<h3 class="volanta">Finanzas <span>Legislativas 2017</span></h3>
+					<h2 class="titulo"><a href>Empieza la Fase II: las PASO marcaron el fin del gradualismo y el inicio del plan "verdadero" de Mauricio Macri</a></h2>
+					<div class="tiemposhare">
+						<div class="tiempo">Hace 14 minutos</div>
+						<div class="share"><a class="fancybox" href="#compartir" title=""></a></div>
+					</div>
+				</div>
+				<div class="notachica">
+					<h3 class="volanta">Finanzas <span>Legislativas 2017</span></h3>
+					<h2 class="titulo"><a href>Empieza la Fase II: las PASO marcaron el fin del gradualismo y el inicio del plan "verdadero" de Mauricio Macri</a></h2>
+					<div class="tiemposhare">
+						<div class="tiempo">Hace 14 minutos</div>
+						<div class="share"><a class="fancybox" href="#compartir" title=""></a></div>
+					</div>
+				</div>
+			</div>
+			<div class="notainsider box">
+				<div class="tituloseccion">INSIDER <span>Datos reservados del mercado</span></div>
+				<div class="imagen">
+					<div class="textos">
+						<h3 class="volanta">Acuerdo millonario</h3>
+						<h2 class="titulo"><a href>El CEO de Mercado Libre y Techint firma acuerdo con importante empresa multinacional</a></h2>
+					</div>
+					<div class="laimagen"><a href><img src="images/insider.jpg"></a></div>
+				</div>
+			</div>
+			<div class="banner box">
+				<div class="titulo">Publicidad</div>
+				<div class="elbanner"><img src="images/banner300x250.jpg"></div>
+			</div>
+
+			<div class="notamedianaslider box">
+					<!-- Paginacion -->
+	            <div class="swiper-pagination swiper-pagination_med3"></div>
+					<div class="wrapperslider">
+	                    <div class="swiper-container_med3">
+	                        <div class="slides swiper-wrapper">
+		                        <div class="notamediana swiper-slide">
+									<h3 class="volanta">Finanzas <span>Legislativas 2017</span></h3>
+									<div class="imagen">
+										<div class="laimagen"><a href><img src="http://4.bp.blogspot.com/-ZORxWfBox2U/VVjtxI8cjnI/AAAAAAAAHJM/TnVLI8rxXFs/s1600/Jin%2BMao%2Btower%2BShanghai.jpg"></a></div>
+										<div class="shareimagen"><a class="fancybox" href="#compartir" title=""></a></div>
+									</div>
+									<h2 class="titulo"><a href>Sigla DESP y una IPO de 100 millones: Despegar llega a Wall Street</a></h2>
+								</div>
+								<div class="notamediana swiper-slide">
+									<h3 class="volanta">Management <span>Ca&iacute;da del d&oacute;lar</span></h3>
+									<div class="imagen">
+										<div class="laimagen"><a href><img src="images/imagenstandard.jpg"></a></div>
+										<div class="shareimagen"><a class="fancybox" href="#compartir" title=""></a></div>
+									</div>
+									<h2 class="titulo"><a href>Luego de las fuertes bajas, el dólar volvió a subir y cerró a $17,47</a></h2>
+								</div>
+		                        <div class="notamediana swiper-slide">
+									<h3 class="volanta">Actualidad <span>La bolsa</span></h3>
+									<div class="imagen">
+										<div class="laimagen"><a href><img src="http://www.lostiempos.com/sites/default/files/media_imagen/2016/11/3/trumop.jpg"></a></div>
+										<div class="shareimagen"><a class="fancybox" href="#compartir" title=""></a></div>
+									</div>
+									<h2 class="titulo"><a href>Tras ser operado de la rodilla, Macri realizará sus actividades en Olivos</a></h2>
+								</div>
+	                        </div>
+	                    </div>
+	                    <!-- Flechas -->
+						<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev"></div>
+	              </div>
+			</div>
+			<div class="notaschicas box">
+				<div class="notachica">
+					<h3 class="volanta">Finanzas <span>Legislativas 2017</span></h3>
+					<h2 class="titulo"><a href>Empieza la Fase II: las PASO marcaron el fin del gradualismo y el inicio del plan "verdadero" de Mauricio Macri</a></h2>
+					<div class="tiemposhare">
+						<div class="tiempo">Hace 14 minutos</div>
+						<div class="share"><a class="fancybox" href="#compartir" title=""></a></div>
+					</div>
+				</div>
+				<div class="notachica">
+					<h3 class="volanta">Finanzas <span>Legislativas 2017</span></h3>
+					<h2 class="titulo"><a href>Empieza la Fase II: las PASO marcaron el fin del gradualismo y el inicio del plan "verdadero" de Mauricio Macri</a></h2>
+					<div class="tiemposhare">
+						<div class="tiempo">Hace 14 minutos</div>
+						<div class="share"><a class="fancybox" href="#compartir" title=""></a></div>
+					</div>
+				</div>
+			</div>
+			<div class="objetoespecial boxdoble">
+				<h3 class="tituloseccion">Autos iPro</h3>
+				<div class="notagrande">
+					<div class="imagen">
+						<div class="laimagen"><a href><img src="images/imagenstandard.jpg"></a></div>
+						<div class="shareimagen"><a class="fancybox" href="#compartir" title=""></a></div>
+					</div>
+					<div class="textos">
+						<div class="volanta">Panorama</div>
+						<h2 class="titulo"><a href>Hyundai puso a prueba los nuevos Santa Fe Chapelco y Creta Connect en la nieve</a></h2>
+					</div>
+				</div>
+				<div class="notasdobles">
+					<div class="notadoble">
+						<div class="imagen">
+							<div class="laimagen"><a href><img src="images/imagenstandard.jpg"></a></div>
+							<div class="shareimagen"><a class="fancybox" href="#compartir" title=""></a></div>
+						</div>
+						<div class="textos">
+							<div class="volanta">Concurso</div>
+							<h2 class="titulo"><a href>Hyundai puso a prueba los nuevos Santa Fe Chapelco y Creta Connect en la nieve</a></h2>
+						</div>
+					</div>
+					<div class="notadoble">
+						<div class="imagen">
+							<div class="laimagen"><a href><img src="images/imagenstandard.jpg"></a></div>
+							<div class="shareimagen"><a class="fancybox" href="#compartir" title=""></a></div>
+						</div>
+						<div class="textos">
+							<div class="volanta">Panorama</div>
+							<h2 class="titulo"><a href>Hyundai puso a prueba los nuevos Santa Fe Chapelco y Creta Connect en la nieve</a></h2>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="banner box">
+				<div class="titulo">Publicidad</div>
+				<div class="elbanner"><img src="images/banner300x250.jpg"></div>
+			</div>
+			<div class="objetovideo box">
+				<div class="tituloseccion">Video<span> Suba del dólar</span></div>
+				<h2 class="titulo">La estrategia de la cadena hotelera más grande del mundo para la Argentina</h2>
+				<div class="video">
+					<video controls poster="images/imagen-cuadrada.jpg">
+					  <source src="video/video.mp4" type="video/mp4">
+					  <source src="video/video.ogg" type="video/ogg">
+					Your browser does not support the video tag.
+					</video>
+				</div>
+				<div class="tiemposhare">
+					<div class="tiempo">Hace 14 minutos</div>
+					<div class="share"><a class="fancybox" href="#compartir" title=""></a></div>
+				</div>
+			</div>
+			<div class="objetolomasleido boxdoble">
+				<div class="tituloseccion">Lo m&aacute;s le&iacute;do</div>
+				<div class="items">
+				<div class="item">
+					<div class="numero">1</div>
+					<div class="textos">
+						<div class="volanta"><a href>Finanzas</a></div>
+						<div class="titulo"><a href>La venta ilegal cayó un 57,4% en la Ciudad, pero aumentó en La Plata</a></div>
+					</div>
+					<div class="imagen">
+						<div class="laimagen"><a href><img src="images/thumbnail.jpg"></a></div>
+						<div class="shareimagen"><a class="fancybox" href="#compartir" title=""></a></div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="numero">2</div>
+					<div class="textos">
+						<div class="volanta"><a href>Econom&iacute;a</a></div>
+						<div class="titulo"><a href>Qué tecnologías aporta la Argentina en la lucha global contra el hambre</a></div>
+					</div>
+					<div class="imagen">
+						<div class="laimagen"><a href><img src="images/thumbnail.jpg"></a></div>
+						<div class="shareimagen"><a class="fancybox" href="#compartir" title=""></a></div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="numero">3</div>
+					<div class="textos">
+						<div class="volanta"><a href>Finanzas</a></div>
+						<div class="titulo"><a href>La venta ilegal cayó un 57,4% en la Ciudad, pero aumentó en La Plata</a></div>
+					</div>
+					<div class="imagen">
+						<div class="laimagen"><a href><img src="images/thumbnail.jpg"></a></div>
+						<div class="shareimagen"><a class="fancybox" href="#compartir" title=""></a></div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="numero">4</div>
+					<div class="textos">
+						<div class="volanta"><a href>Finanzas</a></div>
+						<div class="titulo"><a href>La venta ilegal cayó un 57,4% en la Ciudad, pero aumentó en La Plata</a></div>
+					</div>
+					<div class="imagen">
+						<div class="laimagen"><a href><img src="images/thumbnail.jpg"></a></div>
+						<div class="shareimagen"><a class="fancybox" href="#compartir" title=""></a></div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="numero">5</div>
+					<div class="textos">
+						<div class="volanta"><a href>Finanzas</a></div>
+						<div class="titulo"><a href>La venta ilegal cayó un 57,4% en la Ciudad, pero aumentó en La Plata</a></div>
+					</div>
+					<div class="imagen">
+						<div class="laimagen"><a href><img src="images/thumbnail.jpg"></a></div>
+						<div class="shareimagen"><a class="fancybox" href="#compartir" title=""></a></div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="numero">6</div>
+					<div class="textos">
+						<div class="volanta"><a href>Finanzas</a></div>
+						<div class="titulo"><a href>La venta ilegal cayó un 57,4% en la Ciudad, pero aumentó en La Plata</a></div>
+					</div>
+					<div class="imagen">
+						<div class="laimagen"><a href><img src="images/thumbnail.jpg"></a></div>
+						<div class="shareimagen"><a class="fancybox" href="#compartir" title=""></a></div>
+					</div>
+				</div>
+				</div>
+			</div>
+			</div>
+			<div class="banner bannerwide">
+				<div class="titulo">Publicidad</div>
+				<div class="elbanner"><img src="images/banner300x250.jpg"></div>
+			</div>
+			<div class="bloquenotas" id="bloque3">
+			<div class="objetozoom boxdoble">
+				<div class="tituloseccion">Destacadas <span>en otros medios</span></div>
+				<div class="sliderzoom">
+					<!-- Paginacion -->
+	                <div class="swiper-pagination swiper-pagination3"></div>
+					<div class="wrapperslider">
+	                    <div class="swiper-container3">
+	                        <div class="slides swiper-wrapper">
+		                        <div class="lanotachica swiper-slide">
+		                        	<div class="textos txtdestacadas">
+										<div class="volanta">14/7 <span>Cronista</span></div>
+										<h2 class="titulo"><a href>Alquileres: Cuáles son las claves de la nueva ley que favorece a los inquilinos</a></h2>
+									</div>
+									<div class="textos txtdestacadas">
+										<div class="volanta">14/7 <span>Clar&iacute;n Econ&oacute;mico</span></div>
+										<h2 class="titulo"><a href>Weretilneck se arrepiente: ya no quiere la central nuclear en Río Negro</a></h2>
+									</div>
+		                        </div>
+		                        <div class="lanotachica swiper-slide">
+		                        	<div class="textos txtdestacadas">
+										<div class="volanta">14/7 <span>Cronista</span></div>
+										<h2 class="titulo"><a href>Con un salto de 40% este año, fondos ya manejan $ 500.000 millones</a></h2>
+									</div>
+									<div class="textos txtdestacadas">
+										<div class="volanta">14/7 <span>La Naci&oacute;n</span></div>
+										<h2 class="titulo"><a href>Dura protesta del Gobierno por los aranceles para vender biodiesel a EE.UU</a></h2>
+									</div>
+		                        </div>
+		                        <div class="lanotachica swiper-slide">
+		                        	<div class="textos txtdestacadas">
+										<div class="volanta">14/7 <span>Perfil</span></div>
+										<h2 class="titulo"><a href>Las inmobiliarias advierten: "Es muy factible que aumenten los alquileres"</a></h2>
+									</div>
+									<div class="textos txtdestacadas">
+										<div class="volanta">14/7 <span>Cronista</span></div>
+										<h2 class="titulo"><a href>Se amplía la oferta de préstamos UVA para comprar automóviles</a></h2>
+									</div>
+		                        </div>
+		                        <div class="lanotachica swiper-slide">
+		                        	<div class="textos txtdestacadas">
+										<div class="volanta">14/7 <span>Infobae</span></div>
+										<h2 class="titulo"><a href>Inversores extranjeros buscan bonos de emergentes en moneda local</a></h2>
+									</div>
+									<div class="textos txtdestacadas">
+										<div class="volanta">14/7 <span>La Naci&oacute;n</span></div>
+										<h2 class="titulo"><a href>Las charlas en el VIP, entre el optimismo y la duda de Costantini</a></h2>
+									</div>
+		                        </div>
+	                        </div>
+	                    </div>
+	            	</div>
+				</div>
+			</div>
+			<div class="objetofrase box">
+				<div class="tituloseccion">La Frase</div>
+				<div class="lafrase">“Ser independientes significa que nuestro futuro depende de nosotros”</div>
+				<div class="autor">
+					<div class="foto">
+						<div class="imagen"><a href><img src="images/thumbnail.jpg"></a></div>
+					</div>
+					<div class="nombre">
+						<p class="bold">Mauricio Macri</p>
+						<p>Presidente de la Naci&oacute;n</p>
+					</div>
+					<div class="share"><a class="fancybox" href="#compartir" title=""></a></div>
+				</div>
+			</div>
+			<div class="notaschicas box">
+				<div class="notachica">
+					<h3 class="volanta">Finanzas <span>Legislativas 2017</span></h3>
+					<h2 class="titulo"><a href>Empieza la Fase II: las PASO marcaron el fin del gradualismo y el inicio del plan "verdadero" de Mauricio Macri</a></h2>
+					<div class="tiemposhare">
+						<div class="tiempo">Hace 14 minutos</div>
+						<div class="share"><a class="fancybox" href="#compartir" title=""></a></div>
+					</div>
+				</div>
+				<div class="notachica">
+					<h3 class="volanta">Finanzas <span>Legislativas 2017</span></h3>
+					<h2 class="titulo"><a href>Empieza la Fase II: las PASO marcaron el fin del gradualismo y el inicio del plan "verdadero" de Mauricio Macri</a></h2>
+					<div class="tiemposhare">
+						<div class="tiempo">Hace 14 minutos</div>
+						<div class="share"><a class="fancybox" href="#compartir" title=""></a></div>
+					</div>
+				</div>
+			</div>
+			<div class="banner box">
+				<div class="titulo">Publicidad</div>
+				<div class="elbanner"><img src="images/banner300x250.jpg"></div>
+			</div>
+			<div class="notaschicas box">
+				<div class="notachica">
+					<h3 class="volanta">Finanzas <span>Legislativas 2017</span></h3>
+					<h2 class="tituloangosto"><a href>Empieza la Fase II: las PASO marcaron el fin del gradualismo y el inicio del plan "verdadero" de Mauricio Macri</a></h2>
+					<div class="imagen">
+						<div class="laimagen"><a href><img src="images/thumbnail.jpg"></a></div>
+						<div class="shareimagen"><a class="fancybox" href="#compartir" title=""></a></div>
+					</div>
+				</div>
+				<div class="notachica">
+					<h3 class="volanta">Finanzas <span>Legislativas 2017</span></h3>
+					<h2 class="tituloangosto"><a href>Empieza la Fase II: las PASO marcaron el fin del gradualismo y el inicio del plan "verdadero" de Mauricio Macri</a></h2>
+					<div class="imagen">
+						<div class="laimagen"><a href><img src="images/thumbnail.jpg"></a></div>
+						<div class="shareimagen"><a class="fancybox" href="#compartir" title=""></a></div>
+					</div>
+				</div>
+			</div>
+			<div class="objetoespecial boxdoble">
+				<div class="tituloseccion">Health &amp; Tech</div>
+				<div class="notagrande">
+					<div class="imagen">
+						<div class="laimagen"><a href><img src="images/imagenstandard.jpg"></a></div>
+						<div class="shareimagen"><a class="fancybox" href="#compartir" title=""></a></div>
+					</div>
+					<div class="textos">
+						<div class="volanta">Panorama</div>
+						<h2 class="titulo"><a href>El Lamborghini Aventador SV de Novitec roza los 1.000 CV</a></h2>
+					</div>
+				</div>
+				<div class="notasdobles">
+					<div class="notadoble">
+						<div class="imagen">
+							<div class="laimagen"><a href><img src="images/imagenstandard.jpg"></a></div>
+							<div class="shareimagen"><a class="fancybox" href="#compartir" title=""></a></div>
+						</div>
+						<div class="textos">
+							<div class="volanta">Concurso</div>
+							<h2 class="titulo"><a href>Por qué algunas empresas están buscando empleados de más de 45</a></h2>
+						</div>
+					</div>
+					<div class="notadoble">
+						<div class="imagen">
+							<div class="laimagen"><a href><img src="images/imagenstandard.jpg"></a></div>
+							<div class="shareimagen"><a class="fancybox" href="#compartir" title=""></a></div>
+						</div>
+						<div class="textos">
+							<div class="volanta">Panorama</div>
+							<h2 class="titulo"><a href>El Lamborghini Aventador SV de Novitec roza los 1.000 CV</a></h2>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="banner box">
+				<div class="titulo">Publicidad</div>
+				<div class="elbanner"><img src="images/banner300x250.jpg"></div>
+			</div>
+			<div class="notamediana box">
+				<h3 class="volanta">Management <span>Legislativas 2017</span></h3>
+				<div class="imagen">
+					<div class="laimagen"><a href><img src="images/imagenstandard.jpg"></a></div>
+					<div class="shareimagen"><a class="fancybox" href="#compartir" title=""></a></div>
+				</div>
+				<h2 class="titulo"><a href>Empieza la Fase II: las PASO marcaron el fin del gradualismo y el inicio del plan "verdadero" de Mauricio Macri</a></h2>
+			</div>
+			<div class="notaprincipal1 boxdoble">
+				<h3 class="volanta">Actualidad <span>Legislativas 2017</span></h3>
+				<h1 class="titulo"><a href>Empieza la Fase II: las PASO marcaron el fin del gradualismo y el inicio del plan "verdadero" de Mauricio Macri</a></h1>
+				<div class="imagen"><a href><img src="images/imagenstandard.jpg"></a></div>
+				<h2 class="bajada"><a href>Además el Presidente dio indicios sobre la coparticipación: "No puede ser que se asista al que no hace las cosas bien"</a></h2>
+				<div class="tiemposhare">
+					<div class="tiempo">Hace 14 minutos</div>
+					<div class="share"><a class="fancybox" href="#compartir" title=""></a></div>
+				</div>
+			</div>
+			</div>
+
+			<div class="banner bannerwide">
+				<div class="titulo">Publicidad</div>
+				<div class="elbanner"><img src="images/banner300x250.jpg"></div>
+			</div>
+
+			<div class="bloquenotas" id="bloque4">
+			<div class="objetoespecial boxdoble">
+				<div class="tituloseccion">Vinos &amp; Bodegas</div>
+				<div class="notagrande">
+					<div class="imagen">
+						<div class="laimagen"><a href><img src="images/imagenstandard.jpg"></a></div>
+						<div class="shareimagen"><a class="fancybox" href="#compartir" title=""></a></div>
+					</div>
+					<div class="textos">
+						<div class="volanta">Panorama</div>
+						<h2 class="titulo"><a href>El Lamborghini Aventador SV de Novitec roza los 1.000 CV</a></h2>
+					</div>
+				</div>
+				<div class="notasdobles">
+					<div class="notadoble">
+						<div class="imagen">
+							<div class="laimagen"><a href><img src="images/imagenstandard.jpg"></a></div>
+							<div class="shareimagen"><a class="fancybox" href="#compartir" title=""></a></div>
+						</div>
+						<div class="textos">
+							<div class="volanta">Concurso</div>
+							<h2 class="titulo"><a href>Por qué algunas empresas están buscando empleados de más de 45</a></h2>
+						</div>
+					</div>
+					<div class="notadoble">
+						<div class="imagen">
+							<div class="laimagen"><a href><img src="images/imagenstandard.jpg"></a></div>
+							<div class="shareimagen"><a class="fancybox" href="#compartir" title=""></a></div>
+						</div>
+						<div class="textos">
+							<div class="volanta">Panorama</div>
+							<h2 class="titulo"><a href>El Lamborghini Aventador SV de Novitec roza los 1.000 CV</a></h2>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="notaschicas box">
+				<div class="notachica">
+					<h3 class="volanta">Finanzas <span>Legislativas 2017</span></h3>
+					<h2 class="titulo"><a href>Empieza la Fase II: las PASO marcaron el fin del gradualismo y el inicio del plan "verdadero" de Mauricio Macri</a></h2>
+					<div class="tiemposhare">
+						<div class="tiempo">Hace 14 minutos</div>
+						<div class="share"><a class="fancybox" href="#compartir" title=""></a></div>
+					</div>
+				</div>
+				<div class="notachica">
+					<h3 class="volanta">Finanzas <span>Legislativas 2017</span></h3>
+					<h2 class="titulo"><a href>Empieza la Fase II: las PASO marcaron el fin del gradualismo y el inicio del plan "verdadero" de Mauricio Macri</a></h2>
+					<div class="tiemposhare">
+						<div class="tiempo">Hace 14 minutos</div>
+						<div class="share"><a class="fancybox" href="#compartir" title=""></a></div>
+					</div>
+				</div>
+			</div>
+			<div class="banner box">
+				<div class="titulo">Publicidad</div>
+				<div class="elbanner"><img src="images/banner300x250.jpg"></div>
+			</div>
+			<div class="notaschicas box">
+				<div class="notachica">
+					<h3 class="volanta">Finanzas <span>Legislativas 2017</span></h3>
+					<h2 class="titulo"><a href>Empieza la Fase II: las PASO marcaron el fin del gradualismo y el inicio del plan "verdadero" de Mauricio Macri</a></h2>
+					<div class="tiemposhare">
+						<div class="tiempo">Hace 14 minutos</div>
+						<div class="share"><a class="fancybox" href="#compartir" title=""></a></div>
+					</div>
+				</div>
+				<div class="notachica">
+					<h3 class="volanta">Finanzas <span>Legislativas 2017</span></h3>
+					<h2 class="titulo"><a href>Empieza la Fase II: las PASO marcaron el fin del gradualismo y el inicio del plan "verdadero" de Mauricio Macri</a></h2>
+					<div class="tiemposhare">
+						<div class="tiempo">Hace 14 minutos</div>
+						<div class="share"><a class="fancybox" href="#compartir" title=""></a></div>
+					</div>
+				</div>
+			</div>
+			<div class="notamediana box">
+				<h3 class="volanta">Management <span>Legislativas 2017</span></h3>
+				<div class="imagen">
+					<div class="laimagen"><a href><img src="images/imagenstandard.jpg"></a></div>
+					<div class="shareimagen"><a class="fancybox" href="#compartir" title=""></a></div>
+				</div>
+				<h2 class="titulo"><a href>Empieza la Fase II: las PASO marcaron el fin del gradualismo y el inicio del plan "verdadero" de Mauricio Macri</a></h2>
+			</div>
+			<div class="objetozoom boxdoble">
+				<div class="tituloseccion">Zoom <span>Recomendadas</span></div>
+				<div class="sliderzoom">
+					<!-- Paginacion -->
+	                <div class="swiper-pagination swiper-pagination1"></div>
+					<div class="wrapperslider">
+	                    <div class="swiper-container1">
+	                        <div class="slides swiper-wrapper">
+		                        <div class="lanotachica swiper-slide">
+		                        	<div class="imagen"><a href><img src="images/imagenstandard.jpg"></a></div>
+		                        	<div class="textos">
+										<div class="volanta">14/7 <span>Panorama</span></div>
+										<h2 class="titulo"><a href>Empieza la Fase II: las PASO marcaron el fin del gradualismo y el inicio del plan "verdadero" de Mauricio Macri</a></h2>
+									</div>
+		                        </div>
+		                        <div class="lanotachica swiper-slide">
+		                        	<div class="imagen"><a href><img src="images/imagenstandard.jpg"></a></div>
+		                        	<div class="textos">
+										<div class="volanta">14/7 <span>Panorama</span></div>
+										<h2 class="titulo"><a href>El Lamborghini Aventador SV de Novitec roza los 1.000 CV</a></h2>
+									</div>
+		                        </div>
+		                        <div class="lanotachica swiper-slide">
+		                        	<div class="imagen"><a href><img src="images/imagenstandard.jpg"></a></div>
+		                        	<div class="textos">
+										<div class="volanta">14/7 <span>Panorama</span></div>
+										<h2 class="titulo"><a href>El Lamborghini Aventador SV de Novitec roza los 1.000 CV</a></h2>
+									</div>
+		                        </div>
+		                        <div class="lanotachica swiper-slide">
+		                        	<div class="imagen"><a href><img src="images/imagenstandard.jpg"></a></div>
+		                        	<div class="textos">
+										<div class="volanta">14/7 <span>Panorama</span></div>
+										<h2 class="titulo"><a href>El Lamborghini Aventador SV de Novitec roza los 1.000 CV</a></h2>
+									</div>
+		                        </div>
+	                        </div>
+	                    </div>
+	              </div>
+				</div>
+			</div>
+			<div class="notaschicas box">
+				<div class="notachica">
+					<h3 class="volanta">Finanzas <span>Legislativas 2017</span></h3>
+					<h2 class="titulo"><a href>Empieza la Fase II: las PASO marcaron el fin del gradualismo y el inicio del plan "verdadero" de Mauricio Macri</a></h2>
+					<div class="tiemposhare">
+						<div class="tiempo">Hace 14 minutos</div>
+						<div class="share"><a class="fancybox" href="#compartir" title=""></a></div>
+					</div>
+				</div>
+				<div class="notachica">
+					<h3 class="volanta">Finanzas <span>Legislativas 2017</span></h3>
+					<h2 class="titulo"><a href>Empieza la Fase II: las PASO marcaron el fin del gradualismo y el inicio del plan "verdadero" de Mauricio Macri</a></h2>
+					<div class="tiemposhare">
+						<div class="tiempo">Hace 14 minutos</div>
+						<div class="share"><a class="fancybox" href="#compartir" title=""></a></div>
+					</div>
+				</div>
+			</div>
+			<div class="banner box">
+				<div class="titulo">Publicidad</div>
+				<div class="elbanner"><img src="images/banner300x250.jpg"></div>
+			</div>
+			<div class="notamediana box">
+				<h3 class="volanta">Management <span>Legislativas 2017</span></h3>
+				<div class="imagen">
+					<div class="laimagen"><a href><img src="images/imagenstandard.jpg"></a></div>
+					<div class="shareimagen"><a class="fancybox" href="#compartir" title=""></a></div>
+				</div>
+				<h2 class="titulo"><a href>Empieza la Fase II: las PASO marcaron el fin del gradualismo y el inicio del plan "verdadero" de Mauricio Macri</a></h2>
+			</div>
+			<div class="notaschicas box">
+				<div class="notachica">
+					<h3 class="volanta">Finanzas <span>Legislativas 2017</span></h3>
+					<h2 class="titulo"><a href>Empieza la Fase II: las PASO marcaron el fin del gradualismo y el inicio del plan "verdadero" de Mauricio Macri</a></h2>
+					<div class="tiemposhare">
+						<div class="tiempo">Hace 14 minutos</div>
+						<div class="share"><a class="fancybox" href="#compartir" title=""></a></div>
+					</div>
+				</div>
+				<div class="notachica">
+					<h3 class="volanta">Finanzas <span>Legislativas 2017</span></h3>
+					<h2 class="titulo"><a href>Polémica en San Isidro por un proyecto inmobiliario que incluye torres, un shopping y salas de cine</a></h2>
+					<div class="tiemposhare">
+						<div class="tiempo">Hace 14 minutos</div>
+						<div class="share"><a class="fancybox" href="#compartir" title=""></a></div>
+					</div>
+				</div>
+			</div>
+			</div>
+			<div class="banner bannerwide">
+				<div class="titulo">Publicidad</div>
+				<div class="elbanner"><img src="images/banner300x250.jpg"></div>
+			</div>
+			<div class="bloquenotas" id="bloque5">
+			<div class="objetoinfografia boxdoble">
+				<div class="tituloseccion">Infograf&iacute;a</div>
+				<div class="imagen"><a href><img src="https://olbergsanz.files.wordpress.com/2013/12/aabdd-infografia-motivacion-empleados.jpg"></a></div>
+				<h2 class="titulo"><a href>Engagement: Cómo fidelizar y motivar a sus empleados</a></h2>
+				<h3 class="bajada"><a href>Además el Presidente dio indicios sobre la coparticipación: "No puede ser que se asista al que no hace las cosas bien"</a></h3>
+				<div class="tiemposhare">
+					<div class="tiempo">Hace 14 minutos</div>
+					<div class="share"><a class="fancybox" href="#compartir" title=""></a></div>
+				</div>
+			</div>
+			<div class="notaschicas box">
+				<div class="notachica">
+					<h3 class="volanta">Finanzas <span>Legislativas 2017</span></h3>
+					<h2 class="titulo"><a href>Empieza la Fase II: las PASO marcaron el fin del gradualismo y el inicio del plan "verdadero" de Mauricio Macri</a></h2>
+					<div class="tiemposhare">
+						<div class="tiempo">Hace 14 minutos</div>
+						<div class="share"><a class="fancybox" href="#compartir" title=""></a></div>
+					</div>
+				</div>
+				<div class="notachica">
+					<h3 class="volanta">Finanzas <span>Legislativas 2017</span></h3>
+					<h2 class="titulo"><a href>Empieza la Fase II: las PASO marcaron el fin del gradualismo y el inicio del plan "verdadero" de Mauricio Macri</a></h2>
+					<div class="tiemposhare">
+						<div class="tiempo">Hace 14 minutos</div>
+						<div class="share"><a class="fancybox" href="#compartir" title=""></a></div>
+					</div>
+				</div>
+			</div>
+			<div class="objetoeldato box">
+				<div class="tituloseccion">El dato</div>
+				<div class="textos">
+					<div class="dato">50%</div>
+					<div class="descripcion">de los empleados dice que cambiaría su trabajo por uno con más reconocimiento</div>
+				</div>
+				<div class="tiemposhare">
+					<div class="share"><a class="fancybox" href="#compartir" title=""></a></div>
+				</div>
+			</div>
+			<div class="objetocomentario box">
+				<div class="tituloseccion">Comentario</div>
+				<h2 class="titulo"><a href>El voto para cortar la inmigración no será olvidado</a></h2>
+				<div class="autor">Clara Martinez</div>
+				<div class="linea"></div>
+				<h3 class="bajada"><a href>Al retirarse de la preocupación central de los votantes, los Brexiteers se arriesgan a alimentar el mayor sentido de la traición en generaciones</a></h3>
+				<div class="imagen"><img src="http://www.writersfestival.org/assets/cache/Mlynowski%20author%20photo_Credit%20Heather%20Waraksa_bw-306-306.jpg"></div>
+				<div class="tiemposhare">
+					<div class="tiempo">11 de agosto</div>
+					<div class="share"><a class="fancybox" href="#compartir" title=""></a></div>
+				</div>
+			</div>
+			<div class="banner box">
+				<div class="titulo">Publicidad</div>
+				<div class="elbanner"><img src="images/banner300x250.jpg"></div>
+			</div>
+			<div class="notamediana box">
+				<h3 class="volanta">Management <span>Legislativas 2017</span></h3>
+				<div class="imagen">
+					<div class="laimagen"><a href><img src="images/imagenstandard.jpg"></a></div>
+					<div class="shareimagen"><a class="fancybox" href="#compartir" title=""></a></div>
+				</div>
+				<h2 class="titulo"><a href>Empieza la Fase II: las PASO marcaron el fin del gradualismo y el inicio del plan "verdadero" de Mauricio Macri</a></h2>
+			</div>
+			<div class="notaschicas box">
+				<div class="notachica">
+					<h3 class="volanta">Finanzas <span>Legislativas 2017</span></h3>
+					<h2 class="titulo"><a href>Empieza la Fase II: las PASO marcaron el fin del gradualismo y el inicio del plan "verdadero" de Mauricio Macri</a></h2>
+					<div class="tiemposhare">
+						<div class="tiempo">Hace 14 minutos</div>
+						<div class="share"><a class="fancybox" href="#compartir" title=""></a></div>
+					</div>
+				</div>
+				<div class="notachica">
+					<h3 class="volanta">Finanzas <span>Legislativas 2017</span></h3>
+					<h2 class="titulo"><a href>Empieza la Fase II: las PASO marcaron el fin del gradualismo y el inicio del plan "verdadero" de Mauricio Macri</a></h2>
+					<div class="tiemposhare">
+						<div class="tiempo">Hace 14 minutos</div>
+						<div class="share"><a class="fancybox" href="#compartir" title=""></a></div>
+					</div>
+				</div>
+			</div>
+			<div class="notaschicas box">
+				<div class="notachica">
+					<h3 class="volanta">Finanzas <span>Legislativas 2017</span></h3>
+					<h2 class="titulo"><a href>Empieza la Fase II: las PASO marcaron el fin del gradualismo y el inicio del plan "verdadero" de Mauricio Macri</a></h2>
+					<div class="tiemposhare">
+						<div class="tiempo">Hace 14 minutos</div>
+						<div class="share"><a class="fancybox" href="#compartir" title=""></a></div>
+					</div>
+				</div>
+				<div class="notachica">
+					<h3 class="volanta">Finanzas <span>Legislativas 2017</span></h3>
+					<h2 class="titulo"><a href>Empieza la Fase II: las PASO marcaron el fin del gradualismo y el inicio del plan "verdadero" de Mauricio Macri</a></h2>
+					<div class="tiemposhare">
+						<div class="tiempo">Hace 14 minutos</div>
+						<div class="share"><a class="fancybox" href="#compartir" title=""></a></div>
+					</div>
+				</div>
+			</div>
+			<div class="notamediana box">
+				<h3 class="volanta">Management <span>Legislativas 2017</span></h3>
+				<div class="imagen">
+					<div class="laimagen"><a href><img src="images/imagenstandard.jpg"></a></div>
+					<div class="shareimagen"><a class="fancybox" href="#compartir" title=""></a></div>
+				</div>
+				<h2 class="titulo"><a href>Empieza la Fase II: las PASO marcaron el fin del gradualismo y el inicio del plan "verdadero" de Mauricio Macri</a></h2>
+			</div>
+			<div class="objetorecreo boxdoble">
+				<div class="tituloseccion">Recreo</div>
+				<div class="notagrande">
+					<div class="imagen">
+						<div class="laimagen"><a href><img src="images/imagen-cuadrada.jpg"></a></div>
+						<div class="shareimagen"><a class="fancybox" href="#compartir" title=""></a></div>
+					</div>
+					<div class="textos">
+						<div class="volanta">Panorama</div>
+						<h2 class="titulo"><a href>El Lamborghini Aventador SV de Novitec roza los 1.000 CV</a></h2>
+					</div>
+				</div>
+				<div class="notasdobles">
+					<div class="notadoble">
+						<div class="imagen">
+							<div class="laimagen"><a href><img src="images/imagenstandard.jpg"></a></div>
+							<div class="shareimagen"><a class="fancybox" href="#compartir" title=""></a></div>
+						</div>
+						<div class="textos">
+							<div class="volanta">Concurso</div>
+							<h2 class="titulo"><a href>Por qué algunas empresas están buscando empleados de más de 45</a></h2>
+						</div>
+					</div>
+					<div class="notadoble">
+						<div class="textos">
+							<div class="volanta">Recreo</div>
+							<h2 class="titulo"><a href>Más, menos e igual: quiénes crearon los símbolos +, -, =</a></h2>
+						</div>
+					</div>
+					<div class="notadoble">
+						<div class="textos">
+							<div class="volanta">Panorama</div>
+							<h2 class="titulo"><a href>El Lamborghini Aventador SV de Novitec roza los 1.000 CV</a></h2>
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>
+			<div class="banner bannerwide">
+				<div class="titulo">Publicidad</div>
+				<div class="elbanner"><img src="images/banner300x250.jpg"></div>
+			</div>
+			<div class="objetosinferiores">
+			<div class="objetoexplora">
+				<div class="tituloseccion">Explor&aacute; <span>iProfesional</span></div>
+				<div class="listado">
+					<ul>
+						<li><strong>&Uacute;ltimas noticias</strong></li>
+						<li><a href>Econom&iacute;a</a></li>
+						<li><a href>Finanzas</a></li>
+						<li><a href>Impuestos</a></li>
+						<li><a href>Legales</a></li>
+						<li><a href>Negocios</a></li>
+						<li><a href>Tecnolog&iacute;a</a></li>
+						<li><a href>Comex</a></li>
+						<li><a href>Management</a></li>
+						<li><a href>Marketing</a></li>
+					</ul>
+					<ul>
+						<li><strong>Adem&aacute;s</strong></li>
+						<li><a href>Autos iPro</a></li>
+						<li><a href>Vinos &amp; Bodegas</a></li>
+						<li><a href>Energías Limpias</a></li>
+						<li><a href>Ahora Brasil</a></li>
+						<li><a href>Health &amp; Tech</a></li>
+						<li><a href>RSD</a></li>
+						<li><a href>Real Estate</a></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+			</div>
+			<div class="objetovolverarriba">
+				<a href>
+					<span class="flecha"></span>
+					<a href="#top"><span class="texto">Volver a arriba</span></a>
+					<span class="flecha"></span>
+				</a>
+			</div>
+			<div class="navegacioninferior">
+				<div class="indiceacceso"><a class="fancybox" href="#indicenotas" title="&Iacute;NDICE DE NOTAS">&Iacute;ndice de notas</a></div>
+				<div class="items">
+					<ul>
+						<li class="primero"><a href>Recomendar</a></li>
+						<li><a href>Registrarse</a></li>
+						<li><a href>RSS</a></li>
+						<li><a href>Contacto</a></li>
+						<li class="ultimo"><a href>Publicidad</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer">
+				<div class="textos">
+					iProfesional - Copyright © 2017 <br>
+					Emprendimientos Corporativos S.A. <br>
+					Buenos Aires, Argentina. Todos los derechos reservados.<br>
+				</div>
+				<div class="redes">
+					<ul>
+						<li class="fb"><a href></a></li>
+						<li class="tw"><a href></a></li>
+						<li class="gp"><a href></a></li>
+						<li class="ln"><a href></a></li>
+						<li class="mail"><a href></a></li>
+						<li class="app"><a href></a></li>
+					</ul>
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="js/iprofesional.js"></script>
+</body>
+</html>

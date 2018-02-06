@@ -17,6 +17,9 @@
   .bannerdoble { width: 620px; margin-bottom: 30px; border-bottom: 1px solid #d4d6d7; padding-bottom: 15px !important; }
   .bloquenotas, .desarrollonota, .objetosmedio, .objetoexplora { width: 620px; }
   .contenido .bloquenotas .titulobloque { margin-left: 10px; text-indent: 0px; }
+  .alerta { height: 40px; }
+  .alerta .tituloalerta { line-height: 40px; }
+  .alerta .textoalerta { line-height: 40px; padding-top: 0; padding-bottom: 0; }
   .briefing { padding-left: 10px; padding-right: 10px; padding-top: 0; margin-left: 10px; margin-right: 10px; float: left; }
   .briefing .tituloseccion { padding-top: 10px; }
   .briefing .sliderbriefing .wrapperslider { width: calc(620px/2 - 40px); }
@@ -126,7 +129,43 @@
   .notaprincipalinsider .tiemposhare { width: 50%; padding-left: 10px; padding-right: 10px; float: right; }
   .alertaswrapper .bloquecontenido .items .item .imagen { width: 80px; height: 80px; }
   .alertaswrapper .bloquecontenido .items .item .textos { width: calc(100% - 210px); }
-  .alertaswrapper .bloquecontenido .items .item .textos .titulo { font-size: 20px; line-height: 22px; } }
+  .alertaswrapper .bloquecontenido .items .item .textos .titulo { font-size: 20px; line-height: 22px; }
+  .notavideohome .notagrande { width: 60%; border-bottom: 0; padding-right: 15px; border-right: 1px solid #4b4b4b; padding-bottom: 0px; }
+  .notavideohome .notagrande .titulo { font-size: 37px; line-height: 40px; letter-spacing: -1px; padding-bottom: 10px; }
+  .notavideohome .notasimple { width: 40%; padding-left: 15px; }
+  .notavideohome .elvideo { margin-bottom: 20px; }
+  .notavideohome .notavideohomeespecial .notasimpleesp { width: 50%; float: left; height: 150px; position: relative; }
+  .notahomebomba .notagrande { position: relative; }
+  .notahomebomba .notagrande .titulo { margin-bottom: 15px; font-size: 30px; line-height: 34px; }
+  .notahomebomba .notagrande .bajada { width: calc(100% - 310px); float: right; }
+  .notahomebomba .notagrande .imagen { width: 290px; float: left; margin-bottom: 0; }
+  .notahomebomba .notagrande .tiemposhare { width: calc(100% - 330px); float: right; position: absolute; bottom: 40px; right: 10px; }
+  .notahomebomba .masnotasbomba .notamasgrande { position: relative; }
+  .notahomebomba .masnotasbomba .notamasgrande .imagen { width: calc(50% - 10px); float: right; }
+  .notahomebomba .masnotasbomba .notamasgrande .imagen .imagenwide { display: none; }
+  .notahomebomba .masnotasbomba .notamasgrande .imagen .imagencuadrada { display: block; }
+  .notahomebomba .masnotasbomba .notamasgrande .volanta { width: calc(50% - 10px); float: left; margin-bottom: 10px; }
+  .notahomebomba .masnotasbomba .notamasgrande .titulo { width: calc(50% - 10px); float: left; }
+  .notahomebomba .masnotasbomba .notamasgrande .bajada { width: calc(50% - 10px); float: left; }
+  .notahomebomba .masnotasbomba .notamasgrande .tiemposhare { width: calc(50% - 20px); float: left; position: absolute; bottom: 40px; }
+  .notahomebomba .masnotasbomba .notamasmediana { width: 50%; height: 330px; border-right: 1px solid #4b4b4b; float: left; border-bottom: 0; margin-bottom: 0; padding-bottom: 0; padding-top: 0; position: relative; }
+  .notahomebomba .masnotasbomba .notamasmediana .tiemposhare { width: calc(100% - 20px); position: absolute; bottom: 0px; }
+  .notahomebomba .masnotasbomba .notasmassimples { width: 50%; float: left; }
+  .notahomebomba .masnotasbomba .notasmassimples .notamassimple { padding-bottom: 0px; margin-bottom: 30px; position: relative; height: 155px; }
+  .notahomebomba .masnotasbomba .notasmassimples .notamassimple .titulo { font-size: 17px; line-height: 21px; }
+  .notahomebomba .masnotasbomba .notasmassimples .notamassimple .tiemposhare { width: calc(100% - 20px); position: absolute; bottom: 10px; }
+  .notahomebomba .masnotasbomba .notasmassimples .notamassimpleultima { margin-bottom: 0; padding-bottom: 0; }
+  .notahomebombasimple .notagrande { width: 620px; margin-left: 10px; margin-right: 10px; }
+  .notahomebombasimple .notamedianabombasimple { margin-bottom: 30px; padding-bottom: 0; }
+  .notahomebombasimple .notamedianabombasimple .volanta { padding: 0; }
+  .notahomebombasimple .notamedianabombasimple .titulo { padding: 0; font-size: 19px; line-height: 24px; }
+  .notahomebombasimple .notaschicasbombasimple .notachica { padding-bottom: 20px; margin-bottom: 20px; border-bottom: 0; height: 150px; position: relative; padding: 0; }
+  .notahomebombasimple .notaschicasbombasimple .notachica .volanta { padding: 0; }
+  .notahomebombasimple .notaschicasbombasimple .notachica .titulo { padding: 0; font-size: 17px; line-height: 21px; }
+  .notahomebombasimple .notaschicasbombasimpleosc { padding-top: 15px; }
+  .notahomebombasimple .notaschicasbombasimpleosc .notachica { padding-bottom: 15px; margin-bottom: 15px; border-bottom: 0; height: 150px; position: relative; padding: 0; }
+  .notahomebombasimple .notaschicasbombasimpleosc .notachica .titulo { font-size: 16px; line-height: 20px; }
+  .notahomebombasimple .notaschicasbombasimpleosc .notachica .tiemposhare { padding-left: 10px; padding-right: 10px; } }
 
 @media screen and (min-width: 1024px) { #compartir { width: 600px; }
   #compartir ul { width: 600px; }
@@ -138,6 +177,7 @@
   .cabezalmobile .botonmenuclose { background-size: 14px !important; }
   .cabezalmobile .botonbuscador { background-size: 14px; background-color: white; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; }
   .cabezalmobilenv2 { width: 960px; margin: 0 auto; border-top: 2px solid #1c1c1c; }
+  .alerta { width: 960px; margin: 0 auto 40px auto; }
   .bloquenotas, .objetoexplora { width: 960px; }
   .desarrollonota { width: 600px; float: left; }
   .objetosmedio { width: 320px; float: right; }
@@ -183,9 +223,37 @@
   .suscripcionwrapper .botonessocial { width: 100%; }
   .suscripcionwrapper .botonessocial .botoningresafb { width: 100%; }
   .suscripcionwrapper .botonessocial .botoningresatw { width: 100%; }
-  .alertaswrapper .bloquecontenido { max-width: 100%; padding-left: 30px; padding-right: 30px; } }
+  .alertaswrapper .bloquecontenido { max-width: 100%; padding-left: 30px; padding-right: 30px; }
+  .notavideohome { display: -webkit-flex; display: flex; -webkit-flex-wrap: wrap; flex-wrap: wrap; padding: 10px; }
+  .notavideohome .temanotavideo { flex: 0 0 100%; -webkit-flex: 0 0 100%; }
+  .notavideohome .copeteobjeto { order: 1; -webkit-order: 1; }
+  .notavideohome .elvideo { order: 3; -webkit-order: 3; width: calc(100% - 300px); padding-right: 20px; padding-left: 10px; }
+  .notavideohome .notagrande { order: 2; -webkit-order: 2; width: 100%; border: 0; padding-right: 10px; }
+  .notavideohome .notasimple { order: 4; -webkit-order: 4; width: 300px; padding-top: 0; padding-left: 0; }
+  .notavideohome .notavideohomeespecial { order: 5; -webkit-order: 5; margin-bottom: -30px; }
+  .notavideohome .notavideohomeespecial .notasimpleesp { height: 140px; }
+  .notahomebomba { padding: 10px; }
+  .notahomebomba .notagrande { width: 50%; float: left; border-right: 1px solid #4b4b4b; padding-right: 20px; border-bottom: 0; padding-bottom: 0; }
+  .notahomebomba .notagrande .titulo { margin-bottom: 10px; font-size: 34px; font-weight: 700; line-height: 40px; }
+  .notahomebomba .notagrande .bajada { width: 100%; float: left; }
+  .notahomebomba .notagrande .imagen { width: 100%; float: left; margin-bottom: 10px; }
+  .notahomebomba .notagrande .tiemposhare { width: 100%; float: left; position: relative; bottom: unset; right: unset; }
+  .notahomebomba .notagrandeultima { padding-left: 20px; padding-right: 10px; border: 0; margin-bottom: 30px; }
+  .notahomebomba .masnotasbomba { margin-bottom: 30px; }
+  .notahomebomba .masnotasbomba .notamasgrande { width: calc(100% - 315px); height: 330px; border-right: 1px solid #4b4b4b; border-bottom: 0; float: left; padding-right: 20px; padding-top: 0; margin-bottom: 0; }
+  .notahomebomba .masnotasbomba .notamasgrande .imagen { margin-bottom: 0; }
+  .notahomebomba .masnotasbomba .notamasmediana { width: 305px; float: right; border: 0; padding-bottom: 10px; position: relative; }
+  .notahomebomba .masnotasbomba .notamasmediana .titulo { font-size: 17px; line-height: 21px; }
+  .notahomebomba .masnotasbomba .notamasmediana .tiemposhare { width: 285px; position: absolute; bottom: 40px; }
+  .notahomebomba .masnotasbomba .notasmassimples { padding-top: 30px; border-top: 1px solid #4b4b4b; width: 100%; }
+  .notahomebomba .masnotasbomba .notasmassimples .notamassimple { width: 50%; min-height: 130px; height: auto; float: left; border-bottom: 0; border-right: 1px solid #4b4b4b; padding-right: 20px; padding-bottom: 0; margin-bottom: 0; }
+  .notahomebomba .masnotasbomba .notasmassimples .notamassimple .titulo { font-size: 17px; line-height: 21px; }
+  .notahomebomba .masnotasbomba .notasmassimples .notamassimpleultima { padding-left: 20px; border-right: 0; }
+  .notahomebombasimple .notagrande { height: 710px; overflow: hidden; }
+  .notahomebombasimple .notagrande .titulo { font-size: 42px; line-height: 46px; font-weight: 700; } }
 
-@media screen and (min-width: 1300px) { .bloquenotas, .objetoexplora { width: 1280px; }
+@media screen and (min-width: 1300px) { .alerta { width: 1280px; }
+  .bloquenotas, .objetoexplora { width: 1280px; }
   .cabezalgrande { width: 1280px; }
   .cabezalmobilenv2 { width: 1280px; }
   .desarrollonota { width: 880px; float: left; }
@@ -206,4 +274,28 @@
   .alertaswrapper .bloquecontenido .items .item .textos .titulo { font-size: 22px; line-height: 24px; }
   .alertaswrapper .bloquecontenido .items .item .textos .bajada { font-size: 16px; }
   .alertaswrapper .bloquecontenido .items .item .boton { margin-top: 25px; }
-  .alertaswrapper .bloquecontenido .items .item .btn-suscripto { margin-top: 25px; } }
+  .alertaswrapper .bloquecontenido .items .item .btn-suscripto { margin-top: 25px; }
+  .notavideohome .copeteobjeto { flex: 0 0 100%; -webkit-flex: 0 0 100%; margin-bottom: 20px; }
+  .notavideohome .notagrande { width: 300px; height: 390px; position: relative; padding-top: 0; }
+  .notavideohome .notagrande .titulo { font-size: 28px; line-height: 32px; }
+  .notavideohome .notagrande .tiemposhare { width: calc(100% - 20px); position: absolute; bottom: 0; }
+  .notavideohome .elvideo { width: calc(100% - 600px); }
+  .notavideohome .notasimple { position: relative; height: 390px; }
+  .notavideohome .notasimple .tiemposhare { width: calc(100% - 20px); position: absolute; bottom: 0; }
+  .notavideohome .notavideohomeespecial { margin-bottom: 0; }
+  .notavideohome .notavideohomeespecial .notasimpleesp { height: auto; width: calc(25% - 7px); padding-right: 15px; padding-top: 0; margin-right: 7px; padding-bottom: 0; border-bottom: 0; border-right: 1px solid #4b4b4b; }
+  .notavideohome .notavideohomeespecial .notasimpleesp .titulo { min-height: 75px; }
+  .notavideohome .notavideohomeespecial .ultima { border: 0; }
+  .notahomebomba .masnotasbomba .notamasgrande { width: 50%; padding-top: 0; padding-bottom: 0; }
+  .notahomebomba .masnotasbomba .notamasgrande .imagen { width: 50%; margin-bottom: 0; }
+  .notahomebomba .masnotasbomba .notamasgrande .bajada { width: calc(50% - 30px); }
+  .notahomebomba .masnotasbomba .notamasgrande .titulo { width: calc(50% - 30px); }
+  .notahomebomba .masnotasbomba .notamasgrande .tiemposhare { width: calc(50% - 30px); bottom: 30px; }
+  .notahomebomba .masnotasbomba .notamasmediana { width: 25%; float: left; padding-left: 20px; padding-right: 20px; padding-bottom: 0; border-right: 1px solid #4b4b4b; }
+  .notahomebomba .masnotasbomba .notamasmediana .titulo { font-size: 17px; line-height: 21px; }
+  .notahomebomba .masnotasbomba .notamasmediana .tiemposhare { bottom: 30px; }
+  .notahomebomba .masnotasbomba .notasmassimples { width: 25%; padding-left: 20px; padding-right: 10px; border-top: 0; padding-top: 0; }
+  .notahomebomba .masnotasbomba .notasmassimples .notamassimple { width: 100%; padding-left: 0; padding-right: 0; height: 155px; margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid #4b4b4b; border-right: 0; }
+  .notahomebomba .masnotasbomba .notasmassimples .notamassimple .titulo { font-size: 17px; line-height: 21px; }
+  .notahomebomba .masnotasbomba .notasmassimples .notamassimple .tiemposhare { bottom: 30px; }
+  .notahomebomba .masnotasbomba .notasmassimples .notamassimpleultima { margin-bottom: 0; padding-bottom: 0; border-bottom: 0; } }

@@ -1,0 +1,255 @@
+@import "_reset.scss";
+@import "_fonts.scss";
+@import "_variables.scss";
+@import "_generales.scss";
+
+
+.notahomebomba{
+	background-color: $fondoObjetos;
+	width: 100%;
+	float: left;
+	margin-bottom: 30px;
+	.temanotavideo{
+		font-size: 30px;
+		line-height: 35px;
+		color: white;
+		font-family: "Source Serif Pro", serif;
+		letter-spacing: -1px;
+		margin-top: 20px;
+		margin-left: 10px;
+		margin-bottom: 30px;
+		font-weight: 700;
+		border-bottom: 3px solid $colorTerciario;
+		display: table;
+	}
+    .copeteobjeto{
+		background-color: $colorTerciario;
+		height: 30px;
+		line-height: 30px;
+        color: $colorPrincipal;
+    	font-weight: 700;
+    	margin: 10px;
+    	text-transform: uppercase;
+    	padding-left: 10px;
+    	padding-right: 10px;
+    	display: table;
+    	span{
+    		color: white;
+    	}
+    }
+    .notasgrandes{
+        width: 100%;
+        display: table;
+    }
+    .notagrande{
+    	width: 100%;
+    	padding: 10px 10px 40px 10px;
+		margin-bottom: 30px;
+    	border-bottom: 1px solid #4b4b4b;
+    	float: left;
+		.copete{
+    		color: $colorTerciario;
+    		font-weight: 700;
+    		text-transform: uppercase;
+    		width: 100%;
+    		padding-bottom: 3px;
+    	}
+    	.titulo{
+    		width: 100%;
+    		font-family: "Source Serif Pro";
+    		font-size: 27px;
+    		line-height: 33px;
+    		letter-spacing: -0.75px;
+    		font-weight: 600;
+            margin-bottom:10px;
+    		a{
+    			color: white;
+    		}
+    	}
+    	.bajada{
+    		width: 100%;
+    		font-size: 16px;
+    		line-height: 21px;
+            margin-bottom: 20px;
+    		a{
+    			color: white;
+    		}
+    	}
+        .imagen{
+            width: 100%;
+            margin-bottom: 15px;
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+        .tiemposhare{
+            padding: 0;
+            .share {
+                background-image: url(../images/share-blanco.png);
+            }
+        }
+    }
+    .notagrandeultima{
+        border:0;
+        margin-bottom: 0;
+    }
+    .masnotasbomba{
+        width: 100%;
+        display: table;
+        border-top: 1px solid #4b4b4b;
+        padding-top: 30px;
+        margin-bottom: 40px;
+        .notamasgrande{
+            width: 100%;
+            display: table;
+            padding: 10px 10px 40px 10px;
+            border-bottom: 1px solid #4b4b4b;
+            margin-bottom: 40px;
+            .imagen{
+                width: 100%;
+                margin-bottom: 5px;
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+                .imagenwide{
+                    display: block;
+                }
+                .imagencuadrada{
+                    display: none;
+                }
+            }
+            .volanta{
+                color: #ff9933;
+                font-weight: 700;
+                text-transform: uppercase;
+                width: 100%;
+                padding-bottom: 3px;
+                span{
+                    color: white;
+                }
+            }
+            .titulo{
+                font-size: 19px;
+                font-family: 'Source Serif Pro', serif;
+                line-height: 23px;
+                color: white;
+                font-weight: 600;
+                letter-spacing: -0.5px;
+                margin-bottom: 10px;
+                width: 100%;
+                a{
+                    color: white;
+                }
+            }
+            .bajada{
+                font-size: 16px;
+                line-height: 21px;
+                font-weight: 400;
+                margin-bottom: 20px;
+                width: 100%;
+                a{
+                    color: white;
+                }
+            }
+            .tiemposhare{
+                padding-left: 0;
+                padding-right: 0;
+                .share {
+                    background-image: url(../images/share-blanco.png);
+                }
+            }
+        }
+        .notamasmediana{
+            width: 100%;
+            display: table;
+            padding: 0px 10px 40px 10px;
+            border-bottom: 1px solid #4b4b4b;
+            margin-bottom: 40px;
+            .volanta{
+                color: #ff9933;
+                font-weight: 700;
+                text-transform: uppercase;
+                width: 100%;
+                padding-bottom: 3px;
+                span{
+                    color: white;
+                }
+            }
+            .titulo{
+                font-size: 19px;
+                font-family: 'Source Serif Pro', serif;
+                line-height: 23px;
+                color: white;
+                font-weight: 600;
+                letter-spacing: -0.5px;
+                margin-bottom: 10px;
+                width: 100%;
+                a{
+                    color: white;
+                }
+            }
+            .imagen{
+                width: 100%;
+                margin-bottom: 15px;
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            .tiemposhare{
+                padding-left: 0;
+                padding-right: 0;
+                .share {
+                    background-image: url(../images/share-blanco.png);
+                }
+            }
+        }
+        .notasmassimples{
+            width: 100%;
+            display: table;
+            .notamassimple{
+                width: 100%;
+                padding: 0px 10px 40px 10px;
+                border-bottom: 1px solid #4b4b4b;
+                margin-bottom: 40px;
+                .volanta{
+                    color: #ff9933;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    width: 100%;
+                    padding-bottom: 3px;
+                    span{
+                        color: white;
+                    }
+                }
+                .titulo{
+                    font-size: 19px;
+                    font-family: 'Source Serif Pro', serif;
+                    line-height: 23px;
+                    color: white;
+                    font-weight: 600;
+                    letter-spacing: -0.5px;
+                    margin-bottom: 10px;
+                    width: 100%;
+                    a{
+                        color: white;
+                    }
+                }
+                .tiemposhare{
+                    padding-left: 0;
+                    padding-right: 0;
+                    .share {
+                        background-image: url(../images/share-blanco.png);
+                    }
+                }
+            }
+            .notamassimpleultima{
+                padding-bottom: 0;
+                margin-bottom: 0;
+                border-bottom: 0;
+            }
+        }
+    }
+}

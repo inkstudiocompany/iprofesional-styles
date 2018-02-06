@@ -297,74 +297,72 @@ body { text-align: left; color: #1c1c1c; background-color: white; font-family: '
 
 .notamedianaslider .swiper-button-prev { background-image: url(../images/flecha-izq.png); background-size: 20px; }
 
-.buscadorwrapper { width: 100%; padding-left: 10px; padding-right: 10px; margin: 0 auto; padding-bottom: 20px; float: left; }
+.notavideohome { background-color: #373737; width: 100%; float: left; margin-bottom: 30px; }
 
-.buscadorwrapper .titulobuscador { font-weight: 600; font-size: 18px; letter-spacing: -0.5px; width: 100%; }
+.notavideohome .temanotavideo { font-size: 30px; line-height: 35px; color: white; font-family: "Source Serif Pro", serif; letter-spacing: -1px; margin-top: 20px; margin-left: 10px; margin-bottom: 30px; font-weight: 700; border-bottom: 3px solid #ff9933; display: table; }
 
-.buscadorwrapper .palabraclave { font-weight: 700; font-size: 26px; letter-spacing: -0.5px; width: 100%; margin-bottom: 10px; color: #20c0ab; }
+.notavideohome .copeteobjeto { background-color: #ff9933; height: 30px; line-height: 30px; color: #1c1c1c; font-weight: 700; margin: 10px; text-transform: uppercase; padding-left: 10px; padding-right: 10px; display: table; }
 
-.buscadorwrapper .cantidadresultados { width: 100%; padding: 10px; font-weight: 600; background-color: rgba(0, 0, 0, 0.05); float: left; margin-bottom: 10px; }
+.notavideohome .copeteobjeto span { color: white; }
 
-.buscadorwrapper .cantidadresultados .colizq { float: left; }
+.notavideohome .notagrande { width: 100%; padding: 10px 10px 40px 10px; margin-bottom: 30px; border-bottom: 1px solid #4b4b4b; float: left; }
 
-.buscadorwrapper .cantidadresultados .colder { float: right; }
+.notavideohome .notagrande .copete { color: #ff9933; font-weight: 700; text-transform: uppercase; width: 100%; padding-bottom: 3px; }
 
-.buscadorwrapper .cantidadresultados .colder a { height: 20px; color: #1c1c1c; }
+.notavideohome .notagrande .titulo { width: 100%; font-family: "Source Serif Pro"; font-size: 23px; line-height: 29px; letter-spacing: -0.25px; font-weight: 700; }
 
-.buscadorwrapper .cantidadresultados .colder .flechaizq { background-image: url(../images/flecha-izq.png); background-repeat: no-repeat; background-position: left; background-size: 20px; font-size: 12px; line-height: 19px; margin-right: 15px; float: left; height: 20px; padding-left: 25px; font-weight: 700; }
+.notavideohome .notagrande .titulo a { color: white; }
 
-.buscadorwrapper .cantidadresultados .colder .flechaizq a { height: 20px; display: block; color: #1c1c1c; }
+.notavideohome .notagrande .bajada { width: 100%; font-size: 16px; line-height: 21px; margin-bottom: 20px; }
 
-.buscadorwrapper .cantidadresultados .colder .flechader { background-image: url(../images/flecha-der.png); background-repeat: no-repeat; background-position: right; background-size: 20px; font-size: 12px; line-height: 19px; float: left; height: 20px; padding-right: 25px; font-weight: 700; }
+.notavideohome .notagrande .bajada a { color: white; }
 
-.buscadorwrapper .cantidadresultados .colder .flechader a { height: 20px; display: block; color: #1c1c1c; }
+.notavideohome .notagrande .tiemposhare { width: 100%; padding-left: 0; padding-right: 0; }
 
-.buscadorwrapper .opcioneslistado { width: 100%; float: left; margin-bottom: 30px; padding-bottom: 12px; border-bottom: 1px solid rgba(0, 0, 0, 0.15); }
+.notavideohome .notagrande .tiemposhare .share { background-image: url(../images/share-blanco.png); }
 
-.buscadorwrapper .opcioneslistado .ordenlistado { text-align: right; font-weight: 600; float: right; line-height: 30px; }
+.notavideohome .elvideo { float: left; width: 100%; }
 
-.buscadorwrapper .opcioneslistado .ordenlistado span { font-weight: 400; }
+.notavideohome .elvideo .videowrapper { position: relative; padding-bottom: 56.25%; /* 16:9 */ padding-top: 25px; height: 0; }
 
-.buscadorwrapper .opcioneslistado .ordenlistado a { color: #1c1c1c; text-decoration: underline; }
+.notavideohome .elvideo .videowrapper iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
 
-.buscadorwrapper .opcioneslistado .botonfiltro { float: left; background-color: rgba(47, 47, 47, 0.6); background-image: url(../images/filtro.png); background-position: 7px; background-repeat: no-repeat; background-size: 14px; font-weight: 600; text-transform: uppercase; text-indent: 27px; height: 30px; line-height: 30px; padding-right: 15px; color: white; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; font-size: 13px; }
+.notavideohome .elvideo img { width: 100%; height: auto; }
 
-.buscadorwrapper .opcioneslistado .botonfiltro a { color: white; display: block; }
+.notavideohome .notasimple { padding: 10px; margin-bottom: 30px; float: left; }
 
-.buscadorwrapper .listaresultados { width: 100%; float: left; }
+.notavideohome .notasimple .imagen { width: 100%; margin-bottom: 5px; }
 
-.buscadorwrapper .listaresultados .item { width: 100%; margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+.notavideohome .notasimple .imagen img { width: 100%; height: auto; }
 
-.buscadorwrapper .listaresultados .item .fechaitem { width: 100%; font-weight: 600; margin-bottom: 5px; color: gray; }
+.notavideohome .notasimple .copete { color: #ff9933; font-weight: 700; text-transform: uppercase; width: 100%; padding-bottom: 3px; }
 
-.buscadorwrapper .listaresultados .item .fechaitem span { color: #20c0ab; }
+.notavideohome .notasimple .titulo { width: 100%; font-family: "Source Serif Pro"; font-size: 19px; line-height: 23px; letter-spacing: -0.25px; font-weight: 700; }
 
-.buscadorwrapper .listaresultados .item .tituloitem { width: 100%; font-weight: 400; font-size: 19px; line-height: 24px; font-family: 'Source Serif Pro', serif; letter-spacing: -0.5px; margin-bottom: 5px; }
+.notavideohome .notasimple .titulo a { color: white; }
 
-.buscadorwrapper .listaresultados .item .tituloitem a { color: #1c1c1c; }
+.notavideohome .notasimple .bajada { width: 100%; font-size: 16px; line-height: 21px; margin-bottom: 20px; }
 
-.buscadorwrapper .listaresultados .item .tituloitem strong { color: black; font-weight: 700; }
+.notavideohome .notasimple .bajada a { color: white; }
 
-.buscadorwrapper .listaresultados .item .bajadaitem { width: 100%; }
+.notavideohome .notasimple .tiemposhare { width: 100%; padding-left: 0; padding-right: 0; }
 
-.buscadorwrapper .listaresultados .item .bajadaitem a { color: #1c1c1c; }
+.notavideohome .notasimple .tiemposhare .share { background-image: url(../images/share-blanco.png); }
 
-.filtroderesultados { width: 270px; float: left; }
+.notavideohome .notavideohomeespecial { width: 100%; display: table; border-top: 1px solid #4b4b4b; padding-top: 30px; margin-bottom: -20px; }
 
-.filtroderesultados .columna { width: 100%; float: left; }
+.notavideohome .notavideohomeespecial .notasimpleesp { padding: 10px; margin-bottom: 20px; padding-bottom: 30px; float: left; border-bottom: 1px solid #4b4b4b; }
 
-.filtroderesultados .tipofiltro { width: 100%; float: left; margin-bottom: 25px; }
+.notavideohome .notavideohomeespecial .notasimpleesp .copete { color: #ff9933; font-weight: 700; text-transform: uppercase; width: 100%; padding-bottom: 3px; }
 
-.filtroderesultados .tipofiltro .titulofiltro { width: 100%; font-weight: 700; text-transform: uppercase; color: #20c0ab; line-height: 30px; float: left; margin-bottom: 5px; border-bottom: 1px solid #4a4a4a; }
+.notavideohome .notavideohomeespecial .notasimpleesp .titulo { width: 100%; font-family: "Source Serif Pro"; font-size: 17px; line-height: 21px; font-weight: 600; letter-spacing: -0.5px; margin-bottom: 10px; }
 
-.filtroderesultados .tipofiltro .itemsfiltro { width: 100%; float: left; font-weight: 600; line-height: 25px; color: white; }
+.notavideohome .notavideohomeespecial .notasimpleesp .titulo a { color: white; }
 
-.filtroderesultados .tipofiltro .itemsfiltro ul li { width: 100%; }
+.notavideohome .notavideohomeespecial .notasimpleesp .imagen { width: 100%; margin-bottom: 10px; }
 
-.filtroderesultados .tipofiltro .itemsfiltro ul li a { color: white; display: block; }
+.notavideohome .notavideohomeespecial .notasimpleesp .imagen img { width: 100%; height: auto; }
 
-.filtroderesultados .tipofiltro .itemsfiltromitad { width: 100%; float: left; font-weight: 600; line-height: 25px; color: white; }
+.notavideohome .notavideohomeespecial .notasimpleesp .tiemposhare { padding: 0; }
 
-.filtroderesultados .tipofiltro .itemsfiltromitad ul li { width: 50%; float: left; }
-
-.filtroderesultados .tipofiltro .itemsfiltromitad ul li a { color: white; display: block; }
+.notavideohome .notavideohomeespecial .notasimpleesp .tiemposhare .share { background-image: url(../images/share-blanco.png); }
