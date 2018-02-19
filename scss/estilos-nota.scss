@@ -124,6 +124,10 @@
 		font-weight: 600;
 		margin-bottom: 25px;
 		@include widePadding;
+		a{
+			color: $colorPrincipal;
+			text-decoration: underline;
+		}
 	}
 	.fecha{
 		@include widePadding;
@@ -320,6 +324,18 @@
 			width: $wide;
 		}
 	}
+}
+.page404{
+	text-align: center;
+	width: 100% !important;
+}
+.separador1px{
+	width: 100%;
+	height: 1px;
+	line-height: 0;
+	margin-bottom: 40px;
+	background-color: $colorSeparadores;
+	display: table;
 }
 .objetosmedio{
 	width: $wide;

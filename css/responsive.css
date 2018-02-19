@@ -15,7 +15,7 @@
 @media screen and (min-width: 720px) { .box { height: 340px; width: 300px; float: left; margin-left: 10px; margin-right: 10px; margin-bottom: 30px; overflow: hidden; border-bottom: 1px solid #d4d6d7; }
   .boxdoble { height: 340px; width: 620px; float: left; margin-left: 10px; margin-right: 10px; margin-bottom: 30px; overflow: hidden; border-bottom: 1px solid #d4d6d7; }
   .bannerdoble { width: 620px; margin-bottom: 30px; border-bottom: 1px solid #d4d6d7; padding-bottom: 15px !important; }
-  .bloquenotas, .desarrollonota, .objetosmedio, .objetoexplora { width: 620px; }
+  .bloquenotas, .desarrollonota, .objetosmedio, .objetoexplora { width: 640px; }
   .contenido .bloquenotas .titulobloque { margin-left: 10px; text-indent: 0px; }
   .alerta { height: 40px; }
   .alerta .tituloalerta { line-height: 40px; }
