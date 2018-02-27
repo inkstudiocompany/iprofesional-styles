@@ -297,6 +297,18 @@ body { text-align: left; color: #1c1c1c; background-color: white; font-family: '
 
 .notamedianaslider .swiper-button-prev { background-image: url(../images/flecha-izq.png); background-size: 20px; }
 
+.bannervertical { width: 100%; padding-left: 10px; padding-right: 10px; margin-bottom: 40px; display: table; background-color: whitesmoke; padding-bottom: 15px; padding-top: 15px; }
+
+.bannervertical .titulo { font-size: 10px; text-align: center; margin-bottom: 10px; text-transform: uppercase; opacity: 0.7; }
+
+.bannervertical .elbanner { width: 100%; text-align: center; }
+
+.bannerverticalnota { width: 100%; padding-left: 10px; padding-right: 10px; margin-bottom: 40px; display: table; background-color: whitesmoke; padding-bottom: 15px; padding-top: 15px; }
+
+.bannerverticalnota .titulo { font-size: 10px; text-align: center; margin-bottom: 10px; text-transform: uppercase; opacity: 0.7; }
+
+.bannerverticalnota .elbanner { width: 100%; text-align: center; }
+
 .rsswrapper { width: 100%; padding-left: 10px; padding-right: 10px; margin: 0 auto; padding-bottom: 20px; float: left; }
 
 .rsswrapper .titulosrss { font-weight: 700; font-size: 26px; letter-spacing: -0.75px; width: 100%; margin-bottom: 20px; }

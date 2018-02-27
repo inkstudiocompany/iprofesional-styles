@@ -147,7 +147,7 @@
 		}
 	}
 	.objetozoom{
-		width: $doscolumnas - 20px;
+		width: $doscolumnas;
 		height: auto;
 		padding-top: 20px;
 		padding-bottom: 20px;
@@ -239,6 +239,17 @@
 		background-color: transparent;
 		float: left;
 		@include separacionObjetosChico;
+	}
+	.bannervertical{
+		width: 300px;
+		height: 710px;
+		padding: 0;
+		background-color: transparent;
+		float: left;
+		margin-left: 10px;
+		margin-right: 10px;
+		margin-bottom: 30px;
+		border-bottom: 1px solid #d4d6d7;
 	}
 	.bannerwide{
 		width: 100%;
@@ -372,9 +383,11 @@
 			}
 		}
 		.notasdobles{
-			width: 60%;
+			width: calc(60% + 10px);
+			margin-right: -10px;
 			margin-top: 0;
 			float: left;
+			overflow: hidden;
 			.notadoble{
 				width: 50%;
 			}
@@ -881,7 +894,7 @@
 		}
 	}
 	.objetoespecial{
-		width: $doscolumnas - 20px;
+		width: $doscolumnas;
 		height: 340px;
 		float: left;
 	}
@@ -1234,6 +1247,9 @@
 				font-weight: 700;
 			}
 		}
+	}
+	.bannerverticalnota{
+		background-color: transparent;
 	}
 }
 @media screen and (min-width: $mq_cuatrocolumnas){
