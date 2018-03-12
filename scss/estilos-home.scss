@@ -233,6 +233,10 @@
 	}
 	.imagen{
 		@include imagenChica;
+		img{
+			height: 75px;
+		}
+
 	}
 }
 .playeraudio{
@@ -549,6 +553,10 @@
 			position: absolute;
 			width: 100%;
 			top: 0;
+			img{
+				height: 250px;
+				object-fit: cover;
+			}
 		}
 	}
 	.textos{
@@ -612,6 +620,7 @@
 			width: 100%;
 			height: auto;
 			background-color: black;
+			object-fit: cover;
 		}
 	}
 }
@@ -661,6 +670,9 @@
 		}
 		.imagen{
 			@include imagenChica;
+			img{
+				height: 75px;
+			}
 		}
 	}
 }
@@ -788,6 +800,10 @@
 			.imagen{
 				@include imagenWide;
 				margin-bottom: 0;
+				img{
+					height: 80px;
+					object-fit: cover;
+				}
 			}
 		}
 		.nombre{
@@ -975,6 +991,11 @@
 		.imagen{
 			@include imagenWide;
 			margin-bottom: 0;
+			img{
+				min-width: 100%;
+				min-height: 360px;
+				object-fit: cover;
+			}
 		}
 		.textos{
 			@include widePadding;

@@ -53,6 +53,8 @@ body { text-align: left; color: #1c1c1c; background-color: white; font-family: '
 
 .cabezalmobile .logotipoblanco { width: calc(100% - 80px); height: 32px; background-image: url(../images/logotipo-iprofesional_blanco.png); background-repeat: no-repeat; background-position: center; background-size: contain; float: left; display: none; }
 
+.cabezalmobile .logotipoblanco a { display: block; width: 100%; height: 32px; }
+
 .cabezalmobile .botonbuscador { width: 30px; height: 30px; margin-right: 10px; float: left; background-image: url(../images/icono-buscar.png); background-repeat: no-repeat; background-position: center; background-size: 20px; -webkit-transition: all 0.3s ease-out 0s; -moz-transition: all 0.3s ease-out 0s; -ms-transition: all 0.3s ease-out 0s; -o-transition: all 0.3s ease-out 0s; transition: all 0.3s ease-out 0s; }
 
 .cabezalmobile .botonbuscador:hover { opacity: 0.7; }
@@ -67,13 +69,15 @@ body { text-align: left; color: #1c1c1c; background-color: white; font-family: '
 
 .botonmenuclose { background-image: url(../images/cerrar-menu.png) !important; background-size: 18px !important; background-color: #FFFFFF !important; }
 
-.cabezalgrande { display: none; width: 100%; padding-left: 10px; padding-right: 10px; height: 100px; padding-top: 23px; position: relative; top: 65px; margin: 10px auto 25px auto; }
+.cabezalgrande { display: none; width: 100%; height: 125px; padding-top: 25px; position: relative; top: 65px; margin: 10px auto 25px auto; }
 
-.cabezalgrande .bannerizq { width: 180px; height: 70px; float: left; }
+.cabezalgrande .bannerizq { width: 300px; height: 100px; float: left; }
 
-.cabezalgrande .bannerder { width: 180px; height: 70px; float: right; }
+.cabezalgrande .bannerder { width: 300px; height: 100px; float: right; }
 
-.cabezalgrande .logogrande { width: calc(100% - 360px); height: 60px; float: left; margin-top: 10px; background-image: url(../images/logotipo-iprofesional.png); background-repeat: no-repeat; background-size: 250px; background-position: center; }
+.cabezalgrande .bannerder > * { float: right; }
+
+.cabezalgrande .logogrande { width: calc(100% - 600px); height: 90px; float: left; margin-top: 5px; margin-bottom: 5px; background-image: url(../images/logotipo-iprofesional.png); background-repeat: no-repeat; background-size: 280px; background-position: center; }
 
 .cabezalmobilenv2 { width: 100%; border-bottom: 1px solid #d4d6d7; padding-top: 7px; padding-bottom: 7px; background-color: white; display: table; position: relative; top: 65px; }
 
@@ -309,6 +313,8 @@ body { text-align: left; color: #1c1c1c; background-color: white; font-family: '
 
 .bannerverticalnota .elbanner { width: 100%; text-align: center; }
 
+img.lazy { width: 300px; height: 168px; display: block; }
+
 .desarrollonota { width: 100%; margin: 0 auto; padding-bottom: 20px; }
 
 .desarrollonota .volanta { color: #20c0ab; font-weight: 700; font-size: 16px; text-transform: uppercase; margin-bottom: 15px; width: 100%; padding-left: 10px; padding-right: 10px; }
@@ -367,7 +373,7 @@ body { text-align: left; color: #1c1c1c; background-color: white; font-family: '
 
 .desarrollonota .autoreldato .fotoautor { width: 65px; height: 65px; background-color: #20c0ab; float: left; margin-right: 15px; -webkit-border-radius: 100px; -moz-border-radius: 100px; border-radius: 100px; overflow: hidden; }
 
-.desarrollonota .autoreldato .fotoautor img { width: 100%; height: auto; }
+.desarrollonota .autoreldato .fotoautor img { width: 100%; height: 65px; object-fit: cover; }
 
 .desarrollonota .autoreldato .nombreautor { margin-bottom: 15px; margin-top: 8px; font-size: 16px; }
 
@@ -425,7 +431,7 @@ body { text-align: left; color: #1c1c1c; background-color: white; font-family: '
 
 .desarrollonota .notachica .imagen { width: 20%; margin-right: 10px; overflow: hidden; float: right; line-height: 0; position: relative; }
 
-.desarrollonota .notachica .imagen img { width: 100%; height: auto; }
+.desarrollonota .notachica .imagen img { width: 100%; height: auto; object-fit: cover; }
 
 .desarrollonota .notachica .imagen img { margin: 0; }
 
@@ -461,7 +467,7 @@ body { text-align: left; color: #1c1c1c; background-color: white; font-family: '
 
 .lomasleido .items .itemmasleido .imagen { width: 28%; max-width: 120px; margin-right: 15px; float: left; }
 
-.lomasleido .items .itemmasleido .imagen img { width: 100%; height: auto; }
+.lomasleido .items .itemmasleido .imagen img { width: 100%; height: 110px; object-fit: cover; }
 
 .lomasleido .items .itemmasleido .titulo { width: calc(72% - 15px); float: left; font-size: 20px; line-height: 25px; font-family: "Source Serif Pro"; letter-spacing: -0.5px; font-weight: 600; }
 
@@ -493,7 +499,7 @@ body { text-align: left; color: #1c1c1c; background-color: white; font-family: '
 
 .massobreseccion .notachica .imagen { width: 20%; margin-right: 10px; overflow: hidden; float: right; line-height: 0; position: relative; }
 
-.massobreseccion .notachica .imagen img { width: 100%; height: auto; }
+.massobreseccion .notachica .imagen img { width: 100%; height: auto; object-fit: cover; }
 
 .tiemposhare { width: 100%; display: table; }
 

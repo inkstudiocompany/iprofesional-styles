@@ -40,6 +40,7 @@
   .notaschicas .notachica .titulo { width: 100%; padding-left: 0; padding-right: 0; font-size: 17px; line-height: 21px; }
   .notaschicas .notachica .tituloangosto { padding: 0; width: calc(80% - 10px); font-size: 17px; line-height: 21px; }
   .notaschicas .notachica .imagen { margin-left: 10px; margin-right: 0; }
+  .notaschicas .notachica .imagen img { height: 60px; }
   .notaschicas .notachica .playeraudio { width: 100%; padding-left: 0; padding-right: 0; }
   .notaschicas .notachica .tiemposhare { position: absolute; bottom: 5px; }
   .notamediana { padding-bottom: 20px; margin-bottom: 30px; }
@@ -108,6 +109,7 @@
   .lomasleido .items { column-count: 2; -webkit-column-count: 2; /* Chrome, Safari, Opera */ -moz-column-count: 2; /* Firefox */ column-gap: 20px; -webkit-column-gap: 20px; /* Chrome, Safari, Opera */ -moz-column-gap: 20px; /* Firefox */ display: block; }
   .lomasleido .items .itemmasleido { width: 100%; height: 175px; display: inline-block; }
   .lomasleido .items .itemmasleido .titulo { font-size: 17px; line-height: 21px; }
+  .lomasleido .items .itemmasleido .imagen img { height: 85px; }
   .massobreseccion .titulomasseccion { margin-left: 10px; text-indent: 0px; }
   .objetosinferiores .objetoexplora .tituloseccion { margin-left: 0px; text-indent: 0px; }
   .objetofrase { border: 0; }
@@ -145,6 +147,7 @@
   .notahomebomba .masnotasbomba .notamasgrande .imagen { width: calc(50% - 10px); float: right; }
   .notahomebomba .masnotasbomba .notamasgrande .imagen .imagenwide { display: none; }
   .notahomebomba .masnotasbomba .notamasgrande .imagen .imagencuadrada { display: block; }
+  .notahomebomba .masnotasbomba .notamasgrande .imagen .imagencuadrada img { height: 300px; object-fit: cover; }
   .notahomebomba .masnotasbomba .notamasgrande .volanta { width: calc(50% - 10px); float: left; margin-bottom: 10px; }
   .notahomebomba .masnotasbomba .notamasgrande .titulo { width: calc(50% - 10px); float: left; }
   .notahomebomba .masnotasbomba .notamasgrande .bajada { width: calc(50% - 10px); float: left; }
@@ -191,9 +194,11 @@
   .objetolomasleido .items .item .textos { padding: 0; width: calc(100% - 100px); }
   .objetolomasleido .items .item .textos .titulo { font-size: 16px; }
   .objetolomasleido .items .item .imagen { width: 60px; }
+  .objetolomasleido .items .item .imagen img { height: 60px; }
   .objetovideo .video video { height: auto; }
   .objetorecreo .notagrande { width: 50%; }
   .objetorecreo .notagrande .imagen { max-height: 245px; }
+  .objetorecreo .notagrande .imagen img { height: 245px; min-height: 245px; }
   .objetorecreo .notasdobles { width: 50%; }
   .objetorecreo .notasdobles .notadoble .imagen { display: none; }
   .objetoexplora .listado ul li { width: 50%; float: left; }
@@ -214,6 +219,9 @@
   .buscadorwrapper .listaresultados .item { min-height: 150px; }
   .tituloprincipalseccion { font-size: 40px; text-indent: 0; margin-left: 10px; margin-bottom: 45px; }
   .suscripcionwrapper .bloquecontenido { max-width: 100%; padding-left: 30px; padding-right: 30px; }
+  .suscripcionwrapper .bloquecontenido .cajasuscripcion { float: left; width: calc(100% - 20px); }
+  .suscripcionwrapper .bloquecontenido .cajasuscripcion ul li { width: 50%; float: left; }
+  .suscripcionwrapper .bloquecontenido .botonconfigurartipo { text-align: left; }
   .suscripcionwrapper .bloquemail { width: 65%; display: inline-block; border: 0; }
   .suscripcionwrapper .bloquemail .campo { float: left; width: calc(50% - 20px); margin-right: 20px; }
   .suscripcionwrapper .bloquemail .campo input { width: 100%; }

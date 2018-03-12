@@ -117,6 +117,7 @@ $wide: 100%;
 	img {
 		width: $wide;
 		height: auto;
+		object-fit: cover;
 	}
 }
 @mixin tituloSecciones($colorTexto, $colorLinea){

@@ -155,6 +155,11 @@ body {
 		background-size: contain;
 		float: left;
 		display: none;
+		a{
+			display: block;
+			width: 100%;
+			height: 32px;
+		}
 	}
 	.botonbuscador{
 		width: 30px;
@@ -207,31 +212,33 @@ body {
 .cabezalgrande{
 	display: none;
 	width: 100%;
-	padding-left: 10px;
-	padding-right: 10px;
-	height: 100px;
-	padding-top: 23px;
+	height: 125px;
+	padding-top: 25px;
 	position: relative;
 	top: 65px;
 	margin: 10px auto 25px auto;
 	.bannerizq{
-		width: 180px;
-		height: 70px;
+		width: 300px;
+		height: 100px;
 		float: left;
 	}
 	.bannerder{
-		width: 180px;
-		height: 70px;
+		width: 300px;
+		height: 100px;
 		float: right;
 	}
+	.bannerder > *{
+	float: right;
+	}
 	.logogrande{
-		width: calc(100% - 360px);
-		height: 60px;
+		width: calc(100% - 600px);
+		height: 90px;
 		float: left;
-		margin-top: 10px;
+		margin-top: 5px;
+		margin-bottom: 5px;
 		background-image: url(../images/logotipo-iprofesional.png);
 		background-repeat: no-repeat;
-		background-size: 250px;
+		background-size: 280px;
 		background-position: center;
 	}
 }
@@ -862,4 +869,9 @@ body {
 		width: $wide;
 		text-align: center;
 	}
+}
+img.lazy {
+	width: 300px; 
+	height: 168px; 
+	display: block;
 }

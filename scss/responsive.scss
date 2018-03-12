@@ -212,6 +212,9 @@
 			.imagen{
 				margin-left: 10px;
 				margin-right: 0;
+				img{
+					height: 60px;
+				}
 			}
 			.playeraudio{
 				@include wideNoPadding;
@@ -528,6 +531,11 @@
     				font-size: 17px;
     				line-height: 21px;
     			}
+    			.imagen{
+    				img{
+    					height: 85px;
+    				}
+    			}
 			}
 		} 
 	} 
@@ -703,6 +711,10 @@
 					}
 					.imagencuadrada{
 						display: block;
+						img{
+							height: 300px;
+							object-fit: cover;
+						}
 					}
 				}
 				.volanta{
@@ -927,6 +939,9 @@
 				}
 				.imagen{
 					width: 60px;
+					img{
+						height: 60px;
+					}
 				}
 			}
 		}
@@ -943,6 +958,10 @@
 			width: 50%;
 			.imagen{
 				max-height: 245px;
+				img{
+					height: 245px;
+					min-height: 245px;
+				}
 			}
 		}
 		.notasdobles{
@@ -1051,6 +1070,17 @@
 			max-width: 100%;
 			padding-left: 30px;
 			padding-right: 30px;
+			.cajasuscripcion{
+				float: left;
+				width: calc(100% - 20px);
+				ul li{
+					width: 50%;
+					float: left;
+				}
+			}
+			.botonconfigurartipo{
+				text-align: left;
+			}
 		}
 		.bloquemail{
 			width: 65%;

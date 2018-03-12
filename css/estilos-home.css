@@ -53,6 +53,8 @@ body { text-align: left; color: #1c1c1c; background-color: white; font-family: '
 
 .cabezalmobile .logotipoblanco { width: calc(100% - 80px); height: 32px; background-image: url(../images/logotipo-iprofesional_blanco.png); background-repeat: no-repeat; background-position: center; background-size: contain; float: left; display: none; }
 
+.cabezalmobile .logotipoblanco a { display: block; width: 100%; height: 32px; }
+
 .cabezalmobile .botonbuscador { width: 30px; height: 30px; margin-right: 10px; float: left; background-image: url(../images/icono-buscar.png); background-repeat: no-repeat; background-position: center; background-size: 20px; -webkit-transition: all 0.3s ease-out 0s; -moz-transition: all 0.3s ease-out 0s; -ms-transition: all 0.3s ease-out 0s; -o-transition: all 0.3s ease-out 0s; transition: all 0.3s ease-out 0s; }
 
 .cabezalmobile .botonbuscador:hover { opacity: 0.7; }
@@ -67,13 +69,15 @@ body { text-align: left; color: #1c1c1c; background-color: white; font-family: '
 
 .botonmenuclose { background-image: url(../images/cerrar-menu.png) !important; background-size: 18px !important; background-color: #FFFFFF !important; }
 
-.cabezalgrande { display: none; width: 100%; padding-left: 10px; padding-right: 10px; height: 100px; padding-top: 23px; position: relative; top: 65px; margin: 10px auto 25px auto; }
+.cabezalgrande { display: none; width: 100%; height: 125px; padding-top: 25px; position: relative; top: 65px; margin: 10px auto 25px auto; }
 
-.cabezalgrande .bannerizq { width: 180px; height: 70px; float: left; }
+.cabezalgrande .bannerizq { width: 300px; height: 100px; float: left; }
 
-.cabezalgrande .bannerder { width: 180px; height: 70px; float: right; }
+.cabezalgrande .bannerder { width: 300px; height: 100px; float: right; }
 
-.cabezalgrande .logogrande { width: calc(100% - 360px); height: 60px; float: left; margin-top: 10px; background-image: url(../images/logotipo-iprofesional.png); background-repeat: no-repeat; background-size: 250px; background-position: center; }
+.cabezalgrande .bannerder > * { float: right; }
+
+.cabezalgrande .logogrande { width: calc(100% - 600px); height: 90px; float: left; margin-top: 5px; margin-bottom: 5px; background-image: url(../images/logotipo-iprofesional.png); background-repeat: no-repeat; background-size: 280px; background-position: center; }
 
 .cabezalmobilenv2 { width: 100%; border-bottom: 1px solid #d4d6d7; padding-top: 7px; padding-bottom: 7px; background-color: white; display: table; position: relative; top: 65px; }
 
@@ -309,6 +313,8 @@ body { text-align: left; color: #1c1c1c; background-color: white; font-family: '
 
 .bannerverticalnota .elbanner { width: 100%; text-align: center; }
 
+img.lazy { width: 300px; height: 168px; display: block; }
+
 .alerta { margin-bottom: 40px; width: 100%; height: 50px; background-color: red; margin-top: -35px; color: white; font-weight: 600; font-size: 18px; line-height: 23px; display: table; }
 
 .alerta a { color: white; }
@@ -401,7 +407,9 @@ body { text-align: left; color: #1c1c1c; background-color: white; font-family: '
 
 .notachica .imagen { width: 20%; margin-right: 10px; overflow: hidden; float: right; line-height: 0; position: relative; }
 
-.notachica .imagen img { width: 100%; height: auto; }
+.notachica .imagen img { width: 100%; height: auto; object-fit: cover; }
+
+.notachica .imagen img { height: 75px; }
 
 .playeraudio { width: calc(100% - 20px); float: left; margin-top: 10px; padding-left: 10px; padding-right: 10px; }
 
@@ -541,6 +549,8 @@ body { text-align: left; color: #1c1c1c; background-color: white; font-family: '
 
 .notainsider .imagen .laimagen { position: absolute; width: 100%; top: 0; }
 
+.notainsider .imagen .laimagen img { height: 250px; object-fit: cover; }
+
 .notainsider .textos { width: calc(100% - 20px); padding-top: 20px; padding-bottom: 20px; position: absolute; z-index: 1; bottom: 0px; }
 
 .notainsider .textos .volanta { background-color: #ff9933; display: table; font-size: 14px; line-height: 26px; color: white; padding-left: 10px; padding-right: 10px; text-transform: uppercase; }
@@ -565,7 +575,7 @@ body { text-align: left; color: #1c1c1c; background-color: white; font-family: '
 
 .objetovideo .video img { width: 100%; height: auto; }
 
-.objetovideo .video video { width: 100%; height: auto; background-color: black; }
+.objetovideo .video video { width: 100%; height: auto; background-color: black; object-fit: cover; }
 
 .objetolomasleido { margin-bottom: 40px; display: table; width: 100%; }
 
@@ -587,7 +597,9 @@ body { text-align: left; color: #1c1c1c; background-color: white; font-family: '
 
 .objetolomasleido .item .imagen { width: 20%; margin-right: 10px; overflow: hidden; float: right; line-height: 0; position: relative; }
 
-.objetolomasleido .item .imagen img { width: 100%; height: auto; }
+.objetolomasleido .item .imagen img { width: 100%; height: auto; object-fit: cover; }
+
+.objetolomasleido .item .imagen img { height: 75px; }
 
 .objetoespecial { width: 100%; display: table; padding-bottom: 40px; margin-bottom: 40px; border-bottom: 1px solid #d4d6d7; }
 
@@ -644,6 +656,8 @@ body { text-align: left; color: #1c1c1c; background-color: white; font-family: '
 .objetofrase .autor .foto .imagen { width: 100%; margin-bottom: 10px; line-height: 0; position: relative; margin-bottom: 0; }
 
 .objetofrase .autor .foto .imagen img { width: 100%; height: auto; }
+
+.objetofrase .autor .foto .imagen img { height: 80px; object-fit: cover; }
 
 .objetofrase .autor .nombre { font-size: 16px; width: calc(80% - 50px); margin-right: 10px; padding-top: 10px; float: left; letter-spacing: -0.25px; }
 
@@ -712,6 +726,8 @@ body { text-align: left; color: #1c1c1c; background-color: white; font-family: '
 .objetorecreo .notagrande .imagen { width: 100%; margin-bottom: 10px; line-height: 0; position: relative; margin-bottom: 0; }
 
 .objetorecreo .notagrande .imagen img { width: 100%; height: auto; }
+
+.objetorecreo .notagrande .imagen img { min-width: 100%; min-height: 360px; object-fit: cover; }
 
 .objetorecreo .notagrande .textos { width: 100%; padding-left: 10px; padding-right: 10px; padding-top: 20px; padding-bottom: 20px; position: relative; z-index: 1; margin-top: -120px; background: rgba(55, 55, 55, 0.7); }
 

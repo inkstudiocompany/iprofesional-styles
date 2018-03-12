@@ -53,6 +53,8 @@ body { text-align: left; color: #1c1c1c; background-color: white; font-family: '
 
 .cabezalmobile .logotipoblanco { width: calc(100% - 80px); height: 32px; background-image: url(../images/logotipo-iprofesional_blanco.png); background-repeat: no-repeat; background-position: center; background-size: contain; float: left; display: none; }
 
+.cabezalmobile .logotipoblanco a { display: block; width: 100%; height: 32px; }
+
 .cabezalmobile .botonbuscador { width: 30px; height: 30px; margin-right: 10px; float: left; background-image: url(../images/icono-buscar.png); background-repeat: no-repeat; background-position: center; background-size: 20px; -webkit-transition: all 0.3s ease-out 0s; -moz-transition: all 0.3s ease-out 0s; -ms-transition: all 0.3s ease-out 0s; -o-transition: all 0.3s ease-out 0s; transition: all 0.3s ease-out 0s; }
 
 .cabezalmobile .botonbuscador:hover { opacity: 0.7; }
@@ -67,13 +69,15 @@ body { text-align: left; color: #1c1c1c; background-color: white; font-family: '
 
 .botonmenuclose { background-image: url(../images/cerrar-menu.png) !important; background-size: 18px !important; background-color: #FFFFFF !important; }
 
-.cabezalgrande { display: none; width: 100%; padding-left: 10px; padding-right: 10px; height: 100px; padding-top: 23px; position: relative; top: 65px; margin: 10px auto 25px auto; }
+.cabezalgrande { display: none; width: 100%; height: 125px; padding-top: 25px; position: relative; top: 65px; margin: 10px auto 25px auto; }
 
-.cabezalgrande .bannerizq { width: 180px; height: 70px; float: left; }
+.cabezalgrande .bannerizq { width: 300px; height: 100px; float: left; }
 
-.cabezalgrande .bannerder { width: 180px; height: 70px; float: right; }
+.cabezalgrande .bannerder { width: 300px; height: 100px; float: right; }
 
-.cabezalgrande .logogrande { width: calc(100% - 360px); height: 60px; float: left; margin-top: 10px; background-image: url(../images/logotipo-iprofesional.png); background-repeat: no-repeat; background-size: 250px; background-position: center; }
+.cabezalgrande .bannerder > * { float: right; }
+
+.cabezalgrande .logogrande { width: calc(100% - 600px); height: 90px; float: left; margin-top: 5px; margin-bottom: 5px; background-image: url(../images/logotipo-iprofesional.png); background-repeat: no-repeat; background-size: 280px; background-position: center; }
 
 .cabezalmobilenv2 { width: 100%; border-bottom: 1px solid #d4d6d7; padding-top: 7px; padding-bottom: 7px; background-color: white; display: table; position: relative; top: 65px; }
 
@@ -309,6 +313,8 @@ body { text-align: left; color: #1c1c1c; background-color: white; font-family: '
 
 .bannerverticalnota .elbanner { width: 100%; text-align: center; }
 
+img.lazy { width: 300px; height: 168px; display: block; }
+
 .suscripcionwrapper { width: 100%; margin: 0 auto 40px auto; padding-top: 40px; padding-bottom: 40px; background-color: #f6f6f6; }
 
 .suscripcionwrapper .bloquecontenido { display: table; width: 100%; max-width: 800px; margin: 0 auto; padding-left: 10px; padding-right: 10px; }
@@ -346,3 +352,25 @@ body { text-align: left; color: #1c1c1c; background-color: white; font-family: '
 .suscripcionwrapper .olvidaste a { color: #1c1c1c; text-decoration: underline; opacity: 0.6; }
 
 .suscripcionwrapper .botoningresar { width: 300px; height: 40px; background-color: dimgray; color: white; font-weight: 700; text-align: center; line-height: 40px; margin: 0 auto; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; display: table; text-transform: uppercase; }
+
+.suscripcionwrapper .botonconfigurartipo { color: #1c1c1c; font-weight: 600; text-align: center; margin-bottom: 15px; display: table; float: left; width: 100%; font-size: 16px; text-decoration: underline; }
+
+.suscripcionwrapper .botonconfigurartipo a { color: #1c1c1c; text-decoration: underline; }
+
+.suscripcionwrapper .cajasuscripcion { width: 300px; margin: 0 auto; background-color: white; display: none; margin-bottom: 20px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; padding: 15px; }
+
+.suscripcionwrapper .cajasuscripcion .titulocaja { font-size: 16px; font-weight: 700; margin-bottom: 10px; display: table; }
+
+.suscripcionwrapper .cajasuscripcion .bajadacaja { width: 100%; margin-bottom: 20px; display: table; font-size: 16px; }
+
+.suscripcionwrapper .cajasuscripcion .listado { width: 100%; display: table; border-top: 1px solid #d4d6d7; margin-bottom: 15px; }
+
+.suscripcionwrapper .cajasuscripcion .listado ul li { width: 100%; height: 46px; line-height: 46px; border-bottom: 1px solid #d4d6d7; }
+
+.suscripcionwrapper .cajasuscripcion .listado ul li .checkbox { width: 36px; height: 21px; -webkit-border-radius: 20px; -moz-border-radius: 20px; border-radius: 20px; float: left; line-height: 16px; font-size: 34px; margin-top: 12px; color: white; cursor: pointer; text-align: left; background-color: #cacaca; -webkit-transition: all 0.3s ease-out 0s; -moz-transition: all 0.3s ease-out 0s; -ms-transition: all 0.3s ease-out 0s; -o-transition: all 0.3s ease-out 0s; transition: all 0.3s ease-out 0s; }
+
+.suscripcionwrapper .cajasuscripcion .listado ul li .checkbox-on { text-indent: 15px; background-color: #ff9933; }
+
+.suscripcionwrapper .cajasuscripcion .listado ul li .checkbox-off { text-indent: 0px; background-color: #cacaca; }
+
+.suscripcionwrapper .cajasuscripcion .listado ul li .textobtn { float: left; margin-left: 10px; font-size: 16px; }
