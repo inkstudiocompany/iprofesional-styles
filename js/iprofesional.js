@@ -161,3 +161,19 @@ var windowHeight = $(window).height();
 			}
 		});
 	});
+
+	// Checkbox switchers areas de interes suscripcion
+
+	$('.checkbox')
+	.mousedown(function(){
+		$(this).toggleClass('checkbox-on checkbox-off');
+	});
+	
+
+	$(".botonconfigurartipo").click(function() {
+		$(".cajasuscripcion").slideToggle("slow");
+	});
+
+	// Lazy Load
+
+	$("img.lazy").lazyload();
