@@ -1,0 +1,266 @@
+@charset "utf-8";
+
+@import "_reset.scss";
+@import "_fonts.scss";
+@import "_variables.scss";
+@import "_generales.scss";
+
+// Variables
+$colorSeccion: $colorSecundario;
+
+// Estilos INSIDER
+.box{
+
+}
+.tituloprincipalseccion{
+	border-bottom: 3px solid $colorSeccion;
+}
+.notaprincipalinsider{
+	width: $wide;
+	background-color: $fondoObjetos;
+	@include separacionNotas;
+	.volanta{
+		color: white;
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 29px;
+		text-transform: uppercase;
+		margin-bottom: 15px;
+		background-color: $colorSeccion;
+		@include widePadding;
+		span{
+			color: $colorPrincipal;
+			font-weight: 600;
+			text-transform: none;
+		}
+	}
+	.titulo{
+		@include tituloGrande;
+		text-align: center;
+		a{
+			color: white;
+		}
+	}
+	.imagen{
+		@include imagenWide;
+	}
+	.bajada{
+		font-size: 17px;
+		line-height: 22px;
+		font-weight: 400;
+		text-align: center;
+		margin-bottom: 30px;
+		@include widePadding;
+		a{
+			color: white;
+		}
+	}
+	.tiemposhare{
+		.tiempo{
+			color: gray;
+		}
+		.share{
+			background-image: url(../images/share-blanco.png);
+			opacity: 0.5;
+		}
+	}
+}
+.notamediana{
+	width: $wide;
+	display: table;
+	@include separacionNotas;
+	.volanta{
+		@include volanta;
+		@include widePadding;
+		color: $colorSeccion;
+		span{
+			color: lighten($colorPrincipal, 10%);
+		}
+	}
+	.titulo{
+		@include tituloMediano;
+		a{
+			color: $colorPrincipal;
+		}
+	}
+	.imagen{
+		@include imagenWide;
+		position: relative;
+	}
+}
+.notaschicas{
+	.notachica{
+		.volanta{
+			color: $colorSeccion;
+		}
+	}
+}
+.notaprincipal1{
+	.volanta{
+		color: $colorSeccion;
+	}
+}
+.objetoeldato{
+	background-color: $colorSeccion;
+	.textos{
+		.titulo{
+			color: $colorPrincipal;
+			opacity: 1;
+			width: 100%;
+			text-align: center;
+			font-size: 26px;
+			letter-spacing: -1px;
+			line-height: 30px;
+			font-weight: 500;
+			a{
+				color: $colorPrincipal;
+			}
+		}
+		.descripcion{
+			color: $colorPrincipal;
+			width: 100%;
+			text-align: center;
+			margin-top: 10px;
+			a{
+				color: $colorPrincipal;
+			}
+		}
+	}
+}
+.notagrandevideo{
+	width: $wide;
+	@include separacionNotas;
+	background-color: $fondoObjetos;
+	padding:20px 10px 10px 10px;
+	float: left;
+	.textos{
+		width: 100%;
+		float: left;
+		.volanta{
+			@include volanta;
+			color: white;
+			text-align: center;
+		}
+		.titulo{
+			@include tituloMediano;
+			padding: 0px;
+			text-align: left;
+			margin-bottom: 5px;
+			a{
+				color: white;
+			}
+		}
+		.imagen{
+			@include imagenWide;
+		}
+		.bajada{
+			font-size: 17px;
+			line-height: 22px;
+			font-weight: 400;
+			text-align: left;
+			margin-bottom: 30px;
+			width: 100%;
+			a{
+				color: white;
+			}
+		}
+		.tiemposhare{
+			padding-left: 0px;
+			padding-right: 0px;
+			margin-bottom: 10px;
+			.share {
+				background-image: url(../images/share-blanco.png);
+			}
+		}
+	}
+	.tituloseccion{
+		@include tituloSecciones(white, $colorSeccion);
+		span{
+			font-weight: 400;
+		}
+	}
+	.video{
+		width: 100%;
+		line-height: 0;
+		position: relative;
+		margin-bottom: 15px;
+		float: left;
+		video{
+			width: 100%;
+			height: auto;
+			background-color: black;
+		}
+	}
+}
+.objetopersonaje{
+	@include widePadding;
+	@include separacionNotas;
+	background-color: $fondoObjetos;
+	padding-top: 20px;
+	.tituloseccion{
+		@include tituloSecciones(white, $colorSeccion);
+		margin-bottom: 25px;
+	}
+	.titulo{
+		@include tituloMediano;
+		padding-left: 10%;
+		padding-right: 10%;
+		text-align: center;
+		margin-bottom: 10px;
+		a{
+			color: white;
+		}
+	}
+	.autor{
+		font-size: 16px;
+		color: $colorSeccion;
+		text-align: center;
+		width: $wide;
+		margin-bottom: 15px;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+	.linea{
+		width: 14px;
+		height: 1px;
+		background-color: $colorSeccion;
+		margin: 0 auto;
+		margin-bottom: 15px;
+	}
+	.bajada{
+		font-size: 16px;
+		color: white;
+		font-family: "Source Serif Pro";
+		text-align: center;
+		padding-left: 10%;
+		padding-right: 10%;
+		font-weight: 400;
+		margin-bottom: 30px;
+		a{
+			color: white;
+		}
+	}
+	.imagen{
+		width: 130px;
+		height: 130px;
+		overflow: hidden;
+		margin: 0 auto;
+		margin-bottom: 20px;
+		text-align: center;
+		-webkit-border-radius: 100px;
+		-moz-border-radius: 100px;
+		border-radius: 100px;
+		img{
+			height: 100%;
+			width: auto;
+		}
+	}
+	.tiemposhare{
+		.tiempo{
+			color: gray;
+		}
+		.share {
+			background-image: url(../images/share-blanco.png);
+		}
+	}
+}

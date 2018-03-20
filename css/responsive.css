@@ -58,14 +58,7 @@
   .notaopinion .textos .autor { font-size: 15px; }
   .notaopinion .tiemposhare { padding-left: 10px; padding-right: 10px; }
   .notainsider .tituloseccion { text-indent: 0; }
-  .notalobocity { /*width: calc(50% - 20px);*/ margin-right: 10px; margin-left: 10px; display: table; margin-bottom: 30px; }
   .notalobocity .tituloseccion { text-indent: 0; }
-  .notalobocity .imagen { height: 150px; }
-  .notalobocity .textos { padding-top: 10px; }
-  .notalobocity .textos .titulo { font-size: 20px; line-height: 23px; }
-  .notalobocity .textos .bajada { font-size: 15px; }
-  .notalobocity .textos .autor { font-size: 15px; }
-  .notalobocity .tiemposhare { padding-left: 10px; padding-right: 10px; }
   .objetovideo .tituloseccion { text-indent: 0; }
   .objetovideo .titulo { width: 100%; padding-left: 0; padding-right: 0; font-size: 17px; line-height: 21px; }
   .objetovideo .video video { height: 165px; }

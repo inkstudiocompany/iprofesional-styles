@@ -297,35 +297,10 @@
 			text-indent: 0;
 		}
 	}
-	.notalobocity {
-	    /*width: calc(50% - 20px);*/
-		margin-right: 10px;
-		margin-left: 10px;
-	    display: table;
-	    @include separacionObjetosChico;
-	    .tituloseccion{
+	.notalobocity{
+		.tituloseccion{
 			text-indent: 0;
 		}
-	    .imagen{
-	    	height: 150px;
-	    }
-	    .textos{
-	    	padding-top: 10px;
-	    	.titulo{
-	    		font-size: 20px;
-	    		line-height: 23px;
-	    	}
-	    	.bajada{
-	    		font-size: 15px;
-	    	}
-	    	.autor{
-	    		font-size: 15px;
-	    	}
-	    }
-	    .tiemposhare{
-	    	padding-left: 10px;
-	    	padding-right: 10px;
-	    }
 	}
 	.objetovideo{
 		.tituloseccion{

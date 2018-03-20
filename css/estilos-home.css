@@ -511,27 +511,31 @@ img.lazy { width: 300px; height: 168px; display: block; }
 
 .notaopinion .tiemposhare .share { background-image: url(../images/share-blanco.png); }
 
-.notalobocity { width: 100%; display: table; margin-bottom: 40px; }
+.notalobocity { width: 100%; display: table; margin-bottom: 40px; position: relative; }
 
-.notalobocity .tituloseccion { color: #1c1c1c; font-size: 16px; font-weight: 700; line-height: 28px; text-transform: uppercase; margin-left: -10px; text-indent: 10px; border-bottom: 3px solid rgba(0, 0, 0, 0.2); display: table; margin-bottom: 20px; margin-left: 0; }
+.notalobocity .tituloseccion { color: #1c1c1c; font-size: 16px; font-weight: 700; line-height: 28px; text-transform: uppercase; margin-left: -10px; text-indent: 10px; border-bottom: 3px solid #20c0ab; display: table; margin-bottom: 20px; margin-left: 0; }
 
-.notalobocity .imagen { width: 100%; margin-bottom: 10px; line-height: 0; position: relative; margin-bottom: 0; }
+.notalobocity .tituloseccion span { font-weight: 500; text-transform: none; }
+
+.notalobocity .botonvermas { position: absolute; top: 0; right: 0; background-color: #20c0ab; margin-top: 6px; height: 25px; line-height: 25px; font-size: 13px; font-weight: 700; color: white; padding-left: 8px; padding-right: 8px; }
+
+.notalobocity .botonvermas a { display: block; color: white; }
+
+.notalobocity .imagen { width: 100%; margin-bottom: 10px; line-height: 0; position: relative; margin-bottom: 0; height: 250px; overflow: hidden; }
 
 .notalobocity .imagen img { width: 100%; height: auto; }
 
-.notalobocity .textos { width: 100%; padding-left: 10px; padding-right: 10px; padding-top: 20px; padding-bottom: 20px; background-color: #373737; }
+.notalobocity .imagen .laimagen { position: absolute; width: 100%; top: 0; }
 
-.notalobocity .textos .autor { font-size: 16px; color: white; margin-bottom: 10px; }
+.notalobocity .imagen .laimagen img { height: 250px; object-fit: cover; }
 
-.notalobocity .textos .autor span { font-weight: 700; }
+.notalobocity .textos { width: calc(100% - 20px); padding-top: 20px; padding-bottom: 20px; position: absolute; z-index: 1; bottom: 0px; }
 
-.notalobocity .textos .titulo { font-size: 22px; font-family: 'Source Serif Pro', serif; line-height: 27px; color: white; font-weight: 600; letter-spacing: -0.5px; }
+.notalobocity .textos .volanta { background-color: #20c0ab; display: table; font-size: 14px; line-height: 26px; color: white; padding-left: 10px; padding-right: 10px; text-transform: uppercase; }
+
+.notalobocity .textos .titulo { font-size: 18px; font-family: 'Source Serif Pro', serif; line-height: 22px; color: white; font-weight: 600; letter-spacing: -0.5px; background-color: rgba(0, 0, 0, 0.65); width: 100%; padding: 10px; }
 
 .notalobocity .textos .titulo a { color: white; }
-
-.notalobocity .textos .bajada { font-size: 16px; color: white; font-weight: 500; }
-
-.notalobocity .textos .bajada a { color: white; }
 
 .notalobocity .tiemposhare { background-color: #373737; }
 
