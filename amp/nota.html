@@ -1,0 +1,600 @@
+<!doctype html>
+  <html ⚡>
+    <head>
+      <meta charset="utf-8">
+      <title>News Article</title>
+      <script async src="https://cdn.ampproject.org/v0.js"></script>
+      <!-- ## Setup -->
+      <!--
+        All additionally used AMP components must be imported in the header.
+      -->
+      <script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>
+      <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
+      <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+      <script async custom-element="amp-user-notification" src="https://cdn.ampproject.org/v0/amp-user-notification-0.1.js"></script>
+      <script async custom-element="amp-list" src="https://cdn.ampproject.org/v0/amp-list-0.1.js"></script>
+      <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.1.js"></script>
+      <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+      <script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
+      <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+      <script async custom-element="amp-fit-text" src="https://cdn.ampproject.org/v0/amp-fit-text-0.1.js"></script>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,600i,700,700i,900|Source+Serif+Pro:400,600,700">
+      <link rel="canonical" href="https://ampbyexample.com/samples_templates/news_article/">
+
+      <!-- ## Metadata -->
+      <!-- The Top Stories carousel requires schema.org markup for one of the following types: Article, NewsArticle, BlogPosting, or VideoObject. [Learn more](https://developers.google.com/structured-data/carousels/top-stories#markup_specification).  -->
+      <script type="application/ld+json">
+{
+      "@context": "http://schema.org",
+      "@type": "NewsArticle",
+      "mainEntityOfPage": "https://ampbyexample.com/samples_templates/news_article/",
+      "headline": "Lorem Ipsum",
+      "datePublished": "2016-04-21T11:55:02Z",
+      "dateModified": "2016-04-21T11:55:02Z",
+      "description": "A sample news article build with AMP.",
+      "author": {
+        "@type": "Person",
+        "name": "Sebastian Benz"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Google",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "http://cdn.ampproject.org/logo.jpg",
+          "width": 600,
+          "height": 60
+        }
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://ampbyexample.com/img/landscape_lake_1366x857.jpg",
+        "height": 1366,
+        "width": 857
+      }
+    }
+</script>
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
+
+</style><noscript>
+<style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+<style amp-custom>
+  body{
+    font-family: 'Source Sans Pro', sans-serif, sans, Arial, Verdana;
+    font-weight: 400;
+    text-align: left;
+    color: #1c1c1c;
+    background-color: white;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; 
+    -webkit-text-size-adjust: none;
+  }
+  h2{
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+  }
+  header{
+    width: 100%;
+    height: 65px;
+    background-color: white;
+    border-top: 2px solid #d4d6d7;
+    border-bottom: 1px solid #d4d6d7;
+    position: fixed;
+    top: 0px;
+    z-index: 100000;
+  }
+  header .logo{
+    width: 160px;
+    height: 65px;
+    background-image: url(images/logotipo-iprofesional.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin: 0 auto;
+  }
+  header > button{
+    width: 36px;
+    height: 36px;
+    top: 15px;
+    position: absolute;
+    border:0;
+    background-color: white;
+  }
+  header .btnizq{
+    left:10px;
+    background-image: url(images/icono-menu.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
+  }
+  header .btnder{
+    right: 10px;
+    font-weight: 500;
+    background-image: url(images/indice.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
+    opacity:0.4;
+  }
+  main{
+    margin-top: 65px;
+  }
+  main>p, main>div, main>h2, main>figure>figcaption {
+    padding: 1rem;
+  }
+  figure {
+    margin: 1rem 0;
+    padding: 0;
+  }
+  figure>figcaption{
+    font-size: 13px; 
+    color: gray;
+    padding-top: 5px;
+    padding-left: 1rem;
+  }
+  .amp-ad-container {
+    display: flex;
+    background-color: whitesmoke;
+    text-align: center;
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 100%;
+  }
+  amp-ad {
+    margin: 0 auto;
+  }
+  .carousel .slide > amp-img > img {
+    object-fit: contain;
+  }
+  .heading {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #d4d6d7;
+  }
+  .heading h1 {
+    font-size: 27px;
+    font-family: 'Source Serif Pro', serif;
+    line-height: 33px;
+    color: #1c1c1c;
+    font-weight: 600;
+    letter-spacing: -0.75px;
+    margin-bottom: 30px;
+  }
+  .heading h2 {
+    color: #20c0ab;
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+  .heading > #summary {
+    font-size: 19px;
+    line-height: 24px;
+    font-weight: 600;
+  }
+  .heading > small {
+    color: #656565;
+  }
+  .heading > figure{
+    margin-right: -1rem;
+    margin-left: -1rem;
+  }
+  amp-social-share{
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    background-size: 22px;
+    margin-bottom: 20px;
+  }
+  .textonota{
+    font-size: 18px;
+    line-height: 25px;
+    font-family: "Source Serif Pro";
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #d4d6d7;
+  }
+  .textonota p:first-of-type:first-letter { 
+    font-family: "Source Sans Pro";
+    font-size:90px;
+    font-weight:300;
+    float:left;
+    padding-right:5px;
+    line-height:70px;
+    color: #20c0ab;
+    margin-left: -20px;
+  }
+  .textonota a{
+    color: black;
+    text-decoration: underline;
+    display: inline;
+  }
+  .textonota > figure{
+    margin-left: -2rem;
+    margin-right: -2rem;
+  }
+  .textonota > amp-carousel{
+    margin-left: -2rem;
+    margin-right: -2rem;
+  }
+  .textonota > .amp-ad-container{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-left: -2rem;
+  }
+  .relacionadas{
+    font-family: "Source Sans Pro";
+    color: #1c1c1c;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 28px;
+    text-transform: uppercase;
+    text-indent: 10px;
+    border-bottom: 3px solid #20c0ab;
+    display: table;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    padding:0px;
+  }
+  .related {
+    font-family: "Source Sans Pro";
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600
+    background-color: #EAEAEA;
+    margin: 1rem;
+    display: flex;
+    color: black;
+    padding: 0;
+    text-decoration: none;
+  }
+  .related > span {
+    font-weight: 600;
+    margin: 8px;
+  }
+  .related:hover {
+    background-color: #f6f6f6;
+  }
+  amp-user-notification {
+    padding: 8px;
+    background: #bbb;
+    text-align: center;
+    color: white;
+  }
+  amp-sidebar {
+      width: 280px;
+      padding-right: 10px;
+      background-color: #1c1c1c;
+      color: white;
+    }
+    .amp-sidebar-image {
+      line-height: 100px;
+      vertical-align:middle;
+    }
+    .amp-close-image {
+       top: 15px;
+       left: 255px;
+       cursor: pointer;
+       background-color: white;
+    }
+    ul{
+      padding-left: 10px;
+    }
+    li {
+      font-size:14px;
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-top: 6px;
+      padding-bottom: 8px;
+      list-style: none;
+      line-height: 19px;
+      font-weight: 800;
+      border-bottom: 1px solid #333;
+    }
+    a{
+      color: #e1e1e1;
+      text-decoration: none;
+      font-weight: 400;
+      display: block;
+    }
+    .previewOnly {
+      font-weight: bold;
+    }
+
+    #sidebar-right nav.amp-sidebar-toolbar-target-shown {
+        display: none;
+    }
+    .textospie{
+      text-align: center;
+      font-size: 13px;
+      margin: 1rem;
+    }
+    .textospie a{
+      text-decoration: underline;
+      color: black;
+      display: inline;
+    }
+    .tepuedeinteresar {
+      border-left: 1px solid #20c0ab;
+      padding-left: 20px;
+      margin-top: 10px;
+      margin-bottom: 30px;
+      float: left;
+      width: 100%;
+    }
+    .tepuedeinteresar .tituloseccion {
+      font-weight: 700;
+      font-size: 15px;
+      width: 100%;
+    }
+    .tepuedeinteresar .titulorelacionado{
+      width: 100%;
+      font-size: 18px;
+      font-weight: 600;
+      color: #20c0ab;
+      margin: 0;
+    }
+    .tepuedeinteresar .titulorelacionado a {
+      text-decoration: underline;
+      color: #20c0ab;
+    }
+</style>
+
+    </head>
+    <body>
+
+    <header>
+
+      <button on="tap:sidebar.toggle" class="ampstart-btn caps m2 btnder"></button>
+      
+      <div class="logo"><a href=""></a></div>
+
+      <button on="tap:sidebar-left.toggle" class="ampstart-btn caps m2 btnizq"></button>
+
+    </header>
+
+    <amp-sidebar id="sidebar" layout="nodisplay" side="right">
+      <amp-img class="amp-close-image" src="images/ic_close_black_18dp_2x.png" width="20" height="20" alt="close sidebar" on="tap:sidebar.close" role="button" tabindex="0"></amp-img>
+      <nav toolbar="(min-width: 784px)" toolbar-target="target-element-left">
+        <ul>
+          <li>&Iacute;NDICE</li>
+          <li><a href="/"><strong>12.03.2018</strong> Recargado, el dólar minorista avanza cinco centavos hasta los $20,66 en la City porteña</a></li>
+          <li><a href="/"><strong>12.03.2018</strong> Recargado, el dólar minorista avanza cinco centavos hasta los $20,66 en la City porteña</a></li>
+          <li><a href="/"><strong>12.03.2018</strong> Recargado, el dólar minorista avanza cinco centavos hasta los $20,66 en la City porteña</a></li>
+          <li><a href="/"><strong>12.03.2018</strong> Recargado, el dólar minorista avanza cinco centavos hasta los $20,66 en la City porteña</a></li>
+          <li><a href="/"><strong>12.03.2018</strong> Recargado, el dólar minorista avanza cinco centavos hasta los $20,66 en la City porteña</a></li>
+          <li><a href="/"><strong>12.03.2018</strong> Recargado, el dólar minorista avanza cinco centavos hasta los $20,66 en la City porteña</a></li>
+          <li><a href="/"><strong>12.03.2018</strong> Recargado, el dólar minorista avanza cinco centavos hasta los $20,66 en la City porteña</a></li>
+          <li><a href="/"><strong>12.03.2018</strong> Recargado, el dólar minorista avanza cinco centavos hasta los $20,66 en la City porteña</a></li>
+          <li><a href="/"><strong>12.03.2018</strong> Recargado, el dólar minorista avanza cinco centavos hasta los $20,66 en la City porteña</a></li>
+          <li><a href="/"><strong>12.03.2018</strong> Recargado, el dólar minorista avanza cinco centavos hasta los $20,66 en la City porteña</a></li>
+        </ul>
+      </nav>
+    </amp-sidebar>
+
+    <amp-sidebar id="sidebar-left" layout="nodisplay" side="left">
+        <amp-img class="amp-close-image" src="images/ic_close_black_18dp_2x.png" width="20" height="20" alt="close sidebar" on="tap:sidebar-left.close" role="button" tabindex="0"></amp-img>
+        <nav toolbar="(min-width: 784px)" toolbar-target="target-element-left">
+          <ul>
+            <li>ÚLTIMAS NOTICIAS</li>
+            <li><a href="#">Economía</a></li>
+            <li><a href="#">Finanzas</a></li>
+            <li><a href="#">Impuestos</a></li>
+            <li><a href="#">Legales</a></li>
+            <li><a href="#">Negocios</a></li>
+            <li><a href="#">Tecnología</a></li>
+            <li><a href="#">Comex</a></li>
+            <li><a href="#">Management</a></li>
+            <li><a href="#">Marketing</a></li>
+            <li>ADEMÁS</li>
+            <li><a href="#">Autos iPro</a></li>
+            <li><a href="#">Vinos &amp; Bodegas</a></li>
+            <li><a href="#">Energías Limpias</a></li>
+            <li><a href="#">Ahora Brasil</a></li>
+            <li><a href="#">Health &amp; Tech</a></li>
+            <li><a href="#">Responsabilidad Social Digital</a></li>
+            <li><a href="#">Real Estate</a></li>
+          </ul>
+        </nav>
+    </amp-sidebar>
+
+      <main>
+      <!-- ## AD Support -->
+      <!-- There are no limitations regarding the number or placement of ads in an AMP. Learn more about `amp-ad` [here](/components/amp-ad/).  -->
+      <div class="amp-ad-container">
+        <amp-ad width="300" height="250"
+                            type="a9"
+                            data-aax_size="300x250"
+                            data-aax_pubname="test123"
+                            data-aax_src="302">
+        </amp-ad>
+      </div>
+      <div class="heading">
+        <h2>ACTUALIDAD</h2>
+        <h1>Macri: "Ser independientes significa que nuestro futuro depende de nosotros"</h1>
+        <!-- ## Social Sharing  -->
+        <p>
+        <amp-social-share type="facebook" width="35" height="35" data-attribution="254325784911610"></amp-social-share>
+        <amp-social-share type="twitter" width="35" height="35"></amp-social-share>
+        <amp-social-share type="whatsapp" width="35" height="35"></amp-social-share>
+        <amp-social-share type="linkedin" width="35" height="35"></amp-social-share>
+        <amp-social-share type="gplus" width="35" height="35"></amp-social-share>
+        <amp-social-share type="email" width="35" height="35"></amp-social-share>
+        </p>
+
+        <figure>
+          <amp-img src="images/imagenstandard.jpg" width="1366" height="768" layout="responsive"></amp-img>
+          <figcaption>Credito imagen</figcaption>
+        </figure>
+
+        <p id="summary">Además el Presidente dio indicios sobre la coparticipación: "No puede ser que se asista al que no hace las cosas bien"</p>
+        <p><small>Por <strong>Sebastian Benz</strong></small></p>
+      </div>
+
+      <div class="textonota">
+      <p>Lorem ipsum dolor sit amet, voluptua oporteat cum cu, eu vix interesset scribentur. Et <a href="">iudico efficiendi</a> duo, vim an odio iusto reformidans. At maluisset scripserit duo, cum in sumo delenit. Quot erant maiestatis usu ut. Ne mea maiorum vivendum argumentum, tale utinam postea mei in, eam in odio dicta patrioque.
+      </p>
+      <p>
+      Cum ad graeci legimus, ut duo omnesque petentium, mei saepe explicari principes eu. Ex mei ocurreret expetendis, ex errem blandit has. Phaedrum mediocrem appellantur his ut. Erat viris mediocrem id ius, ad dicta appareat assentior sit. Nec et nullam singulis moderatius, est reque vidisse copiosae eu.
+      </p>
+      <div class="tepuedeinteresar">
+          <div class="tituloseccion">Te puede interesar</div>
+          <h3 class="titulorelacionado"><a href="">Ante la justicia, Moreno admitió que la inflación "era alta" pero negó haber manipulado los datos del Indec</a></h3>
+      </div>
+      <p>
+      Mutat dolores ea duo. Usu cu dico everti tincidunt, pri vero nullam vidisse no. Eam novum aeque populo cu. Verear contentiones ne quo, no sed consulatu definitionem.
+      </p>
+
+      <figure>
+        <amp-img src="images/imagenstandard.jpg" width="1366" height="768" layout="responsive"></amp-img>
+        <figcaption>Here is a responsive image.</figcaption>
+      </figure>
+
+      <p>Lorem ipsum dolor sit amet, voluptua oporteat cum cu, eu vix interesset scribentur. Et iudico efficiendi duo, vim an odio iusto reformidans. At maluisset scripserit duo, cum in sumo delenit. Quot erant maiestatis usu ut. Ne mea maiorum vivendum argumentum, tale utinam postea mei in, eam in odio dicta patrioque.</p>
+
+      <!-- ## AD Support -->
+      <div class="amp-ad-container">
+        <amp-ad width="300" height="250"
+                            type="a9"
+                            data-aax_size="300x250"
+                            data-aax_pubname="test123"
+                            data-aax_src="302">
+        </amp-ad>
+      </div>
+
+      <p>
+      Cum ad graeci legimus, ut duo omnesque petentium, mei saepe explicari principes eu. Ex mei ocurreret expetendis, ex errem blandit has. Phaedrum mediocrem appellantur his ut. Erat viris mediocrem id ius, ad dicta appareat assentior sit. Nec et nullam singulis moderatius, est reque vidisse copiosae eu.</p>
+      <p>
+      Mutat dolores ea duo. Usu cu dico everti tincidunt, pri vero nullam vidisse no. Eam novum aeque populo cu. Verear contentiones ne quo, no sed consulatu definitionem.
+      </p>
+      <p>
+      Cum ad graeci legimus, ut duo omnesque petentium, mei saepe explicari principes eu. Ex mei ocurreret expetendis, ex errem blandit has. Phaedrum mediocrem appellantur his ut. Erat viris mediocrem id ius, ad dicta appareat assentior sit. Nec et nullam singulis moderatius, est reque vidisse copiosae eu.</p>
+      <p>
+      Mutat dolores ea duo. Usu cu dico everti tincidunt, pri vero nullam vidisse no. Eam novum aeque populo cu. Verear contentiones ne quo, no sed consulatu definitionem.
+      </p>
+
+      <!-- ## AD Support -->
+      <div class="amp-ad-container">
+        <amp-ad width="300" height="250"
+                            type="a9"
+                            data-aax_size="300x250"
+                            data-aax_pubname="test123"
+                            data-aax_src="302">
+        </amp-ad>
+      </div>
+
+      <p>Lorem ipsum dolor sit amet, voluptua oporteat cum cu, eu vix interesset scribentur. Et iudico efficiendi duo, vim an odio iusto reformidans. At maluisset scripserit duo, cum in sumo delenit. Quot erant maiestatis usu ut. Ne mea maiorum vivendum argumentum, tale utinam postea mei in, eam in odio dicta patrioque.
+      </p>
+      <p>
+      Cum ad graeci legimus, ut duo omnesque petentium, mei saepe explicari principes eu. Ex mei ocurreret expetendis, ex errem blandit has. Phaedrum mediocrem appellantur his ut. Erat viris mediocrem id ius, ad dicta appareat assentior sit. Nec et nullam singulis moderatius, est reque vidisse copiosae eu.
+      </p>
+      <p>
+      Mutat dolores ea duo. Usu cu dico everti tincidunt, pri vero nullam vidisse no. Eam novum aeque populo cu. Verear contentiones ne quo, no sed consulatu definitionem.
+      </p>
+
+      <!-- ## Interactive Content -->
+      <!-- To achieve its performance, AMP HTML doesn't allow custom Javascript. This doesn't mean that you can't created visually rich and interactive websites with AMP. Embed interactive content via `amp-iframe`. Learn more about `amp-iframe` [here](/components/amp-iframe/).  -->
+      <figure>
+        <amp-iframe src="https://www.google.us/trends/embed/US_cu_82I1CVMBAACV6M_en/horserace_chart_3c6cdb21-e1eb-4412-9c28-707c3638ea35?hl=en&template=fe"
+                    title="Interactive chart displaying 2016 Oscar Best Picture search interest by date"
+                    height="360"
+                    layout="fixed-height"
+                    frameborder="0"
+                    sandbox="allow-scripts allow-same-origin">
+          <amp-img src="/img/oscars_placeholder_1.png"
+                   layout="fixed-height"
+                   height="360"
+                   width="auto"
+                   placeholder>
+          </amp-img>
+        </amp-iframe>
+        <figcaption>An interactive chart - in AMP!</figcaption>
+      </figure>
+      <p>Lorem ipsum dolor sit amet, voluptua oporteat cum cu, eu vix interesset scribentur. Et iudico efficiendi duo, vim an odio iusto reformidans. At maluisset scripserit duo, cum in sumo delenit. Quot erant maiestatis usu ut. Ne mea maiorum vivendum argumentum, tale utinam postea mei in, eam in odio dicta patrioque.
+      </p>
+      <p>
+      Cum ad graeci legimus, ut duo omnesque petentium, mei saepe explicari principes eu. Ex mei ocurreret expetendis, ex errem blandit has. Phaedrum mediocrem appellantur his ut. Erat viris mediocrem id ius, ad dicta appareat assentior sit. Nec et nullam singulis moderatius, est reque vidisse copiosae eu.
+      </p>
+      <p>
+      Mutat dolores ea duo. Usu cu dico everti tincidunt, pri vero nullam vidisse no. Eam novum aeque populo cu. Verear contentiones ne quo, no sed consulatu definitionem.
+      </p>
+
+      <p>
+        <amp-social-share type="facebook" width="35" height="35" data-attribution="254325784911610"></amp-social-share>
+        <amp-social-share type="twitter" width="35" height="35"></amp-social-share>
+        <amp-social-share type="whatsapp" width="35" height="35"></amp-social-share>
+        <amp-social-share type="linkedin" width="35" height="35"></amp-social-share>
+        <amp-social-share type="gplus" width="35" height="35"></amp-social-share>
+        <amp-social-share type="email" width="35" height="35"></amp-social-share>
+      </p>
+
+      </div>
+
+
+
+      <!-- ## AD Support -->
+      <div class="amp-ad-container">
+        <amp-ad width="300" height="250"
+                            type="a9"
+                            data-aax_size="300x250"
+                            data-aax_pubname="test123"
+                            data-aax_src="302">
+        </amp-ad>
+      </div>
+
+      <!-- ## Embedding related content -->
+      <!-- -->
+      <h2 class="relacionadas">Te puede interesar</h2>
+      <!-- It's a good idea to recommend related content to your readers. With `amp-list` it is possible to dynamically include personalized content into your AMPs. It's a good idea to link to the AMP version of related content in order to keep the user in the fast AMP world. Learn more about `amp-list` [here](/components/amp-list/) -->
+      <amp-list width="300" height="75" layout="responsive" src="/json/related_articles.json">
+        <template type="amp-mustache">
+          <a class="card related" href="{{url}}"><amp-img width="101" height="75" src="{{thumbnail}}"></amp-img><span>{{title}}</span></a>
+        </template>
+      </amp-list>
+
+      <!-- ## AD Support -->
+      <div class="amp-ad-container">
+        <amp-ad width="300" height="250"
+                            type="a9"
+                            data-aax_size="300x250"
+                            data-aax_pubname="test123"
+                            data-aax_src="302">
+        </amp-ad>
+      </div>
+
+      </main>
+
+
+      <div class="textospie">
+          <a href="http://www.iprofesional.com">iProfesional</a> - Copyright © 2018 <br>
+          Emprendimientos Corporativos S.A. <br>
+          Buenos Aires, Argentina. Todos los derechos reservados.<br>
+      </div>
+
+      <!-- ## User Analytics -->
+      <!-- Analytics must be configured in the body. Here we use Google Analytics to track pageviews.  -->
+      <amp-analytics type="googleanalytics">
+        <script type="application/json">
+{
+          "vars": {
+            "account": "XXXXXX"
+          },
+          "triggers": {
+            "default pageview": {
+              "on": "visible",
+              "request": "pageview",
+              "vars": {
+                "title": "{{title}}"
+              }
+            }
+          }
+        }
+        </script>
+      </amp-analytics>
+
+    </body>
+  </html>
