@@ -29,80 +29,94 @@ var windowHeight = $(window).height();
 
 	// SLIDER ZOOM RECOMENDADAS
 	var swiper = new Swiper('.swiper-container1', {
-		pagination: '.swiper-pagination1',
+		pagination: {
+			el: '.swiper-pagination1',
+		},
 		loop:true,
 		autoplay:5000,
 		slidesPerView: 2,
 		slidesPerColumn: 1,
 		paginationClickable: true,
 		// Navigation arrows
-		nextButton: '.swiper-button-next',
-		prevButton: '.swiper-button-prev',
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		},
 		spaceBetween: 15
 	});
 	// BRIEFING
 	var swiper = new Swiper('.swiper-container2', {
-		pagination: '.swiper-pagination2',
+		pagination: {
+			el: '.swiper-pagination2',
+		},
 		loop:true,
 		autoplay:5000,
 		slidesPerView: 2,
 		slidesPerColumn: 1,
 		paginationClickable: true,
-		// Navigation arrows
-		nextButton: '.swiper-button-next',
-		prevButton: '.swiper-button-prev',
 		spaceBetween: 15
 	});
 	// SLIDER DESTACADAS DE OTROS MEDIOS
 	var swiper = new Swiper('.swiper-container3', {
-		pagination: '.swiper-pagination3',
+		pagination: {
+			el: '.swiper-pagination3',
+		},
 		loop:true,
 		autoplay:10000,
 		slidesPerView: 2,
 		slidesPerColumn: 1,
 		paginationClickable: true,
-		// Navigation arrows
-		nextButton: '.swiper-button-next',
-		prevButton: '.swiper-button-prev',
 		spaceBetween: 15
 	});
 	// NOTA MEDIANA CON SLIDER 1
 	var swiper = new Swiper('.swiper-container_med1', {
-		pagination: '.swiper-pagination_med1',
+		pagination: {
+			el: '.swiper-pagination_med1',
+		},
 		loop:true,
 		autoplay:5000,
 		slidesPerView: 1,
 		slidesPerColumn: 1,
 		paginationClickable: true,
 		// Navigation arrows
-		nextButton: '.swiper-button-next',
-		prevButton: '.swiper-button-prev',
+		navigation: {
+			nextEl: '.swiper-button-next1',
+			prevEl: '.swiper-button-prev1',
+		},
 		spaceBetween: 30
 	});
 	// NOTA MEDIANA CON SLIDER 2
 	var swiper = new Swiper('.swiper-container_med2', {
-		pagination: '.swiper-pagination_med2',
+		pagination: {
+			el: '.swiper-pagination_med2',
+		},
 		loop:true,
 		autoplay:5000,
 		slidesPerView: 1,
 		slidesPerColumn: 1,
 		paginationClickable: true,
 		// Navigation arrows
-		nextButton: '.swiper-button-next',
-		prevButton: '.swiper-button-prev',
+		navigation: {
+			nextEl: '.swiper-button-next2',
+			prevEl: '.swiper-button-prev2',
+		},
 		spaceBetween: 30
 	});
 	// NOTA MEDIANA CON SLIDER 3
 	var swiper = new Swiper('.swiper-container_med3', {
-		pagination: '.swiper-pagination_med3',
+		pagination: {
+			el: '.swiper-pagination_med3',
+		},
 		loop:true,
 		autoplay:5000,
 		slidesPerView: 1,
 		slidesPerColumn: 1,
 		paginationClickable: true,
 		// Navigation arrows
-		nextButton: '.swiper-button-next',
-		prevButton: '.swiper-button-prev',
+		navigation: {
+			nextEl: '.swiper-button-next3',
+			prevEl: '.swiper-button-prev3',
+		},
 		spaceBetween: 30
 	});
 
