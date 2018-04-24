@@ -647,6 +647,11 @@
 				float: left;
 				height: 150px;
 				position: relative;
+				.tiemposhare{
+					position: absolute;
+					bottom: 20px;
+					width: calc(100% - 20px);
+				}
 			}
 		}
 	}
@@ -754,6 +759,16 @@
 			}
 		}
 	}
+	.notahomebombapositivo{
+		.notagrande{
+			//border-right: 1px solid $colorSeparadores;
+		}
+		.masnotasbomba{
+			.notamasmediana{
+				border-right: 1px solid $colorSeparadores;
+			}
+		}
+	}
 	.notahomebombasimple{
 		.notagrande{
 			width: $doscolumnas;
@@ -808,6 +823,190 @@
 				.tiemposhare{
 					padding-left: 10px;
 					padding-right: 10px;
+				}
+			}
+		}
+	}
+	.notahomemegabomba{
+		.notagrande{
+			.notaprincipalchica{
+				width: 50%;
+				height: 350px;
+				overflow: hidden;
+				float: left;
+				padding-bottom: 0;
+				margin-bottom: 0;
+				border-bottom: 0;
+				border-right: 1px solid #d4d6d73b;
+				overflow: hidden;
+			}
+			.notasdobleschicas{
+				width: 50%;
+				height: 350px;
+				overflow: hidden;
+				float: left;
+				padding-top: 10px;
+				padding-bottom: 0;
+				border-top: 0;
+				.notadoblechica{
+					width: 100%;
+					min-height: 155px;
+					border-bottom: 1px solid #d4d6d73b;
+					padding-bottom: 20px;
+					margin-bottom: 20px;
+					border-right: 0;
+					position: relative;
+					.tiemposhare{
+						position: absolute;
+						bottom: 10px;
+						width: calc(100% - 20px);
+					}
+				}
+				.notadoblechicafinal{
+						border-bottom: 0;
+						padding-bottom: 0;
+						margin-bottom: 0;
+				}
+			}
+		}
+		.masnotasbomba{
+			border-bottom: 0;
+			.notamasgrande{
+				position: relative;
+				.imagen {
+					width: calc(50% - 10px);
+					float: right;
+					.imagencuadrada {
+						display: block;
+						img{
+							height: 300px;
+							object-fit: cover;
+						}
+					}
+					.imagenwide{
+						display: none;
+					}
+				}
+				.volanta {
+					width: calc(50% - 10px);
+					float: left;
+					padding-bottom: 10px;
+				}
+				.titulo {
+				    width: calc(50% - 10px);
+				    float: left;
+				}
+				.bajada {
+				    width: calc(50% - 10px);
+				    float: left;
+				}
+				.tiemposhare {
+					width: calc(50% - 20px);
+					float: left;
+					position: absolute;
+					bottom: 40px;
+				}
+			}
+			.notamasmediana{
+				width:50%;
+				display: inline-table;
+				border-right: 1px solid $colorSeparadores;
+				border-bottom: 0;
+				margin-bottom: 0;
+				padding-bottom: 0;
+				.volanta{
+					padding-bottom: 3px;
+				}
+			}
+			.notasmassimples{
+				width: 50%;
+				display: inline-table;
+				.notamassimple{
+					padding-bottom: 0px;
+					margin-bottom: 30px;
+					position: relative;
+					height: 155px;
+					.titulo{
+						font-size: 17px;
+						line-height: 21px;
+					}
+					.volanta{
+						padding-bottom: 3px;
+					}
+					.tiemposhare {
+						width: calc(100% - 20px);
+						position: absolute;
+						bottom: 10px;
+					}
+				}
+				.notamassimpleultima{
+					margin-bottom: 0;
+				}
+			}
+		}
+		.galeriabomba{
+			.copetegaleria{
+				margin: 10px;
+				position: absolute;
+				width: auto;
+			}
+			.contenedorgaleria{
+				background-color: transparent;
+				width: $doscolumnas + 20px;
+				height: $doscolumnas / 2 + 50px;
+			}
+		}
+	}
+	.notahomemegabombapositivo{
+		.notagrande{
+			.notaprincipalchica{
+				border-right: 1px solid darken($colorSeparadores, 5%);
+			}
+			.notasdobleschicas{
+				.notadoblechica{
+					border-bottom: 1px solid darken($colorSeparadores, 5%);
+				}
+				.notadoblechicafinal{
+					border-bottom: 0;
+				}
+			}
+		}
+	}
+	.notatematicahome{
+		.notagrande{
+			.titulo {
+				font-size: 37px;
+				line-height: 40px;
+				letter-spacing: -1px;
+				padding-bottom: 10px;
+			}
+			.imagen{
+				width: calc(50% - 10px);
+				float: left;
+			}
+			.bajada{
+				width: calc(50% - 10px);
+				float: right;
+			}
+			.tiemposhare{
+				width: calc(50% - 10px);
+				float: right;
+			}
+		}
+		.notasimple{
+			width: 50%;
+			float: left;
+		}
+		.notatematicahomechicas{
+			.notasimpleesp{
+				width: 50%;
+				float: left;
+				height: 150px;
+				position: relative;
+				.tiemposhare{
+					position: absolute;
+					bottom: 20px;
+					width: calc(100% - 20px);
 				}
 			}
 		}
@@ -868,6 +1067,9 @@
 	.desarrollonota{
 		width: $trescolumnas - 360px;
 		float: left;
+		.volanta{
+			display: table;
+		}
 	}
 	.objetosmedio{
 		width: $unacolumna + 20px;
@@ -1110,8 +1312,8 @@
 		flex-wrap: wrap;
 		padding:10px;
 		.temanotavideo{
-			flex: 0 0 100%;
-			-webkit-flex: 0 0 100%;
+			//flex: 0 0 100%;
+			//-webkit-flex: 0 0 100%;
 		}
 		.copeteobjeto{
 			order: 1;
@@ -1242,6 +1444,30 @@
 			}
 		}
 	}
+	.notahomebombapositivo{
+		.notasgrandes{
+			.notagrande{
+				border-right: 1px solid $colorSeparadores;
+			}
+			.notagrandeultima{
+				border-right: 0;
+			}
+		}
+		.masnotasbomba{
+			.notamasgrande{
+				border-right: 1px solid $colorSeparadores;
+			}
+			.notasmassimples{
+				border-top: 1px solid $colorSeparadores;
+				.notamassimple{
+					border-right: 1px solid $colorSeparadores;
+				}
+				.notamassimpleultima{
+					border-right: none;
+				}
+			}
+		}
+	}
 	.notahomebombasimple{
 		.notagrande{
 			height: 710px;
@@ -1255,6 +1481,180 @@
 	}
 	.bannerverticalnota{
 		background-color: transparent;
+	}
+
+	.notahomemegabomba {
+		.notagrande{
+			.titulo{
+				font-size: 50px;
+				line-height: 52px;
+				font-weight: 700;
+			}
+			.imagen{
+				width: calc(100% - 320px);
+				float: left;
+				height: 350px;
+				overflow: hidden;
+				img{
+					height: 350px;
+					width: auto;
+				}
+			}
+			.notaprincipalchica{
+				width: 300px;
+				float: right;
+				border:0;
+			}
+			.notasdobleschicas{
+				width: 100%;
+				height: auto;
+				padding: 10px;
+				.notadoblechica{
+					width: 50%;
+					border-right: 1px solid darken($colorSeparadores, 40%);
+					border-bottom: 0;
+					padding-bottom: 0;
+					margin-bottom: 0;
+					display: inline-block;
+					min-height: 130px;
+				}
+				.notadoblechicafinal{
+					padding-right: 0px;
+					border-right: 0;
+					padding-left: 20px;
+
+				}
+			}
+		}
+		.masnotasbomba {
+			.notamasgrande{
+				width: calc(100% - 315px);
+				height: 330px;
+				border-right: 1px solid $colorSeparadores;
+				border-bottom: 0;
+				float: left;
+				padding-right: 20px;
+				padding-top: 0;
+				margin-bottom: 0;
+			}
+			.notamasmediana{
+				width: 305px;
+				float: right;
+				border: 0;
+				padding-bottom: 10px;
+				position: relative;
+			}
+			.notasmassimples{
+				padding-top: 30px;
+				border-top: 1px solid $colorSeparadores;
+				width: 100%;
+				.notamassimple {
+				    width: 50%;
+				    min-height: 110px;
+				    height: auto;
+				    float: left;
+				    border-bottom: 0;
+				    border-right: 1px solid $colorSeparadores;
+				    padding-right: 20px;
+				    padding-bottom: 0;
+				    margin-bottom: 0;
+				}
+				.notamassimpleultima {
+					padding-left: 20px;
+					border-right: 0;
+				}
+			}
+		}
+		.galeriabomba{
+			margin-bottom: 10px;
+			.contenedorgaleria{
+				width: $trescolumnas + 20px;
+				height: $trescolumnas / 2 + 75px;
+			}
+		}
+	}
+	.notahomemegabombapositivo{
+		.notagrande{
+			.notasdobleschicas{
+				.notadoblechica{
+					border-right: 1px solid darken($colorSeparadores, 5%);
+				}
+				.notadoblechicafinal{
+					border-right: 0;
+				}
+			}
+		}
+	}
+	.notacolor{
+		.cabezalmobile{
+			background-color:darken($fondoObjetos, 4%);
+			border-bottom: 0;
+			.botonmenu{
+				background-image: url(#{$urlImages}icono-menu.png);
+			}
+			.logotipo{
+				background-image: url(#{$urlImages}logotipo-iprofesional.png);
+			}
+			.botonbuscador{
+				background-image: url(#{$urlImages}icono-buscar.png);
+			}
+		}
+		.contenido{
+			background-color: white;
+			.bannertop{
+				background-color: lighten($colorPrincipal, 85%);
+				border-bottom: 0;
+			}
+			.bloquenotas{
+				background-color: white;
+				.desarrollonota{
+					.titulonota{
+						color: $colorPrincipal;
+					}
+					.topnotacolor{
+						background-color: transparent;
+						padding-bottom: 0px;
+						margin-top: 0px;
+						display: table;
+						color: $colorPrincipal;
+					}
+				}
+			}
+		}
+	}
+	.notatematicahome{
+		padding: 10px;
+		position: relative;
+		.notagrande{
+			width: calc(100% - 305px);
+			border-bottom: 0;
+			padding-bottom: 0;
+			margin-right: 5px;
+			padding-right: 15px;
+			border-right: 1px solid #4b4b4b;
+			.titulo{
+				font-size: 36px;
+			}
+			.imagen{
+				width: 100%;
+			}
+			.bajada{
+				width: 100%;
+			}
+			.tiemposhare{
+				width: 100%;
+			}
+		}
+		.notasimple{
+			width: 300px;
+		}
+		.notatematicahomechicas{
+			margin-bottom: -30px;
+			.notasimpleesp{
+				height: 140px;
+			}
+		}
+
 	}
 }
 @media screen and (min-width: $mq_cuatrocolumnas){
@@ -1309,21 +1709,6 @@
 		width: $cuatrocolumnas;
 		float: none !important;
 	}
-	/*.objetosmedio{
-		width: $doscolumnas;
-		float: right;
-	}
-	.lomasleido{
-		.items{
-			column-count:2;
-		}
-	}
-	.zoomnota{
-		float: right;
-	}
-	.bannerdoble{
-		float: right !important;
-	}*/
 	.briefing .sliderbriefing .wrapperslider,
 	.objetozoom .sliderzoom .wrapperslider,
 	.notamedianaslider .wrapperslider{
@@ -1375,10 +1760,14 @@
 		} 
 	}
 	.notavideohome{
+		.temanotavideo{
+			margin-right: calc(100% - 380px);
+		}
 		.copeteobjeto{
-			flex: 0 0 100%;
-			-webkit-flex:0 0 100%;
+			//flex: 0 0 100%;
+			//-webkit-flex:0 0 100%;
 			margin-bottom: 20px;
+			margin-right: calc(100% - 400px);
 		}
 		.notagrande{
 			width: 300px;
@@ -1410,7 +1799,6 @@
 		.notavideohomeespecial{
 			margin-bottom: 0;
 			.notasimpleesp{
-				height: auto;
 				width: calc(25% - 7px);
 				padding-right: 15px;
 				padding-top: 0;
@@ -1418,6 +1806,7 @@
 				padding-bottom: 0;
 				border-bottom: 0;
 				border-right: 1px solid #4b4b4b;
+				margin-bottom: 0;
 				.titulo{
 					min-height: 75px;
 				}
@@ -1485,6 +1874,7 @@
 					}
 					.tiemposhare{
 						bottom: 30px;
+						width: 100%;
 					}
 				}
 				.notamassimpleultima{
@@ -1492,6 +1882,222 @@
 					padding-bottom: 0;
 					border-bottom: 0;
 				}
+			}
+		}
+	}
+	.notahomebombapositivo{
+		.masnotasbomba{
+			.notamasmediana{
+				border-right: 1px solid $colorSeparadores;
+			}
+			.notasmassimples{
+				.notamassimple{
+					border-bottom: 1px solid $colorSeparadores;
+				}
+				.notamassimpleultima{
+					border:0;
+				}
+			}
+		}
+	}
+	.notahomemegabomba{
+		.notasgrandes{
+			.notagrande{
+				.copete{
+					padding-bottom: 10px;
+				}
+				.titulo{
+					font-size: 66px;
+					line-height: 60px;
+					font-weight: 700;
+				}
+				.bajada{
+					padding-left: 10%;
+					padding-right: 10%;
+					margin-bottom: 40px;
+				}
+				.imagen{
+					width: calc(50% - 20px);
+					height: 350px;
+					margin-right: 20px;
+					overflow: hidden;
+				}
+				.notaprincipalchica{
+					width: 25%;
+					height: 350px;
+					float: left;
+					border-right: 1px solid darken($colorSeparadores, 40%);
+					padding: 20px;
+					.titulochicoppl{
+						font-size: 22px;
+						line-height: 25px;
+					}
+				}
+				.notasdobleschicas{
+					width: 25%;
+					height: 350px;
+					float: left;
+					padding: 20px;
+					margin-bottom: 0;
+					.notadoblechica{
+						width: 100%;
+						height: 135px;
+						padding-right: 0;
+						padding-left: 0;
+						margin-bottom: 20px;
+						border-right: 0;
+						position: relative;
+						.titulochico{
+							font-size: 17px;
+							line-height: 21px;
+						}
+						.tiemposhare{
+							position: absolute;
+							bottom: 0px;
+							width: 100%;
+						}
+					}
+					.notadoblechicafinal{
+						padding-top: 20px;
+						height: 155px;
+						border-top: 1px solid darken($colorSeparadores, 40%);
+						margin-bottom: 0;
+					}
+				}
+			}
+		}
+		.masnotasbomba{
+			padding: 40px 10px;
+			.notamasgrande{
+				width: 50%;
+				padding-left: 0;
+				padding-bottom: 0;
+				height: 305px;
+				.imagen{
+					margin-bottom: 0;
+				}
+				.tiemposhare{
+					bottom: 0;
+				}
+			}
+			.notamasmediana{
+				width: 25%;
+				height: 305px;
+				float: left;
+				padding-left: 20px;
+				padding-right: 20px;
+				padding-bottom: 0;
+				border-right:1px solid $colorSeparadores;
+				position: relative;
+				.tiemposhare{
+					position: absolute;
+					bottom: 0;
+					width: calc(100% - 40px);
+				}
+			}
+			.notasmassimples{
+				width: 25%;
+				float: left;
+				padding-left: 20px;
+				padding-top: 0;
+				border-top:0;
+				.notamassimple{
+					width: 100%;
+					padding-left: 0;
+					padding-right: 0;
+					height: 147px;
+					margin-bottom: 20px;
+					padding-bottom: 20px;
+					border-bottom: 1px solid $colorSeparadores;
+					border-right: 0;
+					.tiemposhare{
+						width: 100%;
+					}
+				}
+				.notamassimpleultima{
+					border:0;
+				}
+			}
+		}
+		.galeriabomba{
+			float: left;
+			margin-top: -31px;
+			.contenedorgaleria{
+				width: $cuatrocolumnas + 20px;
+				height: $cuatrocolumnas / 2 + 90px;
+			}
+		}
+	}
+	.notahomemegabombapositivo{
+		.notasgrandes{
+			.notagrande{
+				border-bottom: 1px solid $colorSeparadores;
+				.notaprincipalchica{
+					border-right: 1px solid darken($colorSeparadores, 5%);
+				}
+				.notasdobleschicas{
+					.notadoblechicafinal{
+						border-top: 1px solid darken($colorSeparadores, 5%);
+					}
+				}
+			}
+		}
+	}
+	.notatematicahome{
+		.notagrande{
+			width: 50%;
+			min-height: 340px;
+			position: relative;
+			margin-right: 0;
+			.titulo{
+				font-size: 38px;
+			}
+			.imagen{
+				width: 285px;
+				margin-right: 20px;
+				margin-bottom: 0;
+			}
+			.bajada{
+				width: calc(100% - 305px);
+			}
+			.tiemposhare{
+				width: calc(100% - 330px);
+				position: absolute;
+				bottom: 0px;
+				right: 15px;
+			}
+		}
+		.notasimple{
+			height: 340px;
+			width: 25%;
+			position: relative;
+			.titulo{
+				font-size: 21px;
+				line-height: 25px;
+			}
+			.tiemposhare{
+				position: absolute;
+				bottom: 0;
+				width: calc(100% - 20px);
+			}
+		}
+		.notatematicahomechicas{
+			margin-bottom: 0;
+			padding-bottom: 20px;
+			.notasimpleesp{
+				width: 25%;
+				padding-right: 15px;
+				padding-top: 0;
+				padding-bottom: 0;
+				border-bottom: 0;
+				margin-bottom: 0;
+				border-right: 1px solid #4b4b4b;
+				.tiemposhare{
+					bottom: 10px;
+				}
+			}
+			.ultima{
+				border:0;
 			}
 		}
 	}

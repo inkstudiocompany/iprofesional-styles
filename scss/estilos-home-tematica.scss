@@ -3,12 +3,12 @@
 @import "_variables.scss";
 @import "_generales.scss";
 
-.notavideohome{
+.notatematicahome{
 	background-color: $fondoObjetos;
 	width: 100%;
 	float: left;
 	margin-bottom: 30px;
-	.temanotavideo{
+	.temanota{
 		font-size: 30px;
 		line-height: 35px;
 		color: white;
@@ -56,10 +56,19 @@
     		line-height: 29px;
     		letter-spacing: -0.25px;
     		font-weight: 700;
+            margin-bottom: 10px;
     		a{
     			color: white;
     		}
     	}
+        .imagen{
+            width: 100%;
+            margin-bottom: 10px;
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
     	.bajada{
     		width: 100%;
     		font-size: 16px;
@@ -125,6 +134,7 @@
     		line-height: 23px;
     		letter-spacing: -0.25px;
     		font-weight: 700;
+            margin-bottom: 10px;
     		a{
     			color: white;
     		}
@@ -147,14 +157,15 @@
 			}
 		}
     }
-    .notavideohomeespecial{
+    .notatematicahomechicas{
 		width: 100%;
 		display: table;
 		border-top: 1px solid #4b4b4b;
 		padding-top: 30px;
 		margin-bottom: -20px;
 		.notasimpleesp{
-			padding: 10px;
+			width: 100%;
+            padding: 10px;
 			margin-bottom: 20px;
 			padding-bottom: 30px;
 			float: left;

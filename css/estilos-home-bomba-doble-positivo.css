@@ -319,58 +319,98 @@ body { text-align: left; color: #1c1c1c; background-color: white; font-family: '
 
 img.lazy { width: 300px; height: 168px; display: block; }
 
-.notahomebombasimple { width: 100%; float: left; }
+.notahomebomba { background-color: whitesmoke; width: 100%; float: left; margin-bottom: 30px; }
 
-.notahomebombasimple .notagrande { width: 100%; padding: 10px 10px 40px 10px; margin-bottom: 30px; border-bottom: 1px solid #4b4b4b; background-color: #373737; float: left; }
+.notahomebomba .temanotavideo { font-size: 30px; line-height: 35px; color: #1c1c1c; font-family: "Source Serif Pro", serif; letter-spacing: -1px; margin-top: 20px; margin-left: 10px; margin-bottom: 30px; font-weight: 700; border-bottom: 3px solid #ff9933; display: table; }
 
-.notahomebombasimple .notagrande .copeteobjeto { background-color: #ff9933; height: 30px; line-height: 30px; color: #1c1c1c; font-weight: 700; margin-bottom: 10px; text-transform: uppercase; padding-left: 10px; padding-right: 10px; display: table; }
+.notahomebomba .copeteobjeto { background-color: #ff9933; height: 30px; line-height: 30px; color: #1c1c1c; font-weight: 700; margin: 10px; text-transform: uppercase; padding-left: 10px; padding-right: 10px; display: table; }
 
-.notahomebombasimple .notagrande .copeteobjeto span { color: white; }
+.notahomebomba .copeteobjeto span { color: white; }
 
-.notahomebombasimple .notagrande .copete { color: #ff9933; font-weight: 700; text-transform: uppercase; width: 100%; padding-bottom: 3px; }
+.notahomebomba .notasgrandes { width: 100%; display: table; }
 
-.notahomebombasimple .notagrande .titulo { width: 100%; font-family: "Source Serif Pro"; font-size: 27px; line-height: 33px; letter-spacing: -0.75px; font-weight: 600; margin-bottom: 10px; }
+.notahomebomba .notagrande { width: 100%; padding: 10px 10px 40px 10px; margin-bottom: 30px; border-bottom: 1px solid #d4d6d7; float: left; }
 
-.notahomebombasimple .notagrande .titulo a { color: white; }
+.notahomebomba .notagrande .copete { color: #ff9933; font-weight: 700; text-transform: uppercase; width: 100%; padding-bottom: 3px; }
 
-.notahomebombasimple .notagrande .bajada { width: 100%; font-size: 16px; line-height: 21px; margin-bottom: 20px; }
+.notahomebomba .notagrande .titulo { width: 100%; font-family: "Source Serif Pro"; font-size: 27px; line-height: 33px; letter-spacing: -0.75px; font-weight: 600; margin-bottom: 10px; }
 
-.notahomebombasimple .notagrande .bajada a { color: white; }
+.notahomebomba .notagrande .titulo a { color: #1c1c1c; }
 
-.notahomebombasimple .notagrande .imagen { width: 100%; margin-bottom: 15px; }
+.notahomebomba .notagrande .bajada { width: 100%; font-size: 16px; line-height: 21px; margin-bottom: 20px; }
 
-.notahomebombasimple .notagrande .imagen img { width: 100%; height: auto; }
+.notahomebomba .notagrande .bajada a { color: #1c1c1c; }
 
-.notahomebombasimple .notagrande .tiemposhare { padding: 0; }
+.notahomebomba .notagrande .imagen { width: 100%; margin-bottom: 15px; }
 
-.notahomebombasimple .notagrande .tiemposhare .share { background-image: url(../images/share-blanco.png); }
+.notahomebomba .notagrande .imagen img { width: 100%; height: auto; }
 
-.notahomebombasimple .notamedianabombasimple { padding-bottom: 40px; margin-bottom: 40px; border-bottom: 1px solid #d4d6d7; display: table; }
+.notahomebomba .notagrande .tiemposhare { padding: 0; }
 
-.notahomebombasimple .notamedianabombasimple .imagen { width: 100%; margin-bottom: 8px; line-height: 0; position: relative; }
+.notahomebomba .notagrande .tiemposhare .share { background-image: url(../images/share.png); }
 
-.notahomebombasimple .notamedianabombasimple .imagen img { width: 100%; height: auto; }
+.notahomebomba .notagrandeultima { border: 0; margin-bottom: 0; }
 
-.notahomebombasimple .notamedianabombasimple .volanta { width: 100%; padding-left: 10px; padding-right: 10px; color: #ff9933; font-weight: 700; margin-bottom: 4px; font-size: 16px; text-transform: uppercase; }
+.notahomebomba .masnotasbomba { width: 100%; display: table; border-top: 1px solid #d4d6d7; padding-top: 30px; margin-bottom: 40px; }
 
-.notahomebombasimple .notamedianabombasimple .volanta span { color: #1c1c1c; font-weight: 600; text-transform: none; }
+.notahomebomba .masnotasbomba .notamasgrande { width: 100%; display: table; padding: 10px 10px 40px 10px; border-bottom: 1px solid #d4d6d7; margin-bottom: 40px; }
 
-.notahomebombasimple .notamedianabombasimple .titulo { width: 100%; padding-left: 10px; padding-right: 10px; font-size: 18px; line-height: 23px; font-family: 'Source Serif Pro', serif; color: #1c1c1c; font-weight: 600; letter-spacing: -0.5px; }
+.notahomebomba .masnotasbomba .notamasgrande .imagen { width: 100%; margin-bottom: 5px; }
 
-.notahomebombasimple .notamedianabombasimple .titulo a { color: #1c1c1c; }
+.notahomebomba .masnotasbomba .notamasgrande .imagen img { width: 100%; height: auto; }
 
-.notahomebombasimple .notaschicasbombasimple .notachica { width: 100%; display: table; padding-bottom: 40px; margin-bottom: 40px; border-bottom: 1px solid #d4d6d7; }
+.notahomebomba .masnotasbomba .notamasgrande .imagen .imagenwide { display: block; }
 
-.notahomebombasimple .notaschicasbombasimple .notachica .volanta { color: #ff9933; }
+.notahomebomba .masnotasbomba .notamasgrande .imagen .imagencuadrada { display: none; }
 
-.notahomebombasimple .notaschicasbombasimpleosc { background-color: #373737; padding-top: 30px; }
+.notahomebomba .masnotasbomba .notamasgrande .volanta { color: #ff9933; font-weight: 700; text-transform: uppercase; width: 100%; padding-bottom: 3px; }
 
-.notahomebombasimple .notaschicasbombasimpleosc .notachica { width: 100%; display: table; padding-bottom: 40px; margin-bottom: 40px; border-bottom: 1px solid #5a5a5a; }
+.notahomebomba .masnotasbomba .notamasgrande .volanta span { color: #1c1c1c; }
 
-.notahomebombasimple .notaschicasbombasimpleosc .notachica .volanta { color: #ff9933; }
+.notahomebomba .masnotasbomba .notamasgrande .titulo { font-size: 19px; font-family: 'Source Serif Pro', serif; line-height: 23px; color: white; font-weight: 600; letter-spacing: -0.5px; margin-bottom: 10px; width: 100%; }
 
-.notahomebombasimple .notaschicasbombasimpleosc .notachica .volanta span { color: white; }
+.notahomebomba .masnotasbomba .notamasgrande .titulo a { color: #1c1c1c; }
 
-.notahomebombasimple .notaschicasbombasimpleosc .notachica .titulo a { color: white; }
+.notahomebomba .masnotasbomba .notamasgrande .bajada { font-size: 16px; line-height: 21px; font-weight: 400; margin-bottom: 20px; width: 100%; }
 
-.notahomebombasimple .notaschicasbombasimpleosc .notachica .tiemposhare .share { background-image: url(../images/share-blanco.png); }
+.notahomebomba .masnotasbomba .notamasgrande .bajada a { color: #1c1c1c; }
+
+.notahomebomba .masnotasbomba .notamasgrande .tiemposhare { padding-left: 0; padding-right: 0; }
+
+.notahomebomba .masnotasbomba .notamasgrande .tiemposhare .share { background-image: url(../images/share.png); }
+
+.notahomebomba .masnotasbomba .notamasmediana { width: 100%; display: table; padding: 0px 10px 40px 10px; border-bottom: 1px solid #d4d6d7; margin-bottom: 40px; }
+
+.notahomebomba .masnotasbomba .notamasmediana .volanta { color: #ff9933; font-weight: 700; text-transform: uppercase; width: 100%; padding-bottom: 3px; }
+
+.notahomebomba .masnotasbomba .notamasmediana .volanta span { color: #1c1c1c; }
+
+.notahomebomba .masnotasbomba .notamasmediana .titulo { font-size: 19px; font-family: 'Source Serif Pro', serif; line-height: 23px; color: white; font-weight: 600; letter-spacing: -0.5px; margin-bottom: 10px; width: 100%; }
+
+.notahomebomba .masnotasbomba .notamasmediana .titulo a { color: #1c1c1c; }
+
+.notahomebomba .masnotasbomba .notamasmediana .imagen { width: 100%; margin-bottom: 15px; }
+
+.notahomebomba .masnotasbomba .notamasmediana .imagen img { width: 100%; height: auto; }
+
+.notahomebomba .masnotasbomba .notamasmediana .tiemposhare { padding-left: 0; padding-right: 0; }
+
+.notahomebomba .masnotasbomba .notamasmediana .tiemposhare .share { background-image: url(../images/share.png); }
+
+.notahomebomba .masnotasbomba .notasmassimples { width: 100%; display: table; }
+
+.notahomebomba .masnotasbomba .notasmassimples .notamassimple { width: 100%; padding: 0px 10px 40px 10px; border-bottom: 1px solid #d4d6d7; margin-bottom: 40px; }
+
+.notahomebomba .masnotasbomba .notasmassimples .notamassimple .volanta { color: #ff9933; font-weight: 700; text-transform: uppercase; width: 100%; padding-bottom: 3px; }
+
+.notahomebomba .masnotasbomba .notasmassimples .notamassimple .volanta span { color: #1c1c1c; }
+
+.notahomebomba .masnotasbomba .notasmassimples .notamassimple .titulo { font-size: 19px; font-family: 'Source Serif Pro', serif; line-height: 23px; color: #1c1c1c; font-weight: 600; letter-spacing: -0.5px; margin-bottom: 10px; width: 100%; }
+
+.notahomebomba .masnotasbomba .notasmassimples .notamassimple .titulo a { color: #1c1c1c; }
+
+.notahomebomba .masnotasbomba .notasmassimples .notamassimple .tiemposhare { padding-left: 0; padding-right: 0; }
+
+.notahomebomba .masnotasbomba .notasmassimples .notamassimple .tiemposhare .share { background-image: url(../images/share.png); }
+
+.notahomebomba .masnotasbomba .notasmassimples .notamassimpleultima { padding-bottom: 0; margin-bottom: 0; border-bottom: 0; }

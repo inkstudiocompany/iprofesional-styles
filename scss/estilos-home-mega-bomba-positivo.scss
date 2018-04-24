@@ -1,0 +1,68 @@
+@import "_reset.scss";
+@import "_fonts.scss";
+@import "_variables.scss";
+@import "_generales.scss";
+
+
+.notahomemegabombapositivo{
+    background-color: lighten($colorPrincipal, 85%);
+    .notagrande{
+    	.titulo{
+    		a{
+    			color: $colorPrincipal;
+    		}
+    	}
+    	.bajada{
+            a{
+                color: $colorPrincipal;
+            }
+    	}
+        .notaprincipalchica{
+            background-color: rgba(0, 0, 0, 0.07);
+                .copetechico{
+                    color: $colorPrincipal;
+                    opacity: 0.5;
+                }
+                .titulochicoppl{
+                    a{
+                        color: $colorPrincipal;
+                    }
+                }
+                .imagench{
+                    position: relative;
+                    .laimagen{
+                        line-height: 0;
+                        img{
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+                }
+        }
+        .notasdobleschicas{
+            background-color: rgba(0, 0, 0, 0.07);
+            border-top: 1px solid darken($colorSeparadores, 5%);
+            color: $colorPrincipal;
+            .notadoblechica{
+                border-bottom: 1px solid darken($colorSeparadores, 5%);
+                .copetechico{
+                    color: $colorPrincipal;
+                    opacity: 0.5;
+                }
+                .titulochico{
+                    a{
+                        color: $colorPrincipal;
+                    }
+                }
+                .tiemposhare{
+                    .share{
+                        background-image: url(#{$urlImages}share.png);
+                     }
+                }
+            }
+            .notadoblechicafinal{
+                border-bottom: 0;
+            }
+        }
+    }
+}

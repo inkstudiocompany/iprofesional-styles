@@ -67,7 +67,7 @@
         .tiemposhare{
             padding: 0;
             .share {
-                background-image: url(../images/share-blanco.png);
+                background-image: url(#{$urlImages}share-blanco.png);
             }
         }
     }
@@ -150,7 +150,7 @@
             }
             .tiemposhare{
                 .share {
-                    background-image: url(../images/share-blanco.png);
+                    background-image: url(#{$urlImages}share-blanco.png);
                 }
             }
         }

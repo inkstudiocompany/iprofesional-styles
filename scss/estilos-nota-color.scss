@@ -1,0 +1,67 @@
+@charset "utf-8";
+
+@import "_reset.scss";
+@import "_fonts.scss";
+@import "_variables.scss";
+@import "_generales.scss";
+
+$colorFondo: #728260;
+$borderBottom: 1px solid rgba(255, 255, 255, 0.2);
+
+// Estilos nota Color
+.notacolor{
+
+		.cabezalmobile{
+			background-color: $colorFondo; 
+			border-bottom: $borderBottom;
+			.botonmenu{
+				background-image: url(../images/icono-menu_blanco.png);
+			}
+			.logotipo{
+				background-image: url(../images/logotipo-iprofesional_blanco.png);
+			}
+			.botonbuscador{
+				background-image: url(../images/icono-buscar_blanco.png);
+			}
+		}
+		.cabezalmobilenv2{
+			background-color: $colorFondo; 
+			border-bottom: $borderBottom;
+			color: white;
+			a{
+				color: white;
+			}
+		}
+		.contenido{
+			background-color: $colorFondo;
+			.bannertop{
+				background-color: $colorFondo;
+				color: white;
+				border-bottom: $borderBottom;
+			}
+			.bloquenotas{
+				background-color: white;
+				.desarrollonota{
+					.titulonota{
+						color: white;
+					}
+					.topnotacolor{
+						background-color: $colorFondo;
+						
+						padding-bottom: 5px;
+						margin-top: -10px;
+						display: table;
+						color: white;
+					}
+					.compartirredes{
+						margin-bottom: 20px;
+						margin-top: 0px;
+					}
+				}
+			}
+			.objetosinferiores{
+				background-color: white;
+			}
+		}
+
+}

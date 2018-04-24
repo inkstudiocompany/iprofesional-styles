@@ -5,14 +5,14 @@
 
 
 .notahomebomba{
-	background-color: $fondoObjetos;
+    background-color: lighten($colorPrincipal, 85%);
 	width: 100%;
 	float: left;
 	margin-bottom: 30px;
 	.temanotavideo{
 		font-size: 30px;
 		line-height: 35px;
-		color: white;
+		color: $colorPrincipal;
 		font-family: "Source Serif Pro", serif;
 		letter-spacing: -1px;
 		margin-top: 20px;
@@ -45,7 +45,7 @@
     	width: 100%;
     	padding: 10px 10px 40px 10px;
 		margin-bottom: 30px;
-    	border-bottom: 1px solid #4b4b4b;
+    	border-bottom: 1px solid $colorSeparadores;
     	float: left;
 		.copete{
     		color: $colorTerciario;
@@ -63,7 +63,7 @@
     		font-weight: 600;
             margin-bottom:10px;
     		a{
-    			color: white;
+    			color: $colorPrincipal;
     		}
     	}
     	.bajada{
@@ -72,7 +72,7 @@
     		line-height: 21px;
             margin-bottom: 20px;
     		a{
-    			color: white;
+    			color: $colorPrincipal;
     		}
     	}
         .imagen{
@@ -86,7 +86,7 @@
         .tiemposhare{
             padding: 0;
             .share {
-                background-image: url(#{$urlImages}share-blanco.png);
+                background-image: url(#{$urlImages}share.png);
             }
         }
     }
@@ -97,14 +97,14 @@
     .masnotasbomba{
         width: 100%;
         display: table;
-        border-top: 1px solid #4b4b4b;
+        border-top: 1px solid $colorSeparadores;
         padding-top: 30px;
         margin-bottom: 40px;
         .notamasgrande{
             width: 100%;
             display: table;
             padding: 10px 10px 40px 10px;
-            border-bottom: 1px solid #4b4b4b;
+            border-bottom: 1px solid $colorSeparadores;
             margin-bottom: 40px;
             .imagen{
                 width: 100%;
@@ -127,7 +127,7 @@
                 width: 100%;
                 padding-bottom: 3px;
                 span{
-                    color: white;
+                    color: $colorPrincipal;
                 }
             }
             .titulo{
@@ -140,7 +140,7 @@
                 margin-bottom: 10px;
                 width: 100%;
                 a{
-                    color: white;
+                    color: $colorPrincipal;
                 }
             }
             .bajada{
@@ -150,14 +150,14 @@
                 margin-bottom: 20px;
                 width: 100%;
                 a{
-                    color: white;
+                    color: $colorPrincipal;
                 }
             }
             .tiemposhare{
                 padding-left: 0;
                 padding-right: 0;
                 .share {
-                    background-image: url(#{$urlImages}share-blanco.png);
+                    background-image: url(#{$urlImages}share.png);
                 }
             }
         }
@@ -165,7 +165,7 @@
             width: 100%;
             display: table;
             padding: 0px 10px 40px 10px;
-            border-bottom: 1px solid #4b4b4b;
+            border-bottom: 1px solid $colorSeparadores;
             margin-bottom: 40px;
             .volanta{
                 color: #ff9933;
@@ -174,7 +174,7 @@
                 width: 100%;
                 padding-bottom: 3px;
                 span{
-                    color: white;
+                    color: $colorPrincipal;
                 }
             }
             .titulo{
@@ -187,7 +187,7 @@
                 margin-bottom: 10px;
                 width: 100%;
                 a{
-                    color: white;
+                    color: $colorPrincipal;
                 }
             }
             .imagen{
@@ -202,7 +202,7 @@
                 padding-left: 0;
                 padding-right: 0;
                 .share {
-                    background-image: url(#{$urlImages}share-blanco.png);
+                    background-image: url(#{$urlImages}share.png);
                 }
             }
         }
@@ -212,7 +212,7 @@
             .notamassimple{
                 width: 100%;
                 padding: 0px 10px 40px 10px;
-                border-bottom: 1px solid #4b4b4b;
+                border-bottom: 1px solid $colorSeparadores;
                 margin-bottom: 40px;
                 .volanta{
                     color: #ff9933;
@@ -221,27 +221,27 @@
                     width: 100%;
                     padding-bottom: 3px;
                     span{
-                        color: white;
+                       color: $colorPrincipal;
                     }
                 }
                 .titulo{
                     font-size: 19px;
                     font-family: 'Source Serif Pro', serif;
                     line-height: 23px;
-                    color: white;
+                    color: $colorPrincipal;
                     font-weight: 600;
                     letter-spacing: -0.5px;
                     margin-bottom: 10px;
                     width: 100%;
                     a{
-                        color: white;
+                        color: $colorPrincipal;
                     }
                 }
                 .tiemposhare{
                     padding-left: 0;
                     padding-right: 0;
                     .share {
-                        background-image: url(#{$urlImages}share-blanco.png);
+                        background-image: url(#{$urlImages}share.png);
                     }
                 }
             }

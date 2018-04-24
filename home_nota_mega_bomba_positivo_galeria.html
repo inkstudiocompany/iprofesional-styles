@@ -1,0 +1,302 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>iProfesional HOME</title>
+<meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.5, maximum-scale=2.0">
+<link href="css/estilos-home.css" rel="stylesheet" type="text/css">
+<link href="css/estilos-home-mega-bomba.css" rel="stylesheet" type="text/css">
+<link href="css/estilos-home-mega-bomba-positivo.css" rel="stylesheet" type="text/css">
+<link href="css/estilos-home-mega-bomba-galeria.css" rel="stylesheet" type="text/css">
+<link href="css/swiper.min.css" rel="stylesheet" type="text/css">
+<link href="css/responsive.css" rel="stylesheet" type="text/css">
+<script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/fancybox/jquery.fancybox.pack.js"></script>
+<link rel="stylesheet" type="text/css" href="js/fancybox/jquery.fancybox.css?v=2.1.5" media="screen" />
+</head>
+
+<body>
+<div id="top"></div>
+<div class="buscador" id="buscador">
+	<div class="basebuscador">
+		<div class="campo"><input type="" name="" value="Ingresar el texto a buscar"></div>
+		<div class="cerrar" onclick="cerrarBuscador()"></div>
+	</div>
+</div>
+<div class="menuflotante" id="menuflotante">
+	<div class="wrappermenu">
+		<div class="seccionesprincipal">
+			<ul>
+				<li class="titlista">&Uacute;LTIMAS NOTICIAS</li>
+				<li><a href="#">Econom&iacute;a</a></li>
+				<li><a href="#">Finanzas</a></li>
+				<li><a href="#">Impuestos</a></li>
+				<li><a href="#">Legales</a></li>
+				<li><a href="#">Negocios</a></li>
+				<li><a href="#">Tecnolog&iacute;a</a></li>
+				<li><a href="#">Comex</a></li>
+				<li><a href="#">Management</a></li>
+				<li><a href="#">Marketing</a></li>
+				<li></li>
+			</ul>	
+		</div>
+		<div class="seccionessecundarias">
+			<ul>
+				<li class="titlista">ADEM&Aacute;S</li>
+				<li><a href="#">Autos iPro</a></li>
+				<li><a href="#">Vinos &amp; Bodegas</a></li>
+				<li><a href="#">Energ&iacute;as Limpias</a></li>
+				<li><a href="#">Ahora Brasil</a></li>
+				<li><a href="#">Health &amp; Tech</a></li>
+				<li><a href="#">Responsabilidad Social Digital</a></li>
+				<li><a href="#">Real Estate</a></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+		<div class="redessocialesip">
+			<div class="fb"><a href="#"></a></div>
+			<div class="tw"><a href="#"></a></div>
+			<div class="li"><a href="#"></a></div>
+			<div class="gp"><a href="#"></a></div>
+			<div class="alertas"><a href="#"></a></div>
+			<div class="rss"><a href="#"></a></div>
+		</div>
+		<div class="registroip">
+			<div><a href="#">LOGIN</a></div>
+		</div>
+	</div>
+</div>
+<div id="compartir" style="display: none;">
+	<div class="tituloseccion">Compartir nota</div>
+	<ul>
+		<li>
+			<a href="#">
+				<div class="share fb"></div>
+				<div class="texto">Compartir en Facebook</div>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				<div class="share tw"></div>
+				<div class="texto">Compartir en Twitter</div>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				<div class="share mail"></div>
+				<div class="texto">Enviar por Mail</div>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				<div class="share wa"></div>
+				<div class="texto">Enviar por Whatsapp</div>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				<div class="share li"></div>
+				<div class="texto">Compartir en Linkedin</div>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				<div class="share gp"></div>
+				<div class="texto">Compartir en Google+</div>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				<div class="share url"></div>
+				<div class="texto">Copiar url corta</div>
+			</a>
+		</li>
+	</ul>
+</div>
+<div id="indicenotas" style="display: none;">
+          <ul>
+            <li><a href="#"><span class="seccion">FINANZAS</span> <span class="fecha">Hace 14 minutos</span> <span class="titulo">Blanqueo, día después: cómo queda cada impuesto para los que entraron y para quienes queden al margen</span></a> </li>
+            <li><a href="#"><span class="seccion">NEGOCIOS</span> <span class="fecha">Hace 19 minutos</span> <span class="titulo">Los mercados impactados por el default: los bonos y las acciones reportaron pérdidas de hasta el 11 por ciento</a> </li>
+            <li><a href="#"><span class="seccion">ACTUALIDAD</span> <span class="fecha">Hace 34 minutos</span> <span class="titulo">Blanqueo, día después: cómo queda cada impuesto para los que entraron y para quienes queden al margen</span></a> </li>
+            <li><a href="#"><span class="seccion">FINANZAS</span> <span class="fecha">Hace 54 minutos</span> <span class="titulo">Impuesto a las Ganancias, bajo la lupa: este es el horizonte completo de los futuros cambios</span></a> </li>
+            <li><a href="#"><span class="seccion">COMEX</span> <span class="fecha">Hace 1 hora</span> <span class="titulo">Blanqueo, día después: cómo queda cada impuesto para los que entraron y para quienes queden al margen</span></a> </li>
+            <li><a href="#"><span class="seccion">MARKETING</span> <span class="fecha">Hace 1 hora</span> <span class="titulo">Los mercados impactados por el default: los bonos y las acciones reportaron pérdidas de hasta el 11 por ciento</span></a> </li>
+            <li><a href="#"><span class="seccion">FINANZAS</span> <span class="fecha">Hace 2 horas</span> <span class="titulo">Blanqueo, día después: cómo queda cada impuesto para los que entraron y para quienes queden al margen</span></a> </li>
+            <li><a href="#"><span class="seccion">ACTUALIDAD</span> <span class="fecha">Hace 2 horas</span> <span class="titulo">Impuesto a las Ganancias, bajo la lupa: este es el horizonte completo de los futuros cambios</span></a> </li>
+            <li><a href="#"><span class="seccion">TECNOLOG&Iacute;A</span> <span class="fecha">Hace 2 horas</span> <span class="titulo">Blanqueo, día después: cómo queda cada impuesto para los que entraron y para quienes queden al margen</span></a> </li>
+            <li><a href="#"><span class="seccion">FINANZAS</span> <span class="fecha">Hace 3 horas</span> <span class="titulo">Los mercados impactados por el default: los bonos y las acciones reportaron pérdidas de hasta el 11 por ciento</span></a> </li>
+            <li><a href="#"><span class="seccion">ECONOM&Iacute;A</span> <span class="fecha">Hace 4 horas</span> <span class="titulo">Blanqueo, día después: cómo queda cada impuesto para los que entraron y para quienes queden al margen</span></a> </li>
+            <li><a href="#"><span class="seccion">FINANZAS</span> <span class="fecha">Hace 4 horas</span> <span class="titulo">Impuesto a las Ganancias, bajo la lupa: este es el horizonte completo de los futuros cambios</span></a> </li>
+            <li><a href="#"><span class="seccion">FINANZAS</span> <span class="fecha">Hace 4 horas</span> <span class="titulo">Blanqueo, día después: cómo queda cada impuesto para los que entraron y para quienes queden al margen</span></a> </li>
+            <li><a href="#"><span class="seccion">FINANZAS</span> <span class="fecha">Hace 4 horas</span> <span class="titulo">Los mercados impactados por el default: los bonos y las acciones reportaron pérdidas de hasta el 11 por ciento</span></a> </li>
+            <li><a href="#"><span class="seccion">FINANZAS</span> <span class="fecha">Hace 5 horas</span> <span class="titulo">Blanqueo, día después: cómo queda cada impuesto para los que entraron y para quienes queden al margen</span></a> </li>
+            <li><a href="#"><span class="seccion">FINANZAS</span> <span class="fecha">Hace 5 horas</span> <span class="titulo">Impuesto a las Ganancias, bajo la lupa: este es el horizonte completo de los futuros cambios</span></a> </li>
+          </ul>
+        </div>
+
+<div class="mainwrapper">
+	<div class="cabezalmobile">
+		<div class="botonmenu" onclick="funcionMenu()"></div>
+		<div class="desktop">
+			<div class="seccionesexpandido">
+				<ul>
+					<li><strong>SECCIONES</strong></li>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Econom&iacute;a</a></li>
+					<li><a href="#">Finanzas</a></li>
+					<li><a href="#">Impuestos</a></li>
+					<li><a href="#">Legales</a></li>
+					<li><a href="#">Negocios</a></li>
+					<li><a href="#">Tecnolog&iacute;a</a></li>
+					<li><a href="#">Comex</a></li>
+					<li><a href="#">Management</a></li>
+					<li><a href="#">Marketing</a></li>
+				</ul>
+			</div>
+			<div class="logotipoblanco"></div>
+		</div>
+		<div class="logotipo"></div>
+		<div class="botonbuscador" onclick="abrirBuscador()"></div>
+	</div>
+	<div class="cabezalgrande">
+		<div class="bannerizq"><img src="http://www.benzinsider.com/wp-content/uploads/2017/09/mercedes-amg-project-one-3-180x70.jpg"></div>
+		<div class="logogrande"></div>
+		<div class="bannerder"><img src="http://www.benzinsider.com/wp-content/uploads/2017/09/mercedes-amg-project-one-3-180x70.jpg"></div>
+	</div>
+	<div class="cabezalmobilenv2">
+		<div class="fecha">23.04.2017</div>
+		<div class="accesosusuario"><a class="fancybox" href="#indicenotas" title="&Iacute;NDICE DE NOTAS">&Iacute;NDICE</a> <a href>LOGIN</a> <a href>REGISTRO</a></div>
+	</div>
+	<div class="contenido">
+		<div class="banner bannerwide bannertop">
+			<div class="titulo">Publicidad</div>
+			<div class="elbanner"><img src="images/banner300x250.jpg"></div>
+		</div>
+		<div class="alerta">
+			<div class="tituloalerta">ALERTA</div>
+			<div class="textoalerta">Operan al Presidente Mauricio Macri en el Sanatorio Otamendi</div>
+		</div>
+		<div class="bloquenotas">
+			<div class="notahomemegabomba notahomemegabombapositivo">
+				<div class="copeteobjeto"><span>En vivo</span> Congreso</div>
+				<div class="notasgrandes">
+					<div class="notagrande">
+						<div class="copete">Nueva agenda impositiva</div>
+						<h2 class="titulo"><a href>Oficial: Argentina entró en default</a></h2>
+						<h3 class="bajada"><a href>La mirada más global y aperturista del gobierno de Mauricio Macri permite abrir el cepo a grandes íconos internacionales de la moda, la gastronomía y el lujo que vuelve a poner al mercado local en el radar de sus planes de expansión</a></h2>
+						<div class="imagen">
+							<div class="laimagen"><a href><img src="images/imagenstandard.jpg"></a></div>
+							<div class="shareimagen"><a class="fancybox" href="#compartir" title=""></a></div>
+						</div>
+						
+							<div class="notaprincipalchica">
+								<div class="copetechico">Nueva agenda impositiva</div>
+								<h2 class="titulochicoppl"><a href>Empieza la Fase II: las PASO marcaron el fin del gradualismo y el inicio del plan "verdadero" de Mauricio Macri</a></h2>
+								<div class="imagench">
+									<div class="laimagen"><a href><img src="images/imagenstandard.jpg"></a></div>
+									<div class="shareimagen"><a class="fancybox" href="#compartir" title=""></a></div>
+								</div>
+							</div>
+							<div class="notasdobleschicas">
+								<div class="notadoblechica">
+									<div class="copetechico">Nueva agenda laboral</div>
+									<h2 class="titulochico"><a href>Empieza la Fase II: las PASO marcaron el fin del gradualismo y el inicio del plan "verdadero" de Mauricio Macri</a></h2>
+									<div class="tiemposhare">
+										<div class="tiempo">Hace 14 minutos</div>
+										<div class="share"><a class="fancybox" href="#compartir" title=""></a></div>
+									</div>
+								</div>
+								<div class="notadoblechica notadoblechicafinal">
+									<div class="copetechico">Blanqueo</div>
+									<h2 class="titulochico"><a href>Empieza la Fase II: las PASO marcaron el fin del gradualismo y el inicio del plan "verdadero" de Mauricio Macri</a></h2>
+									<div class="tiemposhare">
+										<div class="tiempo">Hace 14 minutos</div>
+										<div class="share"><a class="fancybox" href="#compartir" title=""></a></div>
+									</div>
+								</div>
+							</div>
+					</div>
+				</div>
+				<div class="galeriabomba">
+					<div class="copetegaleria"><span>FOTOGALER&Iacute;A</span> HD</div>
+					<div class="contenedorgaleria">
+						<!-- Swiper Galeria -->
+						<div class="swiper-container swiper-galeria">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<img data-src="https://cdn.tn.com.ar/sites/default/files/styles/embed_image/public/2017/07/19/596fac7a39029trump-y-putin-a-solas-2.jpg" class="swiper-lazy">
+									<div class="swiper-lazy-preloader"></div>
+								</div>
+								<div class="swiper-slide">
+									<img data-src="http://nexo-cdn.nexofin.com/archivos/2017/11/mauricio-macri3.jpg" class="swiper-lazy">
+									<div class="swiper-lazy-preloader"></div>
+								</div>
+								<div class="swiper-slide">
+									<img data-src="http://sanjuanhoy.com/download/multimedia.grande.ad3452154ca24174.6d61637269206a757261206d696e697374726f735f6772616e64652e6a7067.jpg" class="swiper-lazy">
+									<div class="swiper-lazy-preloader"></div>
+								</div>
+							</div>
+							<!-- Pagination -->
+							<div class="swiper-pagination swiper-pagination-galeria"></div>
+							<!-- Navigation -->
+							<div class="swiper-button-next swiper-button-next-galeria"></div>
+							<div class="swiper-button-prev swiper-button-prev-galeria"></div>
+						</div>
+					</div>
+				</div>
+				<div class="masnotasbomba">
+					<div class="notamasgrande">
+						<div class="imagen">
+							<a href class="imagencuadrada"><img src="images/imagenstandard.jpg"></a>
+						</div>
+						<h4 class="volanta">AHORA <span>Legislativas 2017</span></h4>
+						<h2 class="titulo"><a href>Empieza la Fase II: las PASO marcaron el fin del gradualismo y el inicio del plan "verdadero" de Mauricio Macri</a></h2>
+						<div class="imagen">
+							<a href class="imagenwide"><img src="images/imagenstandard.jpg"></a>
+						</div>
+						<h3 class="bajada"><a href>Remarcó que Cambiemos hará una gran apuesta a los créditos populares. Y preguntó si el Central intervendrá en el mercado de divisas para recuperar reservas</a></h3>
+						<div class="tiemposhare">
+							<div class="tiempo">Hace 14 minutos</div>
+							<div class="share"><a class="fancybox" href="#compartir" title=""></a></div>
+						</div>
+					</div>
+					<div class="notamasmediana">
+						<h4 class="volanta">Actualidad <span>Legislativas 2017</span></h4>
+						<h2 class="titulo"><a href>Empieza la Fase II: las PASO marcaron el fin del gradualismo y el inicio del plan "verdadero" de Mauricio Macri</a></h2>
+						<div class="imagen"><a href><img src="images/imagenstandard.jpg"></a></div>
+						<div class="tiemposhare">
+							<div class="tiempo">Hace 14 minutos</div>
+							<div class="share"><a class="fancybox" href="#compartir" title=""></a></div>
+						</div>
+					</div>
+					<div class="notasmassimples">
+						<div class="notamassimple">
+							<h4 class="volanta">Actualidad <span>Legislativas 2017</span></h4>
+							<h2 class="titulo"><a href>Empieza la Fase II: las PASO marcaron el fin del gradualismo y el inicio del plan "verdadero" de Mauricio Macri</a></h2>
+							<div class="tiemposhare">
+								<div class="tiempo">Hace 14 minutos</div>
+								<div class="share"><a class="fancybox" href="#compartir" title=""></a></div>
+							</div>
+						</div>
+						<div class="notamassimple notamassimpleultima">
+							<h4 class="volanta">Actualidad <span>Legislativas 2017</span></h4>
+							<h2 class="titulo"><a href>Empieza la Fase II: las PASO marcaron el fin del gradualismo y el inicio del plan "verdadero" de Mauricio Macri</a></h2>
+							<div class="tiemposhare">
+								<div class="tiempo">Hace 14 minutos</div>
+								<div class="share"><a class="fancybox" href="#compartir" title=""></a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		</div>
+	</div>
+</div>
+<script src="js/iprofesional.js"></script>
+</body>
+</html>

@@ -319,58 +319,40 @@ body { text-align: left; color: #1c1c1c; background-color: white; font-family: '
 
 img.lazy { width: 300px; height: 168px; display: block; }
 
-.notahomebombasimple { width: 100%; float: left; }
+.notahomemegabomba .notasgrandes { margin-bottom: 30px; }
 
-.notahomebombasimple .notagrande { width: 100%; padding: 10px 10px 40px 10px; margin-bottom: 30px; border-bottom: 1px solid #4b4b4b; background-color: #373737; float: left; }
+.notahomemegabomba .galeriabomba { width: 100%; }
 
-.notahomebombasimple .notagrande .copeteobjeto { background-color: #ff9933; height: 30px; line-height: 30px; color: #1c1c1c; font-weight: 700; margin-bottom: 10px; text-transform: uppercase; padding-left: 10px; padding-right: 10px; display: table; }
+.notahomemegabomba .galeriabomba .copetegaleria { background-color: #373737; height: 30px; line-height: 30px; color: #ff9933; font-weight: 700; text-transform: uppercase; padding-left: 10px; padding-right: 10px; display: table; z-index: 2; width: 100%; }
 
-.notahomebombasimple .notagrande .copeteobjeto span { color: white; }
+.notahomemegabomba .galeriabomba .copetegaleria span { color: white; }
 
-.notahomebombasimple .notagrande .copete { color: #ff9933; font-weight: 700; text-transform: uppercase; width: 100%; padding-bottom: 3px; }
+.notahomemegabomba .galeriabomba .contenedorgaleria { width: 100vw; height: 57vw; background-color: #373737; overflow: hidden; z-index: 1; position: relative; }
 
-.notahomebombasimple .notagrande .titulo { width: 100%; font-family: "Source Serif Pro"; font-size: 27px; line-height: 33px; letter-spacing: -0.75px; font-weight: 600; margin-bottom: 10px; }
+.notahomemegabomba .galeriabomba .contenedorgaleria .swiper-galeria { width: 100%; height: 100%; }
 
-.notahomebombasimple .notagrande .titulo a { color: white; }
+.notahomemegabomba .galeriabomba .contenedorgaleria .swiper-galeria .swiper-pagination-bullet { width: 6px; height: 6px; display: inline-block; border-radius: 100%; background: white; opacity: .3; }
 
-.notahomebombasimple .notagrande .bajada { width: 100%; font-size: 16px; line-height: 21px; margin-bottom: 20px; }
+.notahomemegabomba .galeriabomba .contenedorgaleria .swiper-galeria .swiper-pagination { position: absolute; text-align: center; -webkit-transition: .3s opacity; -o-transition: .3s opacity; transition: .3s opacity; -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); z-index: 10; }
 
-.notahomebombasimple .notagrande .bajada a { color: white; }
+.notahomemegabomba .galeriabomba .contenedorgaleria .swiper-galeria .swiper-container-horizontal > .swiper-pagination-bullets, .notahomemegabomba .galeriabomba .contenedorgaleria .swiper-galeria .swiper-pagination-custom, .notahomemegabomba .galeriabomba .contenedorgaleria .swiper-galeria .swiper-pagination-fraction { bottom: 10px; left: 0; width: 100%; }
 
-.notahomebombasimple .notagrande .imagen { width: 100%; margin-bottom: 15px; }
+.notahomemegabomba .galeriabomba .contenedorgaleria .swiper-galeria .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet { margin: 0 4px; }
 
-.notahomebombasimple .notagrande .imagen img { width: 100%; height: auto; }
+.notahomemegabomba .galeriabomba .contenedorgaleria .swiper-galeria .swiper-pagination .swiper-pagination-bullet-active { background: white; opacity: 1; }
 
-.notahomebombasimple .notagrande .tiemposhare { padding: 0; }
+.notahomemegabomba .galeriabomba .contenedorgaleria .swiper-galeria .swiper-button-next, .notahomemegabomba .galeriabomba .contenedorgaleria .swiper-galeria .swiper-button-prev { position: absolute; top: 50%; width: 27px; height: 44px; margin-top: -22px; z-index: 10; cursor: pointer; background-size: 52px 52px; background-position: center; background-repeat: no-repeat; background-color: transparent; }
 
-.notahomebombasimple .notagrande .tiemposhare .share { background-image: url(../images/share-blanco.png); }
+.notahomemegabomba .galeriabomba .contenedorgaleria .swiper-galeria .swiper-button-prev { float: left; margin-left: 0px; }
 
-.notahomebombasimple .notamedianabombasimple { padding-bottom: 40px; margin-bottom: 40px; border-bottom: 1px solid #d4d6d7; display: table; }
+.notahomemegabomba .galeriabomba .contenedorgaleria .swiper-galeria .swiper-button-next { float: right; margin-right: 0px; }
 
-.notahomebombasimple .notamedianabombasimple .imagen { width: 100%; margin-bottom: 8px; line-height: 0; position: relative; }
+.notahomemegabomba .galeriabomba .contenedorgaleria .swiper-galeria .swiper-button-next, .notahomemegabomba .galeriabomba .contenedorgaleria .swiper-galeria .swiper-container-rtl .swiper-button-prev { background-image: url("https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_keyboard_arrow_right_white_24px.svg"); right: 10px; left: auto; }
 
-.notahomebombasimple .notamedianabombasimple .imagen img { width: 100%; height: auto; }
+.notahomemegabomba .galeriabomba .contenedorgaleria .swiper-galeria .swiper-button-prev, .notahomemegabomba .galeriabomba .contenedorgaleria .swiper-galeria .swiper-container-rtl .swiper-button-next { background-image: url("https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_keyboard_arrow_left_white_24px.svg"); left: 10px; right: auto; }
 
-.notahomebombasimple .notamedianabombasimple .volanta { width: 100%; padding-left: 10px; padding-right: 10px; color: #ff9933; font-weight: 700; margin-bottom: 4px; font-size: 16px; text-transform: uppercase; }
+.notahomemegabomba .galeriabomba .contenedorgaleria .swiper-galeria .swiper-button-next.swiper-button-disabled, .notahomemegabomba .galeriabomba .contenedorgaleria .swiper-galeria .swiper-button-prev.swiper-button-disabled { opacity: .3; cursor: auto; pointer-events: none; }
 
-.notahomebombasimple .notamedianabombasimple .volanta span { color: #1c1c1c; font-weight: 600; text-transform: none; }
+.notahomemegabomba .galeriabomba .contenedorgaleria .swiper-slide { text-align: center; font-size: 16px; }
 
-.notahomebombasimple .notamedianabombasimple .titulo { width: 100%; padding-left: 10px; padding-right: 10px; font-size: 18px; line-height: 23px; font-family: 'Source Serif Pro', serif; color: #1c1c1c; font-weight: 600; letter-spacing: -0.5px; }
-
-.notahomebombasimple .notamedianabombasimple .titulo a { color: #1c1c1c; }
-
-.notahomebombasimple .notaschicasbombasimple .notachica { width: 100%; display: table; padding-bottom: 40px; margin-bottom: 40px; border-bottom: 1px solid #d4d6d7; }
-
-.notahomebombasimple .notaschicasbombasimple .notachica .volanta { color: #ff9933; }
-
-.notahomebombasimple .notaschicasbombasimpleosc { background-color: #373737; padding-top: 30px; }
-
-.notahomebombasimple .notaschicasbombasimpleosc .notachica { width: 100%; display: table; padding-bottom: 40px; margin-bottom: 40px; border-bottom: 1px solid #5a5a5a; }
-
-.notahomebombasimple .notaschicasbombasimpleosc .notachica .volanta { color: #ff9933; }
-
-.notahomebombasimple .notaschicasbombasimpleosc .notachica .volanta span { color: white; }
-
-.notahomebombasimple .notaschicasbombasimpleosc .notachica .titulo a { color: white; }
-
-.notahomebombasimple .notaschicasbombasimpleosc .notachica .tiemposhare .share { background-image: url(../images/share-blanco.png); }
+.notahomemegabomba .galeriabomba .contenedorgaleria .swiper-slide img { width: 100%; height: auto; max-width: 100%; max-height: 100%; -ms-transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); -moz-transform: translate(-50%, -50%); transform: translate(-50%, -50%); position: absolute; left: 50%; top: 50%; }

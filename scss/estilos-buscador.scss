@@ -42,7 +42,7 @@
 				color: $colorPrincipal;
 			}
 			.flechaizq{
-				background-image: url(../images/flecha-izq.png);
+				background-image: url(#{$urlImages}flecha-izq.png);
 				background-repeat: no-repeat;
 				background-position: left;
 				background-size: 20px;
@@ -60,7 +60,7 @@
 				}
 			}
 			.flechader{
-				background-image: url(../images/flecha-der.png);
+				background-image: url(#{$urlImages}flecha-der.png);
 				background-repeat: no-repeat;
 				background-position: right;
 				background-size: 20px;
@@ -100,7 +100,7 @@
 		.botonfiltro{
 			float: left;
 			background-color: rgba(47, 47, 47, 0.6);
-			background-image: url(../images/filtro.png);
+			background-image: url(#{$urlImages}filtro.png);
 			background-position: 7px;
 			background-repeat: no-repeat;
 			background-size: 14px;

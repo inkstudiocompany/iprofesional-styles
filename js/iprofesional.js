@@ -120,6 +120,20 @@ var windowHeight = $(window).height();
 		spaceBetween: 30
 	});
 
+	// GALERIA NOTA BOMBA
+	var swiper = new Swiper('.swiper-galeria', {
+		// Lazy loading
+		lazy: true,
+		pagination: {
+			el: '.swiper-pagination-galeria',
+			clickable: true,
+		},
+		navigation: {
+			nextEl: '.swiper-button-next-galeria',
+			prevEl: '.swiper-button-prev-galeria',
+		},
+	});
+
 	// MENU
 	function funcionMenu() {
 		var x = document.getElementById('menuflotante');

@@ -18,7 +18,7 @@ img { border: 0; }
 
 body { text-align: left; color: #1c1c1c; background-color: white; font-family: 'Source Sans Pro', sans-serif; font-size: 14px; font-weight: 400; text-rendering: optimizeLegibility !important; -webkit-font-smoothing: antialiased !important; -moz-osx-font-smoothing: grayscale !important; -webkit-text-size-adjust: none; }
 
-::-webkit-scrollbar { width: 8px; background-color: #EAEAEA; }
+::-webkit-scrollbar { width: 12px; background-color: #EAEAEA; }
 
 ::-webkit-scrollbar-thumb { background-color: #818181; }
 
@@ -164,6 +164,10 @@ body { text-align: left; color: #1c1c1c; background-color: white; font-family: '
 
 .menuflotante .wrappermenu .seccionesprincipal ul .titlista { width: 100%; padding-right: 0; }
 
+.menuflotante .wrappermenu .seccionesprincipal ul .titlista span { float: right; padding-right: 10px; background: rgba(255, 255, 255, 0.3); line-height: 26px; font-size: 13px; border-radius: 4px; font-weight: 600; text-transform: uppercase; }
+
+.menuflotante .wrappermenu .seccionesprincipal ul .titlista span a { color: white; opacity: 1; }
+
 .menuflotante .wrappermenu .seccionesprincipal ul li { width: 45%; float: left; margin-right: 5%; border-bottom: 1px solid rgba(255, 255, 255, 0.1); height: 30px; line-height: 30px; font-size: 13px; font-weight: 600; overflow: hidden; text-indent: 10px; }
 
 .menuflotante .wrappermenu .seccionesprincipal ul li a { color: white; opacity: 0.7; display: block; }
@@ -224,7 +228,7 @@ body { text-align: left; color: #1c1c1c; background-color: white; font-family: '
 
 #indicenotas a .titulo { font-weight: 400; width: 100%; display: block; font-size: 17px; font-family: "Source Serif Pro"; }
 
-#indicenotas ul li { color: white; width: calc(100vw - 80px); margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid rgba(255, 255, 255, 0.15); }
+#indicenotas ul li { color: white; width: calc(100vw - 100px); margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid rgba(255, 255, 255, 0.15); }
 
 .shareimagen { width: 20px; height: 20px; background-image: url(../images/share-blanco.png); background-repeat: no-repeat; background-size: 20px; position: absolute; top: 8px; right: 8px; }
 

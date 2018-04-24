@@ -60,7 +60,7 @@ $colorSeccion: $colorSecundario;
 			color: gray;
 		}
 		.share{
-			background-image: url(../images/share-blanco.png);
+			background-image: url(#{$urlImages}share-blanco.png);
 			opacity: 0.5;
 		}
 	}
@@ -169,7 +169,7 @@ $colorSeccion: $colorSecundario;
 			padding-right: 0px;
 			margin-bottom: 10px;
 			.share {
-				background-image: url(../images/share-blanco.png);
+				background-image: url(#{$urlImages}share-blanco.png);
 			}
 		}
 	}
@@ -260,7 +260,7 @@ $colorSeccion: $colorSecundario;
 			color: gray;
 		}
 		.share {
-			background-image: url(../images/share-blanco.png);
+			background-image: url(#{$urlImages}share-blanco.png);
 		}
 	}
 }

@@ -17,7 +17,7 @@ body {
 	-webkit-text-size-adjust: none;
 }
 ::-webkit-scrollbar {
-    width: 8px;
+    width: 12px;
     background-color: #EAEAEA;
 }
 ::-webkit-scrollbar-thumb {
@@ -94,7 +94,7 @@ body {
 			background-color: rgba(0, 0, 0, 0.1);
 			float: right;
 			margin-right: 10px;
-			background-image: url(../images/cerrar-menu.png);
+			background-image: url(#{$urlImages}cerrar-menu.png);
 			background-size: 14px;
 			background-repeat: no-repeat;
 			background-position: center;
@@ -124,7 +124,7 @@ body {
 		height: 30px;
 		margin-left: 10px;
 		float: left;
-		background-image: url(../images/icono-menu.png);
+		background-image: url(#{$urlImages}icono-menu.png);
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: 20px;
@@ -140,7 +140,7 @@ body {
 	.logotipo{
 		width: calc(100% - 80px);
 		height: 32px;
-		background-image: url(../images/logotipo-iprofesional.png);
+		background-image: url(#{$urlImages}logotipo-iprofesional.png);
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: contain;
@@ -149,7 +149,7 @@ body {
 	.logotipoblanco{
 		width: calc(100% - 80px);
 		height: 32px;
-		background-image: url(../images/logotipo-iprofesional_blanco.png);
+		background-image: url(#{$urlImages}logotipo-iprofesional_blanco.png);
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: contain;
@@ -166,7 +166,7 @@ body {
 		height: 30px;
 		margin-right: 10px;
 		float: left;
-		background-image: url(../images/icono-buscar.png);
+		background-image: url(#{$urlImages}icono-buscar.png);
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: 20px;
@@ -205,7 +205,7 @@ body {
 	}
 }
 .botonmenuclose{
-	background-image: url(../images/cerrar-menu.png) !important;
+	background-image: url(#{$urlImages}cerrar-menu.png) !important;
 	background-size: 18px !important;
     background-color: #FFFFFF !important;
 }
@@ -236,7 +236,7 @@ body {
 		float: left;
 		margin-top: 5px;
 		margin-bottom: 5px;
-		background-image: url(../images/logotipo-iprofesional.png);
+		background-image: url(#{$urlImages}logotipo-iprofesional.png);
 		background-repeat: no-repeat;
 		background-size: 280px;
 		background-position: center;
@@ -411,7 +411,7 @@ body {
 			    a {
 					width: 35px;
 					height: 35px;
-				    background-image: url(../images/redes-colores.png);
+				    background-image: url(#{$urlImages}redes-colores.png);
 				    background-size: 235px;
 				    background-repeat: no-repeat;
 				    display: block;
@@ -435,7 +435,7 @@ body {
 			.app a {
 				background-position: 0px;
 				background-size: 100%;
-				background-image: url(../images/app-android.png);
+				background-image: url(#{$urlImages}app-android.png);
 				width: 106px;
 				height: 35px;
 			}
@@ -468,6 +468,20 @@ body {
 			ul .titlista {
 			    width: 100%;
 			    padding-right: 0;
+			    span{
+					float: right;
+					padding-right: 10px;
+					background: rgba(255, 255, 255, 0.3);
+					line-height: 26px;
+					font-size: 13px;
+					border-radius: 4px;
+					font-weight: 600;
+					text-transform: uppercase;
+			    	a{
+			    		color: white;
+			    		opacity: 1;
+			    	}
+			    }
 			}
 			ul li{
 				width:45%;
@@ -558,22 +572,22 @@ body {
 					}
 				}
 				.fb{
-					background-image: url(../images/facebook_icono.png);
+					background-image: url(#{$urlImages}facebook_icono.png);
 				}
 				.tw{
-					background-image: url(../images/twitter_icono.png);
+					background-image: url(#{$urlImages}twitter_icono.png);
 				}
 				.li{
-					background-image: url(../images/linkedin_icono.png);
+					background-image: url(#{$urlImages}linkedin_icono.png);
 				}
 				.gp{
-					background-image: url(../images/google_icono.png);
+					background-image: url(#{$urlImages}google_icono.png);
 				}
 				.alertas{
-					background-image: url(../images/alertas_icono.png);
+					background-image: url(#{$urlImages}alertas_icono.png);
 				}
 				.rss{
-					background-image: url(../images/rss_icono.png);
+					background-image: url(#{$urlImages}rss_icono.png);
 				}
 			}
 			.registroip{
@@ -593,7 +607,7 @@ body {
 				    border-radius: 5px;
 				    font-weight: 600;
 				    font-size: 13px;
-				    background-image: url(../images/user.png);
+				    background-image: url(#{$urlImages}user.png);
 				    background-size: 16px;
 				    background-repeat: no-repeat;
 				    background-position: 4px;
@@ -640,7 +654,7 @@ body {
 	}
 	ul li{
 		color:white;
-		width:calc(100vw - 80px);
+		width:calc(100vw - 100px);
 		margin-bottom:20px;
 		padding-bottom:20px;
 		border-bottom:1px solid rgba(255,255,255,0.15);
@@ -650,7 +664,7 @@ body {
 .shareimagen{
 	width: 20px;
 	height: 20px;
-	background-image: url(../images/share-blanco.png);
+	background-image: url(#{$urlImages}share-blanco.png);
 	background-repeat: no-repeat;
 	background-size: 20px;
 	position: absolute;
@@ -693,7 +707,7 @@ body {
 			.share{
 				width: 35px;
 				height: 35px;
-				background-image: url(../images/redes-colores.png);
+				background-image: url(#{$urlImages}redes-colores.png);
 				background-size: 235px;
 				background-repeat: no-repeat;
 				float: left;
@@ -718,7 +732,7 @@ body {
 				background-position: -200px;
 			}
 			.url{
-				background-image: url(../images/url-icono.png);
+				background-image: url(#{$urlImages}url-icono.png);
 				background-size: 35px;
 			}
 			
@@ -823,11 +837,11 @@ body {
 	    background-color: transparent;
 	}
 	.swiper-button-next{
-		background-image: url(../images/flecha-der.png);
+		background-image: url(#{$urlImages}flecha-der.png);
 		background-size: 20px;
 	}
 	.swiper-button-prev{
-		background-image: url(../images/flecha-izq.png);
+		background-image: url(#{$urlImages}flecha-izq.png);
 		background-size: 20px;
 	}
 }

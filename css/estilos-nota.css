@@ -17,7 +17,7 @@ img { border: 0; }
 
 body { text-align: left; color: #1c1c1c; background-color: white; font-family: 'Source Sans Pro', sans-serif; font-size: 14px; font-weight: 400; text-rendering: optimizeLegibility !important; -webkit-font-smoothing: antialiased !important; -moz-osx-font-smoothing: grayscale !important; -webkit-text-size-adjust: none; }
 
-::-webkit-scrollbar { width: 8px; background-color: #EAEAEA; }
+::-webkit-scrollbar { width: 12px; background-color: #EAEAEA; }
 
 ::-webkit-scrollbar-thumb { background-color: #818181; }
 
@@ -163,6 +163,10 @@ body { text-align: left; color: #1c1c1c; background-color: white; font-family: '
 
 .menuflotante .wrappermenu .seccionesprincipal ul .titlista { width: 100%; padding-right: 0; }
 
+.menuflotante .wrappermenu .seccionesprincipal ul .titlista span { float: right; padding-right: 10px; background: rgba(255, 255, 255, 0.3); line-height: 26px; font-size: 13px; border-radius: 4px; font-weight: 600; text-transform: uppercase; }
+
+.menuflotante .wrappermenu .seccionesprincipal ul .titlista span a { color: white; opacity: 1; }
+
 .menuflotante .wrappermenu .seccionesprincipal ul li { width: 45%; float: left; margin-right: 5%; border-bottom: 1px solid rgba(255, 255, 255, 0.1); height: 30px; line-height: 30px; font-size: 13px; font-weight: 600; overflow: hidden; text-indent: 10px; }
 
 .menuflotante .wrappermenu .seccionesprincipal ul li a { color: white; opacity: 0.7; display: block; }
@@ -223,7 +227,7 @@ body { text-align: left; color: #1c1c1c; background-color: white; font-family: '
 
 #indicenotas a .titulo { font-weight: 400; width: 100%; display: block; font-size: 17px; font-family: "Source Serif Pro"; }
 
-#indicenotas ul li { color: white; width: calc(100vw - 80px); margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid rgba(255, 255, 255, 0.15); }
+#indicenotas ul li { color: white; width: calc(100vw - 100px); margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid rgba(255, 255, 255, 0.15); }
 
 .shareimagen { width: 20px; height: 20px; background-image: url(../images/share-blanco.png); background-repeat: no-repeat; background-size: 20px; position: absolute; top: 8px; right: 8px; }
 
@@ -317,7 +321,7 @@ img.lazy { width: 300px; height: 168px; display: block; }
 
 .desarrollonota { width: 100%; margin: 0 auto; padding-bottom: 20px; }
 
-.desarrollonota .volanta { color: #20c0ab; font-weight: 700; font-size: 16px; text-transform: uppercase; margin-bottom: 15px; width: 100%; padding-left: 10px; padding-right: 10px; }
+.desarrollonota .volanta { color: #20c0ab; font-weight: 700; font-size: 16px; text-transform: uppercase; margin-bottom: 15px; width: 100%; padding-left: 10px; padding-right: 10px; display: none; }
 
 .desarrollonota .volanta span { color: #1c1c1c; font-weight: 600; text-transform: none; }
 
@@ -335,7 +339,7 @@ img.lazy { width: 300px; height: 168px; display: block; }
 
 .desarrollonota .tepuedeinteresar .titulorelacionado a { text-decoration: underline; color: #20c0ab; }
 
-.desarrollonota .compartirredes { width: 100%; display: table; margin-bottom: 30px; margin-top: 30px; }
+.desarrollonota .compartirredes { width: 100%; display: table; margin-bottom: 20px; margin-top: 25px; }
 
 .desarrollonota .compartirredes .redes { width: 100%; margin-left: 10px; }
 
@@ -368,6 +372,16 @@ img.lazy { width: 300px; height: 168px; display: block; }
 .desarrollonota .fecha { width: 100%; padding-left: 10px; padding-right: 10px; opacity: 0.5; text-transform: uppercase; margin-bottom: 5px; }
 
 .desarrollonota .autor { width: 100%; padding-left: 10px; padding-right: 10px; padding-bottom: 40px; margin-bottom: 40px; border-bottom: 1px solid #d4d6d7; }
+
+.desarrollonota .autor .nombreautor { width: 100%; }
+
+.desarrollonota .autor .fechaautor { width: 100%; font-size: 13px; color: gray; line-height: 24px; }
+
+.desarrollonota .autor .fechaautor .dot { color: #CCCCCC; padding-left: 5px; padding-right: 5px; }
+
+.desarrollonota .autor .fechaautor strong { font-weight: 700; }
+
+.desarrollonota .autor .fechaautor a { color: #20c0ab; font-weight: 700; text-transform: uppercase; }
 
 .desarrollonota .autoreldato { width: 100%; padding-left: 10px; padding-right: 10px; padding-bottom: 40px; margin-bottom: 40px; border-bottom: 1px solid #d4d6d7; margin-top: 15px; display: table; }
 
@@ -501,7 +515,7 @@ img.lazy { width: 300px; height: 168px; display: block; }
 
 .massobreseccion .notachica .imagen img { width: 100%; height: auto; object-fit: cover; }
 
-.tiemposhare { width: 100%; display: table; }
+.tiemposhare { width: 100%; display: table; padding-left: 0; padding-right: 0; }
 
 .tiemposhare .tiempo { font-size: 13px; text-transform: uppercase; color: #828282; float: left; }
 
@@ -515,7 +529,7 @@ img.lazy { width: 300px; height: 168px; display: block; }
 
 .banner .elbanner { width: 100%; text-align: center; }
 
-.bannertop { margin: -35px auto 40px auto !important; }
+.bannertop { margin: -35px auto 25px auto !important; }
 
 /*.notamediana{ width: $wide; display: table; @include separacionNotas; .volanta{ @include volanta; color: lighten($colorPrincipal, 10%); @include widePadding; span{ color: lighten($colorPrincipal, 10%); } } .titulo{ @include tituloMediano; a{ color: $colorPrincipal; } } .imagen{ @include imagenWide; position: relative; } } */
 .chapaespecial { margin-bottom: 25px; background-color: #373737; padding-top: 10px; padding-bottom: 10px; padding-right: 35px; padding-left: 12px; background-image: url(../images/esquina-verde.gif); background-repeat: no-repeat; background-position: top right; background-size: 16px; display: table; }
