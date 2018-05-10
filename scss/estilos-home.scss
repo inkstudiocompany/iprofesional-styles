@@ -524,14 +524,14 @@
 	.imagen{
 		@include imagenWide;
 		margin-bottom: 0;
-		height: 250px;
+		height: 270px;
 		overflow: hidden;
 		.laimagen{
 			position: absolute;
 			width: 100%;
 			top: 0;
 			img{
-				height: 250px;
+				height: 270px;
 				object-fit: cover;
 			}
 		}
@@ -590,14 +590,14 @@
 	.imagen{
 		@include imagenWide;
 		margin-bottom: 0;
-		height: 250px;
+		height: 270px;
 		overflow: hidden;
 		.laimagen{
 			position: absolute;
 			width: 100%;
 			top: 0;
 			img{
-				height: 250px;
+				height: 270px;
 				object-fit: cover;
 			}
 		}

@@ -47,6 +47,9 @@
   .notaschicas .notachica .playeraudio { width: 100%; padding-left: 0; padding-right: 0; }
   .notaschicas .notachica .tiemposhare { position: absolute; bottom: 10px; }
   .notaschicas > div:first-of-type { border-bottom: 1px solid #d4d6d7; margin-bottom: 20px; }
+  .notaschicas .objetodolar { height: 150px; border-bottom: 0 !important; margin-bottom: 30px !important; overflow: hidden; }
+  .notaschicas .objetodolar .colizq { padding-top: 13px; padding-bottom: 13px; }
+  .notaschicas .objetodolar .colder { padding-top: 13px; padding-bottom: 13px; }
   .notamediana { padding-bottom: 20px; margin-bottom: 30px; }
   .notamediana .volanta { width: 100%; padding-left: 0; padding-right: 0; }
   .notamediana .titulo { width: 100%; padding-left: 0; padding-right: 0; font-size: 19px; line-height: 24px; }
@@ -72,12 +75,14 @@
   .objetolomasleido .items .item .numero { padding-left: 0; text-align: center; }
   .objetolomasleido .items .item .imagen { width: 80px; margin: 0; }
   .objetolomasleido .items .item .textos { width: calc(100% - 110px); }
+  .objetoespecial { padding-bottom: 10px; }
   .objetoespecial .tituloseccion { text-indent: 0; }
   .objetoespecial .notagrande { width: 40%; padding-right: 10px; float: left; }
-  .objetoespecial .notagrande .textos { padding-top: 10px; padding-bottom: 10px; }
-  .objetoespecial .notagrande .textos .titulo { font-size: 16px; line-height: 19px; }
+  .objetoespecial .notagrande .textos { padding-top: 10px; padding-bottom: 10px; min-height: 140px; }
+  .objetoespecial .notagrande .textos .titulo { font-size: 18px; line-height: 22px; }
   .objetoespecial .notasdobles { width: calc(60% + 10px); margin-right: -10px; margin-top: 0; float: left; overflow: hidden; }
   .objetoespecial .notasdobles .notadoble { width: 50%; }
+  .objetoespecial .notasdobles .notadoble .textos .titulo { font-size: 17px; line-height: 21px; }
   .objetofrase .lafrase { width: 100%; padding-left: 10px; padding-right: 10px; text-align: center; }
   .objetofrase .autor { width: 100%; padding-left: 10px; padding-right: 10px; }
   .objetofrase .autor .foto { width: 30%; float: none; margin: 0 auto; }

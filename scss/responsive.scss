@@ -248,6 +248,22 @@
 		border-bottom: 1px solid #d4d6d7;
 		margin-bottom: 20px;
 	}
+	.notaschicas{
+		.objetodolar{
+			height: 150px;
+			border-bottom: 0 !important;
+			margin-bottom: 30px !important;
+			overflow: hidden;
+			.colizq{
+				padding-top: 13px;
+				padding-bottom: 13px;
+			}
+			.colder{
+				padding-top: 13px;
+				padding-bottom: 13px;
+			}
+		}
+	}
 	.notamediana{
 		padding-bottom: 20px;
 		margin-bottom: 30px;
@@ -367,6 +383,7 @@
 		}
 	}
 	.objetoespecial{
+		padding-bottom: 10px;
 		.tituloseccion{
 			text-indent: 0;
 		}
@@ -377,9 +394,10 @@
 			.textos{
 				padding-top: 10px;
     			padding-bottom: 10px;
+    			min-height: 140px;
 				.titulo{
-					font-size: 16px;
-					line-height: 19px;
+					font-size: 18px;
+					line-height: 22px;
 				}
 			}
 		}
@@ -391,6 +409,12 @@
 			overflow: hidden;
 			.notadoble{
 				width: 50%;
+				.textos{
+					.titulo{
+						font-size: 17px;
+						line-height: 21px;
+					}
+				}
 			}
 		}
 	}

@@ -545,13 +545,13 @@ img.lazy { width: 300px; height: 168px; display: block; }
 
 .notalobocity .botonvermas a { display: block; color: white; }
 
-.notalobocity .imagen { width: 100%; margin-bottom: 10px; line-height: 0; position: relative; margin-bottom: 0; height: 250px; overflow: hidden; }
+.notalobocity .imagen { width: 100%; margin-bottom: 10px; line-height: 0; position: relative; margin-bottom: 0; height: 270px; overflow: hidden; }
 
 .notalobocity .imagen img { width: 100%; height: auto; }
 
 .notalobocity .imagen .laimagen { position: absolute; width: 100%; top: 0; }
 
-.notalobocity .imagen .laimagen img { height: 250px; object-fit: cover; }
+.notalobocity .imagen .laimagen img { height: 270px; object-fit: cover; }
 
 .notalobocity .textos { width: calc(100% - 20px); padding-top: 20px; padding-bottom: 20px; position: absolute; z-index: 1; bottom: 0px; }
 
@@ -571,13 +571,13 @@ img.lazy { width: 300px; height: 168px; display: block; }
 
 .notainsider .tituloseccion span { font-weight: 500; text-transform: none; }
 
-.notainsider .imagen { width: 100%; margin-bottom: 10px; line-height: 0; position: relative; margin-bottom: 0; height: 250px; overflow: hidden; }
+.notainsider .imagen { width: 100%; margin-bottom: 10px; line-height: 0; position: relative; margin-bottom: 0; height: 270px; overflow: hidden; }
 
 .notainsider .imagen img { width: 100%; height: auto; }
 
 .notainsider .imagen .laimagen { position: absolute; width: 100%; top: 0; }
 
-.notainsider .imagen .laimagen img { height: 250px; object-fit: cover; }
+.notainsider .imagen .laimagen img { height: 270px; object-fit: cover; }
 
 .notainsider .textos { width: calc(100% - 20px); padding-top: 20px; padding-bottom: 20px; position: absolute; z-index: 1; bottom: 0px; }
 
