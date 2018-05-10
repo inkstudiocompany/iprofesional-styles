@@ -4,22 +4,22 @@ var windowHeight = $(window).height();
 // MENU EFECTOS
 
 		$(window).scroll(function() {  
-		   if($(window).scrollTop() >= (windowHeight/2)) {
+		   if($(window).scrollTop() >= (155)) {
 				setTimeout(function(){
-					$(".cabezalmobile .seccionesexpandido").fadeOut( 300, function(){
-						$(".cabezalmobile .logotipoblanco").fadeIn( 300);
+					$(".cabezalmobile .seccionesexpandido").fadeOut( 100, function(){
+						$(".cabezalmobile .logotipoblanco").fadeIn( 150);
 					});
-				}, 300);
+				}, 100);
 			} 
-			if($(window).scrollTop() < (windowHeight/2)) {
+			if($(window).scrollTop() < (155)) {
 				setTimeout(function(){
-					$(".cabezalmobile .logotipoblanco").fadeOut( 300, function(){
-						$(".cabezalmobile .seccionesexpandido").fadeIn( 300);
+					$(".cabezalmobile .logotipoblanco").fadeOut( 100, function(){
+						$(".cabezalmobile .seccionesexpandido").fadeIn( 150);
 					});
-				}, 300);
+				}, 100);
 			}
 		});
-		if($(window).scrollTop() > (windowHeight/2-25)) {
+		if($(window).scrollTop() > (130)) {
 			$(".cabezalmobile .logotipoblanco").hide();
 			$(".cabezalmobile .seccionesexpandido").show();
 		} 

@@ -121,6 +121,9 @@
 		text-transform: uppercase;
 		color: lighten($colorPrincipal, 40%);
 		float: left;
+		a{
+			color: lighten($colorPrincipal, 40%);
+		}
 	}
 	.share{
 		float: right;

@@ -9,8 +9,11 @@
 @media screen and (max-width: 320px) { .filtroderesultados { width: 200px; }
   .filtroderesultados .columna .tipofiltro .itemsfiltromitad ul li { width: 100%; } }
 
-@media screen and (min-width: 500px) { .menuflotante .wrappermenu .seccionesprincipal { width: calc(50% - 15px); float: left; }
-  .menuflotante .wrappermenu .seccionessecundarias { width: calc(50% - 15px); float: right; } }
+@media screen and (min-width: 500px) { .menuflotante .wrappermenu .seccionesprincipal { width: calc(100% - 215px); float: left; }
+  .menuflotante .wrappermenu .seccionesprincipal ul li { height: 32px; line-height: 32px; }
+  .menuflotante .wrappermenu .seccionesprincipal ul .titlista span { margin-top: 4px; }
+  .menuflotante .wrappermenu .seccionessecundarias { width: 200px; float: right; }
+  .menuflotante .wrappermenu .seccionessecundarias ul li { width: 100%; height: 32px; line-height: 32px; } }
 
 @media screen and (min-width: 720px) { .box { height: 340px; width: 300px; float: left; margin-left: 10px; margin-right: 10px; margin-bottom: 30px; overflow: hidden; border-bottom: 1px solid #d4d6d7; }
   .boxdoble { height: 340px; width: 620px; float: left; margin-left: 10px; margin-right: 10px; margin-bottom: 30px; overflow: hidden; border-bottom: 1px solid #d4d6d7; }
@@ -29,20 +32,21 @@
   .objetozoom { width: 620px; height: auto; padding-top: 20px; padding-bottom: 20px; }
   .objetozoom .sliderzoom .wrapperslider { width: 580px; }
   .notamedianaslider .wrapperslider { width: calc(620px / 2 - 10px); }
-  .notaprincipal1 { width: 620px; margin-bottom: 30px; padding-bottom: 30px; }
+  .notaprincipal1 { width: 620px; margin-bottom: 30px; padding-bottom: 30px; position: relative; }
   .notaprincipal1 .titulo { margin-bottom: 20px; }
   .notaprincipal1 .imagen { width: 50%; float: left; padding-right: 10px; margin-bottom: 0px; }
   .notaprincipal1 .bajada { width: 50%; padding-left: 10px; padding-right: 0; float: left; text-align: left; }
-  .notaprincipal1 .tiemposhare { width: 50%; padding-left: 10px; float: right; }
+  .notaprincipal1 .tiemposhare { width: 50%; padding-left: 10px; float: right; position: absolute; bottom: 10px; right: 0px; }
   .tiemposhare { width: 100%; padding-left: 0; padding-right: 0; }
-  .notaschicas .notachica { padding-bottom: 20px; margin-bottom: 20px; border-bottom: 0; height: 150px; position: relative; padding: 0; }
+  .notaschicas .notachica { padding-bottom: 20px; margin-bottom: 20px; border-bottom: 0; height: 160px; position: relative; margin-bottom: 0; padding: 0; }
   .notaschicas .notachica .volanta { width: 100%; padding-left: 0; padding-right: 0; }
   .notaschicas .notachica .titulo { width: 100%; padding-left: 0; padding-right: 0; font-size: 17px; line-height: 21px; }
   .notaschicas .notachica .tituloangosto { padding: 0; width: calc(80% - 10px); font-size: 17px; line-height: 21px; }
   .notaschicas .notachica .imagen { margin-left: 10px; margin-right: 0; }
   .notaschicas .notachica .imagen img { height: 60px; }
   .notaschicas .notachica .playeraudio { width: 100%; padding-left: 0; padding-right: 0; }
-  .notaschicas .notachica .tiemposhare { position: absolute; bottom: 5px; }
+  .notaschicas .notachica .tiemposhare { position: absolute; bottom: 10px; }
+  .notaschicas > div:first-of-type { border-bottom: 1px solid #d4d6d7; margin-bottom: 20px; }
   .notamediana { padding-bottom: 20px; margin-bottom: 30px; }
   .notamediana .volanta { width: 100%; padding-left: 0; padding-right: 0; }
   .notamediana .titulo { width: 100%; padding-left: 0; padding-right: 0; font-size: 19px; line-height: 24px; }
@@ -201,11 +205,17 @@
   .notatematicahome .notatematicahomechicas .notasimpleesp { width: 50%; float: left; height: 150px; position: relative; }
   .notatematicahome .notatematicahomechicas .notasimpleesp .tiemposhare { position: absolute; bottom: 20px; width: calc(100% - 20px); } }
 
-@media screen and (min-width: 1024px) { #compartir { width: 600px; }
+@media screen and (min-width: 1024px) { .footer .textos div { display: inline; }
+  #compartir { width: 600px; }
   #compartir ul { width: 600px; }
   #indicenotas { width: 600px; }
   #indicenotas ul li { width: 600px; }
   .menuflotante { height: auto; }
+  .menuflotante .wrappermenu .seccionesprincipal { border-bottom: 1px solid #d4d6d7; }
+  .menuflotante .wrappermenu .seccionesprincipal ul { margin-bottom: -1px; overflow: hidden; }
+  .menuflotante .wrappermenu .seccionesprincipal ul li { height: 46px; line-height: 46px; font-size: 16px; width: 33.33%; border-bottom: 1px solid #d4d6d7; }
+  .menuflotante .wrappermenu .seccionesprincipal ul .titlista span { margin-top: 12px; }
+  .menuflotante .wrappermenu .seccionessecundarias ul li { height: 46px; line-height: 46px; font-size: 15px; }
   .cabezalgrande { display: block; width: 960px; }
   .cabezalmobile .botonmenu { background-size: 14px; background-color: white; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; }
   .cabezalmobile .botonmenuclose { background-size: 14px !important; }
@@ -232,7 +242,16 @@
   .objetorecreo .notagrande .imagen img { height: 245px; min-height: 245px; }
   .objetorecreo .notasdobles { width: 50%; }
   .objetorecreo .notasdobles .notadoble .imagen { display: none; }
-  .objetoexplora .listado ul li { width: 50%; float: left; }
+  .objetoexplora { display: table; padding-left: 0; padding-right: 0; }
+  .objetoexplora .listado { width: calc(100% - 215px); margin-right: 15px; float: left; margin-bottom: 0; }
+  .objetoexplora .listado ul li { width: 33.33%; padding-right: 0; }
+  .objetoexplora .listadosecundario { width: 200px; float: left; border-bottom: 1px solid #d4d6d7; }
+  .objetoexplora .listadosecundario ul li { height: 40px; line-height: 40px; width: 100%; }
+  .navegacioninferior { padding-top: 30px; padding-bottom: 30px; }
+  .navegacioninferior .wrapper { width: 960px; margin: 0 auto; }
+  .navegacioninferior .wrapper .indiceacceso { float: left; margin: 0; height: 34px; line-height: 34px; }
+  .navegacioninferior .wrapper .items { float: right; width: auto; line-height: 24px; margin-top: 5px; }
+  .navegacioninferior .wrapper .items ul li { font-size: 14px; padding-left: 15px; padding-right: 15px; }
   .notaprincipal1 .volanta { text-align: left; padding-left: 0px; }
   .notaprincipal1 .titulo { text-align: left; padding-left: 0px; }
   .cabezalmobile { background-color: #2d2d2d; border-bottom: 0; }
@@ -332,7 +351,8 @@
   .notatematicahome .notatematicahomechicas { margin-bottom: -30px; }
   .notatematicahome .notatematicahomechicas .notasimpleesp { height: 140px; } }
 
-@media screen and (min-width: 1300px) { .alerta { width: 1280px; }
+@media screen and (min-width: 1300px) { .navegacioninferior .wrapper { width: 1280px; }
+  .alerta { width: 1280px; }
   .bloquenotas, .objetoexplora { width: 1280px; }
   .cabezalgrande { width: 1280px; }
   .cabezalmobilenv2 { width: 1280px; }
@@ -340,6 +360,10 @@
   .desarrollonota .textonota { padding-left: 100px; padding-right: 100px; }
   .desarrollonota .titulonota { font-size: 32px; line-height: 38px; }
   .bannerdoble { width: 880px; }
+  .menuflotante .wrappermenu .seccionesprincipal { width: calc(100% - 315px); }
+  .menuflotante .wrappermenu .seccionessecundarias { width: 300px; }
+  .objetosinferiores .objetoexplora .listado { width: calc(100% - 315px); }
+  .objetosinferiores .objetoexplora .listadosecundario { width: 300px; }
   .zoomnota { width: 840px; height: auto; float: left; }
   .zoomnota .sliderzoom .wrapperslider { width: 840px; }
   .zoomnota .sliderzoom .wrapperslider .slides .lanotachica .imagen { width: 40%; float: left; margin-right: 15px; }

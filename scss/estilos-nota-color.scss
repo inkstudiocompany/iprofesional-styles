@@ -5,48 +5,64 @@
 @import "_variables.scss";
 @import "_generales.scss";
 
-$colorFondo: #728260;
+$colorFondoDemo: #333333;
 $borderBottom: 1px solid rgba(255, 255, 255, 0.2);
 
-// Estilos nota Color
-.notacolor{
+// Colores
+$colorEYE: #a5423e;
+$colorFIRE: #c0663f;
+$colorGREY: #83817a;
+$colorOCRE: #ae803e;
+$colorDESERT: #af9d6e;
+$colorICELAND: #db8c40;
+$colorTOMATE: #d94225;
+$colorYUE: #233993;
+$colorSAMARITAN: #45627f;
+$colorWATERFALL: #4e9c99;
+$colorCARROT: #c06f14;
+$colorJALAPENO: #a82a42;
+$colorSAPPHIRE: #11265d;
+$colorFOREST: #1b3d5f;
+$colorREEF: #449691;
 
-		.cabezalmobile{
-			background-color: $colorFondo; 
-			border-bottom: $borderBottom;
-			.botonmenu{
-				background-image: url(../images/icono-menu_blanco.png);
-			}
-			.logotipo{
-				background-image: url(../images/logotipo-iprofesional_blanco.png);
-			}
-			.botonbuscador{
-				background-image: url(../images/icono-buscar_blanco.png);
-			}
+// Estilos genericos nota Color
+.notacolor{
+	.cabezalmobile{
+		background-color: $colorFondoDemo; 
+		border-bottom: $borderBottom;
+		.botonmenu{
+			background-image: url(../images/icono-menu_blanco.png);
 		}
-		.cabezalmobilenv2{
-			background-color: $colorFondo; 
-			border-bottom: $borderBottom;
+		.logotipo{
+			background-image: url(../images/logotipo-iprofesional_blanco.png);
+		}
+		.botonbuscador{
+			background-image: url(../images/icono-buscar_blanco.png);
+		}
+	}
+	.cabezalmobilenv2{
+		background-color: $colorFondoDemo; 
+		border-bottom: $borderBottom;
+		color: white;
+		a{
 			color: white;
-			a{
-				color: white;
-			}
 		}
-		.contenido{
-			background-color: $colorFondo;
-			.bannertop{
-				background-color: $colorFondo;
-				color: white;
-				border-bottom: $borderBottom;
-			}
-			.bloquenotas{
-				background-color: white;
-				.desarrollonota{
-					.titulonota{
-						color: white;
-					}
+	}
+	.contenido{
+		background-color: $colorFondoDemo;
+		.bannertop{
+			background-color: $colorFondoDemo;
+			color: white;
+			border-bottom: $borderBottom;
+		}
+		.bloquenotas{
+			background-color: white;
+			.desarrollonota{
+				.titulonota{
+					color: white;
+				}
 					.topnotacolor{
-						background-color: $colorFondo;
+						background-color: $colorFondoDemo;
 						
 						padding-bottom: 5px;
 						margin-top: -10px;
@@ -58,10 +74,356 @@ $borderBottom: 1px solid rgba(255, 255, 255, 0.2);
 						margin-top: 0px;
 					}
 				}
-			}
-			.objetosinferiores{
-				background-color: white;
+		}
+		.objetosinferiores{
+			background-color: white;
+		}
+	}
+}
+
+// Themes
+
+// Theme EYE
+.theme-eye{
+	.cabezalmobile{
+		background-color: $colorEYE; 
+	}
+	.cabezalmobilenv2{
+		background-color: $colorEYE;
+	}
+	.contenido{
+		background-color: $colorEYE;
+		.bannertop{
+			background-color: $colorEYE;
+		}
+		.bloquenotas{
+			.desarrollonota{
+				.topnotacolor{
+					background-color: $colorEYE;
+				}
 			}
 		}
+	}
+}
 
+// Theme FIRE
+.theme-fire{
+	.cabezalmobile{
+		background-color: $colorFIRE; 
+	}
+	.cabezalmobilenv2{
+		background-color: $colorFIRE;
+	}
+	.contenido{
+		background-color: $colorFIRE;
+		.bannertop{
+			background-color: $colorFIRE;
+		}
+		.bloquenotas{
+			.desarrollonota{
+				.topnotacolor{
+					background-color: $colorFIRE;
+				}
+			}
+		}
+	}
+}
+
+// Theme GREY
+.theme-grey{
+	.cabezalmobile{
+		background-color: $colorGREY; 
+	}
+	.cabezalmobilenv2{
+		background-color: $colorGREY;
+	}
+	.contenido{
+		background-color: $colorGREY;
+		.bannertop{
+			background-color: $colorGREY;
+		}
+		.bloquenotas{
+			.desarrollonota{
+				.topnotacolor{
+					background-color: $colorGREY;
+				}
+			}
+		}
+	}
+}
+
+// Theme OCRE
+.theme-ocre{
+	.cabezalmobile{
+		background-color: $colorOCRE; 
+	}
+	.cabezalmobilenv2{
+		background-color: $colorOCRE;
+	}
+	.contenido{
+		background-color: $colorOCRE;
+		.bannertop{
+			background-color: $colorOCRE;
+		}
+		.bloquenotas{
+			.desarrollonota{
+				.topnotacolor{
+					background-color: $colorOCRE;
+				}
+			}
+		}
+	}
+}
+
+// Theme DESERT
+.theme-desert{
+	.cabezalmobile{
+		background-color: $colorDESERT; 
+	}
+	.cabezalmobilenv2{
+		background-color: $colorDESERT;
+	}
+	.contenido{
+		background-color: $colorDESERT;
+		.bannertop{
+			background-color: $colorDESERT;
+		}
+		.bloquenotas{
+			.desarrollonota{
+				.topnotacolor{
+					background-color: $colorDESERT;
+				}
+			}
+		}
+	}
+}
+
+// Theme ICELAND
+.theme-iceland{
+	.cabezalmobile{
+		background-color: $colorICELAND; 
+	}
+	.cabezalmobilenv2{
+		background-color: $colorICELAND;
+	}
+	.contenido{
+		background-color: $colorICELAND;
+		.bannertop{
+			background-color: $colorICELAND;
+		}
+		.bloquenotas{
+			.desarrollonota{
+				.topnotacolor{
+					background-color: $colorICELAND;
+				}
+			}
+		}
+	}
+}
+
+// Theme TOMATE
+.theme-tomate{
+	.cabezalmobile{
+		background-color: $colorTOMATE; 
+	}
+	.cabezalmobilenv2{
+		background-color: $colorTOMATE;
+	}
+	.contenido{
+		background-color: $colorTOMATE;
+		.bannertop{
+			background-color: $colorTOMATE;
+		}
+		.bloquenotas{
+			.desarrollonota{
+				.topnotacolor{
+					background-color: $colorTOMATE;
+				}
+			}
+		}
+	}
+}
+
+// Theme YUE
+.theme-yue{
+	.cabezalmobile{
+		background-color: $colorYUE; 
+	}
+	.cabezalmobilenv2{
+		background-color: $colorYUE;
+	}
+	.contenido{
+		background-color: $colorYUE;
+		.bannertop{
+			background-color: $colorYUE;
+		}
+		.bloquenotas{
+			.desarrollonota{
+				.topnotacolor{
+					background-color: $colorYUE;
+				}
+			}
+		}
+	}
+}
+
+// Theme SAMARITAN
+.theme-samaritan{
+	.cabezalmobile{
+		background-color: $colorSAMARITAN; 
+	}
+	.cabezalmobilenv2{
+		background-color: $colorSAMARITAN;
+	}
+	.contenido{
+		background-color: $colorSAMARITAN;
+		.bannertop{
+			background-color: $colorSAMARITAN;
+		}
+		.bloquenotas{
+			.desarrollonota{
+				.topnotacolor{
+					background-color: $colorSAMARITAN;
+				}
+			}
+		}
+	}
+}
+
+// Theme WATERFALL
+.theme-waterfall{
+	.cabezalmobile{
+		background-color: $colorWATERFALL; 
+	}
+	.cabezalmobilenv2{
+		background-color: $colorWATERFALL;
+	}
+	.contenido{
+		background-color: $colorWATERFALL;
+		.bannertop{
+			background-color: $colorWATERFALL;
+		}
+		.bloquenotas{
+			.desarrollonota{
+				.topnotacolor{
+					background-color: $colorWATERFALL;
+				}
+			}
+		}
+	}
+}
+
+// Theme CARROT
+.theme-carrot{
+	.cabezalmobile{
+		background-color: $colorCARROT; 
+	}
+	.cabezalmobilenv2{
+		background-color: $colorCARROT;
+	}
+	.contenido{
+		background-color: $colorCARROT;
+		.bannertop{
+			background-color: $colorCARROT;
+		}
+		.bloquenotas{
+			.desarrollonota{
+				.topnotacolor{
+					background-color: $colorCARROT;
+				}
+			}
+		}
+	}
+}
+
+// Theme JALAPENO
+.theme-jalapeno{
+	.cabezalmobile{
+		background-color: $colorJALAPENO; 
+	}
+	.cabezalmobilenv2{
+		background-color: $colorJALAPENO;
+	}
+	.contenido{
+		background-color: $colorJALAPENO;
+		.bannertop{
+			background-color: $colorJALAPENO;
+		}
+		.bloquenotas{
+			.desarrollonota{
+				.topnotacolor{
+					background-color: $colorJALAPENO;
+				}
+			}
+		}
+	}
+}
+
+// Theme SAPPHIRE
+.theme-sapphire{
+	.cabezalmobile{
+		background-color: $colorSAPPHIRE; 
+	}
+	.cabezalmobilenv2{
+		background-color: $colorSAPPHIRE;
+	}
+	.contenido{
+		background-color: $colorSAPPHIRE;
+		.bannertop{
+			background-color: $colorSAPPHIRE;
+		}
+		.bloquenotas{
+			.desarrollonota{
+				.topnotacolor{
+					background-color: $colorSAPPHIRE;
+				}
+			}
+		}
+	}
+}
+
+// Theme FOREST
+.theme-forest{
+	.cabezalmobile{
+		background-color: $colorFOREST; 
+	}
+	.cabezalmobilenv2{
+		background-color: $colorFOREST;
+	}
+	.contenido{
+		background-color: $colorFOREST;
+		.bannertop{
+			background-color: $colorFOREST;
+		}
+		.bloquenotas{
+			.desarrollonota{
+				.topnotacolor{
+					background-color: $colorFOREST;
+				}
+			}
+		}
+	}
+}
+
+// Theme REEF
+.theme-reef{
+	.cabezalmobile{
+		background-color: $colorREEF; 
+	}
+	.cabezalmobilenv2{
+		background-color: $colorREEF;
+	}
+	.contenido{
+		background-color: $colorREEF;
+		.bannertop{
+			background-color: $colorREEF;
+		}
+		.bloquenotas{
+			.desarrollonota{
+				.topnotacolor{
+					background-color: $colorREEF;
+				}
+			}
+		}
+	}
 }
