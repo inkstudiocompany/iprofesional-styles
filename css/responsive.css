@@ -360,6 +360,7 @@
   .alerta { width: 1280px; }
   .bloquenotas, .objetoexplora { width: 1280px; }
   .cabezalgrande { width: 1280px; }
+  .cabezalgrande .logogrande .nuevodiseno { margin-right: 202px; }
   .cabezalmobilenv2 { width: 1280px; }
   .desarrollonota { width: 880px; float: left; }
   .desarrollonota .textonota { padding-left: 100px; padding-right: 100px; }
