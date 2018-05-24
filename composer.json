@@ -2,7 +2,7 @@
     "name": "iprofesional/iprofesional-styles",
     "version": "1.0.0",
     "dist": {
-        "url": "http://gitlab.grupovi-da.biz/lamezquita/iprofesional-styles.git",
+        "url": "git@github.com:inkstudiocompany/iprofesional-styles2.git",
         "type": "git"
     },
     "description": "Contiene el proyecto correspondiente a los diseños y maquetados de iProfesional.",
