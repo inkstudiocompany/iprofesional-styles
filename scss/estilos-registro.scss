@@ -65,6 +65,7 @@
 		background-position: left;
 		background-size: 40px;
 		margin-bottom: 15px;
+		cursor: pointer;
 		a{ 
 			color: white;
 			display: block;
@@ -92,6 +93,7 @@
 		-webkit-box-shadow: 0px 1px 2px #b3b3b3;
 		   -moz-box-shadow: 0px 1px 2px #b3b3b3;
 		        box-shadow: 0px 1px 2px #b3b3b3;
+		cursor: pointer;
 		a{
 			color: rgba(0,0,0, 0.54);
 			display: block;
@@ -161,5 +163,6 @@
 		border-radius: 5px;
 		display: table;
 		text-transform: uppercase;
+		cursor: pointer;
 	}
 }

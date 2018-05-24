@@ -208,7 +208,22 @@
   .notatematicahome .notagrande .tiemposhare { width: calc(50% - 10px); float: right; }
   .notatematicahome .notasimple { width: 50%; float: left; }
   .notatematicahome .notatematicahomechicas .notasimpleesp { width: 50%; float: left; height: 150px; position: relative; }
-  .notatematicahome .notatematicahomechicas .notasimpleesp .tiemposhare { position: absolute; bottom: 20px; width: calc(100% - 20px); } }
+  .notatematicahome .notatematicahomechicas .notasimpleesp .tiemposhare { position: absolute; bottom: 20px; width: calc(100% - 20px); }
+  .notahomeny .columnaprincipal .notassecundarias .lanota { display: table; }
+  .notahomeny .columnaprincipal .notassecundarias .lanota .imagen { float: right; margin: 0 0 0 18px; max-width: 265px; right: 0; }
+  .notahomeny .columnaprincipal .notassecundarias .lanota .imagen .laimagen { margin-bottom: 0px; }
+  .notahomeny .columnaprincipal .notaterciaria .lanota { display: table; }
+  .notahomeny .columnaprincipal .notaterciaria .lanota .imagen { float: right; margin: 0 0 0 18px; max-width: 265px; right: 0; }
+  .notahomeny .columnaprincipal .notaterciaria .lanota .imagen .laimagen { margin-bottom: 0px; }
+  .notahomeny .columnalateral { padding-bottom: 40px; margin-bottom: 40px; border-bottom: 1px solid #d4d6d7; }
+  .notahomeny .columnalateral .itemsseccion { flex-direction: row; }
+  .notahomeny .columnalateral .itemsseccion .itemscolumna { flex: 1; padding-right: 20px; position: relative; width: 50%; }
+  .notahomeny .columnalateral .itemsseccion .itemscolumna .lanota { border-bottom: 0; padding-bottom: 0; margin-bottom: 0; }
+  .notahomeny .columnalateral .itemsseccion .itemscolumna .lanota .titulo { width: calc(100% - 70px); font-size: 17px; line-height: 21px; }
+  .notahomeny .columnalateral .itemsseccion .itemscolumna .lanota .imagen { width: 60px; height: 60px; margin-right: 0; }
+  .notahomeny .columnalateral .itemsseccion .itemscolumna .lanota .imagen img { height: 60px; }
+  .notahomeny .columnalateral .itemsseccion .itemscolumna .lanota:first-child { padding-bottom: 40px; margin-bottom: 40px; border-bottom: 1px solid #d4d6d7; }
+  .notahomeny .columnalateral .itemsseccion .itemscolumnader { border-left: 1px solid #d4d6d7; padding-left: 20px; padding-right: 0; } }
 
 @media screen and (min-width: 1024px) { .footer .textos div { display: inline; }
   #compartir { width: 600px; }
@@ -354,7 +369,28 @@
   .notatematicahome .notagrande .tiemposhare { width: 100%; }
   .notatematicahome .notasimple { width: 300px; }
   .notatematicahome .notatematicahomechicas { margin-bottom: -30px; }
-  .notatematicahome .notatematicahomechicas .notasimpleesp { height: 140px; } }
+  .notatematicahome .notatematicahomechicas .notasimpleesp { height: 140px; }
+  .notahomeny .columnaprincipal { -ms-flex: 0 0 100%; flex: 0 0 100%; max-width: 100%; width: 100%; -ms-flex-direction: row; flex-direction: row; padding-bottom: 40px; margin-bottom: 40px; border-bottom: 1px solid #d4d6d7; }
+  .notahomeny .columnaprincipal .notassecundarias { min-height: 1px; padding-right: 20px; position: relative; width: 100%; -ms-flex: 0 0 25%; flex: 0 0 25%; max-width: 25%; width: 25%; border-right: 1px solid #d4d6d7; -ms-flex-order: -1; order: -1; }
+  .notahomeny .columnaprincipal .notassecundarias .lanota { border-bottom: 0; margin-bottom: 0; }
+  .notahomeny .columnaprincipal .notassecundarias .lanota:first-child { padding-bottom: 40px; margin-bottom: 40px; border-bottom: 1px solid #d4d6d7; }
+  .notahomeny .columnaprincipal .notassecundarias .lanota .imagen { margin: 0; max-width: 100%; }
+  .notahomeny .columnaprincipal .notassecundarias .lanota .volanta { padding-left: 0; padding-right: 0; }
+  .notahomeny .columnaprincipal .notassecundarias .lanota .titulo { padding-left: 0; padding-right: 0; }
+  .notahomeny .columnaprincipal .notassecundarias .lanota .autor { padding-left: 0; padding-right: 0; }
+  .notahomeny .columnaprincipal .notaprincipal { min-height: 1px; padding-left: 20px; position: relative; width: 100%; -ms-flex: 0 0 75%; flex: 0 0 75%; max-width: 75%; width: 75%; border-bottom: 0; margin-bottom: 0; }
+  .notahomeny .columnaprincipal .notaprincipal .textosnota { margin-left: -10px; width: calc(100% + 20px); }
+  .notahomeny .columnaprincipal .notaprincipal .textosnota .titulo { font-size: 32px; line-height: 38px; }
+  .notahomeny .columnaprincipal .notaterciaria { min-height: 1px; position: relative; width: 100%; }
+  .notahomeny .columnaprincipal .notaterciaria .lanota { border-bottom: 0; margin-bottom: 0; padding-bottom: 0; border-top: 1px solid #d4d6d7; padding-top: 40px; }
+  .notahomeny .columnaprincipal .notaterciaria .lanota .imagen { max-width: 200px; margin-bottom: 0; }
+  .notahomeny .columnaprincipal .notaterciaria .lanota .imagen .laimagen { margin-bottom: 0; }
+  .notahomeny .columnaprincipal .notaterciaria .lanota .volanta { padding: 0; }
+  .notahomeny .columnaprincipal .notaterciaria .lanota .titulo { font-size: 22px; font-family: 'Source Serif Pro', serif; line-height: 27px; color: #1c1c1c; font-weight: 600; letter-spacing: -0.5px; width: 100%; padding-left: 10px; padding-right: 10px; padding: 0; }
+  .notahomeny .columnaprincipal .notaterciaria .lanota .autor { padding: 0; }
+  .notahomeny .columnalateral .titulocolumna { text-indent: 0; }
+  .notahomeny .columnalateral .itemsseccion .itemscolumna .lanota .titulo { padding-left: 0; }
+  .notahomeny .columnalateral .itemsseccion .itemscolumna .lanota .autor { padding-left: 0; } }
 
 @media screen and (min-width: 1300px) { .navegacioninferior .wrapper { width: 1280px; }
   .alerta { width: 1280px; }
@@ -449,4 +485,14 @@
   .notatematicahome .notatematicahomechicas { margin-bottom: 0; padding-bottom: 20px; }
   .notatematicahome .notatematicahomechicas .notasimpleesp { width: 25%; padding-right: 15px; padding-top: 0; padding-bottom: 0; border-bottom: 0; margin-bottom: 0; border-right: 1px solid #4b4b4b; }
   .notatematicahome .notatematicahomechicas .notasimpleesp .tiemposhare { bottom: 10px; }
-  .notatematicahome .notatematicahomechicas .ultima { border: 0; } }
+  .notatematicahome .notatematicahomechicas .ultima { border: 0; }
+  .notahomeny .columnaprincipal { -ms-flex: 0 0 75%; flex: 0 0 75%; max-width: 75%; width: 75%; -ms-flex-direction: row; flex-direction: row; padding-right: 20px; }
+  .notahomeny .columnalateral { -ms-flex: 0 0 25%; flex: 0 0 25%; max-width: 25%; width: 25%; -ms-flex-line-pack: start; align-content: flex-start; padding-left: 20px; border-left: 1px solid #d4d6d7; padding-bottom: 0; }
+  .notahomeny .columnalateral .itemsseccion { display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; }
+  .notahomeny .columnalateral .itemsseccion .itemscolumna { padding: 0; width: 100%; border: 0; }
+  .notahomeny .columnalateral .itemsseccion .itemscolumna .lanota { padding-bottom: 40px; margin-bottom: 40px; border-bottom: 1px solid #d4d6d7; }
+  .notahomeny .columnalateral .itemsseccion .itemscolumna .lanota .titulo { padding-left: 0; float: none; width: 100%; }
+  .notahomeny .columnalateral .itemsseccion .itemscolumna .lanota .autor { padding-left: 0; }
+  .notahomeny .columnalateral .itemsseccion .itemscolumna .lanota .imagen { width: 100px; height: 100px; margin-left: 10px; }
+  .notahomeny .columnalateral .itemsseccion .itemscolumna .lanota .imagen img { height: 100px; }
+  .notahomeny .columnalateral .itemsseccion .itemscolumnader .lanota:last-child { border-bottom: 0; margin-bottom: 0; } }

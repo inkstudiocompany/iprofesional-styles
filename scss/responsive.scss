@@ -1058,6 +1058,77 @@
 			}
 		}
 	}
+	.notahomeny{
+		.columnaprincipal{
+			.notassecundarias{
+				.lanota{
+					display: table;
+					.imagen{
+						float: right;
+						margin: 0 0 0 18px;
+						max-width: 265px;
+						right: 0;
+						.laimagen{
+							margin-bottom: 0px;
+						}
+					}
+				}
+			}
+			.notaterciaria{
+				.lanota{
+					display: table;
+					.imagen{
+						float: right;
+						margin: 0 0 0 18px;
+						max-width: 265px;
+						right: 0;
+						.laimagen{
+							margin-bottom: 0px;
+						}
+					}
+				}
+			}
+		}
+		.columnalateral{
+			@include separacionNotas;
+			.itemsseccion{
+				flex-direction: row;
+				.itemscolumna{
+					flex: 1;
+					padding-right: 20px;
+					position: relative;
+					width: 50%;
+					.lanota{
+						border-bottom: 0;
+						padding-bottom: 0;
+						margin-bottom: 0;
+						.titulo{
+							width: calc(100% - 70px);
+							font-size: 17px;
+							line-height: 21px;
+						}
+						.imagen{
+							width: 60px;
+							height: 60px;
+							margin-right: 0;
+							img{
+								height: 60px;
+							}
+						}
+
+						&:first-child{
+							@include separacionNotas;
+						}
+					}
+				}
+				.itemscolumnader{
+					border-left: 1px solid $colorSeparadores;
+					padding-left: 20px;
+					padding-right: 0;
+				}
+			}
+		}
+	}
 }
 @media screen and (min-width: $mq_trescolumnas){
 	.footer{
@@ -1782,7 +1853,120 @@
 				height: 140px;
 			}
 		}
+	}
+	.notahomeny{
+		.columnaprincipal{
+			-ms-flex: 0 0 100%;
+			flex: 0 0 100%;
+			max-width: 100%;
+			width: 100%;
+			-ms-flex-direction: row;
+			flex-direction: row;
+			@include separacionNotas;
+			.notassecundarias{
+				min-height: 1px;
+				padding-right: 20px;
+				position: relative;
+				width: 100%;
+				-ms-flex: 0 0 25%;
+				flex: 0 0 25%;
+				max-width: 25%;
+				width: 25%;
+				border-right: 1px solid $colorSeparadores;
+				-ms-flex-order: -1;
+				order: -1;
+				.lanota{
+					border-bottom: 0;
+					margin-bottom: 0;
+					&:first-child{
+						@include separacionNotas;
+					}
+					.imagen{
+						margin: 0;
+						max-width: 100%;
+					}
+					.volanta{
+						padding-left: 0;
+						padding-right: 0;
+					}
+					.titulo{
+						padding-left: 0;
+						padding-right: 0;
+					}
+					.autor{
+						padding-left: 0;
+						padding-right: 0;
+					}
+				}
 
+			}
+			.notaprincipal{
+				min-height: 1px;
+				padding-left: 20px;
+				position: relative;
+				width: 100%;
+				-ms-flex: 0 0 75%;
+				flex: 0 0 75%;
+				max-width: 75%;
+				width: 75%;
+				border-bottom: 0;
+				margin-bottom: 0;
+				.textosnota{
+					margin-left: -10px;
+					width: calc(100% + 20px);
+					.titulo{
+						font-size: 32px;
+						line-height: 38px;
+					}
+				}
+			}
+			.notaterciaria{
+				min-height: 1px;
+				position: relative;
+				width: 100%;
+				.lanota{
+					border-bottom: 0;
+					margin-bottom: 0;
+					padding-bottom: 0;
+					border-top: 1px solid $colorSeparadores;
+					padding-top: 40px;
+					.imagen{
+						max-width: 200px;
+						margin-bottom: 0;
+						.laimagen{
+							margin-bottom: 0;
+						}
+					}
+					.volanta{
+						padding: 0;
+					}
+					.titulo{
+						@include tituloMediano;
+						padding: 0;
+					}
+					.autor{
+						padding: 0;
+					}
+				}
+			}
+		}
+		.columnalateral{
+			.titulocolumna{
+				text-indent: 0;
+			}
+			.itemsseccion{
+				.itemscolumna{
+					.lanota{
+						.titulo{
+							padding-left: 0;
+						}
+						.autor{
+							padding-left: 0;
+						}
+					}
+				}
+			}
+		}
 	}
 }
 @media screen and (min-width: $mq_cuatrocolumnas){
@@ -2256,6 +2440,67 @@
 			}
 			.ultima{
 				border:0;
+			}
+		}
+	}
+	.notahomeny{
+		.columnaprincipal{
+			-ms-flex: 0 0 75%;
+			flex: 0 0 75%;
+			max-width: 75%;
+			width: 75%;
+			-ms-flex-direction: row;
+			flex-direction: row;
+			padding-right: 20px;
+		}
+		.columnalateral{
+			-ms-flex: 0 0 25%;
+			flex: 0 0 25%;
+			max-width: 25%;
+			width: 25%;
+			-ms-flex-line-pack: start;
+			align-content: flex-start;
+			padding-left: 20px;
+			border-left: 1px solid $colorSeparadores;
+
+			padding-bottom: 0;
+			.itemsseccion{
+				display: -ms-flexbox;
+				display: flex;
+				-ms-flex-direction: column;
+				flex-direction: column;
+				.itemscolumna{
+					padding: 0;
+					width: 100%;
+					border:0;
+					.lanota{
+						@include separacionNotas;
+						.titulo{
+							padding-left: 0;
+							float: none;
+							width: $wide;
+						}
+						.autor{
+							padding-left: 0;
+						}
+						.imagen{
+							width: 100px;
+							height: 100px;
+							margin-left: 10px;
+							img{
+								height: 100px;
+							}
+						}
+					}
+				}
+				.itemscolumnader{
+					.lanota{
+						&:last-child{
+							border-bottom: 0;
+							margin-bottom: 0;
+						}
+					}
+				}
 			}
 		}
 	}

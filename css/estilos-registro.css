@@ -356,11 +356,11 @@ img.lazy { width: 300px; height: 168px; display: block; }
 
 .registrowrapper .botonessocial { margin-bottom: 20px; height: 40px; display: table; text-align: center; margin: 0 auto; }
 
-.registrowrapper .botoningresafb { width: 230px; height: 40px; background-color: #3b5998; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; color: white; font-family: 'Roboto'; font-size: 14px; font-weight: 500; text-align: left; line-height: 40px; padding-left: 50px; background-image: url(../images/facebook-logo.png); background-repeat: no-repeat; background-position: left; background-size: 40px; margin-bottom: 15px; }
+.registrowrapper .botoningresafb { width: 230px; height: 40px; background-color: #3b5998; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; color: white; font-family: 'Roboto'; font-size: 14px; font-weight: 500; text-align: left; line-height: 40px; padding-left: 50px; background-image: url(../images/facebook-logo.png); background-repeat: no-repeat; background-position: left; background-size: 40px; margin-bottom: 15px; cursor: pointer; }
 
 .registrowrapper .botoningresafb a { color: white; display: block; }
 
-.registrowrapper .botoningresagp { width: 230px; height: 40px; background-color: white; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; font-weight: 600; font-family: 'Roboto'; font-size: 14px; font-weight: 500; color: rgba(0, 0, 0, 0.54); text-align: left; line-height: 40px; padding-left: 50px; background-image: url(https://developers.google.com/identity/images/g-logo.png); background-repeat: no-repeat; background-position: 8px; background-size: 18px; -webkit-box-shadow: 0px 1px 2px #b3b3b3; -moz-box-shadow: 0px 1px 2px #b3b3b3; box-shadow: 0px 1px 2px #b3b3b3; }
+.registrowrapper .botoningresagp { width: 230px; height: 40px; background-color: white; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; font-weight: 600; font-family: 'Roboto'; font-size: 14px; font-weight: 500; color: rgba(0, 0, 0, 0.54); text-align: left; line-height: 40px; padding-left: 50px; background-image: url(https://developers.google.com/identity/images/g-logo.png); background-repeat: no-repeat; background-position: 8px; background-size: 18px; -webkit-box-shadow: 0px 1px 2px #b3b3b3; -moz-box-shadow: 0px 1px 2px #b3b3b3; box-shadow: 0px 1px 2px #b3b3b3; cursor: pointer; }
 
 .registrowrapper .botoningresagp a { color: rgba(0, 0, 0, 0.54); display: block; }
 
@@ -378,4 +378,4 @@ img.lazy { width: 300px; height: 168px; display: block; }
 
 .registrowrapper .olvidaste a { color: #1c1c1c; text-decoration: underline; opacity: 0.6; }
 
-.registrowrapper .botoningresar { width: 300px; height: 40px; background-color: dimgray; color: white; font-weight: 700; text-align: center; line-height: 40px; margin: 0 auto; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; display: table; text-transform: uppercase; }
+.registrowrapper .botoningresar { width: 300px; height: 40px; background-color: dimgray; color: white; font-weight: 700; text-align: center; line-height: 40px; margin: 0 auto; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; display: table; text-transform: uppercase; cursor: pointer; }

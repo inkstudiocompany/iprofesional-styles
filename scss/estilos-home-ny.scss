@@ -1,0 +1,199 @@
+@import "_reset.scss";
+@import "_fonts.scss";
+@import "_variables.scss";
+@import "_generales.scss";
+
+.notahomeny{
+    min-height: 1px;
+    position: relative;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    .columnaprincipal{
+        min-height: 1px;
+        position: relative;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        width: 100%;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-flow: column wrap;
+        flex-flow: column wrap;
+        padding: 0;
+        .notaprincipal{
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            width: $wide;
+            @include separacionNotas;
+            .imagen{
+                width: 100%;
+                position: relative;
+                .laimagen{
+                    @include imagenWide;
+                }
+            }
+            .textosnota{
+                width: 100%;
+                .volanta{
+                    @include volanta;
+                }
+                .titulo{
+                    @include tituloGrande;
+                    a{
+                        color: $colorPrincipal;
+                    }
+                }
+                .bajada{
+                    font-size: 17px;
+                    line-height: 22px;
+                    font-weight: 400;
+                    margin-bottom: 20px;
+                    @include widePadding;
+                    a{
+                        color: $colorPrincipal;
+                    }
+                }
+                .autor{
+                    @include widePadding;
+                    font-weight: 700;
+                    color: $colorPrincipal;
+                }
+            }
+        }
+        .notassecundarias{
+            width: $wide;
+            .lanota{
+                width: $wide;
+                @include separacionNotas;
+                .imagen{
+                    width: 100%;
+                    position: relative;
+                    .laimagen{
+                        @include imagenWide;
+                    }
+                }
+                .volanta{
+                    @include volanta;
+                }
+                .titulo{
+                    @include tituloChico;
+                    margin-bottom: 15px;
+                    a{
+                        color: $colorPrincipal;
+                    }
+                }
+                .autor{
+                    @include widePadding;
+                    font-weight: 700;
+                    color: $colorPrincipal;
+                }
+            }
+        }
+        .notaterciaria{
+            width: $wide;
+            .lanota{
+                width: $wide;
+                @include separacionNotas;
+                .imagen{
+                    width: 100%;
+                    position: relative;
+                    .laimagen{
+                        @include imagenWide;
+                    }
+                }
+                .volanta{
+                    @include volanta;
+                }
+                .titulo{
+                    @include tituloChico;
+                    margin-bottom: 15px;
+                    a{
+                        color: $colorPrincipal;
+                    }
+                }
+                .autor{
+                    @include widePadding;
+                    font-weight: 700;
+                    color: $colorPrincipal;
+                }
+            }
+        }
+    }
+    .columnalateral{
+        min-height: 1px;
+        padding-left: 20px;
+        padding-right: 20px;
+        position: relative;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        width: 100%;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        padding: 0;
+        .titulocolumna{
+            color: #1c1c1c;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 28px;
+            text-transform: uppercase;
+            text-indent: 10px;
+            border-bottom: 3px solid $colorSecundario;
+            display: table;
+            margin-bottom: 40px;
+            margin-left: 0;
+        }
+        .itemsseccion{
+            width: $wide;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            .itemscolumna{
+                width: $wide;
+                .lanota{
+                    width: $wide;
+                    @include separacionNotas;
+                    display: table;
+                    .titulo{
+                        @include tituloChico;
+                        width: calc(80% - 30px);
+                        margin-bottom: 0px;
+                        float: left;
+                        a{
+                            color: $colorPrincipal;
+                            &:hover{
+                                opacity:0.75;
+                            }
+                        }
+                    }
+                    .imagen{
+                        @include imagenChica;
+                        img{
+                            height: 75px;
+                        }
+                    }
+                    .autor{
+                        width: $wide;
+                        font-size: 13px;
+                        color: #828282;
+                        float: left;
+                        margin-top: 10px;
+                        padding: 0 10px;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+    }
+}

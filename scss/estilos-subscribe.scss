@@ -84,6 +84,7 @@
 		background-size: 28px;
 		margin-bottom: 15px;
 		font-size: 16px;
+		cursor: pointer;
 	}
 	.botoningresatw{
 		width: 300px;
@@ -102,6 +103,7 @@
 		background-position: 6px;
 		background-size: 28px;
 		font-size: 16px;
+		cursor: pointer;
 	}
 	.separador{
 		width: $wide;
@@ -167,6 +169,7 @@
 		border-radius: 5px;
 		display: table;
 		text-transform: uppercase;
+		cursor: pointer;
 	}
 	.botongenerico{
 		height: 40px;
@@ -190,9 +193,11 @@
 		-ms-transition: all 0.3s ease-out 0s;
 		-o-transition: all 0.3s ease-out 0s;
 		transition: all 0.3s ease-out 0s;
+		cursor: pointer;
 		a{
 			color: white;
 			display: block;
+			cursor: pointer;
 		}
 		&:hover{
 			background-color: $fondoObjetos;

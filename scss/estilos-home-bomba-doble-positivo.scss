@@ -3,9 +3,10 @@
 @import "_variables.scss";
 @import "_generales.scss";
 
-
-.notahomebomba{
+.notahomebombapositivo{
     background-color: lighten($colorPrincipal, 85%);
+}
+.notahomebomba{
 	width: 100%;
 	float: left;
 	margin-bottom: 30px;
